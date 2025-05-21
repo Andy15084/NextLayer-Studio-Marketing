@@ -34,7 +34,7 @@ export default function ContactPage() {
         <div className="font-mono text-base sm:text-lg mb-10 max-w-3xl text-[#023047]">
           <p className="mb-4">
             Have questions, ideas, or need a consultation? 
-            Don't hesitate to contact us. We're here to help you take your project to the next level.
+            Don&apos;t hesitate to contact us. We&apos;re here to help you take your project to the next level.
           </p>
         </div>
       </section>
