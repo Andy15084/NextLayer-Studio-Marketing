@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="w-full py-8" style={{ background: '#023047', borderTop: '2px solid #219EBC' }}>
+    <footer className="w-full py-8" style={{ background: '#faa957', borderTop: '2px solid rgb(252, 188, 91)' }}>
       <div className="max-w-6xl mx-auto px-2 sm:px-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2 md:gap-6 mb-2 md:mb-4">
           {/* Quick Links */}

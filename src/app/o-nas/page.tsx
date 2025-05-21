@@ -9,7 +9,7 @@ export default function ONasPage() {
       <section className="max-w-7xl mx-auto mt-20 md:mt-24 mb-16 md:mb-24">
         <h1 className="font-heading text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold mb-6 text-[#023047]">
           O nás
-        </h1>
+          </h1>
         <div className="font-mono text-base sm:text-lg mb-10 max-w-3xl text-[#023047]">
           <p className="mb-4">
             Sme tím profesionálov, ktorí sa špecializujú na digitálny marketing a online riešenia.
