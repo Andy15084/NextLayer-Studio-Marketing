@@ -4,13 +4,6 @@ import { useState, useRef, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-const services = [
-  { name: 'Service 1', href: '/service-1' },
-  { name: 'Service 2', href: '/service-2' },
-  { name: 'Service 3', href: '/service-3' },
-  { name: 'Service 4', href: '/service-4' },
-];
-
 const languages = [
   { code: 'sk', name: 'SK', fullName: 'Slovenský' },
   { code: 'de', name: 'DE', fullName: 'Deutsch' },

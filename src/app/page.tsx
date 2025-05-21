@@ -106,7 +106,7 @@ export default function Home() {
           <h2 className="font-heading text-4xl sm:text-5xl md:text-6xl font-bold mb-4 text-[#023047]">Contact Us</h2>
           <p className="font-mono text-base mb-16 text-black max-w-2xl">
             Get in touch with us today!<br />
-            We're here to help with any questions you might have.
+            We&apos;re here to help with any questions you might have.
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24">
