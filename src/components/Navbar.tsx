@@ -4,6 +4,16 @@ import { useState, useRef, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
+const sluzbyItems = [
+  { name: 'Správa sociálnych sietí', href: '/sluzby/socialne-siete' },
+  { name: 'PPC & výkonnostná reklama', href: '/sluzby/ppc-reklama' },
+  { name: 'SEO & Content marketing', href: '/sluzby/seo-content' },
+  { name: 'Web & Landing pages', href: '/sluzby/web-landing' },
+  { name: 'Analytika a reporting', href: '/sluzby/analytika' },
+  { name: 'Výroba kontentu', href: '/sluzby/kontent' },
+  { name: 'Torba reklamných kampaní', href: '/sluzby/kampane' },
+];
+
 const languages = [
   { code: 'sk', name: 'SK', fullName: 'Slovenský' },
   { code: 'de', name: 'DE', fullName: 'Deutsch' },
@@ -12,13 +22,13 @@ const languages = [
 ];
 
 export default function Navbar() {
-  const [isAboutOpen, setIsAboutOpen] = useState(false);
+  const [isSluzbyOpen, setIsSluzbyOpen] = useState(false);
   const [isLanguageOpen, setIsLanguageOpen] = useState(false);
   const [showNavbar, setShowNavbar] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [currentLanguage, setCurrentLanguage] = useState('sk');
-  const aboutTimeout = useRef<NodeJS.Timeout | null>(null);
+  const sluzbyTimeout = useRef<NodeJS.Timeout | null>(null);
   const languageTimeout = useRef<NodeJS.Timeout | null>(null);
 
   // Scroll handler for auto-hide/show
@@ -38,12 +48,13 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [lastScrollY]);
 
-  const handleAboutEnter = () => {
-    if (aboutTimeout.current) clearTimeout(aboutTimeout.current);
-    setIsAboutOpen(true);
+  const handleSluzbyEnter = () => {
+    if (sluzbyTimeout.current) clearTimeout(sluzbyTimeout.current);
+    setIsSluzbyOpen(true);
   };
-  const handleAboutLeave = () => {
-    aboutTimeout.current = setTimeout(() => setIsAboutOpen(false), 200);
+  
+  const handleSluzbyLeave = () => {
+    sluzbyTimeout.current = setTimeout(() => setIsSluzbyOpen(false), 200);
   };
 
   const handleLanguageEnter = () => {
@@ -98,25 +109,16 @@ export default function Navbar() {
                 Web riešenia
               </a>
 
-              <Link
-                href="/products"
-                className="bg-[#FF9800] hover:bg-[#FFB300] text-white font-heading px-5 py-2 rounded-md text-sm font-bold shadow transition"
-              >
-                Products
-              </Link>
-
-              {/* About Dropdown */}
+              {/* Služby Dropdown */}
               <div className="relative">
                 <button
-                  onMouseEnter={handleAboutEnter}
-                  onMouseLeave={handleAboutLeave}
-                  className="font-heading text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium inline-flex items-center"
+                  onMouseEnter={handleSluzbyEnter}
+                  onMouseLeave={handleSluzbyLeave}
+                  className="bg-[#FF9800] text-white border-2 border-[#FF9800] hover:bg-[#FFB300] hover:border-[#FFB300] font-heading px-5 py-2 rounded-md text-sm font-bold shadow transition-colors duration-200 inline-flex items-center"
                 >
-                  About
+                  Služby
                   <svg
-                    className={`ml-2 h-4 w-4 transition-transform ${
-                      isAboutOpen ? 'rotate-180' : ''
-                    }`}
+                    className={`ml-2 h-4 w-4 transition-transform ${isSluzbyOpen ? 'rotate-180' : ''}`}
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -129,43 +131,47 @@ export default function Navbar() {
                     />
                   </svg>
                 </button>
-                {isAboutOpen && (
+                {isSluzbyOpen && (
                   <div
-                    onMouseEnter={handleAboutEnter}
-                    onMouseLeave={handleAboutLeave}
-                    className="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-50"
+                    onMouseEnter={handleSluzbyEnter}
+                    onMouseLeave={handleSluzbyLeave}
+                    className="absolute left-0 mt-2 w-72 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-50"
                   >
                     <div className="py-1 divide-y divide-gray-200" role="menu">
-                      <Link
-                        href="/about"
-                        className="font-heading text-gray-700 hover:text-gray-900 block px-4 py-2 text-sm"
-                      >
-                        About Us
-                      </Link>
-                      <Link
-                        href="/team"
-                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 font-heading"
-                        role="menuitem"
-                      >
-                        Our Team
-                      </Link>
+                      {sluzbyItems.map((item) => (
+                        <Link
+                          key={item.href}
+                          href={item.href}
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 font-heading"
+                          role="menuitem"
+                        >
+                          {item.name}
+                        </Link>
+                      ))}
                     </div>
                   </div>
                 )}
               </div>
 
               <Link
-                href="/projects"
+                href="/o-nas"
                 className="font-heading text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium"
               >
-                Projects
+                O nás
               </Link>
 
               <Link
-                href="/contact"
+                href="/ako-postupujeme"
                 className="font-heading text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium"
               >
-                Contact
+                Ako postupujeme
+              </Link>
+
+              <Link
+                href="/kontakt"
+                className="font-heading text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium"
+              >
+                Kontakt
               </Link>
 
               {/* Language Selector */}
@@ -263,51 +269,61 @@ export default function Navbar() {
             Web riešenia
           </a>
 
-          <Link
-            href="/products"
-            className="bg-[#FF9800] hover:bg-[#FFB300] text-white font-heading px-5 py-2 rounded-md text-sm font-bold shadow transition block"
-          >
-            Products
-          </Link>
-
-          {/* Mobile About Dropdown */}
+          {/* Mobile Služby Dropdown */}
           <div className="relative">
             <button
-              className="font-heading text-gray-700 hover:text-gray-900 block w-full text-left px-3 py-2 rounded-md text-base font-medium"
-              onClick={() => setIsAboutOpen(!isAboutOpen)}
+              className="bg-[#FF9800] hover:bg-[#FFB300] text-white font-heading px-5 py-2 rounded-md text-sm font-bold shadow transition-colors duration-200 inline-flex items-center w-full justify-between"
+              onClick={() => setIsSluzbyOpen(!isSluzbyOpen)}
             >
-              About
+              Služby
+              <svg
+                className={`ml-2 h-4 w-4 transition-transform ${isSluzbyOpen ? 'rotate-180' : ''}`}
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
             </button>
-            {isAboutOpen && (
-              <div className="pl-4 space-y-1">
-                <Link
-                  href="/about"
-                  className="font-heading text-gray-700 hover:text-gray-900 block px-3 py-2 rounded-md text-sm"
-                >
-                  About Us
-                </Link>
-                <Link
-                  href="/team"
-                  className="font-heading text-gray-700 hover:text-gray-900 block px-3 py-2 rounded-md text-sm"
-                >
-                  Our Team
-                </Link>
+            {isSluzbyOpen && (
+              <div className="pl-4 space-y-1 mt-1">
+                {sluzbyItems.map((item) => (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className="font-heading text-gray-700 hover:text-gray-900 block px-3 py-2 rounded-md text-sm"
+                  >
+                    {item.name}
+                  </Link>
+                ))}
               </div>
             )}
           </div>
 
           <Link
-            href="/projects"
+            href="/o-nas"
             className="font-heading text-gray-700 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium"
           >
-            Projects
+            O nás
           </Link>
 
           <Link
-            href="/contact"
+            href="/ako-postupujeme"
             className="font-heading text-gray-700 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium"
           >
-            Contact
+            Ako postupujeme
+          </Link>
+
+          <Link
+            href="/kontakt"
+            className="font-heading text-gray-700 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium"
+          >
+            Kontakt
           </Link>
 
           {/* Mobile Language Selector */}
@@ -316,7 +332,7 @@ export default function Navbar() {
               className="font-heading text-gray-700 hover:text-gray-900 block w-full text-left px-3 py-2 rounded-md text-base font-medium"
               onClick={() => setIsLanguageOpen(!isLanguageOpen)}
             >
-              Language
+              Jazyk / Language
             </button>
             {isLanguageOpen && (
               <div className="pl-4 space-y-1">
