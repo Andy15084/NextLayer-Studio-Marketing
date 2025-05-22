@@ -1,9 +1,8 @@
 import Image from "next/image";
-import Typewriter from "@/components/Typewriter";
-import TypewriterOnView from "@/components/TypewriterOnView";
 import FloatingCard from "@/components/FloatingCard";
 import PaletteButton from "@/components/PaletteButton";
 import AnimatedOnScroll from "@/components/AnimatedOnScroll";
+import ExpandableText from "@/components/ExpandableText";
 import Link from "next/link";
 
 export default function Home() {
@@ -19,18 +18,18 @@ export default function Home() {
                 <h1 className="font-heading text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold mb-4 md:mb-6 leading-tight text-[#023047] text-center md:text-left">
                   NextLayer<br />Studio
                 </h1>
-                <div className="absolute top-45 right-[20%] md:right-[4%] inline-block bg-orange-500 text-white px-8 py-3 rounded-full font-mono text-2xl md:text-3xl mb-4 transform -rotate-20 shadow-lg z-10">
+                <div style={{ transform: 'rotate(-20deg)' }} className="absolute top-45 right-[20%] md:right-[4%] inline-block bg-orange-500 text-white px-8 py-3 rounded-full font-mono text-2xl md:text-3xl mb-4 shadow-lg z-10">
                   marketing
                 </div>
               </div>
-              <div className="h-[60px] md:h-[80px]">
-                <p className="font-mono text-sm sm:text-base mb-6 md:mb-8 max-w-xs sm:max-w-xl text-black text-center md:text-left">
-                  <Typewriter text={"Profesionálny marketing, ktorý vám prinesie nových zákazníkov a zvýši predaje."} speed={10} />
+              <div className="h-auto">
+                <p className="font-mono text-lg sm:text-xl md:text-2xl mb-6 md:mb-8 max-w-xs sm:max-w-xl text-black text-center md:text-left font-medium">
+                  Profesionálny marketing, ktorý vám prinesie nových zákazníkov a zvýši predaje.
                 </p>
               </div>
             </div>
             <Link href="/kontakt">
-              <PaletteButton variant="secondary">Nezáväzná konzultácia</PaletteButton>
+              <PaletteButton variant="secondary">Chcem kampaň</PaletteButton>
             </Link>
           </div>
           {/* Right Side */}
@@ -59,35 +58,306 @@ export default function Home() {
 
         {/* Process Section */}
         <section className="max-w-6xl mx-auto mt-20 md:mt-36">
-          <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-bold mb-2 text-[#023047]">Naše služby</h2>
-          <div className="font-mono text-base sm:text-lg mb-6 md:mb-8 text-black">
-            <TypewriterOnView text="Komplexné marketingové riešenia" speed={20} showCursor={false} animatedDots={true} />
+          <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-bold mb-2 text-[#023047]">Čím sme výnimoční</h2>
+          <div className="font-mono text-base sm:text-lg mb-10 md:mb-12 text-black">
+            Nerobíme to povrchovo a len na oko, ale poriadne a kvalitne
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-6">
-            {/* Card 1 */}
-            <FloatingCard className="bg-white rounded-2xl shadow-xl p-6 md:p-10 flex flex-col items-start min-h-[220px] md:min-h-[260px] transition-transform duration-200 hover:scale-105 w-full">
-              <div className="font-heading text-base md:text-lg font-bold mb-2 text-[#023047]">Správa sociálnych sietí</div>
-              <div className="font-mono text-xs md:text-sm mb-4 text-black">Pravidelné príspevky a komunikácia na sociálnych sieťach</div>
-              <Link href="/sluzby/socialne-siete" className="mt-auto text-[#219EBC] hover:underline font-mono text-sm">Zistiť viac →</Link>
-            </FloatingCard>
-            {/* Card 2 */}
-            <FloatingCard className="bg-white rounded-2xl shadow-xl p-6 md:p-10 flex flex-col items-start min-h-[220px] md:min-h-[260px] transition-transform duration-200 hover:scale-105 w-full">
-              <div className="font-heading text-base md:text-lg font-bold mb-2 text-[#023047]">PPC & výkonnostná reklama</div>
-              <div className="font-mono text-xs md:text-sm mb-4 text-black">Platenej kampane s vysokou návratnosťou investície</div>
-              <Link href="/sluzby/ppc-reklama" className="mt-auto text-[#219EBC] hover:underline font-mono text-sm">Zistiť viac →</Link>
-            </FloatingCard>
-            {/* Card 3 */}
-            <FloatingCard className="bg-white rounded-2xl shadow-xl p-6 md:p-10 flex flex-col items-start min-h-[220px] md:min-h-[260px] transition-transform duration-200 hover:scale-105 w-full">
-              <div className="font-heading text-base md:text-lg font-bold mb-2 text-[#023047]">SEO & Content marketing</div>
-              <div className="font-mono text-xs md:text-sm mb-4 text-black">Optimalizácia pre vyhľadávače a kvalitný obsah</div>
-              <Link href="/sluzby/seo-content" className="mt-auto text-[#219EBC] hover:underline font-mono text-sm">Zistiť viac →</Link>
-            </FloatingCard>
-            {/* Card 4 */}
-            <FloatingCard className="bg-white rounded-2xl shadow-xl p-6 md:p-10 flex flex-col items-start min-h-[220px] md:min-h-[260px] transition-transform duration-200 hover:scale-105 w-full">
-              <div className="font-heading text-base md:text-lg font-bold mb-2 text-[#023047]">Analytika a reporting</div>
-              <div className="font-mono text-xs md:text-sm mb-4 text-black">Meranie výsledkov a strategické plánovanie</div>
-              <Link href="/sluzby/analytika" className="mt-auto text-[#219EBC] hover:underline font-mono text-sm">Zistiť viac →</Link>
-            </FloatingCard>
+          
+          <div className="flex flex-col md:flex-row gap-8 md:gap-12">
+            {/* Left Side - Video */}
+            <div className="w-full md:w-2/5">
+              <div className="relative mx-auto md:mx-0" style={{ maxWidth: "320px" }}>
+                {/* iPhone Frame */}
+                <div className="relative w-64 md:w-80 h-[400px] md:h-[500px] rounded-[40px] border-[14px] border-black bg-black overflow-hidden shadow-2xl mx-auto">
+                  {/* Notch */}
+                  <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-1/3 h-6 bg-black rounded-b-lg z-10"></div>
+                  
+                  {/* Screen Content - Video */}
+                  <video 
+                    className="w-full h-full object-cover rounded-[25px]"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                  >
+                    <source src="/videos/marketing-video.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              </div>
+            </div>
+            
+            {/* Right Side - Cards */}
+            <div className="w-full md:w-3/5">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
+                {/* Card 1 */}
+                <FloatingCard className="bg-white rounded-2xl shadow-xl p-5 md:p-6 flex flex-col items-start transition-all duration-300 hover:scale-105 w-full min-h-[200px] md:min-h-[250px] hover:min-h-[250px] md:hover:min-h-[300px]">
+                  <div className="font-heading text-base md:text-lg font-bold mb-2 text-[#023047]">SEO optimalizácia</div>
+                  <div className="font-mono text-xs md:text-sm mb-4 text-black w-full">
+                    <ExpandableText 
+                      text="Upravíme váš web, aby ho Google miloval – technicky, obsahovo aj link-buildingom. Cieľom je dostať vás na prvú stránku vyhľadávania a priviesť stabilnú, neplatenú návštevnosť, ktorá sa mení na zákazníkov."
+                      maxLength={90}
+                    />
+                  </div>
+                  <Link href="/sluzby/seo-content" className="mt-auto text-[#219EBC] hover:underline font-mono text-sm">Zistiť viac →</Link>
+                </FloatingCard>
+                
+                {/* Card 2 */}
+                <FloatingCard className="bg-white rounded-2xl shadow-xl p-5 md:p-6 flex flex-col items-start transition-all duration-300 hover:scale-105 w-full min-h-[200px] md:min-h-[250px] hover:min-h-[250px] md:hover:min-h-[300px]">
+                  <div className="font-heading text-base md:text-lg font-bold mb-2 text-[#023047]">Správa sociálnych sietí</div>
+                  <div className="font-mono text-xs md:text-sm mb-4 text-black w-full">
+                    <ExpandableText 
+                      text="Zoberieme si na starosť stratégiu, tvorbu kreatívnych príspevkov, videí aj community management pre Instagram, Facebook, LinkedIn, TikTok či YouTube. Vy získate konzistentný obsah, rastúci engagement a viac fanúšikov bez starostí."
+                      maxLength={90}
+                    />
+                  </div>
+                  <Link href="/sluzby/socialne-siete" className="mt-auto text-[#219EBC] hover:underline font-mono text-sm">Zistiť viac →</Link>
+                </FloatingCard>
+                
+                {/* Card 3 */}
+                <FloatingCard className="bg-white rounded-2xl shadow-xl p-5 md:p-6 flex flex-col items-start transition-all duration-300 hover:scale-105 w-full min-h-[200px] md:min-h-[250px] hover:min-h-[250px] md:hover:min-h-[300px]">
+                  <div className="font-heading text-base md:text-lg font-bold mb-2 text-[#023047]">PPC & výkonnostná reklama</div>
+                  <div className="font-mono text-xs md:text-sm mb-4 text-black w-full">
+                    <ExpandableText 
+                      text="Navrhneme a spustíme výkonnostné kampane v Google Ads, Meta, TikTok alebo LinkedIn. Neustále testujeme a optimalizujeme, aby každé euro vložené do reklamy prinieslo maximálny počet konverzií a čo najlepšiu návratnosť investície (ROAS)."
+                      maxLength={90}
+                    />
+                  </div>
+                  <Link href="/sluzby/ppc-reklama" className="mt-auto text-[#219EBC] hover:underline font-mono text-sm">Zistiť viac →</Link>
+                </FloatingCard>
+                
+                {/* Card 4 */}
+                <FloatingCard className="bg-white rounded-2xl shadow-xl p-5 md:p-6 flex flex-col items-start transition-all duration-300 hover:scale-105 w-full min-h-[200px] md:min-h-[250px] hover:min-h-[250px] md:hover:min-h-[300px]">
+                  <div className="font-heading text-base md:text-lg font-bold mb-2 text-[#023047]">Tvorba webov a landing pages</div>
+                  <div className="font-mono text-xs md:text-sm mb-4 text-black w-full">
+                    <ExpandableText 
+                      text="Navrhneme rýchle, moderné a responzívne webstránky alebo kampaňové landing pages. Dôraz kladieme na čistý dizajn, bleskové načítanie a jasné výzvy k akcii, aby návštevníci premenili svoj záujem na reálny dopyt či nákup."
+                      maxLength={90}
+                    />
+                  </div>
+                  <Link href="/sluzby/tvorba-webov" className="mt-auto text-[#219EBC] hover:underline font-mono text-sm">Zistiť viac →</Link>
+                </FloatingCard>
+              </div>
+              
+              <div className="text-center mt-8 md:mt-12">
+                <Link href="/sluzby" className="font-mono text-lg md:text-xl text-[#023047] hover:text-[#219EBC] transition-colors font-medium">
+                  a omnoho viac...
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Digital Identity Section */}
+        <section className="max-w-6xl mx-auto mt-20 md:mt-36 mb-16 md:mb-24">
+          <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-[#023047]">
+            Digitalizácia vašej značky a vytvorenie digitálnej identity
+          </h2>
+          
+          <p className="font-mono text-base md:text-lg mb-12 text-black max-w-4xl">
+            Vaša značka potrebuje vizuál, ktorý si každý zapamätá – od loga až po posledný pixel na sociálnych sieťach. 
+            Náš dizajnérsky tím vám dodá kompletnú vizuálnu identitu, vďaka ktorej budete všade pôsobiť jednotne, 
+            profesionálne a nezameniteľne.
+          </p>
+          
+          {/* Service 1 - Logo */}
+          <div className="flex flex-col md:flex-row items-center mb-12 md:mb-16">
+            <div className="w-full md:w-1/2 order-2 md:order-1 flex justify-center">
+              <div className="rounded-2xl overflow-hidden shadow-xl max-w-[300px]">
+                <Image 
+                  src="/marketing.png" 
+                  alt="Logo a logomanuál" 
+                  width={300} 
+                  height={300} 
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+            </div>
+            <div className="w-full md:w-1/2 md:pl-8 mb-8 md:mb-0 order-1 md:order-2">
+              <div className="bg-white rounded-2xl p-6 md:p-8 shadow-xl">
+                <div className="flex items-center mb-4">
+                  <div className="w-10 h-10 rounded-full bg-orange-500 flex items-center justify-center text-white font-bold mr-4">
+                    1
+                  </div>
+                  <h3 className="font-heading text-xl md:text-2xl font-bold text-[#023047]">Logo & logomanuál</h3>
+                </div>
+                <p className="font-mono text-sm md:text-base text-black pl-14">
+                  Navrhneme originálne logo a spracujeme brandbook s presnými pravidlami používania farieb, písma a kompozície.
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          {/* Service 2 - Firemné tlačoviny */}
+          <div className="flex flex-col md:flex-row items-center mb-12 md:mb-16">
+            <div className="w-full md:w-1/2 md:pr-8 mb-8 md:mb-0 order-1">
+              <div className="bg-white rounded-2xl p-6 md:p-8 shadow-xl">
+                <div className="flex items-center mb-4">
+                  <div className="w-10 h-10 rounded-full bg-orange-500 flex items-center justify-center text-white font-bold mr-4">
+                    2
+                  </div>
+                  <h3 className="font-heading text-xl md:text-2xl font-bold text-[#023047]">Firemné tlačoviny</h3>
+                </div>
+                <p className="font-mono text-sm md:text-base text-black pl-14">
+                  Vizitky, hlavičkový papier, obálky, faktúry či podpis do e-mailu – všetko v jednom štýle, pripravené na tlač alebo digitálne použitie.
+                </p>
+              </div>
+            </div>
+            <div className="w-full md:w-1/2 order-2 flex justify-center">
+              <div className="rounded-2xl overflow-hidden shadow-xl max-w-[300px]">
+                <Image 
+                  src="/moderne.png" 
+                  alt="Firemné tlačoviny" 
+                  width={300} 
+                  height={300} 
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+            </div>
+          </div>
+          
+          {/* Service 3 - Grafika pre sociálne siete */}
+          <div className="flex flex-col md:flex-row items-center mb-12 md:mb-16">
+            <div className="w-full md:w-1/2 order-2 md:order-1 flex justify-center">
+              <div className="rounded-2xl overflow-hidden shadow-xl max-w-[300px]">
+                <Image 
+                  src="/ai.png" 
+                  alt="Grafika pre sociálne siete" 
+                  width={300} 
+                  height={300} 
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+            </div>
+            <div className="w-full md:w-1/2 md:pl-8 mb-8 md:mb-0 order-1 md:order-2">
+              <div className="bg-white rounded-2xl p-6 md:p-8 shadow-xl">
+                <div className="flex items-center mb-4">
+                  <div className="w-10 h-10 rounded-full bg-orange-500 flex items-center justify-center text-white font-bold mr-4">
+                    3
+                  </div>
+                  <h3 className="font-heading text-xl md:text-2xl font-bold text-[#023047]">Grafika pre sociálne siete</h3>
+                </div>
+                <p className="font-mono text-sm md:text-base text-black pl-14">
+                  Šablóny príspevkov, stories, reels titulky aj profilové grafiky, aby ste na Instagrame či LinkedIne pôsobili konzistentne a profesionálne.
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          {/* Service 4 - Web & UI/UX dizajn */}
+          <div className="flex flex-col md:flex-row items-center mb-12 md:mb-16">
+            <div className="w-full md:w-1/2 md:pr-8 mb-8 md:mb-0 order-1">
+              <div className="bg-white rounded-2xl p-6 md:p-8 shadow-xl">
+                <div className="flex items-center mb-4">
+                  <div className="w-10 h-10 rounded-full bg-orange-500 flex items-center justify-center text-white font-bold mr-4">
+                    4
+                  </div>
+                  <h3 className="font-heading text-xl md:text-2xl font-bold text-[#023047]">Web & UI/UX dizajn</h3>
+                </div>
+                <p className="font-mono text-sm md:text-base text-black pl-14">
+                  Vytvoríme moderné rozhranie pre web, e-shop alebo mobilnú aplikáciu s dôrazom na používateľský zážitok, rýchlosť a konverzie.
+                </p>
+              </div>
+            </div>
+            <div className="w-full md:w-1/2 order-2 flex justify-center">
+              <div className="rounded-2xl overflow-hidden shadow-xl max-w-[300px]">
+                <Image 
+                  src="/co-je-webova-aplikacia.png" 
+                  alt="Web a UI/UX dizajn" 
+                  width={300} 
+                  height={300} 
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+            </div>
+          </div>
+          
+          {/* Additional Services */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            {/* Service 5 */}
+            <div className="bg-white rounded-2xl p-6 md:p-8 shadow-xl">
+              <div className="flex items-center mb-4">
+                <div className="w-10 h-10 rounded-full bg-orange-500 flex items-center justify-center text-white font-bold mr-4">
+                  5
+                </div>
+                <h3 className="font-heading text-lg md:text-xl font-bold text-[#023047]">Obalový a produktový dizajn</h3>
+              </div>
+              <p className="font-mono text-sm text-black pl-14">
+                Dizajn krabičiek, etikiet a promo materiálov, ktorý vystúpi z regálov aj e-shopových thumbnailov.
+              </p>
+            </div>
+            
+            {/* Service 6 */}
+            <div className="bg-white rounded-2xl p-6 md:p-8 shadow-xl">
+              <div className="flex items-center mb-4">
+                <div className="w-10 h-10 rounded-full bg-orange-500 flex items-center justify-center text-white font-bold mr-4">
+                  6
+                </div>
+                <h3 className="font-heading text-lg md:text-xl font-bold text-[#023047]">Prezentácie a infografiky</h3>
+              </div>
+              <p className="font-mono text-sm text-black pl-14">
+                PowerPoint/Keynote šablóny, pitch decky a vizualizácie dát, ktoré zaujmú publikum a uľahčia pochopenie kľúčových čísel.
+              </p>
+            </div>
+            
+            {/* Service 7 */}
+            <div className="bg-white rounded-2xl p-6 md:p-8 shadow-xl">
+              <div className="flex items-center mb-4">
+                <div className="w-10 h-10 rounded-full bg-orange-500 flex items-center justify-center text-white font-bold mr-4">
+                  7
+                </div>
+                <h3 className="font-heading text-lg md:text-xl font-bold text-[#023047]">Animácie a motion grafika</h3>
+              </div>
+              <p className="font-mono text-sm text-black pl-14">
+                Logo animácie, krátke brand videá či mikro-animácie pre web – pohyb, ktorý pritiahne oko a zvýrazní vašu osobnosť.
+              </p>
+            </div>
+          </div>
+          
+          <p className="font-mono text-lg md:text-xl text-center italic text-[#023047] mb-12 max-w-4xl mx-auto">
+            Od prvého náčrtu až po finálne súbory pripravené na tlač či online nasadenie držíme všetko pod jednou strechou. 
+            Získate tak jednotný vzhľad, ktorý buduje dôveru a posúva vašu značku na vyšší level.
+          </p>
+          
+          <div className="text-center">
+            <Link href="/sluzby/digitalna-identita">
+              <PaletteButton variant="secondary">Chcem digitálnu identitu</PaletteButton>
+            </Link>
+          </div>
+        </section>
+
+        {/* Prečo my Section */}
+        <section className="max-w-6xl mx-auto mt-20 md:mt-36 mb-16 md:mb-24">
+          <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-bold mb-8 text-[#023047] text-center">
+            Prečo my?
+          </h2>
+          
+          <div className="max-w-4xl mx-auto space-y-6 mb-10">
+            <p className="font-mono text-base md:text-lg text-black">
+              Narodili sme sa s technológiami v rukách. Hry sme vymieňali za prvé weby a sociálne siete sme spoznávali skôr, než sa stali mainstreamom. Dnes z toho ťažia naši klienti – sme mladí digitálni domorodci, ktorí v online prostredí dýchajú prirodzene.
+            </p>
+            
+            <p className="font-mono text-base md:text-lg text-black">
+              Sme vyštudovaní marketéri a programátori súčasne. Rozumieme psychológii predaja aj kódu, ktorý to celé poháňa. Preto dokážeme spojiť kreatívnu marketingovú stratégiu s technickou dokonalosťou webu či aplikácie.
+            </p>
+            
+            <p className="font-mono text-base md:text-lg text-black">
+              Naša najsilnejšia stránka je marketing vo virtuálnom priestore. Klasické &quot;offline&quot; taktiky sa presúvajú z letákov a billboardov na obrazovky mobilov a notebookov – a my vieme, ako tento presun využiť vo váš prospech.
+            </p>
+            
+            <p className="font-mono text-base md:text-lg text-black">
+              Veríme, že každý biznis má právo byť viditeľný tam, kde ľudia skutočne hľadajú riešenia – online. Pomôžeme vám využiť najmodernejšie nástroje, aby si vás vybrali tí správni zákazníci.
+            </p>
+            
+            <p className="font-mono text-base md:text-lg text-black">
+              Postaráme sa o to, aby sa vaše stránky zobrazovali na popredných miestach vo vyhľadávaní a aby vaše značné úsilie nezostalo schované v digitálnom šume. S nami sa z klikov stanú konverzie a z návštevníkov lojálni klienti.
+            </p>
+          </div>
+          
+          <div className="text-center">
+            <Link href="/o-nas">
+              <PaletteButton variant="secondary">Spoznať nás bližšie</PaletteButton>
+            </Link>
           </div>
         </section>
 

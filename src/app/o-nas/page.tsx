@@ -1,7 +1,3 @@
-import TypewriterOnView from '@/components/TypewriterOnView';
-import Image from 'next/image';
-import FloatingCard from '@/components/FloatingCard';
-
 export default function ONasPage() {
   return (
     <main className="p-4 sm:p-8 relative z-10">
@@ -30,7 +26,7 @@ export default function ONasPage() {
           <p className="font-mono text-base mb-8">
             Náš tím tvoria skúsení marketéri, dizajnéri a vývojári, ktorí majú vášeň pre digitálny svet.
             Neustále sledujeme najnovšie trendy a implementujeme ich do našich riešení.
-          </p>
+            </p>
         </div>
       </section>
     </main>

@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import AnimatedOnScroll from '@/components/AnimatedOnScroll';
 import PaletteButton from '@/components/PaletteButton';
