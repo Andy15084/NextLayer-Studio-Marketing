@@ -83,15 +83,17 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-14">
           {/* Logo */}
-          <div className="flex-shrink-0 flex items-center h-10">
+          <div className="flex-shrink-0 flex items-center">
             <Link href="/">
-              <div className="relative w-32 h-8 cursor-pointer">
+              <div className="relative w-40 h-10 cursor-pointer flex items-center">
                 <Image
-                  src="/logo-placeholder.svg"
-                  alt="New Website Logo"
-                  fill
+                  src="/logoblack.png"
+                  alt="NextLayer Studio Logo"
+                  width={160}
+                  height={40}
                   className="object-contain"
                   priority
+                  quality={100}
                 />
               </div>
             </Link>
@@ -326,32 +328,54 @@ export default function Navbar() {
             Kontakt
           </Link>
 
-          {/* Mobile Language Selector */}
-          <div className="relative">
-            <button
-              className="font-heading text-gray-700 hover:text-gray-900 block w-full text-left px-3 py-2 rounded-md text-base font-medium"
-              onClick={() => setIsLanguageOpen(!isLanguageOpen)}
-            >
-              Jazyk / Language
-            </button>
-            {isLanguageOpen && (
-              <div className="pl-4 space-y-1">
-                {languages.map((language) => (
-                  <button
-                    key={language.code}
-                    onClick={() => handleLanguageChange(language.code)}
-                    className={`block w-full text-left px-3 py-2 rounded-md text-sm ${
-                      currentLanguage === language.code
-                        ? 'bg-gray-100 text-gray-900'
-                        : 'text-gray-700 hover:bg-gray-100'
-                    } font-heading`}
-                  >
-                    <span className="font-bold mr-2">{language.name}</span>
-                    {language.fullName}
-                  </button>
-                ))}
-              </div>
-            )}
+          {/* Mobile Language Selector - Always visible */}
+          <div className="flex items-center md:hidden">
+            <div className="relative mr-2">
+              <button
+                onClick={() => setIsLanguageOpen(!isLanguageOpen)}
+                className="font-heading text-gray-700 hover:text-gray-900 px-2 py-1 rounded-md text-sm font-medium inline-flex items-center"
+              >
+                {languages.find(lang => lang.code === currentLanguage)?.name || 'SK'}
+                <svg
+                  className={`ml-1 h-4 w-4 transition-transform ${
+                    isLanguageOpen ? 'rotate-180' : ''
+                  }`}
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </button>
+              {isLanguageOpen && (
+                <div
+                  className="absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-50"
+                >
+                  <div className="py-1 divide-y divide-gray-200" role="menu">
+                    {languages.map((language) => (
+                      <button
+                        key={language.code}
+                        onClick={() => handleLanguageChange(language.code)}
+                        className={`block w-full text-left px-4 py-2 text-sm ${
+                          currentLanguage === language.code
+                            ? 'bg-gray-100 text-gray-900'
+                            : 'text-gray-700 hover:bg-gray-100'
+                        } font-heading`}
+                        role="menuitem"
+                      >
+                        <span className="font-bold mr-2">{language.name}</span>
+                        {language.fullName}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
           </div>
         </div>
       </div>

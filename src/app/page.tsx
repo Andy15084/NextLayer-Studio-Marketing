@@ -340,18 +340,6 @@ export default function Home() {
             <p className="font-mono text-base md:text-lg text-black">
               Sme vyštudovaní marketéri a programátori súčasne. Rozumieme psychológii predaja aj kódu, ktorý to celé poháňa. Preto dokážeme spojiť kreatívnu marketingovú stratégiu s technickou dokonalosťou webu či aplikácie.
             </p>
-            
-            <p className="font-mono text-base md:text-lg text-black">
-              Naša najsilnejšia stránka je marketing vo virtuálnom priestore. Klasické &quot;offline&quot; taktiky sa presúvajú z letákov a billboardov na obrazovky mobilov a notebookov – a my vieme, ako tento presun využiť vo váš prospech.
-            </p>
-            
-            <p className="font-mono text-base md:text-lg text-black">
-              Veríme, že každý biznis má právo byť viditeľný tam, kde ľudia skutočne hľadajú riešenia – online. Pomôžeme vám využiť najmodernejšie nástroje, aby si vás vybrali tí správni zákazníci.
-            </p>
-            
-            <p className="font-mono text-base md:text-lg text-black">
-              Postaráme sa o to, aby sa vaše stránky zobrazovali na popredných miestach vo vyhľadávaní a aby vaše značné úsilie nezostalo schované v digitálnom šume. S nami sa z klikov stanú konverzie a z návštevníkov lojálni klienti.
-            </p>
           </div>
           
           <div className="text-center">
