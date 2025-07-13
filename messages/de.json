@@ -1,0 +1,133 @@
+{
+  "Index": {
+    "title": "Hallo Welt!",
+    "description": "Dies ist die Startseite"
+  },
+  "home": {
+    "subtitle": "Professionelle Marketing-Agentur",
+    "campaignButton": "Kampagne starten"
+  },
+  "Metadata": {
+    "title": "NextLayer Studio",
+    "description": "NextLayer Studio - Professionelle Marketing-Agentur"
+  },
+  "navigation": {
+    "webServices": "Web-Dienste",
+    "services": "Dienste",
+    "aboutUs": "Über uns",
+    "howWeWork": "Wie wir arbeiten",
+    "contact": "Kontakt"
+  },
+  "serviceItems": {
+    "socialMedia": "Soziale Medien",
+    "ppcAdvertising": "PPC-Werbung",
+    "seoContent": "SEO & Content",
+    "webLanding": "Websites & Landing",
+    "analytics": "Analytik",
+    "contentProduction": "Content-Erstellung",
+    "adCampaigns": "Werbekampagnen",
+    "digitalFootprint": "Digitaler Fußabdruck & Unternehmensidentität"
+  },
+  "languages": {
+    "slovak": "Slovenčina",
+    "english": "English",
+    "german": "Deutsch",
+    "czech": "Čeština"
+  },
+  "contactForm": {
+    "name": "Name",
+    "email": "E-Mail",
+    "message": "Nachricht",
+    "send": "Senden",
+    "sending": "Wird gesendet...",
+    "successMessage": "Nachricht erfolgreich gesendet!",
+    "errorMessage": "Beim Senden der Nachricht ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut."
+  },
+  "contact": {
+    "title": "Kontaktieren Sie uns",
+    "intro": "Haben Sie Fragen, Ideen oder brauchen Sie eine Beratung? Zögern Sie nicht, uns zu kontaktieren. Wir sind für Sie da und bereit, Ihnen dabei zu helfen, Ihr Projekt auf die nächste Stufe zu bringen.",
+    "whereToFindUs": "Wo können Sie uns finden",
+    "phone": "Telefon",
+    "email": "E-Mail",
+    "socialMedia": "Soziale Medien",
+    "contactForm": "Kontaktformular",
+    "namePlaceholder": "Name",
+    "emailPlaceholder": "E-Mail",
+    "messagePlaceholder": "Ihr Text",
+    "formSuccess": "Ihre Nachricht wurde erfolgreich gesendet! Vielen Dank für Ihren Kontakt.",
+    "description": "Haben Sie Fragen, Ideen oder brauchen Sie eine Beratung? Zögern Sie nicht, uns zu kontaktieren. Wir sind für Sie da und bereit, Ihnen dabei zu helfen, Ihr Projekt auf die nächste Stufe zu bringen."
+  },
+  "aboutUs": {
+    "title": "Über uns",
+    "subtitle": "Junges Team. Digitale Umgebung ist unser Steckenpferd.",
+    "section1": {
+      "title": "Wir sind ein Team junger Menschen, die mit Technologie aufgewachsen sind und heute darin leben.",
+      "content": "Der Online-Raum ist unsere natürliche Umgebung – wir verfolgen Trends, lernen von den neuesten Tools und nutzen sie täglich. Wir sehen Marketing als ein dynamisches Feld, das sich ständig weiterentwickelt, weshalb wir immer einen Schritt voraus sind.\n\nWir gehören zu Next Layer Studio – einer Technologiemarke, die sich auf Softwareentwicklung, Websites und digitale Lösungen spezialisiert. In der Marketing-Abteilung schauen wir jedoch noch tiefer – es geht nicht nur um Werbung, sondern um Strategie, Sichtbarkeit, Klarheit und Erfahrung. Wir verstehen, was wir tun, weil wir es leben."
+    },
+    "section2": {
+      "title": "Wir sind hier für diejenigen, die etwas zu sagen haben – aber nicht wissen, wie man es online sagt.",
+      "content": "Selbst das beste Produkt oder die beste Dienstleistung kann unbemerkt bleiben, wenn niemand davon erfährt. Und genau deshalb kommen wir ins Spiel. Wir helfen Ihnen, eine Marke zu schaffen, die Spuren hinterlässt. Wir bauen Ihnen eine digitale Identität – von der visuellen Gestaltung über den Kommunikationston bis hin zu spezifischen Inhalten – und verbreiten die Botschaft über Ihr Projekt in der Welt, wo sich heute die meisten Ihrer potenziellen Kunden befinden – im Online-Raum."
+    },
+    "section3": {
+      "title": "Wir wissen, dass richtiges Marketing viel mehr ist als nur Werbung.",
+      "content": "Wir konzentrieren uns auf die tieferen Schichten des Online-Marketings – SEO, Keywords, Sichtbarkeit in Browsern, Website-Geschwindigkeit oder Content-Struktur. Wir machen auch Dinge, die Menschen nicht als Werbung wahrnehmen, aber in Wirklichkeit einen enormen Einfluss haben: zum Beispiel, dass Ihre Seite unter den ersten in den Suchergebnissen erscheint, dass sie vertrauenswürdig und klar wirkt, oder dass Besucher sofort finden, was sie brauchen.\n\nAll dies sind Teile einer qualitativ hochwertigen Marketing-Strategie. Und wir erstellen sie maßgeschneidert – entsprechend der Ziele, des Segments und der Bedürfnisse Ihres Unternehmens."
+    },
+    "section4": {
+      "title": "Warum eine Agentur? Weil wir schneller, professioneller und ohne unnötige Kosten arbeiten.",
+      "content": "Ein eigenes Marketing-Team zu haben ist heute teuer, langsam und oft ineffizient. Bei uns zahlen Sie nur für das, was Sie wirklich brauchen. Sie müssen keine Tools erkunden, Kampagnen lernen oder Neuigkeiten verfolgen – wir kümmern uns um alles. Sie genehmigen nur Vorschläge und beobachten Ergebnisse.\n\nOnline-Marketing mit uns ist nicht nur eine Ausgabe – es ist eine Investition, die sich auszahlt."
+    },
+    "section5": {
+      "title": "Wir glauben an Marketing, das Sinn macht",
+      "content": "Werbung muss nicht nerven – sie kann inspirieren.\nDie richtige Werbung ist die, die Sie sehen möchten, weil sie genau für Sie ist – und Sie wissen nicht einmal, dass es Werbung ist.\nGenau diese Art von Marketing schaffen wir."
+    }
+  },
+  "howWeWork": {
+    "title": "Wie wir arbeiten",
+    "subtitle": "Klare Kommunikation, klare Schritte, starke Ergebnisse.",
+    "intro": "Im Marketing gibt es nichts Schlimmeres als Missverständnisse. Deshalb legen wir Wert auf offene und faire Kommunikation. Jedes Projekt beginnt mit einem ehrlichen Gespräch, um zu verstehen, wer Sie sind, was Sie tun und wohin Sie wollen. Und dann machen wir uns an die Arbeit – systematisch, effizient und mit vollem Einsatz.\n\nHier ist unser bewährter Arbeitsablauf:",
+    "step1": {
+      "title": "1. Kennenlernen und erstes Gespräch",
+      "content": "Jede Zusammenarbeit beginnt mit einem Treffen. Es kann persönlich, online oder telefonisch sein – Hauptsache, wir lernen uns kennen. Wir sprechen über Ihr Projekt, wer Sie sind, was Sie tun und wie Sie Ihr Unternehmen sehen.\n\nZiel: Eine Vertrauensbasis schaffen und klare Erwartungen setzen.\nWarum es wichtig ist: Um Missverständnisse von Anfang an zu vermeiden und während des gesamten Prozesses offen und effektiv kommunizieren zu können."
+    },
+    "step2": {
+      "title": "2. Verständnis Ihres Geschäfts und Ihrer Ziele",
+      "content": "Um eine gute Kampagne zu erstellen, müssen wir Ihr Produkt, Ihre Dienstleistung, Ihre Zielgruppe sowie die Stärken und Schwächen Ihrer Marke verstehen. Wir interessieren uns für Ihre Geschichte, Werte und was Sie einzigartig macht.\n\nZiel: Tiefes Verständnis Ihrer Marke gewinnen und die Grundlagen der Marketingstrategie vorbereiten.\nErgebnis: Internes Briefing, das uns während des gesamten Prozesses leitet."
+    },
+    "step3": {
+      "title": "3. Erklärung unseres Ansatzes und Lösungsvorschlag",
+      "content": "Nach dem Verständnis Ihres Geschäfts stellen wir Ihnen vor, wie wir arbeiten – welche Kanäle wir empfehlen, welche Möglichkeiten es gibt, was wir erreichen könnten und was Sie von uns erwarten können.\n\nZiel: Unsere Fähigkeiten mit Ihren Erwartungen in Einklang bringen.\nErgebnis: Vorläufige Strategie, Prozessvorschlag, vorgeschlagene Kampagnentypen oder Lösungen."
+    },
+    "step4": {
+      "title": "4. Verwaltung und offizieller Beginn der Zusammenarbeit",
+      "content": "Wenn wir uns über den Umfang der Zusammenarbeit einig sind, gehen wir zu formalen Schritten über: Vertragsunterzeichnung, NDA (falls erforderlich), Einrichtung der Kommunikationsmethoden, verantwortliche Personen, Fristen und Genehmigungsprozesse.\n\nZiel: Einen klaren Rahmen für die Zusammenarbeit schaffen.\nErgebnis: Vertrag, Zusammenarbeitsplan, Kontaktpersonen."
+    },
+    "step5": {
+      "title": "5. Festlegung von Budget und Zielen",
+      "content": "Gemeinsam legen wir ein realistisches Budget fest, das Ihren Möglichkeiten und Zielen entspricht. Wir bestimmen kurzfristige und langfristige Ziele – ob es um Umsatzsteigerung, Markenaufbau, Verkehrssteigerung oder andere KPIs geht.\n\nZiel: Klar definieren, was wir erreichen wollen und unter welchen Bedingungen.\nErgebnis: Endgültiges Budget, messbare Ziele, Zeitrahmen."
+    },
+    "step6": {
+      "title": "6. Erstellung der Strategie und Kampagnenvorschlag",
+      "content": "Basierend auf allem Gesammelten erstellen wir einen detaillierten Kampagnenvorschlag: kreatives Konzept, Kanalauswahl (soziale Medien, PPC, SEO, Content, Design...), Timing und Evaluierungsmethode.\n\nZiel: Eine starke, zielgerichtete und effektive Marketingstrategie vorbereiten.\nErgebnis: Vollständiger Kampagnenvorschlag mit Zielgruppe, visueller Stil und Kommunikationsplan."
+    },
+    "step7": {
+      "title": "7. Produktion und Vorbereitung der Ergebnisse",
+      "content": "Hier beginnt die echte Arbeit: Wir erstellen Banner, Videos, Texte, Visuals, richten Anzeigen ein, bereiten Websites oder Landing Pages vor, optimieren SEO, schreiben Artikel oder richten E-Mail-Kampagnen ein – entsprechend der vereinbarten Strategie.\n\nZiel: Qualitativ hochwertige Inhalte und Einstellungen erstellen, die bereit zum Start sind.\nErgebnis: Fertige Visuals, Kampagnen, Anzeigen, bereit zur Veröffentlichung."
+    },
+    "step8": {
+      "title": "8. Genehmigung und Start",
+      "content": "Wir senden Ihnen alles zur Genehmigung. Nach Ihrer Zustimmung starten wir die Kampagne. Wir überwachen, wie es läuft, und passen Dinge bei Bedarf an.\n\nZiel: Die Marketingmaschine starten.\nErgebnis: Aktive Kampagne im Online-Raum."
+    },
+    "step9": {
+      "title": "9. Überwachung, Optimierung und Berichterstattung",
+      "content": "Die Kampagne lebt, aber wir schlafen nicht. Wir überwachen die Leistung, testen verschiedene Varianten, optimieren Budgets und verbessern die Reichweite. Wir senden Ihnen regelmäßig Berichte, damit Sie einen Überblick haben, was funktioniert und was wir noch verbessern können.\n\nZiel: Ergebnisse für den besten Preis maximieren.\nErgebnis: Regelmäßige Berichte, Empfehlungen, klare Analysen."
+    },
+    "step10": {
+      "title": "10. Langfristige Zusammenarbeit und Wachstum",
+      "content": "Marketing ist keine einmalige Aktion, sondern ein langfristiger Prozess. Wir sind bereit, die Zusammenarbeit zu entwickeln, die Strategie entsprechend der Marktentwicklung oder Ihres Wachstums anzupassen und Ihr zuverlässiger Partner auf dem Weg zum Erfolg zu sein.\n\nZiel: Leistung aufrechterhalten, gemeinsam wachsen und auf Veränderungen reagieren.\nErgebnis: Neue Kampagnen, langfristiger Plan, Marketingpartner für Jahre."
+    },
+    "summary": {
+      "title": "Zusammenfassung?",
+      "content": "Offene Kommunikation, klarer Prozess, keine Rätsel.\nSie wissen, was Sie wollen. Wir wissen, wie man es erreicht. Gemeinsam bringen wir es dorthin, wo Ihre Marke sein sollte – im Blick, im Bewusstsein und im Vertrauen der Kunden."
+    }
+  }
+} 

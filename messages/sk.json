@@ -1,0 +1,133 @@
+{
+  "Index": {
+    "title": "Ahoj svet!",
+    "description": "Toto je domovská stránka"
+  },
+  "home": {
+    "subtitle": "Profesionálna marketingová agentúra",
+    "campaignButton": "Spustiť kampaň"
+  },
+  "Metadata": {
+    "title": "NextLayer Studio",
+    "description": "NextLayer Studio - Profesionálna marketingová agentúra"
+  },
+  "navigation": {
+    "webServices": "Webové služby",
+    "services": "Služby",
+    "aboutUs": "O nás",
+    "howWeWork": "Ako pracujeme",
+    "contact": "Kontakt"
+  },
+  "serviceItems": {
+    "socialMedia": "Sociálne siete",
+    "ppcAdvertising": "PPC reklama",
+    "seoContent": "SEO & Content",
+    "webLanding": "Weby & Landing",
+    "analytics": "Analytika",
+    "contentProduction": "Tvorba obsahu",
+    "adCampaigns": "Reklamné kampane",
+    "digitalFootprint": "Digitálna stopa & firemná identita"
+  },
+  "languages": {
+    "slovak": "Slovenčina",
+    "english": "English",
+    "german": "Deutsch",
+    "czech": "Čeština"
+  },
+  "contactForm": {
+    "name": "Meno",
+    "email": "Email",
+    "message": "Správa",
+    "send": "Odoslať",
+    "sending": "Odosielam...",
+    "successMessage": "Správa bola úspešne odoslaná!",
+    "errorMessage": "Nastala chyba pri odosielaní správy. Skúste to znovu."
+  },
+  "contact": {
+    "title": "Kontaktujte nás",
+    "intro": "Máte otázky, nápady alebo potrebujete konzultáciu? Neváhajte nás kontaktovať. Sme tu pre vás a radi vám pomôžeme posunúť váš projekt na novú úroveň.",
+    "whereToFindUs": "Kde nás nájdete",
+    "phone": "Telefón",
+    "email": "Email",
+    "socialMedia": "Sociálne siete",
+    "contactForm": "Kontaktný formulár",
+    "namePlaceholder": "meno",
+    "emailPlaceholder": "email",
+    "messagePlaceholder": "váš text",
+    "formSuccess": "Správa bola odoslaná! Ďakujeme za váš kontakt.",
+    "description": "Máte otázky, nápady alebo potrebujete konzultáciu? Neváhajte nás kontaktovať. Sme tu pre vás a radi vám pomôžeme posunúť váš projekt na novú úroveň."
+  },
+  "aboutUs": {
+    "title": "O nás",
+    "subtitle": "Mladý tím. Digitálne prostredie máme v malíčku.",
+    "section1": {
+      "title": "Sme tím mladých ľudí, ktorí vyrástli s technológiami a dnes v nich žijú.",
+      "content": "Online priestor je pre nás prirodzené prostredie – sledujeme trendy, učíme sa z najnovších nástrojov a denne ich aj používame. Marketing vnímame ako dynamickú oblasť, ktorá sa neustále vyvíja, a práve preto sme vždy o krok vpred.\n\nPatríme pod Next Layer Studio – technologickú značku, ktorá sa špecializuje na vývoj softvéru, webov a digitálnych riešení. V marketingovej divízii sa však pozeráme ešte hlbšie – nejde len o reklamu, ale o stratégiu, viditeľnosť, zrozumiteľnosť a zážitok. Rozumieme tomu, čo robíme, pretože to žijeme."
+    },
+    "section2": {
+      "title": "Sme tu pre tých, ktorí majú čo povedať – ale nevedia, ako sa to má povedať online.",
+      "content": "Aj ten najlepší produkt alebo služba môže ostať bez povšimnutia, ak sa o nej nikto nedozvie. A práve preto prichádzame my. Pomôžeme ti vytvoriť značku, ktorá zanechá stopu. Postavíme ti digitálnu identitu – od vizuálu cez tón komunikácie až po konkrétny obsah – a rozkričíme správu o tvojom projekte do sveta, kde sa dnes nachádza väčšina tvojich potenciálnych zákazníkov – do online priestoru."
+    },
+    "section3": {
+      "title": "Vieme, že správny marketing je omnoho viac než len reklama.",
+      "content": "Venujeme sa hlbším vrstvám online marketingu – SEO, kľúčovým slovám, viditeľnosti v prehliadačoch, rýchlosti webu či štruktúre obsahu. Robíme aj veci, ktoré ľudia nevnímajú ako reklamu, ale v skutočnosti majú obrovský vplyv: napríklad to, že sa tvoja stránka zobrazuje medzi prvými vo vyhľadávači, že pôsobí dôveryhodne a prehľadne, alebo že návštevník hneď nájde to, čo potrebuje.\n\nTo všetko sú súčasti kvalitnej marketingovej stratégie. A tú tvoríme na mieru – podľa cieľov, segmentu a potrieb tvojho biznisu."
+    },
+    "section4": {
+      "title": "Prečo agentúra? Lebo robíme rýchlejšie, profesionálnejšie a bez zbytočných nákladov.",
+      "content": "Mať vlastný marketingový tím je dnes drahé, pomalé a často neefektívne. S nami platíš len za to, čo reálne potrebuješ. Nepotrebuješ skúmať nástroje, učiť sa kampane ani sledovať novinky – my sa postaráme o všetko. Ty len schváliš návrhy a sleduješ výsledky.\n\nOnline marketing s nami nie je len o výdajoch – je to investícia, ktorá sa oplatí."
+    },
+    "section5": {
+      "title": "Veríme v marketing, ktorý má zmysel",
+      "content": "Reklama nemusí otravovať – môže inšpirovať.\nSprávna reklama je taká, ktorú chceš vidieť, lebo je presne pre teba – a ani nevieš, že je to reklama.\nPresne taký marketing tvoríme my."
+    }
+  },
+  "howWeWork": {
+    "title": "Ako pracujeme",
+    "subtitle": "Čistá komunikácia, jasné kroky, silné výsledky.",
+    "intro": "V marketingu nie je nič horšie ako nepochopenie. Preto si zakladáme na otvorenej a férovej komunikácii. Každý projekt začíname úprimným rozhovorom, aby sme pochopili, kto ste, čo robíte a kam sa chcete dostať. A potom sa pustíme do práce – systematicky, efektívne a s plným nasadením.\n\nTu je náš overený pracovný postup:",
+    "step1": {
+      "title": "Zoznámenie a prvý rozhovor",
+      "content": "Každá spolupráca začína stretnutím. Môže to byť osobne, online alebo telefonicky – hlavné je, aby sme sa spoznali. Porozprávame sa o vašom projekte, o tom, kto ste, čo robíte a ako vnímate svoj biznis.\n\nCieľ: Vytvoriť základ dôvery a nastaviť jasné očakávania.\nPrečo je to dôležité: Aby sme sa od začiatku vyhli nedorozumeniam a mohli spolu komunikovať otvorene a efektívne počas celého procesu."
+    },
+    "step2": {
+      "title": "Pochopenie vášho biznisu a cieľov",
+      "content": "Aby sme mohli vytvoriť dobrú kampaň, musíme pochopiť váš produkt, službu, cieľovú skupinu, ako aj silné a slabé stránky vašej značky. Zaujíma nás váš príbeh, hodnoty, a čo vás robí výnimočnými.\n\nCieľ: Získať hlboké porozumenie vašej značky a pripraviť základy marketingovej stratégie.\nVýstup: Interný brief, ktorý nás bude počas celého procesu navigovať."
+    },
+    "step3": {
+      "title": "Vysvetlenie nášho prístupu a návrh riešenia",
+      "content": "Po pochopení vášho biznisu vám predstavíme, ako pracujeme my – aké kanály odporúčame, aké sú možnosti, čo by sme vedeli dosiahnuť a čo od nás môžete očakávať.\n\nCieľ: Zosúladiť naše kapacity s vašimi očakávaniami.\nVýstup: Predbežná stratégia, návrh postupu, navrhnuté typy kampaní alebo riešení."
+    },
+    "step4": {
+      "title": "Administratíva a oficiálne začatie spolupráce",
+      "content": "Keď si odsúhlasíme rozsah spolupráce, prejdeme k formálnym krokom: podpis zmluvy, NDA (ak je potrebná), nastavenie spôsobu komunikácie, zodpovedné osoby, termíny a procesy schvaľovania.\n\nCieľ: Vytvoriť jasný rámec spolupráce.\nVýstup: Zmluva, plán spolupráce, kontaktné osoby."
+    },
+    "step5": {
+      "title": "Stanovenie rozpočtu a cieľov",
+      "content": "Spolu nastavíme reálny rozpočet, ktorý bude zodpovedať vašim možnostiam aj cieľom. Určíme si krátkodobé aj dlhodobé ciele – či ide o zvýšenie predaja, budovanie značky, zvýšenie návštevnosti, alebo iné KPI.\n\nCieľ: Mať jasne určené, čo ideme dosiahnuť a za akých podmienok.\nVýstup: Finálny rozpočet, merateľné ciele, časový rámec."
+    },
+    "step6": {
+      "title": "Tvorba stratégie a návrh kampane",
+      "content": "Na základe všetkého zozbieraného pripravíme detailný návrh kampane: kreatívny koncept, výber kanálov (sociálne siete, PPC, SEO, obsah, dizajn…), načasovanie a spôsob vyhodnocovania.\n\nCieľ: Pripraviť silnú, cielenú a efektívnu marketingovú stratégiu.\nVýstup: Kompletný návrh kampane s cieľovou skupinou, vizuálnym štýlom a komunikačným plánom."
+    },
+    "step7": {
+      "title": "Produkcia a príprava výstupov",
+      "content": "Tu začína reálna práca: tvoríme bannery, videá, texty, vizuály, nastavujeme reklamy, pripravujeme weby alebo landing pages, optimalizujeme SEO, píšeme články, alebo nastavujeme e-mailové kampane – podľa dohodnutej stratégie.\n\nCieľ: Vytvoriť kvalitný obsah a nastavenia, ktoré sú pripravené na spustenie.\nVýstup: Hotové vizuály, kampane, reklamy, pripravené na uverejnenie."
+    },
+    "step8": {
+      "title": "Schválenie a spustenie",
+      "content": "Všetko vám najprv pošleme na schválenie. Po vašom súhlase spúšťame kampaň. Sledujeme, ako sa darí, a podľa potreby veci priebežne upravujeme.\n\nCieľ: Spustiť marketingový stroj.\nVýstup: Aktívna kampaň v online priestore."
+    },
+    "step9": {
+      "title": "Monitoring, optimalizácia a reporting",
+      "content": "Kampaň žije, no my nespíme. Sledujeme výkonnosť, testujeme rôzne varianty, optimalizujeme rozpočty a zlepšujeme dosah. Pravidelne vám posielame reporty, aby ste mali prehľad o tom, čo funguje a čo vieme ešte zlepšiť.\n\nCieľ: Maximalizovať výsledky za čo najlepšiu cenu.\nVýstup: Pravidelné reporty, odporúčania, prehľadná analytika."
+    },
+    "step10": {
+      "title": "Dlhodobá spolupráca a rast",
+      "content": "Marketing nie je jednorazová akcia, ale dlhodobý proces. Sme pripravení rozvíjať spoluprácu, upravovať stratégiu podľa vývoja trhu či vášho rastu a byť vaším spoľahlivým partnerom na ceste za úspechom.\n\nCieľ: Udržať výkonnosť, rásť spolu a reagovať na zmeny.\nVýstup: Nové kampane, dlhodobý plán, marketingový partner na roky."
+    },
+    "summary": {
+      "title": "Zhrnutie?",
+      "content": "Otvorená komunikácia, jasný proces, žiadne hádanky.\nVy viete, čo chcete. My vieme, ako to dosiahnuť. Spolu to dotiahneme tam, kde má vaša značka byť – na očiach, v povedomí a v dôvere zákazníkov."
+    }
+  }
+} 

@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #00ffdd;
+  --background: #7dffee;
   --foreground: #171717;
 }
 
@@ -14,7 +14,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #00ffdd;
+    --background: #c2fff7;
     --foreground: #171717;
   }
 }
@@ -23,4 +23,45 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Custom scroll animation for phone mockup */
+@keyframes scroll-up {
+  0% {
+    transform: translateY(0);
+  }
+  10% {
+    transform: translateY(-5%);
+  }
+  20% {
+    transform: translateY(-12%);
+  }
+  30% {
+    transform: translateY(-18%);
+  }
+  40% {
+    transform: translateY(-25%);
+  }
+  50% {
+    transform: translateY(-32%);
+  }
+  60% {
+    transform: translateY(-38%);
+  }
+  70% {
+    transform: translateY(-42%);
+  }
+  80% {
+    transform: translateY(-45%);
+  }
+  90% {
+    transform: translateY(-48%);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+.animate-scroll-up {
+  animation: scroll-up 20s ease-in-out infinite;
 }

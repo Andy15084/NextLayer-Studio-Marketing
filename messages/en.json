@@ -1,0 +1,133 @@
+{
+  "Index": {
+    "title": "Hello world!",
+    "description": "This is the home page"
+  },
+  "home": {
+    "subtitle": "Professional marketing agency",
+    "campaignButton": "Start campaign"
+  },
+  "Metadata": {
+    "title": "NextLayer Studio",
+    "description": "NextLayer Studio - Professional marketing agency"
+  },
+  "navigation": {
+    "webServices": "Web services",
+    "services": "Services",
+    "aboutUs": "About us",
+    "howWeWork": "How we work",
+    "contact": "Contact"
+  },
+  "serviceItems": {
+    "socialMedia": "Social media",
+    "ppcAdvertising": "PPC advertising",
+    "seoContent": "SEO & Content",
+    "webLanding": "Websites & Landing",
+    "analytics": "Analytics",
+    "contentProduction": "Content creation",
+    "adCampaigns": "Ad campaigns",
+    "digitalFootprint": "Digital footprint & corporate identity"
+  },
+  "languages": {
+    "slovak": "Slovenčina",
+    "english": "English",
+    "german": "Deutsch",
+    "czech": "Čeština"
+  },
+  "contactForm": {
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send",
+    "sending": "Sending...",
+    "successMessage": "Message sent successfully!",
+    "errorMessage": "An error occurred while sending the message. Please try again."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "intro": "Have questions, ideas or need consultation? Don't hesitate to contact us. We're here for you and ready to help you take your project to the next level.",
+    "whereToFindUs": "Where to find us",
+    "phone": "Phone",
+    "email": "Email",
+    "socialMedia": "Social Media",
+    "contactForm": "Contact Form",
+    "namePlaceholder": "name",
+    "emailPlaceholder": "email",
+    "messagePlaceholder": "your message",
+    "formSuccess": "Message was sent successfully! Thank you for your contact.",
+    "description": "Have questions, ideas or need consultation? Don't hesitate to contact us. We're here for you and ready to help you take your project to the next level."
+  },
+  "aboutUs": {
+    "title": "About Us",
+    "subtitle": "Young team. Digital environment is our forte.",
+    "section1": {
+      "title": "We are a team of young people who grew up with technology and live in it today.",
+      "content": "The online space is our natural environment – we follow trends, learn from the latest tools and use them daily. We see marketing as a dynamic field that is constantly evolving, which is why we are always one step ahead.\n\nWe belong to Next Layer Studio – a technology brand that specializes in software development, websites and digital solutions. However, in the marketing division, we look even deeper – it's not just about advertising, but about strategy, visibility, clarity and experience. We understand what we do because we live it."
+    },
+    "section2": {
+      "title": "We are here for those who have something to say – but don't know how to say it online.",
+      "content": "Even the best product or service can go unnoticed if no one hears about it. And that's exactly why we come in. We'll help you create a brand that leaves a mark. We'll build you a digital identity – from visuals through communication tone to specific content – and spread the message about your project to the world where most of your potential customers are today – the online space."
+    },
+    "section3": {
+      "title": "We know that proper marketing is much more than just advertising.",
+      "content": "We focus on the deeper layers of online marketing – SEO, keywords, visibility in browsers, website speed or content structure. We also do things that people don't perceive as advertising, but in reality have a huge impact: for example, that your page appears among the first in search results, that it looks trustworthy and clear, or that visitors immediately find what they need.\n\nAll of these are parts of a quality marketing strategy. And we create it tailored – according to the goals, segment and needs of your business."
+    },
+    "section4": {
+      "title": "Why an agency? Because we work faster, more professionally and without unnecessary costs.",
+      "content": "Having your own marketing team is expensive, slow and often inefficient today. With us, you only pay for what you really need. You don't need to explore tools, learn campaigns or follow news – we'll take care of everything. You just approve proposals and watch results.\n\nOnline marketing with us is not just about expenses – it's an investment that pays off."
+    },
+    "section5": {
+      "title": "We believe in marketing that makes sense",
+      "content": "Advertising doesn't have to be annoying – it can inspire.\nThe right advertising is the one you want to see because it's exactly for you – and you don't even know it's advertising.\nThat's exactly the kind of marketing we create."
+    }
+  },
+  "howWeWork": {
+    "title": "How We Work",
+    "subtitle": "Clear communication, clear steps, strong results.",
+    "intro": "In marketing, there's nothing worse than misunderstanding. That's why we focus on open and fair communication. Every project starts with an honest conversation to understand who you are, what you do, and where you want to go. And then we get to work – systematically, efficiently, and with full commitment.\n\nHere's our proven workflow:",
+    "step1": {
+      "title": "1. Introduction and first conversation",
+      "content": "Every collaboration starts with a meeting. It can be in person, online, or by phone – the main thing is that we get to know each other. We'll talk about your project, who you are, what you do, and how you see your business.\n\nGoal: Create a foundation of trust and set clear expectations.\nWhy it's important: To avoid misunderstandings from the start and be able to communicate openly and effectively throughout the entire process."
+    },
+    "step2": {
+      "title": "2. Understanding your business and goals",
+      "content": "To create a good campaign, we need to understand your product, service, target audience, as well as the strengths and weaknesses of your brand. We're interested in your story, values, and what makes you unique.\n\nGoal: Gain deep understanding of your brand and prepare the foundations of marketing strategy.\nOutput: Internal brief that will guide us throughout the entire process."
+    },
+    "step3": {
+      "title": "3. Explaining our approach and proposing a solution",
+      "content": "After understanding your business, we'll present how we work – what channels we recommend, what options are available, what we could achieve, and what you can expect from us.\n\nGoal: Align our capabilities with your expectations.\nOutput: Preliminary strategy, process proposal, suggested types of campaigns or solutions."
+    },
+    "step4": {
+      "title": "4. Administration and official start of collaboration",
+      "content": "When we agree on the scope of collaboration, we move to formal steps: contract signing, NDA (if needed), setting up communication methods, responsible persons, deadlines, and approval processes.\n\nGoal: Create a clear framework for collaboration.\nOutput: Contract, collaboration plan, contact persons."
+    },
+    "step5": {
+      "title": "5. Setting budget and goals",
+      "content": "Together we'll set a realistic budget that matches your capabilities and goals. We'll determine short-term and long-term goals – whether it's increasing sales, building a brand, increasing traffic, or other KPIs.\n\nGoal: Have clearly defined what we want to achieve and under what conditions.\nOutput: Final budget, measurable goals, timeframe."
+    },
+    "step6": {
+      "title": "6. Creating strategy and campaign proposal",
+      "content": "Based on everything collected, we'll prepare a detailed campaign proposal: creative concept, channel selection (social media, PPC, SEO, content, design...), timing, and evaluation method.\n\nGoal: Prepare a strong, targeted, and effective marketing strategy.\nOutput: Complete campaign proposal with target audience, visual style, and communication plan."
+    },
+    "step7": {
+      "title": "7. Production and preparation of outputs",
+      "content": "This is where the real work begins: we create banners, videos, texts, visuals, set up ads, prepare websites or landing pages, optimize SEO, write articles, or set up email campaigns – according to the agreed strategy.\n\nGoal: Create quality content and settings that are ready to launch.\nOutput: Finished visuals, campaigns, ads, ready for publication."
+    },
+    "step8": {
+      "title": "8. Approval and launch",
+      "content": "We'll send everything to you for approval first. After your consent, we launch the campaign. We monitor how it's doing and adjust things as needed.\n\nGoal: Launch the marketing machine.\nOutput: Active campaign in the online space."
+    },
+    "step9": {
+      "title": "9. Monitoring, optimization, and reporting",
+      "content": "The campaign is alive, but we don't sleep. We monitor performance, test different variants, optimize budgets, and improve reach. We regularly send you reports so you have an overview of what's working and what we can still improve.\n\nGoal: Maximize results for the best price.\nOutput: Regular reports, recommendations, clear analytics."
+    },
+    "step10": {
+      "title": "10. Long-term collaboration and growth",
+      "content": "Marketing is not a one-time action, but a long-term process. We're ready to develop collaboration, adjust strategy according to market developments or your growth, and be your reliable partner on the path to success.\n\nGoal: Maintain performance, grow together, and respond to changes.\nOutput: New campaigns, long-term plan, marketing partner for years."
+    },
+    "summary": {
+      "title": "Summary?",
+      "content": "Open communication, clear process, no riddles.\nYou know what you want. We know how to achieve it. Together we'll get it where your brand should be – in sight, in awareness, and in customer trust."
+    }
+  }
+} 

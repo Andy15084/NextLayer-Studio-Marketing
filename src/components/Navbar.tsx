@@ -3,33 +3,31 @@
 import { useState, useRef, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-
-const sluzbyItems = [
-  { name: 'Správa sociálnych sietí', href: '/sluzby/socialne-siete' },
-  { name: 'PPC & výkonnostná reklama', href: '/sluzby/ppc-reklama' },
-  { name: 'SEO & Content marketing', href: '/sluzby/seo-content' },
-  { name: 'Web & Landing pages', href: '/sluzby/web-landing' },
-  { name: 'Analytika a reporting', href: '/sluzby/analytika' },
-  { name: 'Výroba kontentu', href: '/sluzby/kontent' },
-  { name: 'Torba reklamných kampaní', href: '/sluzby/kampane' },
-];
-
-const languages = [
-  { code: 'sk', name: 'SK', fullName: 'Slovenský' },
-  { code: 'de', name: 'DE', fullName: 'Deutsch' },
-  { code: 'cs', name: 'CS', fullName: 'Čeština' },
-  { code: 'en', name: 'EN', fullName: 'English' },
-];
+import { useTranslations } from 'next-intl';
+import LanguageLinks from './LanguageLinks';
+import MobileLanguageLinks from './MobileLanguageLinks';
 
 export default function Navbar() {
   const [isSluzbyOpen, setIsSluzbyOpen] = useState(false);
-  const [isLanguageOpen, setIsLanguageOpen] = useState(false);
   const [showNavbar, setShowNavbar] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [currentLanguage, setCurrentLanguage] = useState('sk');
   const sluzbyTimeout = useRef<NodeJS.Timeout | null>(null);
-  const languageTimeout = useRef<NodeJS.Timeout | null>(null);
+  
+  // Get translations
+  const t = useTranslations();
+
+  // Service items with translations
+  const sluzbyItems = [
+    { name: t('serviceItems.socialMedia'), href: '/sluzby/socialne-siete' },
+    { name: t('serviceItems.ppcAdvertising'), href: '/sluzby/ppc-reklama' },
+    { name: t('serviceItems.seoContent'), href: '/sluzby/seo-content' },
+    { name: t('serviceItems.webLanding'), href: '/sluzby/web-landing' },
+    { name: t('serviceItems.analytics'), href: '/sluzby/analytika' },
+    { name: t('serviceItems.contentProduction'), href: '/sluzby/kontent' },
+    { name: t('serviceItems.adCampaigns'), href: '/sluzby/kampane' },
+    { name: t('serviceItems.digitalFootprint'), href: '/sluzby/digitalna-stopa' },
+  ];
 
   // Scroll handler for auto-hide/show
   useEffect(() => {
@@ -55,22 +53,6 @@ export default function Navbar() {
   
   const handleSluzbyLeave = () => {
     sluzbyTimeout.current = setTimeout(() => setIsSluzbyOpen(false), 200);
-  };
-
-  const handleLanguageEnter = () => {
-    if (languageTimeout.current) clearTimeout(languageTimeout.current);
-    setIsLanguageOpen(true);
-  };
-
-  const handleLanguageLeave = () => {
-    languageTimeout.current = setTimeout(() => setIsLanguageOpen(false), 200);
-  };
-
-  const handleLanguageChange = (code: string) => {
-    setCurrentLanguage(code);
-    setIsLanguageOpen(false);
-    // Here you would typically implement the actual language change logic
-    // For example, using next-intl or similar internationalization library
   };
 
   return (
@@ -103,12 +85,12 @@ export default function Navbar() {
           <div className="hidden md:block">
             <div className="ml-10 flex items-center space-x-8">
               <a
-                href="https://next-layer-studio-wbapp.vercel.app"
+                href="https://nextlayer.studio"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-[#219EBC] text-white border-2 border-[#219EBC] hover:bg-[#0353a4] hover:border-[#0353a4] font-heading px-5 py-2 rounded-md text-sm font-bold shadow transition-colors duration-200 inline-flex items-center"
               >
-                Web riešenia
+                {t('navigation.webServices')}
               </a>
 
               {/* Služby Dropdown */}
@@ -118,7 +100,7 @@ export default function Navbar() {
                   onMouseLeave={handleSluzbyLeave}
                   className="bg-[#FF9800] text-white border-2 border-[#FF9800] hover:bg-[#FFB300] hover:border-[#FFB300] font-heading px-5 py-2 rounded-md text-sm font-bold shadow transition-colors duration-200 inline-flex items-center"
                 >
-                  Služby
+                  {t('navigation.services')}
                   <svg
                     className={`ml-2 h-4 w-4 transition-transform ${isSluzbyOpen ? 'rotate-180' : ''}`}
                     fill="none"
@@ -159,73 +141,25 @@ export default function Navbar() {
                 href="/o-nas"
                 className="font-heading text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium"
               >
-                O nás
+                {t('navigation.aboutUs')}
               </Link>
 
               <Link
-                href="/ako-postupujeme"
+                href="/ako-pracujeme"
                 className="font-heading text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium"
               >
-                Ako postupujeme
+                {t('navigation.howWeWork')}
               </Link>
 
               <Link
                 href="/kontakt"
                 className="font-heading text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium"
               >
-                Kontakt
+                {t('navigation.contact')}
               </Link>
 
               {/* Language Selector */}
-              <div className="relative">
-                <button
-                  onMouseEnter={handleLanguageEnter}
-                  onMouseLeave={handleLanguageLeave}
-                  className="font-heading text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium inline-flex items-center"
-                >
-                  {languages.find(lang => lang.code === currentLanguage)?.name || 'SK'}
-                  <svg
-                    className={`ml-2 h-4 w-4 transition-transform ${
-                      isLanguageOpen ? 'rotate-180' : ''
-                    }`}
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M19 9l-7 7-7-7"
-                    />
-                  </svg>
-                </button>
-                {isLanguageOpen && (
-                  <div
-                    onMouseEnter={handleLanguageEnter}
-                    onMouseLeave={handleLanguageLeave}
-                    className="absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-50"
-                  >
-                    <div className="py-1 divide-y divide-gray-200" role="menu">
-                      {languages.map((language) => (
-                        <button
-                          key={language.code}
-                          onClick={() => handleLanguageChange(language.code)}
-                          className={`block w-full text-left px-4 py-2 text-sm ${
-                            currentLanguage === language.code
-                              ? 'bg-gray-100 text-gray-900'
-                              : 'text-gray-700 hover:bg-gray-100'
-                          } font-heading`}
-                          role="menuitem"
-                        >
-                          <span className="font-bold mr-2">{language.name}</span>
-                          {language.fullName}
-                        </button>
-                      ))}
-                    </div>
-                  </div>
-                )}
-              </div>
+              <LanguageLinks />
             </div>
           </div>
 
@@ -263,12 +197,12 @@ export default function Navbar() {
       <div className={`md:hidden ${mobileMenuOpen ? '' : 'hidden'}`} id="mobile-menu">
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
           <a
-            href="https://next-layer-studio-wbapp.vercel.app"
+            href="https://nextlayer.studio"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-[#219EBC] text-white font-heading px-5 py-2 rounded-md text-sm font-bold shadow transition-colors duration-200 block"
           >
-            Web riešenia
+            {t('navigation.webServices')}
           </a>
 
           {/* Mobile Služby Dropdown */}
@@ -277,7 +211,7 @@ export default function Navbar() {
               className="bg-[#FF9800] hover:bg-[#FFB300] text-white font-heading px-5 py-2 rounded-md text-sm font-bold shadow transition-colors duration-200 inline-flex items-center w-full justify-between"
               onClick={() => setIsSluzbyOpen(!isSluzbyOpen)}
             >
-              Služby
+              {t('navigation.services')}
               <svg
                 className={`ml-2 h-4 w-4 transition-transform ${isSluzbyOpen ? 'rotate-180' : ''}`}
                 fill="none"
@@ -311,71 +245,26 @@ export default function Navbar() {
             href="/o-nas"
             className="font-heading text-gray-700 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium"
           >
-            O nás
+            {t('navigation.aboutUs')}
           </Link>
 
           <Link
-            href="/ako-postupujeme"
+            href="/ako-pracujeme"
             className="font-heading text-gray-700 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium"
           >
-            Ako postupujeme
+            {t('navigation.howWeWork')}
           </Link>
 
           <Link
             href="/kontakt"
             className="font-heading text-gray-700 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium"
           >
-            Kontakt
+            {t('navigation.contact')}
           </Link>
 
-          {/* Mobile Language Selector - Always visible */}
-          <div className="flex items-center md:hidden">
-            <div className="relative mr-2">
-              <button
-                onClick={() => setIsLanguageOpen(!isLanguageOpen)}
-                className="font-heading text-gray-700 hover:text-gray-900 px-2 py-1 rounded-md text-sm font-medium inline-flex items-center"
-              >
-                {languages.find(lang => lang.code === currentLanguage)?.name || 'SK'}
-                <svg
-                  className={`ml-1 h-4 w-4 transition-transform ${
-                    isLanguageOpen ? 'rotate-180' : ''
-                  }`}
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M19 9l-7 7-7-7"
-                  />
-                </svg>
-              </button>
-              {isLanguageOpen && (
-                <div
-                  className="absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-50"
-                >
-                  <div className="py-1 divide-y divide-gray-200" role="menu">
-                    {languages.map((language) => (
-                      <button
-                        key={language.code}
-                        onClick={() => handleLanguageChange(language.code)}
-                        className={`block w-full text-left px-4 py-2 text-sm ${
-                          currentLanguage === language.code
-                            ? 'bg-gray-100 text-gray-900'
-                            : 'text-gray-700 hover:bg-gray-100'
-                        } font-heading`}
-                        role="menuitem"
-                      >
-                        <span className="font-bold mr-2">{language.name}</span>
-                        {language.fullName}
-                      </button>
-                    ))}
-                  </div>
-                </div>
-              )}
-            </div>
+          {/* Mobile Language Selector */}
+          <div className="mt-4 px-1">
+            <MobileLanguageLinks />
           </div>
         </div>
       </div>
