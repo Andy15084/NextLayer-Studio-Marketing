@@ -3,18 +3,18 @@ import PaletteButton from '@/components/PaletteButton';
 import { 
   Globe, 
   Smartphone, 
-  Palette, 
-  Zap, 
+  Monitor, 
   Code,
+  Zap,
   Eye,
   Users,
   RefreshCw,
   FileSpreadsheet,
   ArrowUpRight,
-  Monitor,
+  Palette,
   Tablet,
-  Database,
-  Cpu
+  Cpu,
+  Database
 } from 'lucide-react';
 
 export default function WebLandingPage() {

@@ -7,9 +7,12 @@ import {
   BarChart3, 
   DollarSign, 
   Target, 
-  LineChart,
+  Smartphone,
+  RefreshCw,
+  FileSpreadsheet,
   Activity,
   PieChart,
+  LineChart,
   BarChart,
   Eye,
   MousePointer,
@@ -17,10 +20,7 @@ import {
   ArrowDownRight,
   Zap,
   Filter,
-  Database,
-  RefreshCw,
-  Smartphone,
-  FileSpreadsheet
+  Database
 } from 'lucide-react';
 
 export default function AnalytikaPage() {

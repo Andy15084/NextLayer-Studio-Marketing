@@ -5,6 +5,7 @@ import { Albert_Sans, Roboto_Mono } from 'next/font/google';
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { NextIntlClientProvider } from 'next-intl';
+import { notFound } from 'next/navigation';
 import { getMessages } from 'next-intl/server';
 
 const geistSans = Geist({
@@ -36,16 +37,28 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
+// Define valid locales
+const locales = ['sk', 'en', 'de', 'cs'];
+
 export default async function LocaleLayout({
-  children
+  children,
+  params
 }: {
   children: React.ReactNode;
+  params: Promise<{ locale: string }>;
 }) {
+  const { locale } = await params;
+  
+  // Validate that the locale is supported
+  if (!locales.includes(locale)) {
+    notFound();
+  }
+  
   // Get messages for current locale using next-intl
   const messages = await getMessages();
 
   return (
-    <html lang="sk" className={`${geistSans.variable} ${geistMono.variable} ${albertSans.variable} ${robotoMono.variable} antialiased`}>
+    <html lang={locale} className={`${geistSans.variable} ${geistMono.variable} ${albertSans.variable} ${robotoMono.variable} antialiased`}>
       <body className="font-sans antialiased min-h-screen flex flex-col bg-[#c2fff7]">
         <NextIntlClientProvider messages={messages}>
           <Navbar />

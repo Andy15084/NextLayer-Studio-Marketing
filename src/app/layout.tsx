@@ -1,17 +1,15 @@
 import type { Metadata } from "next";
-import "../globals.css";
+import "./globals.css";
 
-export async function generateMetadata(): Promise<Metadata> {
-  return {
-    title: 'NextLayer Studio',
-    description: 'NextLayer Studio - Professional Marketing Agency',
-  };
-}
+export const metadata: Metadata = {
+  title: 'New Website',
+  description: 'New website with the same design as NextLayer Studio',
+};
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
-  return (
-    <html lang="sk">
-      <body>{children}</body>
-    </html>
-  );
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return children;
 }

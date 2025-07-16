@@ -3,16 +3,16 @@ import PaletteButton from '@/components/PaletteButton';
 import { 
   Search, 
   TrendingUp, 
-  BarChart3, 
   Globe,
+  BarChart3,
   RefreshCw,
   FileSpreadsheet,
   Settings,
   Eye,
   ArrowUpRight,
-  Hash,
+  BookOpen,
   PenTool,
-  BookOpen
+  Hash
 } from 'lucide-react';
 
 export default function SeoContentPage() {

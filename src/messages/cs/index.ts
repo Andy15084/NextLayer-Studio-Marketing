@@ -1,4 +1,4 @@
-const messages = {
+export default {
   navigation: {
     webServices: 'Webová řešení',
     services: 'Služby',
@@ -25,6 +25,4 @@ const messages = {
   home: {
     // Home page translations
   }
-};
-
-export default messages; 
+}; 

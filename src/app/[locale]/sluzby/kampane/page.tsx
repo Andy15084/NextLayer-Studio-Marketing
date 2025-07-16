@@ -17,8 +17,8 @@ import {
   FileSpreadsheet,
   Rocket,
   ArrowUpRight,
-  Layers,
-  Activity
+  Activity,
+  Layers
 } from 'lucide-react';
 
 export default function KampanePage() {

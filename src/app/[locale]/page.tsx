@@ -35,7 +35,7 @@ export default function Home() {
               <div className="bg-gradient-to-r from-blue-500 to-purple-500 rounded-full p-2 shadow-lg">
                 <Rocket className="text-white w-4 h-4" />
               </div>
-            </div>
+                </div>
             <div className="absolute top-40 right-20 animate-bounce" style={{animationDelay: '1s'}}>
               <div className="bg-gradient-to-r from-green-500 to-blue-500 rounded-full p-2 shadow-lg">
                 <Target className="text-white w-4 h-4" />
@@ -72,14 +72,14 @@ export default function Home() {
               
               {/* Professional CTA */}
               <div className="flex flex-col sm:flex-row gap-4 items-start">
-                <Link href="/kontakt">
+            <Link href="/kontakt">
                   <PaletteButton variant="secondary" className="group text-lg px-8 py-4 shadow-lg hover:shadow-xl transition-all duration-300">
                     <span className="flex items-center gap-3">
                       {t('campaignButton')}
                       <ArrowUpRight className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" />
                     </span>
                   </PaletteButton>
-                </Link>
+            </Link>
                 <div className="flex items-center gap-4 text-sm text-gray-600">
                   <div className="flex items-center gap-1">
                     <Star className="w-4 h-4 text-yellow-500 fill-current" />
