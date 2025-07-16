@@ -55,6 +55,12 @@ export default function Navbar() {
     sluzbyTimeout.current = setTimeout(() => setIsSluzbyOpen(false), 200);
   };
 
+  // Function to close mobile menu
+  const closeMobileMenu = () => {
+    setMobileMenuOpen(false);
+    setIsSluzbyOpen(false);
+  };
+
   return (
     <nav
       className={`w-[80%] mx-auto bg-white rounded-b-xl shadow-md fixed left-1/2 -translate-x-1/2 z-50 transition-transform duration-300 ${
@@ -201,6 +207,7 @@ export default function Navbar() {
             target="_blank"
             rel="noopener noreferrer"
             className="bg-[#219EBC] text-white font-heading px-5 py-2 rounded-md text-sm font-bold shadow transition-colors duration-200 block"
+            onClick={closeMobileMenu}
           >
             {t('navigation.webServices')}
           </a>
@@ -233,6 +240,7 @@ export default function Navbar() {
                     key={item.href}
                     href={item.href}
                     className="font-heading text-gray-700 hover:text-gray-900 block px-3 py-2 rounded-md text-sm"
+                    onClick={closeMobileMenu}
                   >
                     {item.name}
                   </Link>
@@ -244,6 +252,7 @@ export default function Navbar() {
           <Link
             href="/o-nas"
             className="font-heading text-gray-700 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium"
+            onClick={closeMobileMenu}
           >
             {t('navigation.aboutUs')}
           </Link>
@@ -251,6 +260,7 @@ export default function Navbar() {
           <Link
             href="/ako-pracujeme"
             className="font-heading text-gray-700 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium"
+            onClick={closeMobileMenu}
           >
             {t('navigation.howWeWork')}
           </Link>
@@ -258,6 +268,7 @@ export default function Navbar() {
           <Link
             href="/kontakt"
             className="font-heading text-gray-700 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium"
+            onClick={closeMobileMenu}
           >
             {t('navigation.contact')}
           </Link>
