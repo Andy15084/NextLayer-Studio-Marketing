@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 import LanguageLinks from './LanguageLinks';
 import MobileLanguageLinks from './MobileLanguageLinks';
+import { usePathname } from 'next/navigation';
 
 export default function Navbar() {
   const [isSluzbyOpen, setIsSluzbyOpen] = useState(false);
@@ -13,20 +14,34 @@ export default function Navbar() {
   const [lastScrollY, setLastScrollY] = useState(0);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const sluzbyTimeout = useRef<NodeJS.Timeout | null>(null);
+  const pathname = usePathname();
   
   // Get translations
   const t = useTranslations();
 
+  // Extract locale from pathname
+  const getLocaleFromPath = (path: string): string => {
+    const segments = path.split('/').filter(Boolean);
+    if (segments.length === 0) return 'sk';
+    const firstSegment = segments[0];
+    if (['sk', 'en', 'de', 'cs'].includes(firstSegment)) {
+      return firstSegment;
+    }
+    return 'sk';
+  };
+
+  const locale = getLocaleFromPath(pathname);
+
   // Service items with translations
   const sluzbyItems = [
-    { name: t('serviceItems.socialMedia'), href: '/sluzby/socialne-siete' },
-    { name: t('serviceItems.ppcAdvertising'), href: '/sluzby/ppc-reklama' },
-    { name: t('serviceItems.seoContent'), href: '/sluzby/seo-content' },
-    { name: t('serviceItems.webLanding'), href: '/sluzby/web-landing' },
-    { name: t('serviceItems.analytics'), href: '/sluzby/analytika' },
-    { name: t('serviceItems.contentProduction'), href: '/sluzby/kontent' },
-    { name: t('serviceItems.adCampaigns'), href: '/sluzby/kampane' },
-    { name: t('serviceItems.digitalFootprint'), href: '/sluzby/digitalna-stopa' },
+    { name: t('serviceItems.socialMedia'), href: `/${locale}/sluzby/socialne-siete` },
+    { name: t('serviceItems.ppcAdvertising'), href: `/${locale}/sluzby/ppc-reklama` },
+    { name: t('serviceItems.seoContent'), href: `/${locale}/sluzby/seo-content` },
+    { name: t('serviceItems.webLanding'), href: `/${locale}/sluzby/web-landing` },
+    { name: t('serviceItems.analytics'), href: `/${locale}/sluzby/analytika` },
+    { name: t('serviceItems.contentProduction'), href: `/${locale}/sluzby/kontent` },
+    { name: t('serviceItems.adCampaigns'), href: `/${locale}/sluzby/kampane` },
+    { name: t('serviceItems.digitalFootprint'), href: `/${locale}/sluzby/digitalna-stopa` },
   ];
 
   // Scroll handler for auto-hide/show
@@ -72,7 +87,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-14">
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
-            <Link href="/">
+            <Link href={`/${locale}`}>
               <div className="relative w-40 h-10 cursor-pointer flex items-center">
                 <Image
                   src="/logoblack.png"
@@ -144,21 +159,21 @@ export default function Navbar() {
               </div>
 
               <Link
-                href="/o-nas"
+                href={`/${locale}/o-nas`}
                 className="font-heading text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium"
               >
                 {t('navigation.aboutUs')}
               </Link>
 
               <Link
-                href="/ako-pracujeme"
+                href={`/${locale}/ako-pracujeme`}
                 className="font-heading text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium"
               >
                 {t('navigation.howWeWork')}
               </Link>
 
               <Link
-                href="/kontakt"
+                href={`/${locale}/kontakt`}
                 className="font-heading text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium"
               >
                 {t('navigation.contact')}
@@ -250,7 +265,7 @@ export default function Navbar() {
           </div>
 
           <Link
-            href="/o-nas"
+            href={`/${locale}/o-nas`}
             className="font-heading text-gray-700 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium"
             onClick={closeMobileMenu}
           >
@@ -258,7 +273,7 @@ export default function Navbar() {
           </Link>
 
           <Link
-            href="/ako-pracujeme"
+            href={`/${locale}/ako-pracujeme`}
             className="font-heading text-gray-700 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium"
             onClick={closeMobileMenu}
           >
@@ -266,7 +281,7 @@ export default function Navbar() {
           </Link>
 
           <Link
-            href="/kontakt"
+            href={`/${locale}/kontakt`}
             className="font-heading text-gray-700 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium"
             onClick={closeMobileMenu}
           >

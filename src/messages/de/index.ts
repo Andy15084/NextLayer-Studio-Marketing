@@ -1,4 +1,4 @@
-export default {
+const deMessages = {
   navigation: {
     webServices: 'Web-Lösungen',
     services: 'Dienstleistungen',
@@ -7,22 +7,26 @@ export default {
     contact: 'Kontakt'
   },
   serviceItems: {
-    socialMedia: 'Social-Media-Management',
+    socialMedia: 'Social Media Management',
     ppcAdvertising: 'PPC & Performance-Werbung',
-    seoContent: 'SEO & Content-Marketing',
+    seoContent: 'SEO & Content Marketing',
     webLanding: 'Web & Landing Pages',
-    analytics: 'Analytik und Reporting',
+    analytics: 'Analytics & Reporting',
     contentProduction: 'Content-Produktion',
-    adCampaigns: 'Werbekampagnen'
+    adCampaigns: 'Werbekampagnen-Erstellung'
   },
   languages: {
-    slovak: 'Slowakisch',
+    slovak: 'Slovenský',
     german: 'Deutsch',
-    czech: 'Tschechisch',
-    english: 'Englisch'
+    czech: 'Čeština',
+    english: 'English'
   },
   // Add more translations as needed
   home: {
-    // Home page translations
+    title: 'Willkommen bei NextLayer Studio',
+    subtitle: 'Professionelles Marketing, das Ihnen neue Kunden bringt und den Umsatz steigert.',
+    campaignButton: 'Ich möchte eine Kampagne'
   }
-}; 
+};
+
+export default deMessages; 

@@ -7,11 +7,14 @@ export default createMiddleware({
   // Used when no locale matches
   defaultLocale: 'sk',
   
-  // Always add locale prefix
+  // Always add locale prefix to ensure consistent routing
   localePrefix: 'always'
 });
 
 export const config = {
-  // Match only internationalized pathnames
-  matcher: ['/', '/(sk|en|de|cs)/:path*']
+  // Match all paths except for
+  // - API routes (/api/*)
+  // - Static files (/_next/*)
+  // - Files with extensions (.jpg, .png, etc.)
+  matcher: ['/((?!api|_next|.*\\..*).*)']
 }; 

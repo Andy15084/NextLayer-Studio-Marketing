@@ -1,9 +1,9 @@
-export default {
+const csMessages = {
   navigation: {
     webServices: 'Webová řešení',
     services: 'Služby',
     aboutUs: 'O nás',
-    howWeWork: 'Jak postupujeme',
+    howWeWork: 'Jak pracujeme',
     contact: 'Kontakt'
   },
   serviceItems: {
@@ -17,12 +17,16 @@ export default {
   },
   languages: {
     slovak: 'Slovenský',
-    german: 'Německý',
+    german: 'Deutsch',
     czech: 'Čeština',
-    english: 'Anglický'
+    english: 'English'
   },
   // Add more translations as needed
   home: {
-    // Home page translations
+    title: 'Vítejte v NextLayer Studio',
+    subtitle: 'Profesionální marketing, který vám přinese nové zákazníky a zvýší prodeje.',
+    campaignButton: 'Chci kampaň'
   }
-}; 
+};
+
+export default csMessages; 

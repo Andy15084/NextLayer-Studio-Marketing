@@ -1,24 +1,43 @@
+'use client';
+
+import { useTranslations } from 'next-intl';
+import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import PaletteButton from '@/components/PaletteButton';
 import { 
-  Target, 
+  MousePointer, 
   TrendingUp, 
-  DollarSign, 
+  Target, 
   BarChart3, 
-  Search,
-  Zap,
-  Eye,
-  Calendar,
   Users,
-  RefreshCw,
-  FileSpreadsheet,
+  DollarSign,
+  Zap,
+  Search,
+  Eye,
+  ArrowUpRight,
   Settings,
+  RefreshCw,
   Globe,
-  MousePointer,
-  ArrowUpRight
+  FileSpreadsheet
 } from 'lucide-react';
 
-export default function PpcReklamaPage() {
+export default function PPCAdvertisingPage() {
+  const t = useTranslations('ppcAdvertising');
+  const pathname = usePathname();
+  
+  // Extract locale from pathname
+  const getLocaleFromPath = (path: string): string => {
+    const segments = path.split('/').filter(Boolean);
+    if (segments.length === 0) return 'sk';
+    const firstSegment = segments[0];
+    if (['sk', 'en', 'de', 'cs'].includes(firstSegment)) {
+      return firstSegment;
+    }
+    return 'sk';
+  };
+
+  const locale = getLocaleFromPath(pathname);
+
   return (
     <main className="min-h-screen">
       {/* 1. Hero Section with Performance Metrics */}
@@ -60,25 +79,25 @@ export default function PpcReklamaPage() {
             </div>
             
             <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-[#023047]">
-              PPC reklama, ktorá prináša výsledky.
+              {t('title')}
             </h1>
             <p className="font-mono text-xl md:text-2xl lg:text-3xl mb-8 text-[#023047] font-medium">
-              Platená reklama s presným cielením a merateľnými výsledkami.
+              {t('subtitle')}
             </p>
             <div className="font-mono text-lg md:text-xl mb-12 text-[#023047] max-w-4xl">
               <p className="mb-4">
-                PPC (Pay-Per-Click) reklama je rýchly spôsob, ako sa dostaneš k zákazníkom, ktorí práve hľadajú tvoju službu.
+                {t('description1')}
               </p>
               <p className="mb-4">
-                V NextLayer Studio robíme kampane, ktoré sú &quot;smart&quot; – cielené, optimalizované a prinášajú ROI.
+                {t('description2')}
               </p>
               <p>
-                Od Google Ads cez Facebook až po TikTok – všetko s dôrazom na konverzie, nie len na zobrazenia.
+                {t('description3')}
               </p>
             </div>
-            <Link href="/sk/kontakt">
+            <Link href={`/${locale}/kontakt`}>
               <PaletteButton variant="secondary" className="text-lg px-8 py-4">
-                Spustiť PPC kampaň
+                {t('ctaButton')}
               </PaletteButton>
             </Link>
           </div>
@@ -88,7 +107,7 @@ export default function PpcReklamaPage() {
       {/* 2. Performance Metrics Dashboard */}
       <section className="max-w-7xl mx-auto py-20 px-4">
         <h2 className="font-heading text-3xl md:text-4xl font-bold mb-12 text-center text-[#023047]">
-          Prečo PPC funguje?
+          {t('whyPpcWorks.title')}
         </h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
@@ -97,8 +116,8 @@ export default function PpcReklamaPage() {
               <ArrowUpRight className="text-green-600 w-8 h-8" />
             </div>
             <div className="text-3xl font-bold text-[#219EBC] mb-2">300%</div>
-            <div className="font-mono text-gray-700">Priemerný ROAS</div>
-            <div className="text-sm text-gray-500 mt-2">Návratnosť investície</div>
+            <div className="font-mono text-gray-700">{t('stats.averageRoas')}</div>
+            <div className="text-sm text-gray-500 mt-2">{t('stats.roiReturn')}</div>
           </div>
           
           <div className="bg-white rounded-2xl shadow-xl p-6 text-center hover:scale-105 transition-transform duration-300">
@@ -106,8 +125,8 @@ export default function PpcReklamaPage() {
               <MousePointer className="text-blue-600 w-8 h-8" />
             </div>
             <div className="text-3xl font-bold text-[#219EBC] mb-2">15min</div>
-            <div className="font-mono text-gray-700">Čas spustenia</div>
-            <div className="text-sm text-gray-500 mt-2">Od objednávky po zobrazenie</div>
+            <div className="font-mono text-gray-700">{t('stats.launchTime')}</div>
+            <div className="text-sm text-gray-500 mt-2">{t('stats.fromOrderToDisplay')}</div>
           </div>
           
           <div className="bg-white rounded-2xl shadow-xl p-6 text-center hover:scale-105 transition-transform duration-300">
@@ -115,8 +134,8 @@ export default function PpcReklamaPage() {
               <Target className="text-purple-600 w-8 h-8" />
             </div>
             <div className="text-3xl font-bold text-[#219EBC] mb-2">95%</div>
-            <div className="font-mono text-gray-700">Presnosť cielenia</div>
-            <div className="text-sm text-gray-500 mt-2">Podľa demografie a záujmov</div>
+            <div className="font-mono text-gray-700">{t('stats.targetingAccuracy')}</div>
+            <div className="text-sm text-gray-500 mt-2">{t('stats.byDemographics')}</div>
           </div>
           
           <div className="bg-white rounded-2xl shadow-xl p-6 text-center hover:scale-105 transition-transform duration-300">
@@ -124,8 +143,8 @@ export default function PpcReklamaPage() {
               <DollarSign className="text-orange-600 w-8 h-8" />
             </div>
             <div className="text-3xl font-bold text-[#219EBC] mb-2">€0.50</div>
-            <div className="font-mono text-gray-700">Priemerný CPC</div>
-            <div className="text-sm text-gray-500 mt-2">Cena za kliknutie</div>
+            <div className="font-mono text-gray-700">{t('stats.averageCpc')}</div>
+            <div className="text-sm text-gray-500 mt-2">{t('stats.costPerClick')}</div>
           </div>
         </div>
         
@@ -133,67 +152,67 @@ export default function PpcReklamaPage() {
           {/* Left: Text */}
           <div>
             <h3 className="font-heading text-3xl md:text-4xl font-bold mb-6 text-[#023047]">
-              Čo je PPC reklama?
+              {t('whatIsPpc.title')}
             </h3>
             <div className="font-mono text-lg space-y-4 text-gray-800">
               <p>
-                PPC (Pay-Per-Click) znamená, že platíš len za kliknutie, nie za zobrazenie reklamy.
+                {t('whatIsPpc.description1')}
               </p>
               <p>
-                Je to rýchly spôsob, ako sa dostaneš k zákazníkom, ktorí práve hľadajú tvoju službu alebo produkt.
+                {t('whatIsPpc.description2')}
               </p>
               <p>
-                Výhoda je v tom, že máš plnú kontrolu nad rozpočtom, cielením a môžeš presne merať, koľko ti každý zákazník stojí.
+                {t('whatIsPpc.description3')}
               </p>
             </div>
           </div>
           
           {/* Right: Benefits with Progress Bars */}
           <div className="bg-white rounded-2xl shadow-xl p-8">
-            <h3 className="font-heading text-xl font-bold mb-6 text-[#023047] text-center">Výhody PPC reklamy</h3>
+            <h3 className="font-heading text-xl font-bold mb-6 text-[#023047] text-center">{t('benefits.title')}</h3>
             <div className="space-y-6">
               <div>
                 <div className="flex justify-between items-center mb-2">
-                  <h4 className="font-heading font-bold text-[#023047]">Okamžitá viditeľnosť</h4>
+                  <h4 className="font-heading font-bold text-[#023047]">{t('benefits.immediateVisibility.title')}</h4>
                   <span className="text-sm text-green-600 font-bold">100%</span>
                 </div>
                 <div className="w-full bg-gray-200 rounded-full h-2">
                   <div className="bg-green-500 h-2 rounded-full" style={{width: '100%'}}></div>
                 </div>
-                <p className="font-mono text-sm text-gray-700 mt-1">Výsledky už za pár hodín</p>
+                <p className="font-mono text-sm text-gray-700 mt-1">{t('benefits.immediateVisibility.description')}</p>
               </div>
               
               <div>
                 <div className="flex justify-between items-center mb-2">
-                  <h4 className="font-heading font-bold text-[#023047]">Presné cielenie</h4>
+                  <h4 className="font-heading font-bold text-[#023047]">{t('benefits.preciseTargeting.title')}</h4>
                   <span className="text-sm text-blue-600 font-bold">95%</span>
                 </div>
                 <div className="w-full bg-gray-200 rounded-full h-2">
                   <div className="bg-blue-500 h-2 rounded-full" style={{width: '95%'}}></div>
                 </div>
-                <p className="font-mono text-sm text-gray-700 mt-1">Podľa demografie, záujmov, správania</p>
+                <p className="font-mono text-sm text-gray-700 mt-1">{t('benefits.preciseTargeting.description')}</p>
               </div>
               
               <div>
                 <div className="flex justify-between items-center mb-2">
-                  <h4 className="font-heading font-bold text-[#023047]">Merateľné výsledky</h4>
+                  <h4 className="font-heading font-bold text-[#023047]">{t('benefits.measurableResults.title')}</h4>
                   <span className="text-sm text-purple-600 font-bold">100%</span>
                 </div>
                 <div className="w-full bg-gray-200 rounded-full h-2">
                   <div className="bg-purple-500 h-2 rounded-full" style={{width: '100%'}}></div>
                 </div>
-                <p className="font-mono text-sm text-gray-700 mt-1">Každý cent sa dá spočítať</p>
+                <p className="font-mono text-sm text-gray-700 mt-1">{t('benefits.measurableResults.description')}</p>
               </div>
               
               <div>
                 <div className="flex justify-between items-center mb-2">
-                  <h4 className="font-heading font-bold text-[#023047]">Flexibilita</h4>
+                  <h4 className="font-heading font-bold text-[#023047]">{t('benefits.flexibility.title')}</h4>
                   <span className="text-sm text-orange-600 font-bold">90%</span>
                 </div>
                 <div className="w-full bg-gray-200 rounded-full h-2">
                   <div className="bg-orange-500 h-2 rounded-full" style={{width: '90%'}}></div>
                 </div>
-                <p className="font-mono text-sm text-gray-700 mt-1">Môžeš meniť kampaň kedykoľvek</p>
+                <p className="font-mono text-sm text-gray-700 mt-1">{t('benefits.flexibility.description')}</p>
               </div>
             </div>
           </div>
@@ -203,7 +222,7 @@ export default function PpcReklamaPage() {
       {/* 3. How We Work Section with Funnel Visualization */}
       <section className="max-w-7xl mx-auto py-20 px-4">
         <h2 className="font-heading text-3xl md:text-4xl font-bold mb-12 text-center text-[#023047]">
-          Ako pracujeme na PPC kampani
+          {t('howWeWork.title')}
         </h2>
         
         <div className="relative">
@@ -216,10 +235,10 @@ export default function PpcReklamaPage() {
                 <div className="bg-white rounded-2xl shadow-xl p-6 border-l-4 border-[#219EBC] hover:scale-105 transition-transform duration-300">
                   <div className="flex items-center gap-4 mb-4">
                     <div className="bg-[#219EBC] text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl">1</div>
-                    <h3 className="font-heading text-xl font-bold text-[#023047]">Analýza a plánovanie</h3>
+                    <h3 className="font-heading text-xl font-bold text-[#023047]">{t('howWeWork.step1.title')}</h3>
                   </div>
                   <p className="font-mono text-gray-700">
-                    Zistíme tvoje ciele, rozpočet a cieľovú skupinu.
+                    {t('howWeWork.step1.description')}
                   </p>
                   <div className="mt-4 flex items-center gap-2 text-sm text-gray-500">
                     <Users className="w-4 h-4" />
@@ -231,10 +250,10 @@ export default function PpcReklamaPage() {
                 <div className="bg-white rounded-2xl shadow-xl p-6 border-l-4 border-[#219EBC] hover:scale-105 transition-transform duration-300">
                   <div className="flex items-center gap-4 mb-4">
                     <div className="bg-[#219EBC] text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl">2</div>
-                    <h3 className="font-heading text-xl font-bold text-[#023047]">Výber kľúčových slov</h3>
+                    <h3 className="font-heading text-xl font-bold text-[#023047]">{t('howWeWork.step2.title')}</h3>
                   </div>
                   <p className="font-mono text-gray-700">
-                    Vyberieme slová, ktoré používajú tvoji potenciálni zákazníci.
+                    {t('howWeWork.step2.description')}
                   </p>
                   <div className="mt-4 flex items-center gap-2 text-sm text-gray-500">
                     <Search className="w-4 h-4" />
@@ -249,10 +268,10 @@ export default function PpcReklamaPage() {
                 <div className="bg-white rounded-2xl shadow-xl p-6 border-l-4 border-[#219EBC] hover:scale-105 transition-transform duration-300">
                   <div className="flex items-center gap-4 mb-4">
                     <div className="bg-[#219EBC] text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl">3</div>
-                    <h3 className="font-heading text-xl font-bold text-[#023047]">Tvorba reklám</h3>
+                    <h3 className="font-heading text-xl font-bold text-[#023047]">{t('howWeWork.step3.title')}</h3>
                   </div>
                   <p className="font-mono text-gray-700">
-                    Vytvoríme texty a vizuály, ktoré konvertujú.
+                    {t('howWeWork.step3.description')}
                   </p>
                   <div className="mt-4 flex items-center gap-2 text-sm text-gray-500">
                     <Zap className="w-4 h-4" />
@@ -264,10 +283,10 @@ export default function PpcReklamaPage() {
                 <div className="bg-white rounded-2xl shadow-xl p-6 border-l-4 border-[#219EBC] hover:scale-105 transition-transform duration-300">
                   <div className="flex items-center gap-4 mb-4">
                     <div className="bg-[#219EBC] text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl">4</div>
-                    <h3 className="font-heading text-xl font-bold text-[#023047]">Nastavenie kampane</h3>
+                    <h3 className="font-heading text-xl font-bold text-[#023047]">{t('howWeWork.step4.title')}</h3>
                   </div>
                   <p className="font-mono text-gray-700">
-                    Technicky pripravíme všetko v reklamných účtoch.
+                    {t('howWeWork.step4.description')}
                   </p>
                   <div className="mt-4 flex items-center gap-2 text-sm text-gray-500">
                     <Settings className="w-4 h-4" />
@@ -282,10 +301,10 @@ export default function PpcReklamaPage() {
                 <div className="bg-white rounded-2xl shadow-xl p-6 border-l-4 border-[#219EBC] hover:scale-105 transition-transform duration-300">
                   <div className="flex items-center gap-4 mb-4">
                     <div className="bg-[#219EBC] text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl">5</div>
-                    <h3 className="font-heading text-xl font-bold text-[#023047]">Spustenie a optimalizácia</h3>
+                    <h3 className="font-heading text-xl font-bold text-[#023047]">{t('howWeWork.step5.title')}</h3>
                   </div>
                   <p className="font-mono text-gray-700">
-                    Sledujeme výkonnosť a neustále vylepšujeme.
+                    {t('howWeWork.step5.description')}
                   </p>
                   <div className="mt-4 flex items-center gap-2 text-sm text-gray-500">
                     <RefreshCw className="w-4 h-4" />
@@ -297,10 +316,10 @@ export default function PpcReklamaPage() {
                 <div className="bg-white rounded-2xl shadow-xl p-6 border-l-4 border-[#219EBC] hover:scale-105 transition-transform duration-300">
                   <div className="flex items-center gap-4 mb-4">
                     <div className="bg-[#219EBC] text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl">6</div>
-                    <h3 className="font-heading text-xl font-bold text-[#023047]">Reporting a analýza</h3>
+                    <h3 className="font-heading text-xl font-bold text-[#023047]">{t('howWeWork.step6.title')}</h3>
                   </div>
                   <p className="font-mono text-gray-700">
-                    Pravidelne ti poskytujeme prehľadné reporty s výsledkami a odporúčaniami.
+                    {t('howWeWork.step6.description')}
                   </p>
                   <div className="mt-4 flex items-center gap-2 text-sm text-gray-500">
                     <BarChart3 className="w-4 h-4" />
@@ -316,7 +335,7 @@ export default function PpcReklamaPage() {
       {/* 4. What We Offer Section with Performance Cards */}
       <section className="max-w-7xl mx-auto py-20 px-4">
         <h2 className="font-heading text-3xl md:text-4xl font-bold mb-12 text-center text-[#023047]">
-          Čo všetko vieme zabezpečiť?
+          {t('whatWeOffer.title')}
         </h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -324,9 +343,9 @@ export default function PpcReklamaPage() {
             <div className="bg-gradient-to-br from-blue-500 to-blue-600 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
               <Search className="text-white w-8 h-8" />
             </div>
-            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">Google Ads</h3>
+            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">{t('whatWeOffer.googleAds.title')}</h3>
             <p className="font-mono text-gray-700 text-sm">
-              Vyhľadávanie, bannery, YouTube
+              {t('whatWeOffer.googleAds.description')}
             </p>
             <div className="mt-3 flex items-center gap-2 text-sm text-green-600">
               <ArrowUpRight className="w-4 h-4" />
@@ -338,9 +357,9 @@ export default function PpcReklamaPage() {
             <div className="bg-gradient-to-br from-purple-500 to-purple-600 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
               <Globe className="text-white w-8 h-8" />
             </div>
-            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">Facebook & Instagram Ads</h3>
+            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">{t('whatWeOffer.facebookAds.title')}</h3>
             <p className="font-mono text-gray-700 text-sm">
-              Všetky formáty reklám
+              {t('whatWeOffer.facebookAds.description')}
             </p>
             <div className="mt-3 flex items-center gap-2 text-sm text-green-600">
               <ArrowUpRight className="w-4 h-4" />
@@ -352,9 +371,9 @@ export default function PpcReklamaPage() {
             <div className="bg-gradient-to-br from-pink-500 to-pink-600 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
               <TrendingUp className="text-white w-8 h-8" />
             </div>
-            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">TikTok Ads</h3>
+            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">{t('whatWeOffer.tiktokAds.title')}</h3>
             <p className="font-mono text-gray-700 text-sm">
-              Pre mladšiu cieľovku
+              {t('whatWeOffer.tiktokAds.description')}
             </p>
             <div className="mt-3 flex items-center gap-2 text-sm text-green-600">
               <ArrowUpRight className="w-4 h-4" />
@@ -366,9 +385,9 @@ export default function PpcReklamaPage() {
             <div className="bg-gradient-to-br from-blue-600 to-blue-700 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
               <Target className="text-white w-8 h-8" />
             </div>
-            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">LinkedIn Ads</h3>
+            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">{t('whatWeOffer.linkedinAds.title')}</h3>
             <p className="font-mono text-gray-700 text-sm">
-              Pre B2B segment
+              {t('whatWeOffer.linkedinAds.description')}
             </p>
             <div className="mt-3 flex items-center gap-2 text-sm text-green-600">
               <ArrowUpRight className="w-4 h-4" />
@@ -380,9 +399,9 @@ export default function PpcReklamaPage() {
             <div className="bg-gradient-to-br from-orange-500 to-orange-600 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
               <Eye className="text-white w-8 h-8" />
             </div>
-            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">Remarketing</h3>
+            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">{t('whatWeOffer.remarketing.title')}</h3>
             <p className="font-mono text-gray-700 text-sm">
-              Znovuzískanie návštevníkov
+              {t('whatWeOffer.remarketing.description')}
             </p>
             <div className="mt-3 flex items-center gap-2 text-sm text-green-600">
               <ArrowUpRight className="w-4 h-4" />
@@ -394,41 +413,41 @@ export default function PpcReklamaPage() {
             <div className="bg-gradient-to-br from-green-500 to-green-600 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
               <Zap className="text-white w-8 h-8" />
             </div>
-            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">Optimalizácia výkonu</h3>
+            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">{t('whatWeOffer.landingPages.title')}</h3>
             <p className="font-mono text-gray-700 text-sm">
-              CPC, CTR, ROAS
+              {t('whatWeOffer.landingPages.description')}
             </p>
             <div className="mt-3 flex items-center gap-2 text-sm text-green-600">
               <ArrowUpRight className="w-4 h-4" />
-              <span>Maximálny ROI</span>
+              <span>Vysoká konverzia</span>
             </div>
           </div>
           
           <div className="bg-white rounded-2xl shadow-xl p-6 hover:scale-105 transition-transform duration-300 group">
             <div className="bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-              <Calendar className="text-white w-8 h-8" />
+              <BarChart3 className="text-white w-8 h-8" />
             </div>
-            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">A/B testovanie</h3>
+            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">{t('whatWeOffer.analytics.title')}</h3>
             <p className="font-mono text-gray-700 text-sm">
-              Reklám a landing pages
+              {t('whatWeOffer.analytics.description')}
             </p>
             <div className="mt-3 flex items-center gap-2 text-sm text-green-600">
               <ArrowUpRight className="w-4 h-4" />
-              <span>Vylepšenie konverzií</span>
+              <span>Presné dáta</span>
             </div>
           </div>
           
           <div className="bg-white rounded-2xl shadow-xl p-6 hover:scale-105 transition-transform duration-300 group">
             <div className="bg-gradient-to-br from-teal-500 to-teal-600 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-              <Users className="text-white w-8 h-8" />
+              <RefreshCw className="text-white w-8 h-8" />
             </div>
-            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">Správa účtov</h3>
+            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">{t('whatWeOffer.optimization.title')}</h3>
             <p className="font-mono text-gray-700 text-sm">
-              Denná kontrola a údržba
+              {t('whatWeOffer.optimization.description')}
             </p>
             <div className="mt-3 flex items-center gap-2 text-sm text-green-600">
               <ArrowUpRight className="w-4 h-4" />
-              <span>Kontinuálna optimalizácia</span>
+              <span>Lepšie výsledky</span>
             </div>
           </div>
           
@@ -436,9 +455,9 @@ export default function PpcReklamaPage() {
             <div className="bg-gradient-to-br from-red-500 to-red-600 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
               <FileSpreadsheet className="text-white w-8 h-8" />
             </div>
-            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">Pravidelné reporty a konzultácie</h3>
+            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">{t('whatWeOffer.reporting.title')}</h3>
             <p className="font-mono text-gray-700 text-sm">
-              Mesačné vyhodnotenie s odporúčaniami
+              {t('whatWeOffer.reporting.description')}
             </p>
             <div className="mt-3 flex items-center gap-2 text-sm text-green-600">
               <ArrowUpRight className="w-4 h-4" />
@@ -452,19 +471,77 @@ export default function PpcReklamaPage() {
       <section className="max-w-7xl mx-auto py-20 px-4">
         <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
           <h2 className="font-heading text-3xl md:text-4xl font-bold mb-8 text-center text-[#023047]">
-            Prečo to robiť s nami?
+            {t('whyAgency.title')}
           </h2>
           
-          <div className="font-mono text-lg space-y-6 text-gray-800 max-w-4xl mx-auto">
-            <p>
-              Pretože robíme PPC kampane, ktoré sú postavené na dátach, nie na pocitoch. Každé rozhodnutie má svoj dôvod a každá zmena sa meria.
-            </p>
-            <p>
-              Máme skúsenosti s rôznymi odvetviami a vieme, čo funguje pre tvoj typ biznisu. Neexperimentujeme na tvojich peniazoch.
-            </p>
-            <p>
-              Transparentnosť je pre nás kľúčová – vždy vieš, kde tvoje peniaze idú a aké výsledky prinášajú.
-            </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div className="border-2 border-red-200 rounded-xl p-6 bg-red-50">
+              <h3 className="font-heading text-xl font-bold mb-6 text-red-600 text-center">{t('whyAgency.diy.title')}</h3>
+              <div className="space-y-4">
+                <div className="flex items-start space-x-3">
+                  <div className="text-red-500 text-xl">❌</div>
+                  <div>
+                    <h4 className="font-heading font-bold text-[#023047]">{t('whyAgency.diy.complexity.title')}</h4>
+                    <p className="font-mono text-sm text-gray-700">{t('whyAgency.diy.complexity.description')}</p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <div className="text-red-500 text-xl">❌</div>
+                  <div>
+                    <h4 className="font-heading font-bold text-[#023047]">{t('whyAgency.diy.lackExperience.title')}</h4>
+                    <p className="font-mono text-sm text-gray-700">{t('whyAgency.diy.lackExperience.description')}</p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <div className="text-red-500 text-xl">❌</div>
+                  <div>
+                    <h4 className="font-heading font-bold text-[#023047]">{t('whyAgency.diy.wastedBudget.title')}</h4>
+                    <p className="font-mono text-sm text-gray-700">{t('whyAgency.diy.wastedBudget.description')}</p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <div className="text-red-500 text-xl">❌</div>
+                  <div>
+                    <h4 className="font-heading font-bold text-[#023047]">{t('whyAgency.diy.timeConsuming.title')}</h4>
+                    <p className="font-mono text-sm text-gray-700">{t('whyAgency.diy.timeConsuming.description')}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="border-2 border-green-200 rounded-xl p-6 bg-green-50">
+              <h3 className="font-heading text-xl font-bold mb-6 text-green-600 text-center">{t('whyAgency.withAgency.title')}</h3>
+              <div className="space-y-4">
+                <div className="flex items-start space-x-3">
+                  <div className="text-green-500 text-xl">✅</div>
+                  <div>
+                    <h4 className="font-heading font-bold text-[#023047]">{t('whyAgency.withAgency.expertise.title')}</h4>
+                    <p className="font-mono text-sm text-gray-700">{t('whyAgency.withAgency.expertise.description')}</p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <div className="text-green-500 text-xl">✅</div>
+                  <div>
+                    <h4 className="font-heading font-bold text-[#023047]">{t('whyAgency.withAgency.optimization.title')}</h4>
+                    <p className="font-mono text-sm text-gray-700">{t('whyAgency.withAgency.optimization.description')}</p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <div className="text-green-500 text-xl">✅</div>
+                  <div>
+                    <h4 className="font-heading font-bold text-[#023047]">{t('whyAgency.withAgency.saveTime.title')}</h4>
+                    <p className="font-mono text-sm text-gray-700">{t('whyAgency.withAgency.saveTime.description')}</p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <div className="text-green-500 text-xl">✅</div>
+                  <div>
+                    <h4 className="font-heading font-bold text-[#023047]">{t('whyAgency.withAgency.results.title')}</h4>
+                    <p className="font-mono text-sm text-gray-700">{t('whyAgency.withAgency.results.description')}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -474,20 +551,20 @@ export default function PpcReklamaPage() {
         <div className="bg-gradient-to-br from-[#219EBC] to-[#8ECAE6] rounded-2xl shadow-xl p-10 md:p-16 text-center relative overflow-hidden">
           <div className="relative z-10">
             <h2 className="font-heading text-3xl md:text-4xl font-bold mb-4 text-[#023047]">
-              PPC reklama, ktorá sa vypláca.
+              {t('finalCta.title')}
             </h2>
             <div className="font-mono text-lg md:text-xl mb-8 text-[#023047]">
-              Nechaj si vytvoriť kampaň, ktorá bude cielená, optimalizovaná a bude ti prinášať zákazníkov.
+              {t('finalCta.description1')}
             </div>
             <div className="font-mono text-lg md:text-xl mb-8 text-[#023047]">
-              S nami budeš vedieť presne, koľko ti každý zákazník stojí a aký máš ROI.
+              {t('finalCta.description2')}
             </div>
             <div className="font-mono text-lg md:text-xl mb-8 text-[#023047]">
-              Od prvého nastavenia až po pravidelný monitoring.
+              {t('finalCta.description3')}
             </div>
-            <Link href="/sk/kontakt">
+            <Link href={`/${locale}/kontakt`}>
               <PaletteButton variant="secondary" className="text-lg px-8 py-4">
-                Spustiť PPC kampaň
+                {t('ctaButton')}
               </PaletteButton>
             </Link>
           </div>

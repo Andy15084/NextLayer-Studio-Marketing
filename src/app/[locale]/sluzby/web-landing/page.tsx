@@ -1,23 +1,43 @@
+'use client';
+
+import { useTranslations } from 'next-intl';
+import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import PaletteButton from '@/components/PaletteButton';
 import { 
-  Globe, 
-  Smartphone, 
   Monitor, 
-  Code,
-  Zap,
-  Eye,
   Users,
-  RefreshCw,
-  FileSpreadsheet,
-  ArrowUpRight,
+  Globe,
+  Zap,
+  Code,
+  Smartphone,
   Palette,
-  Tablet,
+  Eye,
+  ArrowUpRight,
   Cpu,
-  Database
+  RefreshCw,
+  Database,
+  FileSpreadsheet,
+  TabletSmartphone
 } from 'lucide-react';
 
 export default function WebLandingPage() {
+  const t = useTranslations('webLanding');
+  const pathname = usePathname();
+  
+  // Extract locale from pathname
+  const getLocaleFromPath = (path: string): string => {
+    const segments = path.split('/').filter(Boolean);
+    if (segments.length === 0) return 'sk';
+    const firstSegment = segments[0];
+    if (['sk', 'en', 'de', 'cs'].includes(firstSegment)) {
+      return firstSegment;
+    }
+    return 'sk';
+  };
+
+  const locale = getLocaleFromPath(pathname);
+
   return (
     <main className="min-h-screen">
       {/* 1. Hero Section with Device Visualization */}
@@ -36,7 +56,7 @@ export default function WebLandingPage() {
           </div>
           <div className="absolute bottom-40 left-20 animate-bounce" style={{animationDelay: '1s'}}>
             <div className="bg-white rounded-full p-3 shadow-lg">
-              <Tablet className="text-purple-500 w-6 h-6" />
+              <TabletSmartphone className="text-purple-500 w-6 h-6" />
             </div>
           </div>
           <div className="absolute bottom-20 right-10 animate-pulse" style={{animationDelay: '2s'}}>
@@ -59,25 +79,25 @@ export default function WebLandingPage() {
             </div>
             
             <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-[#023047]">
-              Weby & Landing pages, ktoré konvertujú.
+              {t('title')}
             </h1>
             <p className="font-mono text-xl md:text-2xl lg:text-3xl mb-8 text-[#023047] font-medium">
-              Moderné, rýchle a konverzne optimalizované webstránky.
+              {t('subtitle')}
             </p>
             <div className="font-mono text-lg md:text-xl mb-12 text-[#023047] max-w-4xl">
               <p className="mb-4">
-                Webstránka je tvoja digitálna vizitka. Je to prvé, čo zákazníci uvidia a posúdia.
+                {t('description1')}
               </p>
               <p className="mb-4">
-                V NextLayer Studio robíme weby, ktoré sú &quot;smart&quot; – rýchle, responzívne, konverzne optimalizované a technicky dokonalé.
+                {t('description2')}
               </p>
               <p>
-                Od návrhu cez vývoj až po optimalizáciu – všetko s dôrazom na používateľský zážitok a konverzie.
+                {t('description3')}
               </p>
             </div>
-            <Link href="/sk/kontakt">
+            <Link href={`/${locale}/kontakt`}>
               <PaletteButton variant="secondary" className="text-lg px-8 py-4">
-                Spustiť web projekt
+                {t('ctaButton')}
               </PaletteButton>
             </Link>
           </div>
@@ -87,7 +107,7 @@ export default function WebLandingPage() {
       {/* 2. Web Development Stats */}
       <section className="max-w-7xl mx-auto py-20 px-4">
         <h2 className="font-heading text-3xl md:text-4xl font-bold mb-12 text-center text-[#023047]">
-          Prečo moderný web funguje?
+          {t('whyModernWebWorks.title')}
         </h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
@@ -96,8 +116,8 @@ export default function WebLandingPage() {
               <Zap className="text-blue-600 w-8 h-8" />
             </div>
             <div className="text-3xl font-bold text-[#219EBC] mb-2">2.5s</div>
-            <div className="font-mono text-gray-700">Priemerný čas načítania</div>
-            <div className="text-sm text-gray-500 mt-2">Pre úspešné weby</div>
+            <div className="font-mono text-gray-700">{t('stats.averageLoadTime')}</div>
+            <div className="text-sm text-gray-500 mt-2">{t('stats.forSuccessfulWebsites')}</div>
           </div>
           
           <div className="bg-white rounded-2xl shadow-xl p-6 text-center hover:scale-105 transition-transform duration-300">
@@ -105,8 +125,8 @@ export default function WebLandingPage() {
               <Smartphone className="text-green-600 w-8 h-8" />
             </div>
             <div className="text-3xl font-bold text-[#219EBC] mb-2">68%</div>
-            <div className="font-mono text-gray-700">Mobilný traffic</div>
-            <div className="text-sm text-gray-500 mt-2">Na moderných weboch</div>
+            <div className="font-mono text-gray-700">{t('stats.mobileTraffic')}</div>
+            <div className="text-sm text-gray-500 mt-2">{t('stats.onModernWebsites')}</div>
           </div>
           
           <div className="bg-white rounded-2xl shadow-xl p-6 text-center hover:scale-105 transition-transform duration-300">
@@ -114,8 +134,8 @@ export default function WebLandingPage() {
               <Eye className="text-purple-600 w-8 h-8" />
             </div>
             <div className="text-3xl font-bold text-[#219EBC] mb-2">3s</div>
-            <div className="font-mono text-gray-700">Čas na rozhodnutie</div>
-            <div className="text-sm text-gray-500 mt-2">Používateľa oďaľ</div>
+            <div className="font-mono text-gray-700">{t('stats.decisionTime')}</div>
+            <div className="text-sm text-gray-500 mt-2">{t('stats.userLeaves')}</div>
           </div>
           
           <div className="bg-white rounded-2xl shadow-xl p-6 text-center hover:scale-105 transition-transform duration-300">
@@ -123,8 +143,8 @@ export default function WebLandingPage() {
               <ArrowUpRight className="text-orange-600 w-8 h-8" />
             </div>
             <div className="text-3xl font-bold text-[#219EBC] mb-2">+200%</div>
-            <div className="font-mono text-gray-700">Priemerný nárast konverzií</div>
-            <div className="text-sm text-gray-500 mt-2">Po optimalizácii</div>
+            <div className="font-mono text-gray-700">{t('stats.averageConversionIncrease')}</div>
+            <div className="text-sm text-gray-500 mt-2">{t('stats.afterOptimization')}</div>
           </div>
         </div>
         
@@ -132,54 +152,54 @@ export default function WebLandingPage() {
           {/* Left: Text */}
           <div>
             <h3 className="font-heading text-3xl md:text-4xl font-bold mb-6 text-[#023047]">
-              Čo je moderný web?
+              {t('whatIsModernWeb.title')}
             </h3>
             <div className="font-mono text-lg space-y-4 text-gray-800">
               <p>
-                Moderný web je rýchly, responzívny a optimalizovaný pre všetky zariadenia.
+                {t('whatIsModernWeb.description1')}
               </p>
               <p>
-                Je to web, ktorý sa načíta za menej ako 3 sekundy, vyzerá perfektne na mobile aj desktope a vedie zákazníkov k akcii.
+                {t('whatIsModernWeb.description2')}
               </p>
               <p>
-                Je to web, ktorý je technicky dokonalý, bezpečný a prispôsobený pre vyhľadávače.
+                {t('whatIsModernWeb.description3')}
               </p>
             </div>
           </div>
           
           {/* Right: Technology Stack */}
           <div className="bg-white rounded-2xl shadow-xl p-8">
-            <h3 className="font-heading text-xl font-bold mb-6 text-[#023047] text-center">Technológie, ktoré používame</h3>
+            <h3 className="font-heading text-xl font-bold mb-6 text-[#023047] text-center">{t('technologies.title')}</h3>
             <div className="grid grid-cols-2 gap-4">
               <div className="flex items-center gap-3 p-3 rounded-lg bg-blue-50">
                 <div className="bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">R</div>
                 <div>
-                  <h4 className="font-heading font-bold text-[#023047]">React/Next.js</h4>
-                  <p className="font-mono text-sm text-gray-700">Moderný frontend</p>
+                  <h4 className="font-heading font-bold text-[#023047]">{t('technologies.reactNextjs.title')}</h4>
+                  <p className="font-mono text-sm text-gray-700">{t('technologies.reactNextjs.description')}</p>
                 </div>
               </div>
               
               <div className="flex items-center gap-3 p-3 rounded-lg bg-green-50">
                 <div className="bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">T</div>
                 <div>
-                  <h4 className="font-heading font-bold text-[#023047]">TypeScript</h4>
-                  <p className="font-mono text-sm text-gray-700">Typová bezpečnosť</p>
+                  <h4 className="font-heading font-bold text-[#023047]">{t('technologies.typescript.title')}</h4>
+                  <p className="font-mono text-sm text-gray-700">{t('technologies.typescript.description')}</p>
                 </div>
               </div>
               
               <div className="flex items-center gap-3 p-3 rounded-lg bg-purple-50">
                 <div className="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">T</div>
                 <div>
-                  <h4 className="font-heading font-bold text-[#023047]">Tailwind CSS</h4>
-                  <p className="font-mono text-sm text-gray-700">Rýchly vývoj</p>
+                  <h4 className="font-heading font-bold text-[#023047]">{t('technologies.tailwindCss.title')}</h4>
+                  <p className="font-mono text-sm text-gray-700">{t('technologies.tailwindCss.description')}</p>
                 </div>
               </div>
               
               <div className="flex items-center gap-3 p-3 rounded-lg bg-orange-50">
                 <div className="bg-orange-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">S</div>
                 <div>
-                  <h4 className="font-heading font-bold text-[#023047]">SEO optimalizácia</h4>
-                  <p className="font-mono text-sm text-gray-700">Viditeľnosť</p>
+                  <h4 className="font-heading font-bold text-[#023047]">{t('technologies.seoOptimization.title')}</h4>
+                  <p className="font-mono text-sm text-gray-700">{t('technologies.seoOptimization.description')}</p>
                 </div>
               </div>
             </div>
@@ -190,7 +210,7 @@ export default function WebLandingPage() {
       {/* 3. How We Work Section with Development Process */}
       <section className="max-w-7xl mx-auto py-20 px-4">
         <h2 className="font-heading text-3xl md:text-4xl font-bold mb-12 text-center text-[#023047]">
-          Ako pracujeme na webe
+          {t('howWeWork.title')}
         </h2>
         
         <div className="relative">
@@ -203,14 +223,14 @@ export default function WebLandingPage() {
                 <div className="bg-white rounded-2xl shadow-xl p-6 border-l-4 border-[#219EBC] hover:scale-105 transition-transform duration-300">
                   <div className="flex items-center gap-4 mb-4">
                     <div className="bg-[#219EBC] text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl">1</div>
-                    <h3 className="font-heading text-xl font-bold text-[#023047]">Analýza a plánovanie</h3>
+                    <h3 className="font-heading text-xl font-bold text-[#023047]">{t('howWeWork.step1.title')}</h3>
                   </div>
                   <p className="font-mono text-gray-700">
-                    Zistíme tvoje požiadavky a naplánujeme architektúru.
+                    {t('howWeWork.step1.description')}
                   </p>
                   <div className="mt-4 flex items-center gap-2 text-sm text-gray-500">
-                    <Users className="w-4 h-4" />
-                    <span>User research</span>
+                    <Cpu className="w-4 h-4" />
+                    <span>Analýza</span>
                   </div>
                 </div>
               </div>
@@ -218,14 +238,14 @@ export default function WebLandingPage() {
                 <div className="bg-white rounded-2xl shadow-xl p-6 border-l-4 border-[#219EBC] hover:scale-105 transition-transform duration-300">
                   <div className="flex items-center gap-4 mb-4">
                     <div className="bg-[#219EBC] text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl">2</div>
-                    <h3 className="font-heading text-xl font-bold text-[#023047]">Design a UX</h3>
+                    <h3 className="font-heading text-xl font-bold text-[#023047]">{t('howWeWork.step2.title')}</h3>
                   </div>
                   <p className="font-mono text-gray-700">
-                    Vytvoríme wireframy a vizuálny dizajn.
+                    {t('howWeWork.step2.description')}
                   </p>
                   <div className="mt-4 flex items-center gap-2 text-sm text-gray-500">
                     <Palette className="w-4 h-4" />
-                    <span>UI/UX design</span>
+                    <span>Dizajn</span>
                   </div>
                 </div>
               </div>
@@ -236,14 +256,14 @@ export default function WebLandingPage() {
                 <div className="bg-white rounded-2xl shadow-xl p-6 border-l-4 border-[#219EBC] hover:scale-105 transition-transform duration-300">
                   <div className="flex items-center gap-4 mb-4">
                     <div className="bg-[#219EBC] text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl">3</div>
-                    <h3 className="font-heading text-xl font-bold text-[#023047]">Vývoj frontendu</h3>
+                    <h3 className="font-heading text-xl font-bold text-[#023047]">{t('howWeWork.step3.title')}</h3>
                   </div>
                   <p className="font-mono text-gray-700">
-                    Programujeme responzívny a rýchly frontend.
+                    {t('howWeWork.step3.description')}
                   </p>
                   <div className="mt-4 flex items-center gap-2 text-sm text-gray-500">
                     <Code className="w-4 h-4" />
-                    <span>React/Next.js</span>
+                    <span>Vývoj</span>
                   </div>
                 </div>
               </div>
@@ -251,14 +271,14 @@ export default function WebLandingPage() {
                 <div className="bg-white rounded-2xl shadow-xl p-6 border-l-4 border-[#219EBC] hover:scale-105 transition-transform duration-300">
                   <div className="flex items-center gap-4 mb-4">
                     <div className="bg-[#219EBC] text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl">4</div>
-                    <h3 className="font-heading text-xl font-bold text-[#023047]">Backend a databáza</h3>
+                    <h3 className="font-heading text-xl font-bold text-[#023047]">{t('howWeWork.step4.title')}</h3>
                   </div>
                   <p className="font-mono text-gray-700">
-                    Vytvoríme API a databázovú štruktúru.
+                    {t('howWeWork.step4.description')}
                   </p>
                   <div className="mt-4 flex items-center gap-2 text-sm text-gray-500">
-                    <Database className="w-4 h-4" />
-                    <span>API & Database</span>
+                    <RefreshCw className="w-4 h-4" />
+                    <span>Testovanie</span>
                   </div>
                 </div>
               </div>
@@ -269,14 +289,14 @@ export default function WebLandingPage() {
                 <div className="bg-white rounded-2xl shadow-xl p-6 border-l-4 border-[#219EBC] hover:scale-105 transition-transform duration-300">
                   <div className="flex items-center gap-4 mb-4">
                     <div className="bg-[#219EBC] text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl">5</div>
-                    <h3 className="font-heading text-xl font-bold text-[#023047]">Testovanie a optimalizácia</h3>
+                    <h3 className="font-heading text-xl font-bold text-[#023047]">{t('howWeWork.step5.title')}</h3>
                   </div>
                   <p className="font-mono text-gray-700">
-                    Testujeme na všetkých zariadeniach a optimalizujeme výkon.
+                    {t('howWeWork.step5.description')}
                   </p>
                   <div className="mt-4 flex items-center gap-2 text-sm text-gray-500">
-                    <Zap className="w-4 h-4" />
-                    <span>Performance</span>
+                    <Globe className="w-4 h-4" />
+                    <span>Spustenie</span>
                   </div>
                 </div>
               </div>
@@ -284,14 +304,14 @@ export default function WebLandingPage() {
                 <div className="bg-white rounded-2xl shadow-xl p-6 border-l-4 border-[#219EBC] hover:scale-105 transition-transform duration-300">
                   <div className="flex items-center gap-4 mb-4">
                     <div className="bg-[#219EBC] text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl">6</div>
-                    <h3 className="font-heading text-xl font-bold text-[#023047]">Spustenie a podpora</h3>
+                    <h3 className="font-heading text-xl font-bold text-[#023047]">{t('howWeWork.step6.title')}</h3>
                   </div>
                   <p className="font-mono text-gray-700">
-                    Nasadíme na server a poskytujeme technickú podporu.
+                    {t('howWeWork.step6.description')}
                   </p>
                   <div className="mt-4 flex items-center gap-2 text-sm text-gray-500">
-                    <Globe className="w-4 h-4" />
-                    <span>Deployment</span>
+                    <Users className="w-4 h-4" />
+                    <span>Podpora</span>
                   </div>
                 </div>
               </div>
@@ -303,7 +323,7 @@ export default function WebLandingPage() {
       {/* 4. What We Offer Section with Web Services */}
       <section className="max-w-7xl mx-auto py-20 px-4">
         <h2 className="font-heading text-3xl md:text-4xl font-bold mb-12 text-center text-[#023047]">
-          Čo všetko vieme zabezpečiť?
+          {t('whatWeOffer.title')}
         </h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -311,37 +331,23 @@ export default function WebLandingPage() {
             <div className="bg-gradient-to-br from-blue-500 to-blue-600 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
               <Globe className="text-white w-8 h-8" />
             </div>
-            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">Firemné weby</h3>
+            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">{t('whatWeOffer.corporateWebsites.title')}</h3>
             <p className="font-mono text-gray-700 text-sm">
-              Profesionálne webstránky
+              {t('whatWeOffer.corporateWebsites.description')}
             </p>
             <div className="mt-3 flex items-center gap-2 text-sm text-green-600">
               <ArrowUpRight className="w-4 h-4" />
-              <span>Kompletné riešenie</span>
+              <span>Profesionálny vzhľad</span>
             </div>
           </div>
           
           <div className="bg-white rounded-2xl shadow-xl p-6 hover:scale-105 transition-transform duration-300 group">
             <div className="bg-gradient-to-br from-green-500 to-green-600 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-              <Zap className="text-white w-8 h-8" />
+              <Database className="text-white w-8 h-8" />
             </div>
-            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">Landing pages</h3>
+            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">{t('whatWeOffer.ecommerceWebsites.title')}</h3>
             <p className="font-mono text-gray-700 text-sm">
-              Konverzne optimalizované
-            </p>
-            <div className="mt-3 flex items-center gap-2 text-sm text-green-600">
-              <ArrowUpRight className="w-4 h-4" />
-              <span>Maximálne konverzie</span>
-            </div>
-          </div>
-          
-          <div className="bg-white rounded-2xl shadow-xl p-6 hover:scale-105 transition-transform duration-300 group">
-            <div className="bg-gradient-to-br from-purple-500 to-purple-600 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-              <Smartphone className="text-white w-8 h-8" />
-            </div>
-            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">E-commerce weby</h3>
-            <p className="font-mono text-gray-700 text-sm">
-              Online obchody
+              {t('whatWeOffer.ecommerceWebsites.description')}
             </p>
             <div className="mt-3 flex items-center gap-2 text-sm text-green-600">
               <ArrowUpRight className="w-4 h-4" />
@@ -350,72 +356,72 @@ export default function WebLandingPage() {
           </div>
           
           <div className="bg-white rounded-2xl shadow-xl p-6 hover:scale-105 transition-transform duration-300 group">
-            <div className="bg-gradient-to-br from-orange-500 to-orange-600 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-              <Palette className="text-white w-8 h-8" />
+            <div className="bg-gradient-to-br from-purple-500 to-purple-600 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+              <Eye className="text-white w-8 h-8" />
             </div>
-            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">UI/UX dizajn</h3>
+            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">{t('whatWeOffer.landingPages.title')}</h3>
             <p className="font-mono text-gray-700 text-sm">
-              Používateľské rozhranie
+              {t('whatWeOffer.landingPages.description')}
             </p>
             <div className="mt-3 flex items-center gap-2 text-sm text-green-600">
               <ArrowUpRight className="w-4 h-4" />
-              <span>Intuitívne ovládanie</span>
+              <span>Viac konverzií</span>
+            </div>
+          </div>
+          
+          <div className="bg-white rounded-2xl shadow-xl p-6 hover:scale-105 transition-transform duration-300 group">
+            <div className="bg-gradient-to-br from-orange-500 to-orange-600 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+              <Cpu className="text-white w-8 h-8" />
+            </div>
+            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">{t('whatWeOffer.webApplications.title')}</h3>
+            <p className="font-mono text-gray-700 text-sm">
+              {t('whatWeOffer.webApplications.description')}
+            </p>
+            <div className="mt-3 flex items-center gap-2 text-sm text-green-600">
+              <ArrowUpRight className="w-4 h-4" />
+              <span>Komplexné riešenia</span>
             </div>
           </div>
           
           <div className="bg-white rounded-2xl shadow-xl p-6 hover:scale-105 transition-transform duration-300 group">
             <div className="bg-gradient-to-br from-pink-500 to-pink-600 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-              <Code className="text-white w-8 h-8" />
+              <Smartphone className="text-white w-8 h-8" />
             </div>
-            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">Webové aplikácie</h3>
+            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">{t('whatWeOffer.responsiveDesign.title')}</h3>
             <p className="font-mono text-gray-700 text-sm">
-              Komplexné systémy
+              {t('whatWeOffer.responsiveDesign.description')}
             </p>
             <div className="mt-3 flex items-center gap-2 text-sm text-green-600">
               <ArrowUpRight className="w-4 h-4" />
-              <span>Automatizácia procesov</span>
+              <span>Všetky zariadenia</span>
             </div>
           </div>
           
           <div className="bg-white rounded-2xl shadow-xl p-6 hover:scale-105 transition-transform duration-300 group">
             <div className="bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-              <Cpu className="text-white w-8 h-8" />
+              <Zap className="text-white w-8 h-8" />
             </div>
-            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">API integrácie</h3>
+            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">{t('whatWeOffer.performanceOptimization.title')}</h3>
             <p className="font-mono text-gray-700 text-sm">
-              Spojenie s externými službami
+              {t('whatWeOffer.performanceOptimization.description')}
             </p>
             <div className="mt-3 flex items-center gap-2 text-sm text-green-600">
               <ArrowUpRight className="w-4 h-4" />
-              <span>Automatizácia</span>
+              <span>Rýchlosť</span>
             </div>
           </div>
           
           <div className="bg-white rounded-2xl shadow-xl p-6 hover:scale-105 transition-transform duration-300 group">
             <div className="bg-gradient-to-br from-teal-500 to-teal-600 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-              <Eye className="text-white w-8 h-8" />
-            </div>
-            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">SEO optimalizácia</h3>
-            <p className="font-mono text-gray-700 text-sm">
-              Pre vyhľadávače
-            </p>
-            <div className="mt-3 flex items-center gap-2 text-sm text-green-600">
-              <ArrowUpRight className="w-4 h-4" />
-              <span>Lepšia viditeľnosť</span>
-            </div>
-          </div>
-          
-          <div className="bg-white rounded-2xl shadow-xl p-6 hover:scale-105 transition-transform duration-300 group">
-            <div className="bg-gradient-to-br from-red-500 to-red-600 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
               <RefreshCw className="text-white w-8 h-8" />
             </div>
-            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">Údržba a podpora</h3>
+            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">{t('whatWeOffer.seoOptimization.title')}</h3>
             <p className="font-mono text-gray-700 text-sm">
-              Kontinuálna podpora
+              {t('whatWeOffer.seoOptimization.description')}
             </p>
             <div className="mt-3 flex items-center gap-2 text-sm text-green-600">
               <ArrowUpRight className="w-4 h-4" />
-              <span>Dlhodobá spolupráca</span>
+              <span>Viditeľnosť</span>
             </div>
           </div>
           
@@ -423,13 +429,13 @@ export default function WebLandingPage() {
             <div className="bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
               <FileSpreadsheet className="text-white w-8 h-8" />
             </div>
-            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">Pravidelné reporty a konzultácie</h3>
+            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">{t('whatWeOffer.maintenanceSupport.title')}</h3>
             <p className="font-mono text-gray-700 text-sm">
-              Mesačné vyhodnotenie s odporúčaniami
+              {t('whatWeOffer.maintenanceSupport.description')}
             </p>
             <div className="mt-3 flex items-center gap-2 text-sm text-green-600">
               <ArrowUpRight className="w-4 h-4" />
-              <span>Transparentnosť</span>
+              <span>Pokračujúca podpora</span>
             </div>
           </div>
         </div>
@@ -439,15 +445,15 @@ export default function WebLandingPage() {
       <section className="max-w-7xl mx-auto py-20 px-4">
         <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
           <h2 className="font-heading text-3xl md:text-4xl font-bold mb-8 text-center text-[#023047]">
-            Prečo to robiť s nami?
+            {t('whyAgency.title')}
           </h2>
           
           <div className="font-mono text-lg space-y-6 text-gray-800 max-w-4xl mx-auto">
             <p>
-              Pretože robíme weby, ktoré sú postavené na moderných technológiách a najlepších praktikách.
+              Pretože robíme weby, ktoré sú založené na moderných technológiách a dlhodobých výsledkoch, nie na rýchlych riešeniach.
             </p>
             <p>
-              Máme skúsenosti s rôznymi typmi projektov a vieme, čo funguje pre tvoj typ biznisu. Neexperimentujeme s tvojou online prítomnosťou.
+              Máme skúsenosti s rôznymi typmi webov a vieme, čo funguje pre tvoj typ biznisu. Neexperimentujeme s tvojou online prítomnosťou.
             </p>
             <p>
               Transparentnosť je pre nás kľúčová – vždy vieš, čo robíme a aké výsledky prináša.
@@ -461,20 +467,20 @@ export default function WebLandingPage() {
         <div className="bg-gradient-to-br from-[#219EBC] to-[#8ECAE6] rounded-2xl shadow-xl p-10 md:p-16 text-center relative overflow-hidden">
           <div className="relative z-10">
             <h2 className="font-heading text-3xl md:text-4xl font-bold mb-4 text-[#023047]">
-              Weby & Landing pages, ktoré konvertujú.
+              {t('finalCta.title')}
             </h2>
             <div className="font-mono text-lg md:text-xl mb-8 text-[#023047]">
-              Nechaj si vytvoriť web, ktorý bude rýchly, responzívny a bude ti prinášať zákazníkov.
+              {t('finalCta.description1')}
             </div>
             <div className="font-mono text-lg md:text-xl mb-8 text-[#023047]">
-              S nami budeš mať web, ktorý sa načíta za sekundy, vyzerá perfektne na všetkých zariadeniach a vedie zákazníkov k akcii.
+              {t('finalCta.description2')}
             </div>
             <div className="font-mono text-lg md:text-xl mb-8 text-[#023047]">
-              Od návrhu až po spustenie a dlhodobú podporu.
+              {t('finalCta.description3')}
             </div>
-            <Link href="/sk/kontakt">
+            <Link href={`/${locale}/kontakt`}>
               <PaletteButton variant="secondary" className="text-lg px-8 py-4">
-                Spustiť web projekt
+                {t('ctaButton')}
               </PaletteButton>
             </Link>
           </div>

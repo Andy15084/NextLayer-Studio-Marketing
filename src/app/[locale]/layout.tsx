@@ -55,12 +55,16 @@ export default async function LocaleLayout({
   }
   
   // Get messages for current locale using next-intl
-  const messages = await getMessages();
+  const messages = await getMessages({ locale });
+
+  // Debug logs
+  console.log('Loaded locale:', locale);
+  console.log('Loaded subtitle:', messages.home?.subtitle);
 
   return (
     <html lang={locale} className={`${geistSans.variable} ${geistMono.variable} ${albertSans.variable} ${robotoMono.variable} antialiased`}>
       <body className="font-sans antialiased min-h-screen flex flex-col bg-[#c2fff7]">
-        <NextIntlClientProvider messages={messages}>
+        <NextIntlClientProvider messages={messages} locale={locale}>
           <Navbar />
           <div className="flex-grow">
             {children}

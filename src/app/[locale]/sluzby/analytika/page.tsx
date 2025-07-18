@@ -1,20 +1,20 @@
+'use client';
+
+import { useTranslations } from 'next-intl';
+import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import PaletteButton from '@/components/PaletteButton';
 import { 
   Users, 
-  Clock, 
-  DoorOpen, 
   BarChart3, 
   DollarSign, 
   Target, 
-  Smartphone,
   RefreshCw,
   FileSpreadsheet,
   Activity,
   PieChart,
   LineChart,
   BarChart,
-  Eye,
   MousePointer,
   ArrowUpRight,
   ArrowDownRight,
@@ -24,6 +24,22 @@ import {
 } from 'lucide-react';
 
 export default function AnalytikaPage() {
+  const t = useTranslations('analytics');
+  const pathname = usePathname();
+  
+  // Extract locale from pathname
+  const getLocaleFromPath = (path: string): string => {
+    const segments = path.split('/').filter(Boolean);
+    if (segments.length === 0) return 'sk';
+    const firstSegment = segments[0];
+    if (['sk', 'en', 'de', 'cs'].includes(firstSegment)) {
+      return firstSegment;
+    }
+    return 'sk';
+  };
+
+  const locale = getLocaleFromPath(pathname);
+
   return (
     <main className="min-h-screen">
       {/* 1. Hero Section with Data Visualization */}
@@ -65,25 +81,25 @@ export default function AnalytikaPage() {
             </div>
             
             <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-[#023047]">
-              Analytika, ktorá dáva zmysel.
+              {t('title')}
             </h1>
             <p className="font-mono text-xl md:text-2xl lg:text-3xl mb-8 text-[#023047] font-medium">
-              Dáta, ktoré ti povedia, čo robiť ďalej.
+              {t('subtitle')}
             </p>
             <div className="font-mono text-lg md:text-xl mb-12 text-[#023047] max-w-4xl">
               <p className="mb-4">
-                Analytika nie je len o číslach. Je o pochopení správania zákazníkov, identifikácii príležitostí a optimalizácii kampán.
+                {t('description1')}
               </p>
               <p className="mb-4">
-                V NextLayer Studio robíme analýzy, ktoré sú prehľadné, akčné a pomáhajú ti robiť lepšie rozhodnutia.
+                {t('description2')}
               </p>
               <p>
-                Od Google Analytics cez Facebook Insights až po vlastné reporty – všetko s dôrazom na praktické využitie.
+                {t('description3')}
               </p>
             </div>
-            <Link href="/sk/kontakt">
+            <Link href={`/${locale}/kontakt`}>
               <PaletteButton variant="secondary" className="text-lg px-8 py-4">
-                Spustiť analýzu
+                {t('ctaButton')}
               </PaletteButton>
             </Link>
           </div>
@@ -93,14 +109,14 @@ export default function AnalytikaPage() {
       {/* 2. Analytics Dashboard Mockup */}
       <section className="max-w-7xl mx-auto py-20 px-4">
         <h2 className="font-heading text-3xl md:text-4xl font-bold mb-12 text-center text-[#023047]">
-          Prečo je analytika dôležitá?
+          {t('whyAnalyticsImportant.title')}
         </h2>
         
         <div className="bg-white rounded-2xl shadow-xl p-8 mb-16">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
             <div className="bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl p-6 text-white text-center">
               <div className="text-3xl font-bold mb-2">12,847</div>
-              <div className="font-mono text-sm opacity-90">Návštevníkov</div>
+              <div className="font-mono text-sm opacity-90">{t('stats.visitors')}</div>
               <div className="flex items-center justify-center gap-1 mt-2 text-green-300">
                 <ArrowUpRight className="w-4 h-4" />
                 <span className="text-sm">+23%</span>
@@ -109,7 +125,7 @@ export default function AnalytikaPage() {
             
             <div className="bg-gradient-to-br from-green-500 to-green-600 rounded-xl p-6 text-white text-center">
               <div className="text-3xl font-bold mb-2">2:45</div>
-              <div className="font-mono text-sm opacity-90">Priemerný čas</div>
+              <div className="font-mono text-sm opacity-90">{t('stats.averageTime')}</div>
               <div className="flex items-center justify-center gap-1 mt-2 text-green-300">
                 <ArrowUpRight className="w-4 h-4" />
                 <span className="text-sm">+15%</span>
@@ -118,7 +134,7 @@ export default function AnalytikaPage() {
             
             <div className="bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl p-6 text-white text-center">
               <div className="text-3xl font-bold mb-2">3.2%</div>
-              <div className="font-mono text-sm opacity-90">Konverzia</div>
+              <div className="font-mono text-sm opacity-90">{t('stats.conversion')}</div>
               <div className="flex items-center justify-center gap-1 mt-2 text-red-300">
                 <ArrowDownRight className="w-4 h-4" />
                 <span className="text-sm">-2%</span>
@@ -127,7 +143,7 @@ export default function AnalytikaPage() {
             
             <div className="bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl p-6 text-white text-center">
               <div className="text-3xl font-bold mb-2">€2,847</div>
-              <div className="font-mono text-sm opacity-90">ROI</div>
+              <div className="font-mono text-sm opacity-90">{t('stats.roi')}</div>
               <div className="flex items-center justify-center gap-1 mt-2 text-green-300">
                 <ArrowUpRight className="w-4 h-4" />
                 <span className="text-sm">+45%</span>
@@ -139,29 +155,29 @@ export default function AnalytikaPage() {
             {/* Left: Text */}
             <div>
               <h3 className="font-heading text-3xl md:text-4xl font-bold mb-6 text-[#023047]">
-                Čo je analytika?
+                {t('whatIsAnalytics.title')}
               </h3>
               <div className="font-mono text-lg space-y-4 text-gray-800">
                 <p>
-                  Analytika je systém zberu, analýzy a interpretácie dát o návštevníkoch tvojho webu.
+                  {t('whatIsAnalytics.description1')}
                 </p>
                 <p>
-                  Pomáha ti pochopiť, ako sa ľudia správajú na tvojej stránke, čo ich zaujíma a kde majú problémy.
+                  {t('whatIsAnalytics.description2')}
                 </p>
                 <p>
-                  S týmito informáciami môžeš optimalizovať web, kampane a celkovú stratégiu.
+                  {t('whatIsAnalytics.description3')}
                 </p>
               </div>
             </div>
             
             {/* Right: Data Points */}
             <div className="bg-gray-50 rounded-2xl p-8">
-              <h3 className="font-heading text-xl font-bold mb-6 text-[#023047] text-center">Kľúčové metriky</h3>
+              <h3 className="font-heading text-xl font-bold mb-6 text-[#023047] text-center">{t('keyMetrics.title')}</h3>
               <div className="space-y-4">
                 <div className="flex items-center justify-between p-3 bg-white rounded-lg">
                   <div className="flex items-center gap-3">
                     <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
-                    <span className="font-mono text-sm">Návštevnosť</span>
+                    <span className="font-mono text-sm">{t('keyMetrics.traffic')}</span>
                   </div>
                   <div className="w-24 bg-gray-200 rounded-full h-2">
                     <div className="bg-blue-500 h-2 rounded-full" style={{width: '85%'}}></div>
@@ -171,7 +187,7 @@ export default function AnalytikaPage() {
                 <div className="flex items-center justify-between p-3 bg-white rounded-lg">
                   <div className="flex items-center gap-3">
                     <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-                    <span className="font-mono text-sm">Engagement</span>
+                    <span className="font-mono text-sm">{t('keyMetrics.engagement')}</span>
                   </div>
                   <div className="w-24 bg-gray-200 rounded-full h-2">
                     <div className="bg-green-500 h-2 rounded-full" style={{width: '72%'}}></div>
@@ -181,7 +197,7 @@ export default function AnalytikaPage() {
                 <div className="flex items-center justify-between p-3 bg-white rounded-lg">
                   <div className="flex items-center gap-3">
                     <div className="w-3 h-3 bg-purple-500 rounded-full"></div>
-                    <span className="font-mono text-sm">Konverzie</span>
+                    <span className="font-mono text-sm">{t('keyMetrics.conversions')}</span>
                   </div>
                   <div className="w-24 bg-gray-200 rounded-full h-2">
                     <div className="bg-purple-500 h-2 rounded-full" style={{width: '45%'}}></div>
@@ -191,7 +207,7 @@ export default function AnalytikaPage() {
                 <div className="flex items-center justify-between p-3 bg-white rounded-lg">
                   <div className="flex items-center gap-3">
                     <div className="w-3 h-3 bg-orange-500 rounded-full"></div>
-                    <span className="font-mono text-sm">ROI</span>
+                    <span className="font-mono text-sm">{t('keyMetrics.roi')}</span>
                   </div>
                   <div className="w-24 bg-gray-200 rounded-full h-2">
                     <div className="bg-orange-500 h-2 rounded-full" style={{width: '93%'}}></div>
@@ -203,14 +219,14 @@ export default function AnalytikaPage() {
         </div>
       </section>
 
-      {/* 3. How We Work Section with Data Flow */}
+      {/* 3. How We Work Section with Analytics Process */}
       <section className="max-w-7xl mx-auto py-20 px-4">
         <h2 className="font-heading text-3xl md:text-4xl font-bold mb-12 text-center text-[#023047]">
-          Ako to robíme?
+          {t('howWeWork.title')}
         </h2>
         
         <div className="relative">
-          {/* Data Flow Visualization */}
+          {/* Analytics Process Flow */}
           <div className="hidden lg:block absolute left-1/2 transform -translate-x-1/2 w-1 bg-gradient-to-b from-[#219EBC] to-[#7dffee] h-full"></div>
           
           <div className="space-y-8">
@@ -219,14 +235,14 @@ export default function AnalytikaPage() {
                 <div className="bg-white rounded-2xl shadow-xl p-6 border-l-4 border-[#219EBC] hover:scale-105 transition-transform duration-300">
                   <div className="flex items-center gap-4 mb-4">
                     <div className="bg-[#219EBC] text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl">1</div>
-                    <h3 className="font-heading text-xl font-bold text-[#023047]">Audit analytiky</h3>
+                    <h3 className="font-heading text-xl font-bold text-[#023047]">{t('howWeWork.step1.title')}</h3>
                   </div>
                   <p className="font-mono text-gray-700">
-                    Zistíme, čo už máš nastavené a čo chýba.
+                    {t('howWeWork.step1.description')}
                   </p>
                   <div className="mt-4 flex items-center gap-2 text-sm text-gray-500">
                     <Database className="w-4 h-4" />
-                    <span>Dátový audit</span>
+                    <span>Tracking</span>
                   </div>
                 </div>
               </div>
@@ -234,14 +250,14 @@ export default function AnalytikaPage() {
                 <div className="bg-white rounded-2xl shadow-xl p-6 border-l-4 border-[#219EBC] hover:scale-105 transition-transform duration-300">
                   <div className="flex items-center gap-4 mb-4">
                     <div className="bg-[#219EBC] text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl">2</div>
-                    <h3 className="font-heading text-xl font-bold text-[#023047]">Implementácia nástrojov</h3>
+                    <h3 className="font-heading text-xl font-bold text-[#023047]">{t('howWeWork.step2.title')}</h3>
                   </div>
                   <p className="font-mono text-gray-700">
-                    Prepojíme tvoj web s Google Analytics, GTM, Search Console.
+                    {t('howWeWork.step2.description')}
                   </p>
                   <div className="mt-4 flex items-center gap-2 text-sm text-gray-500">
-                    <Zap className="w-4 h-4" />
-                    <span>Technické nastavenie</span>
+                    <Filter className="w-4 h-4" />
+                    <span>Data collection</span>
                   </div>
                 </div>
               </div>
@@ -252,14 +268,14 @@ export default function AnalytikaPage() {
                 <div className="bg-white rounded-2xl shadow-xl p-6 border-l-4 border-[#219EBC] hover:scale-105 transition-transform duration-300">
                   <div className="flex items-center gap-4 mb-4">
                     <div className="bg-[#219EBC] text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl">3</div>
-                    <h3 className="font-heading text-xl font-bold text-[#023047]">Definovanie cieľov</h3>
+                    <h3 className="font-heading text-xl font-bold text-[#023047]">{t('howWeWork.step3.title')}</h3>
                   </div>
                   <p className="font-mono text-gray-700">
-                    Nastavíme sledovanie kľúčových akcií a konverzií.
+                    {t('howWeWork.step3.description')}
                   </p>
                   <div className="mt-4 flex items-center gap-2 text-sm text-gray-500">
-                    <Target className="w-4 h-4" />
-                    <span>KPI definícia</span>
+                    <BarChart3 className="w-4 h-4" />
+                    <span>Analysis</span>
                   </div>
                 </div>
               </div>
@@ -267,14 +283,14 @@ export default function AnalytikaPage() {
                 <div className="bg-white rounded-2xl shadow-xl p-6 border-l-4 border-[#219EBC] hover:scale-105 transition-transform duration-300">
                   <div className="flex items-center gap-4 mb-4">
                     <div className="bg-[#219EBC] text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl">4</div>
-                    <h3 className="font-heading text-xl font-bold text-[#023047]">Dashboardy a reporty</h3>
+                    <h3 className="font-heading text-xl font-bold text-[#023047]">{t('howWeWork.step4.title')}</h3>
                   </div>
                   <p className="font-mono text-gray-700">
-                    Vytvoríme prehľadné reporty a vizualizácie.
+                    {t('howWeWork.step4.description')}
                   </p>
                   <div className="mt-4 flex items-center gap-2 text-sm text-gray-500">
-                    <BarChart3 className="w-4 h-4" />
-                    <span>Vizualizácia dát</span>
+                    <FileSpreadsheet className="w-4 h-4" />
+                    <span>Reports</span>
                   </div>
                 </div>
               </div>
@@ -285,14 +301,14 @@ export default function AnalytikaPage() {
                 <div className="bg-white rounded-2xl shadow-xl p-6 border-l-4 border-[#219EBC] hover:scale-105 transition-transform duration-300">
                   <div className="flex items-center gap-4 mb-4">
                     <div className="bg-[#219EBC] text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl">5</div>
-                    <h3 className="font-heading text-xl font-bold text-[#023047]">Analýza a odporúčania</h3>
+                    <h3 className="font-heading text-xl font-bold text-[#023047]">{t('howWeWork.step5.title')}</h3>
                   </div>
                   <p className="font-mono text-gray-700">
-                    Na základe dát navrhujeme ďalšie kroky a optimalizácie.
+                    {t('howWeWork.step5.description')}
                   </p>
                   <div className="mt-4 flex items-center gap-2 text-sm text-gray-500">
-                    <Activity className="w-4 h-4" />
-                    <span>Dátová analýza</span>
+                    <Zap className="w-4 h-4" />
+                    <span>Optimization</span>
                   </div>
                 </div>
               </div>
@@ -300,14 +316,14 @@ export default function AnalytikaPage() {
                 <div className="bg-white rounded-2xl shadow-xl p-6 border-l-4 border-[#219EBC] hover:scale-105 transition-transform duration-300">
                   <div className="flex items-center gap-4 mb-4">
                     <div className="bg-[#219EBC] text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl">6</div>
-                    <h3 className="font-heading text-xl font-bold text-[#023047]">Monitoring a optimalizácia</h3>
+                    <h3 className="font-heading text-xl font-bold text-[#023047]">{t('howWeWork.step6.title')}</h3>
                   </div>
                   <p className="font-mono text-gray-700">
-                    Pravidelne sledujeme vývoj a optimalizujeme stratégiu.
+                    {t('howWeWork.step6.description')}
                   </p>
                   <div className="mt-4 flex items-center gap-2 text-sm text-gray-500">
                     <RefreshCw className="w-4 h-4" />
-                    <span>Kontinuálne zlepšovanie</span>
+                    <span>Monitoring</span>
                   </div>
                 </div>
               </div>
@@ -316,34 +332,90 @@ export default function AnalytikaPage() {
         </div>
       </section>
 
-      {/* 4. What We Measure Section with Interactive Cards */}
+      {/* 4. What We Offer Section with Analytics Tools */}
       <section className="max-w-7xl mx-auto py-20 px-4">
         <h2 className="font-heading text-3xl md:text-4xl font-bold mb-12 text-center text-[#023047]">
-          Čo všetko meriame?
+          {t('whatWeOffer.title')}
         </h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <div className="bg-white rounded-2xl shadow-xl p-6 hover:scale-105 transition-transform duration-300 group">
             <div className="bg-gradient-to-br from-blue-500 to-blue-600 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-              <Users className="text-white w-8 h-8" />
+              <BarChart3 className="text-white w-8 h-8" />
             </div>
-            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">Návštevnosť webu</h3>
+            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">{t('whatWeOffer.googleAnalytics.title')}</h3>
             <p className="font-mono text-gray-700 text-sm">
-              Kto, kedy, odkiaľ
+              {t('whatWeOffer.googleAnalytics.description')}
             </p>
             <div className="mt-3 flex items-center gap-2 text-sm text-green-600">
               <ArrowUpRight className="w-4 h-4" />
-              <span>Demografické dáta</span>
+              <span>Kompletná analýza</span>
             </div>
           </div>
           
           <div className="bg-white rounded-2xl shadow-xl p-6 hover:scale-105 transition-transform duration-300 group">
             <div className="bg-gradient-to-br from-green-500 to-green-600 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-              <Clock className="text-white w-8 h-8" />
+              <Users className="text-white w-8 h-8" />
             </div>
-            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">Správanie návštevníkov</h3>
+            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">{t('whatWeOffer.facebookInsights.title')}</h3>
             <p className="font-mono text-gray-700 text-sm">
-              Čas na stránke, cesta
+              {t('whatWeOffer.facebookInsights.description')}
+            </p>
+            <div className="mt-3 flex items-center gap-2 text-sm text-green-600">
+              <ArrowUpRight className="w-4 h-4" />
+              <span>Sociálne siete</span>
+            </div>
+          </div>
+          
+          <div className="bg-white rounded-2xl shadow-xl p-6 hover:scale-105 transition-transform duration-300 group">
+            <div className="bg-gradient-to-br from-purple-500 to-purple-600 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+              <DollarSign className="text-white w-8 h-8" />
+            </div>
+            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">{t('whatWeOffer.googleAds.title')}</h3>
+            <p className="font-mono text-gray-700 text-sm">
+              {t('whatWeOffer.googleAds.description')}
+            </p>
+            <div className="mt-3 flex items-center gap-2 text-sm text-green-600">
+              <ArrowUpRight className="w-4 h-4" />
+              <span>Reklamy</span>
+            </div>
+          </div>
+          
+          <div className="bg-white rounded-2xl shadow-xl p-6 hover:scale-105 transition-transform duration-300 group">
+            <div className="bg-gradient-to-br from-orange-500 to-orange-600 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+              <FileSpreadsheet className="text-white w-8 h-8" />
+            </div>
+            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">{t('whatWeOffer.customReports.title')}</h3>
+            <p className="font-mono text-gray-700 text-sm">
+              {t('whatWeOffer.customReports.description')}
+            </p>
+            <div className="mt-3 flex items-center gap-2 text-sm text-green-600">
+              <ArrowUpRight className="w-4 h-4" />
+              <span>Vlastné metriky</span>
+            </div>
+          </div>
+          
+          <div className="bg-white rounded-2xl shadow-xl p-6 hover:scale-105 transition-transform duration-300 group">
+            <div className="bg-gradient-to-br from-pink-500 to-pink-600 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+              <Target className="text-white w-8 h-8" />
+            </div>
+            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">{t('whatWeOffer.conversionTracking.title')}</h3>
+            <p className="font-mono text-gray-700 text-sm">
+              {t('whatWeOffer.conversionTracking.description')}
+            </p>
+            <div className="mt-3 flex items-center gap-2 text-sm text-green-600">
+              <ArrowUpRight className="w-4 h-4" />
+              <span>Meranie úspechu</span>
+            </div>
+          </div>
+          
+          <div className="bg-white rounded-2xl shadow-xl p-6 hover:scale-105 transition-transform duration-300 group">
+            <div className="bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+              <MousePointer className="text-white w-8 h-8" />
+            </div>
+            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">{t('whatWeOffer.userBehavior.title')}</h3>
+            <p className="font-mono text-gray-700 text-sm">
+              {t('whatWeOffer.userBehavior.description')}
             </p>
             <div className="mt-3 flex items-center gap-2 text-sm text-green-600">
               <ArrowUpRight className="w-4 h-4" />
@@ -352,100 +424,30 @@ export default function AnalytikaPage() {
           </div>
           
           <div className="bg-white rounded-2xl shadow-xl p-6 hover:scale-105 transition-transform duration-300 group">
-            <div className="bg-gradient-to-br from-purple-500 to-purple-600 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-              <MousePointer className="text-white w-8 h-8" />
-            </div>
-            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">Interakcie a kliky</h3>
-            <p className="font-mono text-gray-700 text-sm">
-              Kde klikajú návštevníci
-            </p>
-            <div className="mt-3 flex items-center gap-2 text-sm text-green-600">
-              <ArrowUpRight className="w-4 h-4" />
-              <span>Heat maps</span>
-            </div>
-          </div>
-          
-          <div className="bg-white rounded-2xl shadow-xl p-6 hover:scale-105 transition-transform duration-300 group">
-            <div className="bg-gradient-to-br from-orange-500 to-orange-600 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-              <DollarSign className="text-white w-8 h-8" />
-            </div>
-            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">Konverzie a predaje</h3>
-            <p className="font-mono text-gray-700 text-sm">
-              Objednávky, formuláre
-            </p>
-            <div className="mt-3 flex items-center gap-2 text-sm text-green-600">
-              <ArrowUpRight className="w-4 h-4" />
-              <span>ROI tracking</span>
-            </div>
-          </div>
-          
-          <div className="bg-white rounded-2xl shadow-xl p-6 hover:scale-105 transition-transform duration-300 group">
-            <div className="bg-gradient-to-br from-pink-500 to-pink-600 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-              <Eye className="text-white w-8 h-8" />
-            </div>
-            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">Výkonnosť kampán</h3>
-            <p className="font-mono text-gray-700 text-sm">
-              CTR, CPC, ROAS
-            </p>
-            <div className="mt-3 flex items-center gap-2 text-sm text-green-600">
-              <ArrowUpRight className="w-4 h-4" />
-              <span>Campaign metrics</span>
-            </div>
-          </div>
-          
-          <div className="bg-white rounded-2xl shadow-xl p-6 hover:scale-105 transition-transform duration-300 group">
-            <div className="bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-              <Filter className="text-white w-8 h-8" />
-            </div>
-            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">SEO a organický traffic</h3>
-            <p className="font-mono text-gray-700 text-sm">
-              Pozície, kľúčové slová
-            </p>
-            <div className="mt-3 flex items-center gap-2 text-sm text-green-600">
-              <ArrowUpRight className="w-4 h-4" />
-              <span>Search performance</span>
-            </div>
-          </div>
-          
-          <div className="bg-white rounded-2xl shadow-xl p-6 hover:scale-105 transition-transform duration-300 group">
             <div className="bg-gradient-to-br from-teal-500 to-teal-600 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-              <Smartphone className="text-white w-8 h-8" />
+              <Zap className="text-white w-8 h-8" />
             </div>
-            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">Mobilné správanie</h3>
+            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">{t('whatWeOffer.performanceOptimization.title')}</h3>
             <p className="font-mono text-gray-700 text-sm">
-              Mobilný vs desktop
+              {t('whatWeOffer.performanceOptimization.description')}
             </p>
             <div className="mt-3 flex items-center gap-2 text-sm text-green-600">
               <ArrowUpRight className="w-4 h-4" />
-              <span>Device analytics</span>
+              <span>Zlepšenie</span>
             </div>
           </div>
           
           <div className="bg-white rounded-2xl shadow-xl p-6 hover:scale-105 transition-transform duration-300 group">
             <div className="bg-gradient-to-br from-red-500 to-red-600 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-              <DoorOpen className="text-white w-8 h-8" />
+              <RefreshCw className="text-white w-8 h-8" />
             </div>
-            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">Exit points</h3>
+            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">{t('whatWeOffer.monthlyReports.title')}</h3>
             <p className="font-mono text-gray-700 text-sm">
-              Kde návštevníci odchádzajú
+              {t('whatWeOffer.monthlyReports.description')}
             </p>
             <div className="mt-3 flex items-center gap-2 text-sm text-green-600">
               <ArrowUpRight className="w-4 h-4" />
-              <span>Bounce analysis</span>
-            </div>
-          </div>
-          
-          <div className="bg-white rounded-2xl shadow-xl p-6 hover:scale-105 transition-transform duration-300 group">
-            <div className="bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-              <FileSpreadsheet className="text-white w-8 h-8" />
-            </div>
-            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">Pravidelné reporty a konzultácie</h3>
-            <p className="font-mono text-gray-700 text-sm">
-              Mesačné vyhodnotenie s odporúčaniami
-            </p>
-            <div className="mt-3 flex items-center gap-2 text-sm text-green-600">
-              <ArrowUpRight className="w-4 h-4" />
-              <span>Transparentnosť</span>
+              <span>Pravidelné reporty</span>
             </div>
           </div>
         </div>
@@ -455,18 +457,18 @@ export default function AnalytikaPage() {
       <section className="max-w-7xl mx-auto py-20 px-4">
         <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
           <h2 className="font-heading text-3xl md:text-4xl font-bold mb-8 text-center text-[#023047]">
-            Prečo to robiť s nami?
+            {t('whyAgency.title')}
           </h2>
           
           <div className="font-mono text-lg space-y-6 text-gray-800 max-w-4xl mx-auto">
             <p>
-              Pretože robíme analytiku, ktorá je založená na reálnych dátach a praktických odporúčaniach.
+              Pretože robíme analýzy, ktoré sú založené na dátach a poskytujú jasné poznatky, nie na rýchlych reportoch.
             </p>
             <p>
-              Máme skúsenosti s rôznymi analytickými nástrojmi a vieme, ktoré metriky sú dôležité pre tvoj typ biznisu.
+              Máme skúsenosti s rôznymi analytickými nástrojmi a vieme, čo funguje pre tvoj typ biznisu. Neexperimentujeme s tvojimi dátami.
             </p>
             <p>
-              Transparentnosť je pre nás kľúčová – vždy vieš, čo meriame a aké výsledky to prináša.
+              Transparentnosť je pre nás kľúčová – vždy vieš, čo robíme a aké výsledky prináša.
             </p>
           </div>
         </div>
@@ -477,20 +479,20 @@ export default function AnalytikaPage() {
         <div className="bg-gradient-to-br from-[#219EBC] to-[#8ECAE6] rounded-2xl shadow-xl p-10 md:p-16 text-center relative overflow-hidden">
           <div className="relative z-10">
             <h2 className="font-heading text-3xl md:text-4xl font-bold mb-4 text-[#023047]">
-              Analytika, ktorá dáva zmysel.
+              {t('finalCta.title')}
             </h2>
             <div className="font-mono text-lg md:text-xl mb-8 text-[#023047]">
-              Nechaj si vytvoriť analytický systém, ktorý ti bude dávať jasné odpovede na otázky o tvojom biznise.
+              {t('finalCta.description1')}
             </div>
             <div className="font-mono text-lg md:text-xl mb-8 text-[#023047]">
-              S nami budeš vedieť presne, čo funguje, kde sú príležitosti a ako optimalizovať svoje kampane.
+              {t('finalCta.description2')}
             </div>
             <div className="font-mono text-lg md:text-xl mb-8 text-[#023047]">
-              Od implementácie až po pravidelný monitoring a konzultácie.
+              {t('finalCta.description3')}
             </div>
-            <Link href="/sk/kontakt">
+            <Link href={`/${locale}/kontakt`}>
               <PaletteButton variant="secondary" className="text-lg px-8 py-4">
-                Spustiť analýzu
+                {t('ctaButton')}
               </PaletteButton>
             </Link>
           </div>

@@ -1,29 +1,34 @@
+'use client';
+
+import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 import PaletteButton from '@/components/PaletteButton';
 import { 
-  FileText, 
-  Video, 
-  Palette, 
-  Sparkles, 
   PenTool, 
-  ClipboardList,
-  Camera,
-  Target,
-  Megaphone,
-  Play,
+  Target, 
+  BookOpen,
+  Zap,
+  FileText,
   Image,
+  Video,
+  Mic,
+  Play,
   Type,
   Music,
-  Zap,
+  Palette,
+  Sparkles,
   Eye,
   ArrowUpRight,
+  Film,
+  Megaphone,
   Layers,
-  BookOpen,
-  Mic,
-  Film
+  Camera,
+  ClipboardList
 } from 'lucide-react';
 
-export default function KontentPage() {
+export default function ContentPage() {
+  const t = useTranslations('content');
+  
   return (
     <main className="min-h-screen">
       {/* 1. Hero Section with Creative Elements */}
@@ -65,25 +70,25 @@ export default function KontentPage() {
             </div>
             
             <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-[#023047]">
-              Kontent, ktorý sa číta.
+              {t('hero.title')}
             </h1>
             <p className="font-mono text-xl md:text-2xl lg:text-3xl mb-8 text-[#023047] font-medium">
-              Obsah, ktorý zaujme, poučí a konvertuje.
+              {t('hero.subtitle')}
             </p>
             <div className="font-mono text-lg md:text-xl mb-12 text-[#023047] max-w-4xl">
               <p className="mb-4">
-                Dobrý kontent je základom každého úspešného marketingu. Je to spôsob, ako sa dostaneš k zákazníkom bez reklám.
+                {t('hero.description1')}
               </p>
               <p className="mb-4">
-                V NextLayer Studio robíme obsah, ktorý nie je len o &quot;byť vidieť&quot; – je o tom, aby si ľudí zaujal, poučil a presvedčil.
+                {t('hero.description2')}
               </p>
               <p>
-                Od článkov cez videá až po infografiky – všetko s dôrazom na hodnotu a autenticitu.
+                {t('hero.description3')}
               </p>
             </div>
-            <Link href="/sk/kontakt">
+            <Link href="../../kontakt">
               <PaletteButton variant="secondary" className="text-lg px-8 py-4">
-                Vytvoriť kontent
+                {t('hero.ctaButton')}
               </PaletteButton>
             </Link>
           </div>
@@ -93,7 +98,7 @@ export default function KontentPage() {
       {/* 2. Content Creation Stats */}
       <section className="max-w-7xl mx-auto py-20 px-4">
         <h2 className="font-heading text-3xl md:text-4xl font-bold mb-12 text-center text-[#023047]">
-          Prečo je kvalitný kontent dôležitý?
+          {t('stats.title')}
         </h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
@@ -101,36 +106,36 @@ export default function KontentPage() {
             <div className="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
               <Eye className="text-blue-600 w-8 h-8" />
             </div>
-            <div className="text-3xl font-bold text-[#219EBC] mb-2">70%</div>
-            <div className="font-mono text-gray-700">Zákazníkov</div>
-            <div className="text-sm text-gray-500 mt-2">sa informuje cez obsah</div>
+            <div className="text-3xl font-bold text-[#219EBC] mb-2">{t('stats.stat1.percentage')}</div>
+            <div className="font-mono text-gray-700">{t('stats.stat1.label')}</div>
+            <div className="text-sm text-gray-500 mt-2">{t('stats.stat1.description')}</div>
           </div>
           
           <div className="bg-white rounded-2xl shadow-xl p-6 text-center hover:scale-105 transition-transform duration-300">
             <div className="bg-green-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
               <Zap className="text-green-600 w-8 h-8" />
             </div>
-            <div className="text-3xl font-bold text-[#219EBC] mb-2">3x</div>
-            <div className="font-mono text-gray-700">Viac konverzií</div>
-            <div className="text-sm text-gray-500 mt-2">s kvalitným obsahom</div>
+            <div className="text-3xl font-bold text-[#219EBC] mb-2">{t('stats.stat2.percentage')}</div>
+            <div className="font-mono text-gray-700">{t('stats.stat2.label')}</div>
+            <div className="text-sm text-gray-500 mt-2">{t('stats.stat2.description')}</div>
           </div>
           
           <div className="bg-white rounded-2xl shadow-xl p-6 text-center hover:scale-105 transition-transform duration-300">
             <div className="bg-purple-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
               <BookOpen className="text-purple-600 w-8 h-8" />
             </div>
-            <div className="text-3xl font-bold text-[#219EBC] mb-2">60%</div>
-            <div className="font-mono text-gray-700">Nižšie náklady</div>
-            <div className="text-sm text-gray-500 mt-2">na získanie zákazníka</div>
+            <div className="text-3xl font-bold text-[#219EBC] mb-2">{t('stats.stat3.percentage')}</div>
+            <div className="font-mono text-gray-700">{t('stats.stat3.label')}</div>
+            <div className="text-sm text-gray-500 mt-2">{t('stats.stat3.description')}</div>
           </div>
           
           <div className="bg-white rounded-2xl shadow-xl p-6 text-center hover:scale-105 transition-transform duration-300">
             <div className="bg-orange-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
               <ArrowUpRight className="text-orange-600 w-8 h-8" />
             </div>
-            <div className="text-3xl font-bold text-[#219EBC] mb-2">5x</div>
-            <div className="font-mono text-gray-700">Viac zdieľaní</div>
-            <div className="text-sm text-gray-500 mt-2">organický obsah</div>
+            <div className="text-3xl font-bold text-[#219EBC] mb-2">{t('stats.stat4.percentage')}</div>
+            <div className="font-mono text-gray-700">{t('stats.stat4.label')}</div>
+            <div className="text-sm text-gray-500 mt-2">{t('stats.stat4.description')}</div>
           </div>
         </div>
         
@@ -138,54 +143,54 @@ export default function KontentPage() {
           {/* Left: Text */}
           <div>
             <h3 className="font-heading text-3xl md:text-4xl font-bold mb-6 text-[#023047]">
-              Čo je kvalitný kontent?
+              {t('stats.qualityContent.title')}
             </h3>
             <div className="font-mono text-lg space-y-4 text-gray-800">
               <p>
-                Kvalitný kontent je ten, ktorý rieši problémy tvojich zákazníkov a poskytuje im hodnotu.
+                {t('stats.qualityContent.description1')}
               </p>
               <p>
-                Je to obsah, ktorý sa ľahko číta, je vizuálne príťažlivý a vedie k akcii.
+                {t('stats.qualityContent.description2')}
               </p>
               <p>
-                Je to obsah, ktorý buduje dôveru, autoritu a dlhodobé vzťahy so zákazníkmi.
+                {t('stats.qualityContent.description3')}
               </p>
             </div>
           </div>
           
           {/* Right: Content Types */}
           <div className="bg-white rounded-2xl shadow-xl p-8">
-            <h3 className="font-heading text-xl font-bold mb-6 text-[#023047] text-center">Typy obsahu</h3>
+            <h3 className="font-heading text-xl font-bold mb-6 text-[#023047] text-center">{t('stats.contentTypes.title')}</h3>
             <div className="grid grid-cols-2 gap-4">
               <div className="flex items-center gap-3 p-3 rounded-lg bg-blue-50">
                 <div className="bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">V</div>
                 <div>
-                  <h4 className="font-heading font-bold text-[#023047]">Video</h4>
-                  <p className="font-mono text-sm text-gray-700">Reels, spoty, tutoriály</p>
+                  <h4 className="font-heading font-bold text-[#023047]">{t('stats.contentTypes.video.title')}</h4>
+                  <p className="font-mono text-sm text-gray-700">{t('stats.contentTypes.video.description')}</p>
                 </div>
               </div>
               
               <div className="flex items-center gap-3 p-3 rounded-lg bg-green-50">
                 <div className="bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">T</div>
                 <div>
-                  <h4 className="font-heading font-bold text-[#023047]">Text</h4>
-                  <p className="font-mono text-sm text-gray-700">Články, blog, copy</p>
+                  <h4 className="font-heading font-bold text-[#023047]">{t('stats.contentTypes.text.title')}</h4>
+                  <p className="font-mono text-sm text-gray-700">{t('stats.contentTypes.text.description')}</p>
                 </div>
               </div>
               
               <div className="flex items-center gap-3 p-3 rounded-lg bg-purple-50">
                 <div className="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">G</div>
                 <div>
-                  <h4 className="font-heading font-bold text-[#023047]">Grafika</h4>
-                  <p className="font-mono text-sm text-gray-700">Príspevky, infografiky</p>
+                  <h4 className="font-heading font-bold text-[#023047]">{t('stats.contentTypes.graphics.title')}</h4>
+                  <p className="font-mono text-sm text-gray-700">{t('stats.contentTypes.graphics.description')}</p>
                 </div>
               </div>
               
               <div className="flex items-center gap-3 p-3 rounded-lg bg-orange-50">
                 <div className="bg-orange-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">A</div>
                 <div>
-                  <h4 className="font-heading font-bold text-[#023047]">Audio</h4>
-                  <p className="font-mono text-sm text-gray-700">Podcasty, zvukové</p>
+                  <h4 className="font-heading font-bold text-[#023047]">{t('stats.contentTypes.audio.title')}</h4>
+                  <p className="font-mono text-sm text-gray-700">{t('stats.contentTypes.audio.description')}</p>
                 </div>
               </div>
             </div>
@@ -196,7 +201,7 @@ export default function KontentPage() {
       {/* 3. How We Work Section with Creative Process */}
       <section className="max-w-7xl mx-auto py-20 px-4">
         <h2 className="font-heading text-3xl md:text-4xl font-bold mb-12 text-center text-[#023047]">
-          Ako pracujeme na kontente
+          {t('process.title')}
         </h2>
         
         <div className="relative">
@@ -209,14 +214,14 @@ export default function KontentPage() {
                 <div className="bg-white rounded-2xl shadow-xl p-6 border-l-4 border-[#219EBC] hover:scale-105 transition-transform duration-300">
                   <div className="flex items-center gap-4 mb-4">
                     <div className="bg-[#219EBC] text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl">1</div>
-                    <h3 className="font-heading text-xl font-bold text-[#023047]">Analýza a stratégia</h3>
+                    <h3 className="font-heading text-xl font-bold text-[#023047]">{t('process.step1.title')}</h3>
                   </div>
                   <p className="font-mono text-gray-700">
-                    Zistíme tvoju cieľovku a naplánujeme obsahovú stratégiu.
+                    {t('process.step1.description')}
                   </p>
                   <div className="mt-4 flex items-center gap-2 text-sm text-gray-500">
                     <Target className="w-4 h-4" />
-                    <span>Audience research</span>
+                    <span>{t('process.step1.tag')}</span>
                   </div>
                 </div>
               </div>
@@ -224,14 +229,14 @@ export default function KontentPage() {
                 <div className="bg-white rounded-2xl shadow-xl p-6 border-l-4 border-[#219EBC] hover:scale-105 transition-transform duration-300">
                   <div className="flex items-center gap-4 mb-4">
                     <div className="bg-[#219EBC] text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl">2</div>
-                    <h3 className="font-heading text-xl font-bold text-[#023047]">Kreatívny koncept</h3>
+                    <h3 className="font-heading text-xl font-bold text-[#023047]">{t('process.step2.title')}</h3>
                   </div>
                   <p className="font-mono text-gray-700">
-                    Vytvoríme nápad, štýl a formu obsahu.
+                    {t('process.step2.description')}
                   </p>
                   <div className="mt-4 flex items-center gap-2 text-sm text-gray-500">
                     <Sparkles className="w-4 h-4" />
-                    <span>Creative concept</span>
+                    <span>{t('process.step2.tag')}</span>
                   </div>
                 </div>
               </div>
@@ -242,14 +247,14 @@ export default function KontentPage() {
                 <div className="bg-white rounded-2xl shadow-xl p-6 border-l-4 border-[#219EBC] hover:scale-105 transition-transform duration-300">
                   <div className="flex items-center gap-4 mb-4">
                     <div className="bg-[#219EBC] text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl">3</div>
-                    <h3 className="font-heading text-xl font-bold text-[#023047]">Produkcia obsahu</h3>
+                    <h3 className="font-heading text-xl font-bold text-[#023047]">{t('process.step3.title')}</h3>
                   </div>
                   <p className="font-mono text-gray-700">
-                    Tvoríme video, grafiku, texty a ďalší obsah.
+                    {t('process.step3.description')}
                   </p>
                   <div className="mt-4 flex items-center gap-2 text-sm text-gray-500">
                     <Film className="w-4 h-4" />
-                    <span>Content production</span>
+                    <span>{t('process.step3.tag')}</span>
                   </div>
                 </div>
               </div>
@@ -257,14 +262,14 @@ export default function KontentPage() {
                 <div className="bg-white rounded-2xl shadow-xl p-6 border-l-4 border-[#219EBC] hover:scale-105 transition-transform duration-300">
                   <div className="flex items-center gap-4 mb-4">
                     <div className="bg-[#219EBC] text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl">4</div>
-                    <h3 className="font-heading text-xl font-bold text-[#023047]">Optimalizácia a úpravy</h3>
+                    <h3 className="font-heading text-xl font-bold text-[#023047]">{t('process.step4.title')}</h3>
                   </div>
                   <p className="font-mono text-gray-700">
-                    Upravujeme obsah podľa spätnej väzby a optimalizujeme.
+                    {t('process.step4.description')}
                   </p>
                   <div className="mt-4 flex items-center gap-2 text-sm text-gray-500">
                     <Zap className="w-4 h-4" />
-                    <span>Refinement</span>
+                    <span>{t('process.step4.tag')}</span>
                   </div>
                 </div>
               </div>
@@ -275,14 +280,14 @@ export default function KontentPage() {
                 <div className="bg-white rounded-2xl shadow-xl p-6 border-l-4 border-[#219EBC] hover:scale-105 transition-transform duration-300">
                   <div className="flex items-center gap-4 mb-4">
                     <div className="bg-[#219EBC] text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl">5</div>
-                    <h3 className="font-heading text-xl font-bold text-[#023047]">Publikovanie a distribúcia</h3>
+                    <h3 className="font-heading text-xl font-bold text-[#023047]">{t('process.step5.title')}</h3>
                   </div>
                   <p className="font-mono text-gray-700">
-                    Zverejníme obsah na správnych platformách.
+                    {t('process.step5.description')}
                   </p>
                   <div className="mt-4 flex items-center gap-2 text-sm text-gray-500">
                     <Megaphone className="w-4 h-4" />
-                    <span>Distribution</span>
+                    <span>{t('process.step5.tag')}</span>
                   </div>
                 </div>
               </div>
@@ -290,14 +295,14 @@ export default function KontentPage() {
                 <div className="bg-white rounded-2xl shadow-xl p-6 border-l-4 border-[#219EBC] hover:scale-105 transition-transform duration-300">
                   <div className="flex items-center gap-4 mb-4">
                     <div className="bg-[#219EBC] text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl">6</div>
-                    <h3 className="font-heading text-xl font-bold text-[#023047]">Analýza a optimalizácia</h3>
+                    <h3 className="font-heading text-xl font-bold text-[#023047]">{t('process.step6.title')}</h3>
                   </div>
                   <p className="font-mono text-gray-700">
-                    Sledujeme výkonnosť a vylepšujeme budúci obsah.
+                    {t('process.step6.description')}
                   </p>
                   <div className="mt-4 flex items-center gap-2 text-sm text-gray-500">
                     <Eye className="w-4 h-4" />
-                    <span>Performance analysis</span>
+                    <span>{t('process.step6.tag')}</span>
                   </div>
                 </div>
               </div>
@@ -309,7 +314,7 @@ export default function KontentPage() {
       {/* 4. What Content We Create Section with Multimedia Cards */}
       <section className="max-w-7xl mx-auto py-20 px-4">
         <h2 className="font-heading text-3xl md:text-4xl font-bold mb-12 text-center text-[#023047]">
-          Aký obsah vytvárame?
+          {t('services.title')}
         </h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -317,13 +322,13 @@ export default function KontentPage() {
             <div className="bg-gradient-to-br from-blue-500 to-blue-600 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
               <Play className="text-white w-8 h-8" />
             </div>
-            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">Video obsah</h3>
+            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">{t('services.videoContent.title')}</h3>
             <p className="font-mono text-gray-700 text-sm">
-              Reels, TikTok, YouTube, spoty
+              {t('services.videoContent.description')}
             </p>
             <div className="mt-3 flex items-center gap-2 text-sm text-green-600">
               <ArrowUpRight className="w-4 h-4" />
-              <span>Vysoká engagement</span>
+              <span>{t('services.videoContent.benefit')}</span>
             </div>
           </div>
           
@@ -331,13 +336,13 @@ export default function KontentPage() {
             <div className="bg-gradient-to-br from-green-500 to-green-600 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
               <Image className="text-white w-8 h-8" />
             </div>
-            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">Grafický dizajn</h3>
+            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">{t('services.graphicDesign.title')}</h3>
             <p className="font-mono text-gray-700 text-sm">
-              Príspevky, carousel, infografiky
+              {t('services.graphicDesign.description')}
             </p>
             <div className="mt-3 flex items-center gap-2 text-sm text-green-600">
               <ArrowUpRight className="w-4 h-4" />
-              <span>Vizuálna príťažlivosť</span>
+              <span>{t('services.graphicDesign.benefit')}</span>
             </div>
           </div>
           
@@ -345,13 +350,13 @@ export default function KontentPage() {
             <div className="bg-gradient-to-br from-purple-500 to-purple-600 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
               <Type className="text-white w-8 h-8" />
             </div>
-            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">Textový obsah</h3>
+            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">{t('services.textContent.title')}</h3>
             <p className="font-mono text-gray-700 text-sm">
-              Články, blog, copywriting
+              {t('services.textContent.description')}
             </p>
             <div className="mt-3 flex items-center gap-2 text-sm text-green-600">
               <ArrowUpRight className="w-4 h-4" />
-              <span>SEO optimalizácia</span>
+              <span>{t('services.textContent.benefit')}</span>
             </div>
           </div>
           
@@ -359,13 +364,13 @@ export default function KontentPage() {
             <div className="bg-gradient-to-br from-orange-500 to-orange-600 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
               <Mic className="text-white w-8 h-8" />
             </div>
-            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">Audio obsah</h3>
+            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">{t('services.audioContent.title')}</h3>
             <p className="font-mono text-gray-700 text-sm">
-              Podcasty, zvukové príspevky
+              {t('services.audioContent.description')}
             </p>
             <div className="mt-3 flex items-center gap-2 text-sm text-green-600">
               <ArrowUpRight className="w-4 h-4" />
-              <span>Mobilné počúvanie</span>
+              <span>{t('services.audioContent.benefit')}</span>
             </div>
           </div>
           
@@ -373,13 +378,13 @@ export default function KontentPage() {
             <div className="bg-gradient-to-br from-pink-500 to-pink-600 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
               <Layers className="text-white w-8 h-8" />
             </div>
-            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">Interaktívny obsah</h3>
+            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">{t('services.interactiveContent.title')}</h3>
             <p className="font-mono text-gray-700 text-sm">
-              Stories, polls, quizzes
+              {t('services.interactiveContent.description')}
             </p>
             <div className="mt-3 flex items-center gap-2 text-sm text-green-600">
               <ArrowUpRight className="w-4 h-4" />
-              <span>Vysoká interakcia</span>
+              <span>{t('services.interactiveContent.benefit')}</span>
             </div>
           </div>
           
@@ -387,13 +392,13 @@ export default function KontentPage() {
             <div className="bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
               <Camera className="text-white w-8 h-8" />
             </div>
-            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">Fotografický obsah</h3>
+            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">{t('services.photography.title')}</h3>
             <p className="font-mono text-gray-700 text-sm">
-              Produktové fotky, lifestyle
+              {t('services.photography.description')}
             </p>
             <div className="mt-3 flex items-center gap-2 text-sm text-green-600">
               <ArrowUpRight className="w-4 h-4" />
-              <span>Autentický vzhľad</span>
+              <span>{t('services.photography.benefit')}</span>
             </div>
           </div>
           
@@ -401,13 +406,13 @@ export default function KontentPage() {
             <div className="bg-gradient-to-br from-teal-500 to-teal-600 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
               <BookOpen className="text-white w-8 h-8" />
             </div>
-            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">Edukačný obsah</h3>
+            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">{t('services.educationalContent.title')}</h3>
             <p className="font-mono text-gray-700 text-sm">
-              Tutoriály, návody, prípadové štúdie
+              {t('services.educationalContent.description')}
             </p>
             <div className="mt-3 flex items-center gap-2 text-sm text-green-600">
               <ArrowUpRight className="w-4 h-4" />
-              <span>Budovanie autority</span>
+              <span>{t('services.educationalContent.benefit')}</span>
             </div>
           </div>
           
@@ -415,13 +420,13 @@ export default function KontentPage() {
             <div className="bg-gradient-to-br from-red-500 to-red-600 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
               <ClipboardList className="text-white w-8 h-8" />
             </div>
-            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">Content kalendár</h3>
+            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">{t('services.contentCalendar.title')}</h3>
             <p className="font-mono text-gray-700 text-sm">
-              Plánovanie a koordinácia
+              {t('services.contentCalendar.description')}
             </p>
             <div className="mt-3 flex items-center gap-2 text-sm text-green-600">
               <ArrowUpRight className="w-4 h-4" />
-              <span>Konzistentnosť</span>
+              <span>{t('services.contentCalendar.benefit')}</span>
             </div>
           </div>
           
@@ -429,13 +434,13 @@ export default function KontentPage() {
             <div className="bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
               <FileText className="text-white w-8 h-8" />
             </div>
-            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">Pravidelné reporty a konzultácie</h3>
+            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">{t('services.reports.title')}</h3>
             <p className="font-mono text-gray-700 text-sm">
-              Mesačné vyhodnotenie s odporúčaniami
+              {t('services.reports.description')}
             </p>
             <div className="mt-3 flex items-center gap-2 text-sm text-green-600">
               <ArrowUpRight className="w-4 h-4" />
-              <span>Transparentnosť</span>
+              <span>{t('services.reports.benefit')}</span>
             </div>
           </div>
         </div>
@@ -445,18 +450,18 @@ export default function KontentPage() {
       <section className="max-w-7xl mx-auto py-20 px-4">
         <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
           <h2 className="font-heading text-3xl md:text-4xl font-bold mb-8 text-center text-[#023047]">
-            Prečo to robiť s nami?
+            {t('whyChooseUs.title')}
           </h2>
           
           <div className="font-mono text-lg space-y-6 text-gray-800 max-w-4xl mx-auto">
             <p>
-              Pretože robíme kontent, ktorý je založený na skutočných potrebách zákazníkov a prináša reálne výsledky.
+              {t('whyChooseUs.description1')}
             </p>
             <p>
-              Máme skúsenosti s rôznymi typmi obsahu a vieme, čo funguje pre tvoj typ biznisu. Neexperimentujeme s tvojou online prítomnosťou.
+              {t('whyChooseUs.description2')}
             </p>
             <p>
-              Transparentnosť je pre nás kľúčová – vždy vieš, čo robíme a aké výsledky to prináša.
+              {t('whyChooseUs.description3')}
             </p>
           </div>
         </div>
@@ -467,20 +472,20 @@ export default function KontentPage() {
         <div className="bg-gradient-to-br from-[#219EBC] to-[#8ECAE6] rounded-2xl shadow-xl p-10 md:p-16 text-center relative overflow-hidden">
           <div className="relative z-10">
             <h2 className="font-heading text-3xl md:text-4xl font-bold mb-4 text-[#023047]">
-              Kontent, ktorý sa číta.
+              {t('finalCta.title')}
             </h2>
             <div className="font-mono text-lg md:text-xl mb-8 text-[#023047]">
-              Nechaj si vytvoriť obsah, ktorý bude zaujímavý, hodnotný a bude ti prinášať zákazníkov.
+              {t('finalCta.description1')}
             </div>
             <div className="font-mono text-lg md:text-xl mb-8 text-[#023047]">
-              S nami budeš mať kontent, ktorý sa ľudia budú chcieť čítať, pozerať a zdieľať.
+              {t('finalCta.description2')}
             </div>
             <div className="font-mono text-lg md:text-xl mb-8 text-[#023047]">
-              Od stratégie až po publikovanie a analýzu výkonnosti.
+              {t('finalCta.description3')}
             </div>
-            <Link href="/sk/kontakt">
+            <Link href="../../kontakt">
               <PaletteButton variant="secondary" className="text-lg px-8 py-4">
-                Vytvoriť kontent
+                {t('finalCta.ctaButton')}
               </PaletteButton>
             </Link>
           </div>

@@ -5,7 +5,105 @@
   },
   "home": {
     "subtitle": "Profesionální marketingová agentura",
-    "campaignButton": "Spustit kampaň"
+    "campaignButton": "Spustit kampaň",
+    "expertBadge": "Digitální marketing expert",
+    "stats": {
+      "averageGrowth": "Průměrný růst",
+      "campaignSuccess": "Úspěšnost kampaní",
+      "clientSatisfaction": "Spokojenost klientů",
+      "support": "Podpora",
+      "forOurCampaigns": "Pro naše kampaně",
+      "exceededGoals": "Překročili cíle",
+      "averageRating": "Průměrné hodnocení",
+      "alwaysHere": "Vždy jsme tu pro vás"
+    },
+    "services": {
+      "title": "Naše služby",
+      "subtitle": "Komplexní řešení pro váš digitální úspěch",
+      "seoContent": {
+        "title": "SEO & Content",
+        "subtitle": "Organický růst",
+        "description": "Optimalizujeme váš web pro vyhledávače a vytváříme kvalitní obsah, který přiláká organickou návštěvnost.",
+        "learnMore": "Zjistit více"
+      },
+      "socialMedia": {
+        "title": "Sociální sítě",
+        "subtitle": "Budování komunity",
+        "description": "Spravujeme vaše sociální sítě, vytváříme poutavý obsah a budujeme komunitu vašich fanoušků.",
+        "learnMore": "Zjistit více"
+      },
+      "ppcAdvertising": {
+        "title": "PPC reklama",
+        "subtitle": "Performance marketing",
+        "description": "Spouštíme a optimalizujeme výkonnostní kampaně, které přinášejí měřitelné výsledky a vysokou návratnost.",
+        "learnMore": "Zjistit více"
+      },
+      "webLanding": {
+        "title": "Weby & Landing pages",
+        "subtitle": "Moderní vývoj",
+        "description": "Vytváříme rychlé, moderní a konverzní webové stránky, které přesvědčí návštěvníky k akci.",
+        "learnMore": "Zjistit více"
+      },
+      "viewAllServices": "Zobrazit všechny služby"
+    },
+    "process": {
+      "title": "Jak pracujeme",
+      "subtitle": "Moderní marketing nemusí být složitý. U nás funguje vše jednoduše, rychle a přehledně.",
+      "step1": {
+        "title": "Nasloucháme a analyzujeme",
+        "subtitle": "Poznáme váš byznys",
+        "description": "Nejprve vás poznáme – vaši značku, cílovku, cíle a výzvy. Zanalyzujeme, kde jste a kam se chcete dostat.",
+        "output": "Výstup: Brief, cíl kampaně, analýza aktuálního stavu"
+      },
+      "step2": {
+        "title": "Navrhujeme strategii",
+        "subtitle": "Vytvoříme plán",
+        "description": "Na základě analýzy připravíme konkrétní plán. Navrhneme vhodné kanály, rozpočty a formáty komunikace.",
+        "output": "Výstup: Marketingová strategie, návrh obsahu, harmonogram"
+      },
+      "step3": {
+        "title": "Implementujeme a spouštíme",
+        "subtitle": "Spustíme kampaně",
+        "description": "Vše připravíme a spustíme podle plánu. Nastavíme účty, tracking a optimalizujeme kampaně.",
+        "output": "Výstup: Spuštěné kampaně, aktivní kanály, tracking"
+      },
+      "step4": {
+        "title": "Optimalizujeme a rosteme",
+        "subtitle": "Nepřetržitý růst",
+        "description": "Neustále sledujeme výsledky a optimalizujeme. Pravidelně reportujeme a navrhujeme vylepšení.",
+        "output": "Výstup: Pravidelné reporty, optimalizace, rozšíření"
+      },
+      "analysis": "Analýza",
+      "strategicPlanning": "Strategické plánování",
+      "implementation": "Implementace",
+      "campaignLaunch": "Spuštění kampaní"
+    },
+    "contact": {
+      "title": "Začněme spolupracovat",
+      "subtitle": "Máte otázky nebo chcete začít s marketingem? Kontaktujte nás a domluvíme si bezplatnou konzultaci.",
+      "formTitle": "Kontaktní formulář"
+    },
+    "analytics": {
+      "marketingAnalytics": "Marketing Analytics",
+      "realTimeData": "Real-time data",
+      "conversions": "Konverze",
+      "roiTracking": "ROI Tracking",
+      "performanceMetrics": "Výkonnostní metriky",
+      "socialMedia": "Sociální sítě",
+      "engagementRate": "Engagement rate",
+      "reach": "Dosah",
+      "totalImpressions": "Celkové imprese",
+      "activeCampaigns": "Aktivní kampaně",
+      "ppcSocial": "PPC & Social",
+      "ctr": "CTR",
+      "clickThroughRate": "Click-through rate",
+      "trafficSources": "Zdroje provozu",
+      "organicVsPaid": "Organický vs Placený",
+      "organic": "Organický",
+      "paid": "Placený",
+      "newUsers": "Noví uživatelé",
+      "thisMonth": "Tento měsíc"
+    }
   },
   "Metadata": {
     "title": "NextLayer Studio",
@@ -86,48 +184,1309 @@
     "subtitle": "Čistá komunikace, jasné kroky, silné výsledky.",
     "intro": "V marketingu není nic horšího než nepochopení. Proto si zakládáme na otevřené a férové komunikaci. Každý projekt začínáme upřímným rozhovorem, abychom pochopili, kdo jste, co děláte a kam se chcete dostat. A pak se pustíme do práce – systematicky, efektivně a s plným nasazením.\n\nZde je náš ověřený pracovní postup:",
     "step1": {
-      "title": "1. Seznámení a první rozhovor",
+      "title": "Seznámení a první rozhovor",
       "content": "Každá spolupráce začíná setkáním. Může to být osobně, online nebo telefonicky – hlavní je, abychom se poznali. Popovídáme si o vašem projektu, o tom, kdo jste, co děláte a jak vnímáte svůj byznys.\n\nCíl: Vytvořit základ důvěry a nastavit jasná očekávání.\nProč je to důležité: Abychom se od začátku vyhnuli nedorozuměním a mohli spolu komunikovat otevřeně a efektivně během celého procesu."
     },
     "step2": {
-      "title": "2. Pochopení vašeho byznysu a cílů",
+      "title": "Pochopení vašeho byznysu a cílů",
       "content": "Abychom mohli vytvořit dobrou kampaň, musíme pochopit váš produkt, službu, cílovou skupinu, jakož i silné a slabé stránky vaší značky. Zajímá nás váš příběh, hodnoty a co vás dělá výjimečnými.\n\nCíl: Získat hluboké porozumění vaší značce a připravit základy marketingové strategie.\nVýstup: Interní brief, který nás bude během celého procesu navigovat."
     },
     "step3": {
-      "title": "3. Vysvětlení našeho přístupu a návrh řešení",
+      "title": "Vysvětlení našeho přístupu a návrh řešení",
       "content": "Po pochopení vašeho byznysu vám představíme, jak pracujeme my – jaké kanály doporučujeme, jaké jsou možnosti, čeho bychom mohli dosáhnout a co od nás můžete očekávat.\n\nCíl: Zosouladit naše kapacity s vašimi očekáváními.\nVýstup: Předběžná strategie, návrh postupu, navržené typy kampaní nebo řešení."
     },
     "step4": {
-      "title": "4. Administrativa a oficiální začátek spolupráce",
+      "title": "Administrativa a oficiální začátek spolupráce",
       "content": "Když si odsouhlasíme rozsah spolupráce, přejdeme k formálním krokům: podpis smlouvy, NDA (pokud je potřeba), nastavení způsobu komunikace, zodpovědné osoby, termíny a procesy schvalování.\n\nCíl: Vytvořit jasný rámec spolupráce.\nVýstup: Smlouva, plán spolupráce, kontaktní osoby."
+    }
+  },
+  "contentCreation": {
+    "hero": {
+      "title": "Kontent, který se čte.",
+      "subtitle": "Obsah, který zaujme, poučí a konvertuje.",
+      "description1": "Dobrý kontent je základem každého úspěšného marketingu. Je to způsob, jak se dostat k zákazníkům bez reklam.",
+      "description2": "V NextLayer Studio děláme obsah, který není jen o \"být vidět\" – je o tom, aby si lidi zaujal, poučil a přesvědčil.",
+      "description3": "Od článků přes videa až po infografiky – vše s důrazem na hodnotu a autenticitu.",
+      "ctaButton": "Vytvořit kontent"
     },
-    "step5": {
-      "title": "5. Stanovení rozpočtu a cílů",
-      "content": "Spolu nastavíme reálný rozpočet, který bude odpovídat vašim možnostem i cílům. Určíme si krátkodobé i dlouhodobé cíle – zda jde o zvýšení prodeje, budování značky, zvýšení návštěvnosti, nebo jiné KPI.\n\nCíl: Mít jasně určené, čeho chceme dosáhnout a za jakých podmínek.\nVýstup: Finální rozpočet, měřitelné cíle, časový rámec."
+    "stats": {
+      "title": "Proč je kvalitní kontent důležitý?",
+      "stat1": {
+        "percentage": "70%",
+        "label": "Zákazníků",
+        "description": "se informuje přes obsah"
+      },
+      "stat2": {
+        "percentage": "3x",
+        "label": "Více konverzí",
+        "description": "s kvalitním obsahem"
+      },
+      "stat3": {
+        "percentage": "60%",
+        "label": "Nižší náklady",
+        "description": "na získání zákazníka"
+      },
+      "stat4": {
+        "percentage": "5x",
+        "label": "Více sdílení",
+        "description": "organický obsah"
+      },
+      "qualityContent": {
+        "title": "Co je kvalitní kontent?",
+        "description1": "Kvalitní kontent je ten, který řeší problémy vašich zákazníků a poskytuje jim hodnotu.",
+        "description2": "Je to obsah, který se snadno čte, je vizuálně přitažlivý a vede k akci.",
+        "description3": "Je to obsah, který buduje důvěru, autoritu a dlouhodobé vztahy se zákazníky."
+      },
+      "contentTypes": {
+        "title": "Typy obsahu",
+        "video": {
+          "title": "Video",
+          "description": "Reels, spoty, tutoriály"
+        },
+        "text": {
+          "title": "Text",
+          "description": "Články, blog, copy"
+        },
+        "graphics": {
+          "title": "Grafika",
+          "description": "Příspěvky, infografiky"
+        },
+        "audio": {
+          "title": "Audio",
+          "description": "Podcasty, zvukové"
+        }
+      }
     },
-    "step6": {
-      "title": "6. Tvorba strategie a návrh kampaně",
-      "content": "Na základě všeho nasbíraného připravíme detailní návrh kampaně: kreativní koncept, výběr kanálů (sociální sítě, PPC, SEO, obsah, design…), načasování a způsob vyhodnocování.\n\nCíl: Připravit silnou, cílenou a efektivní marketingovou strategii.\nVýstup: Kompletní návrh kampaně s cílovou skupinou, vizuálním stylem a komunikačním plánem."
+    "process": {
+      "title": "Jak pracujeme na kontentu",
+      "step1": {
+        "title": "Analýza a strategie",
+        "description": "Zjistíme vaši cílovku a naplánujeme obsahovou strategii.",
+        "tag": "Výzkum publika"
+      },
+      "step2": {
+        "title": "Kreativní koncept",
+        "description": "Vytvoříme nápad, styl a formu obsahu.",
+        "tag": "Kreativní koncept"
+      },
+      "step3": {
+        "title": "Produkce obsahu",
+        "description": "Tvoříme video, grafiku, texty a další obsah.",
+        "tag": "Produkce obsahu"
+      },
+      "step4": {
+        "title": "Optimalizace a úpravy",
+        "description": "Upravujeme obsah podle zpětné vazby a optimalizujeme.",
+        "tag": "Vylepšení"
+      },
+      "step5": {
+        "title": "Publikování a distribuce",
+        "description": "Zveřejníme obsah na správných platformách.",
+        "tag": "Distribuce"
+      },
+      "step6": {
+        "title": "Analýza a optimalizace",
+        "description": "Sledujeme výkonnost a vylepšujeme budoucí obsah.",
+        "tag": "Analýza výkonnosti"
+      }
     },
-    "step7": {
-      "title": "7. Produkce a příprava výstupů",
-      "content": "Zde začíná reálná práce: vytváříme bannery, videa, texty, vizuály, nastavujeme reklamy, připravujeme weby nebo landing pages, optimalizujeme SEO, píšeme články, nebo nastavujeme e-mailové kampaně – podle dohodnuté strategie.\n\nCíl: Vytvořit kvalitní obsah a nastavení, které jsou připravené na spuštění.\nVýstup: Hotové vizuály, kampaně, reklamy, připravené na zveřejnění."
+    "services": {
+      "title": "Jaký obsah vytváříme?",
+      "videoContent": {
+        "title": "Video obsah",
+        "description": "Reels, TikTok, YouTube, spoty",
+        "benefit": "Vysoká engagement"
+      },
+      "graphicDesign": {
+        "title": "Grafický design",
+        "description": "Příspěvky, carousel, infografiky",
+        "benefit": "Vizuální přitažlivost"
+      },
+      "textContent": {
+        "title": "Textový obsah",
+        "description": "Články, blog, copywriting",
+        "benefit": "SEO optimalizace"
+      },
+      "audioContent": {
+        "title": "Audio obsah",
+        "description": "Podcasty, zvukové příspěvky",
+        "benefit": "Mobilní poslech"
+      },
+      "interactiveContent": {
+        "title": "Interaktivní obsah",
+        "description": "Stories, ankety, kvízy",
+        "benefit": "Vysoká interakce"
+      },
+      "photography": {
+        "title": "Fotografický obsah",
+        "description": "Produktové fotky, lifestyle",
+        "benefit": "Autentický vzhled"
+      },
+      "educationalContent": {
+        "title": "Vzdělávací obsah",
+        "description": "Tutoriály, návody, případové studie",
+        "benefit": "Budování autority"
+      },
+      "contentCalendar": {
+        "title": "Content kalendář",
+        "description": "Plánování a koordinace",
+        "benefit": "Konzistence"
+      },
+      "reports": {
+        "title": "Pravidelné reporty a konzultace",
+        "description": "Měsíční vyhodnocení s doporučeními",
+        "benefit": "Transparentnost"
+      }
     },
-    "step8": {
-      "title": "8. Schválení a spuštění",
-      "content": "Vše vám nejprve pošleme ke schválení. Po vašem souhlasu spouštíme kampaň. Sledujeme, jak se daří, a podle potřeby věci průběžně upravujeme.\n\nCíl: Spustit marketingový stroj.\nVýstup: Aktivní kampaň v online prostoru."
+    "whyChooseUs": {
+      "title": "Proč to dělat s námi?",
+      "description1": "Protože děláme kontent, který je založen na skutečných potřebách zákazníků a přináší reálné výsledky.",
+      "description2": "Máme zkušenosti s různými typy obsahu a víme, co funguje pro váš typ byznysu. Neexperimentujeme s vaší online přítomností.",
+      "description3": "Transparentnost je pro nás klíčová – vždy víte, co děláme a jaké výsledky to přináší."
     },
-    "step9": {
-      "title": "9. Monitoring, optimalizace a reporting",
-      "content": "Kampaň žije, ale my nespíme. Sledujeme výkonnost, testujeme různé varianty, optimalizujeme rozpočty a zlepšujeme dosah. Pravidelně vám posíláme reporty, abyste měli přehled o tom, co funguje a co můžeme ještě zlepšit.\n\nCíl: Maximalizovat výsledky za co nejlepší cenu.\nVýstup: Pravidelné reporty, doporučení, přehledná analytika."
+    "finalCta": {
+      "title": "Kontent, který se čte.",
+      "description1": "Nechte si vytvořit obsah, který bude zajímavý, hodnotný a bude vám přinášet zákazníky.",
+      "description2": "S námi budete mít kontent, který se lidé budou chtít číst, dívat a sdílet.",
+      "description3": "Od strategie až po publikování a analýzu výkonnosti.",
+      "ctaButton": "Vytvořit kontent"
+    }
+  },
+  "adCampaigns": {
+    "hero": {
+      "title": "Reklamní kampaně, které fungují.",
+      "subtitle": "Komplexní řešení pro maximální výsledky.",
+      "description1": "Reklamní kampaň není jen o zobrazení reklamy. Je o celkové strategii, která spojuje všechny kanály a přináší výsledky.",
+      "description2": "V NextLayer Studio děláme kampaně, které jsou koordinované, optimalizované a měřitelné. Od plánování až po vyhodnocení.",
+      "description3": "Od PPC přes sociální sítě až po display reklamy – vše s důrazem na ROI a konverze.",
+      "ctaButton": "Spustit kampaň"
     },
-    "step10": {
-      "title": "10. Dlouhodobá spolupráce a růst",
-      "content": "Marketing není jednorázová akce, ale dlouhodobý proces. Jsme připraveni rozvíjet spolupráci, upravovat strategii podle vývoje trhu či vašeho růstu a být vaším spolehlivým partnerem na cestě za úspěchem.\n\nCíl: Udržet výkonnost, růst spolu a reagovat na změny.\nVýstup: Nové kampaně, dlouhodobý plán, marketingový partner na roky."
+    "stats": {
+      "title": "Proč jsou kampaně důležité?",
+      "totalSales": {
+        "amount": "€15,847",
+        "label": "Celkový prodej",
+        "change": "+45%"
+      },
+      "clicks": {
+        "amount": "2,847",
+        "label": "Kliknutí",
+        "change": "+23%"
+      },
+      "conversion": {
+        "amount": "4.2%",
+        "label": "Konverze",
+        "change": "+18%"
+      },
+      "avgCpc": {
+        "amount": "€2.45",
+        "label": "Průměrný CPC",
+        "change": "-12%"
+      },
+      "campaignDefinition": {
+        "title": "Co je reklamní kampaň?",
+        "description1": "Reklamní kampaň je soustředěná marketingová aktivita, která má za cíl něco konkrétního: prodat produkt, získat nové zákazníky, spustit novou službu.",
+        "description2": "Aby byla úspěšná, musí být dobře načasovaná, kreativně zpracovaná a strategicky vedená.",
+        "description3": "Je to komplexní systém, který spojuje různé kanály a optimalizuje pro maximální výsledky."
+      },
+      "components": {
+        "title": "Komponenty kampaně",
+        "strategy": {
+          "title": "Strategie",
+          "description": "Plánování a cíle"
+        },
+        "content": {
+          "title": "Obsah",
+          "description": "Kreativa a copy"
+        },
+        "targeting": {
+          "title": "Cílení",
+          "description": "Audience targeting"
+        },
+        "optimization": {
+          "title": "Optimalizace",
+          "description": "Performance tuning"
+        }
+      }
     },
-    "summary": {
-      "title": "Shrnutí?",
-      "content": "Otevřená komunikace, jasný proces, žádné hádanky.\nVy víte, co chcete. My víme, jak to dosáhnout. Spolu to dotáhneme tam, kde má vaše značka být – na očích, v povědomí a v důvěře zákazníků."
+    "process": {
+      "title": "Jak pracujeme na kampani",
+      "step1": {
+        "title": "Analýza a plánování",
+        "description": "Zjistíme vaše cíle a cílovou skupinu.",
+        "tag": "Výzkum publika"
+      },
+      "step2": {
+        "title": "Strategie a kanály",
+        "description": "Vybereme správné platformy a způsoby.",
+        "tag": "Výběr kanálů"
+      },
+      "step3": {
+        "title": "Kreativa a obsah",
+        "description": "Vytvoříme všechny potřebné výstupy.",
+        "tag": "Kreativní produkce"
+      },
+      "step4": {
+        "title": "Technické nastavení",
+        "description": "Připravíme účty, tracking a rozpočty.",
+        "tag": "Technické nastavení"
+      },
+      "step5": {
+        "title": "Spuštění a optimalizace",
+        "description": "Sledujeme výkonnost a optimalizujeme.",
+        "tag": "Optimalizace výkonnosti"
+      },
+      "step6": {
+        "title": "Analýza a reporting",
+        "description": "Vyhodnotíme výsledky a navrhujeme další kroky.",
+        "tag": "Analýza výsledků"
+      }
+    },
+    "channels": {
+      "title": "Kde děláme kampaně?",
+      "googleAds": {
+        "title": "Google Ads",
+        "description": "Vyhledávání, bannery, YouTube",
+        "benefit": "Vysoká konverze"
+      },
+      "facebookInstagram": {
+        "title": "Facebook & Instagram",
+        "description": "Všechny formáty včetně reels",
+        "benefit": "Široké cílení"
+      },
+      "tiktokAds": {
+        "title": "TikTok Ads",
+        "description": "Pro mladší cílovku",
+        "benefit": "Viral potenciál"
+      },
+      "linkedinAds": {
+        "title": "LinkedIn Ads",
+        "description": "Pro B2B segment",
+        "benefit": "Profesionální cílení"
+      },
+      "displayAds": {
+        "title": "Display reklamy",
+        "description": "Bannery na webech",
+        "benefit": "Široká viditelnost"
+      },
+      "emailMarketing": {
+        "title": "Email marketing",
+        "description": "Newsletter kampaně",
+        "benefit": "Nízké náklady"
+      },
+      "videoCampaigns": {
+        "title": "Video kampaně",
+        "description": "YouTube, TikTok, Instagram",
+        "benefit": "Vysoká engagement"
+      },
+      "abTesting": {
+        "title": "A/B testování",
+        "description": "Optimalizace kampaní",
+        "benefit": "Vylepšení výkonnosti"
+      },
+      "reports": {
+        "title": "Pravidelné reporty a konzultace",
+        "description": "Měsíční vyhodnocení s doporučeními",
+        "benefit": "Transparentnost"
+      }
+    },
+    "whyChooseUs": {
+      "title": "Proč to dělat s námi?",
+      "description1": "Protože děláme kampaně, které jsou založeny na datech a dlouhodobých výsledcích, ne na rychlých trikech.",
+      "description2": "Máme zkušenosti s různými obory a víme, co funguje pro váš typ byznysu. Neexperimentujeme s vašimi penězi.",
+      "description3": "Transparentnost je pro nás klíčová – vždy víte, kam vaše peníze jdou a jaké výsledky přinášejí."
+    },
+    "finalCta": {
+      "title": "Reklamní kampaně, které fungují.",
+      "description1": "Nechte si vytvořit kampaň, která bude koordinovaná, optimalizovaná a bude vám přinášet zákazníky.",
+      "description2": "S námi budete mít kampaň, která spojuje všechny kanály a optimalizuje pro maximální výsledky.",
+      "description3": "Od plánování až po vyhodnocení a návrh dalších kroků.",
+      "ctaButton": "Spustit kampaň"
+    }
+  },
+  "socialMedia": {
+    "title": "Sociální sítě, které budují značky.",
+    "subtitle": "Nejen příspěvky. Strategie, která přináší výsledky.",
+    "description1": "Sociální sítě jsou místo, kde se vaše značka setkává s lidmi. Kde se buduje důvěra, komunita a loajalita.",
+    "description2": "V NextLayer Studio vytváříme sociální sítě, které nejsou jen o 'být vidět' – jsou o tom, jak zaujmout, zapojit a získat lidi.",
+    "description3": "Od strategie přes obsah až po komunitu – vše s důrazem na autenticitu a výsledky.",
+    "ctaButton": "Spustit sociální sítě",
+    "stats": {
+      "activeUsers": "Aktivních uživatelů",
+      "socialNetworks": "sociálních sítí",
+      "averageTime": "Průměrný čas",
+      "dailyOnSocial": "denně na sociálních sítích",
+      "customers": "Zákazníků",
+      "buyAfterSocial": "kupuje po sociálních sítích"
+    },
+    "whyImportant": {
+      "title": "Proč jsou sociální sítě důležité?",
+      "description1": "Sociální sítě jsou místo, kde se lidé rozhodují o značkách. Kde se buduje důvěra, kde se řeší otázky a kde se vytvářejí vztahy.",
+      "description2": "Není to jen o počtu followerů. Je to o tom, jak se vaše značka chová online, jak komunikuje a jak buduje komunitu.",
+      "description3": "Správně vedené sociální sítě vám pomohou být blíže k zákazníkům, získat zpětnou vazbu a budovat dlouhodobé vztahy."
+    },
+    "benefits": {
+      "title": "Výhody sociálních sítí",
+      "brandBuilding": {
+        "title": "Budování značky",
+        "description": "Autentická komunikace"
+      },
+      "directContact": {
+        "title": "Přímý kontakt",
+        "description": "Se zákazníky"
+      },
+      "increaseSales": {
+        "title": "Zvýšení prodejů",
+        "description": "Cílené kampaně"
+      },
+      "feedback": {
+        "title": "Zpětná vazba",
+        "description": "Od zákazníků"
+      },
+      "community": {
+        "title": "Komunita",
+        "description": "Lojálních zákazníků"
+      }
+    },
+    "howWeWork": {
+      "title": "Jak pracujeme na sociálních sítích",
+      "step1": {
+        "title": "Analýza a strategie",
+        "description": "Zjistíme vaši cílovku a naplánujeme obsahovou strategii."
+      },
+      "step2": {
+        "title": "Výběr platformy",
+        "description": "Vybereme správné sítě podle vaší cílovky."
+      },
+      "step3": {
+        "title": "Tvorba obsahu",
+        "description": "Vytvoříme příspěvky, příběhy, reels a další obsah."
+      },
+      "step4": {
+        "title": "Publikování a monitoring",
+        "description": "Pravidelně publikujeme a sledujeme výkonnost."
+      },
+      "step5": {
+        "title": "Komunita a interakce",
+        "description": "Reagujeme na komentáře a budujeme komunitu."
+      },
+      "step6": {
+        "title": "Analýza a optimalizace",
+        "description": "Pravidelně vyhodnocujeme výsledky a optimalizujeme strategii."
+      }
+    },
+    "whyAgency": {
+      "title": "Proč to dělat s agenturou?",
+      "diy": {
+        "title": "DIY (Sám)",
+        "timeConsuming": {
+          "title": "Časově náročné",
+          "description": "Každý den hodiny práce"
+        },
+        "lackExperience": {
+          "title": "Nedostatek zkušeností",
+          "description": "Chyby a neefektivnost"
+        },
+        "inconsistency": {
+          "title": "Nekonzistentnost",
+          "description": "Přerušovaná komunikace"
+        },
+        "missingTools": {
+          "title": "Chybějící nástroje",
+          "description": "Drahé licence a software"
+        }
+      },
+      "withAgency": {
+        "title": "S agenturou",
+        "saveTime": {
+          "title": "Ušetříte čas",
+          "description": "Soustředíte se na byznys"
+        },
+        "professionalApproach": {
+          "title": "Profesionální přístup",
+          "description": "Zkušenosti a know-how"
+        },
+        "consistency": {
+          "title": "Konzistentnost",
+          "description": "Pravidelná komunikace"
+        },
+        "allTools": {
+          "title": "Všechny nástroje",
+          "description": "Profesionální vybavení"
+        }
+      }
+    },
+    "whatWeOffer": {
+      "title": "Co všechno umíme zajistit?",
+      "socialMediaManagement": {
+        "title": "Správa sociálních sítí",
+        "description": "Denní komunikace"
+      },
+      "contentCreation": {
+        "title": "Tvorba obsahu",
+        "description": "Příspěvky, příběhy, reels"
+      },
+      "communityManagement": {
+        "title": "Komunita management",
+        "description": "Reakce na komentáře"
+      },
+      "influencerMarketing": {
+        "title": "Influencer marketing",
+        "description": "Spolupráce s influencery"
+      },
+      "contentCalendar": {
+        "title": "Content kalendář",
+        "description": "Plánování obsahu"
+      },
+      "performanceAnalysis": {
+        "title": "Analýza výkonnosti",
+        "description": "Reporty a metriky"
+      },
+      "adCampaigns": {
+        "title": "Reklamní kampaně",
+        "description": "Na sociálních sítích"
+      },
+      "accountSetup": {
+        "title": "Nastavení účtů",
+        "description": "Profesionální profily"
+      },
+      "reportsConsultations": {
+        "title": "Pravidelné reporty a konzultace",
+        "description": "Měsíční vyhodnocení s doporučeními"
+      }
+    },
+    "finalCta": {
+      "title": "Sociální sítě, které budují značky.",
+      "description1": "Nechte si vytvořit sociální sítě, které budou autentické, zajímavé a budou vám přinášet reálné výsledky.",
+      "description2": "Od strategie až po denní komunikaci – vše s důrazem na vaši značku a cílovku.",
+      "description3": "A vy? Vy se můžete soustředit na svůj byznys."
+    }
+  },
+  "ppcAdvertising": {
+    "title": "PPC reklama, která přináší výsledky.",
+    "subtitle": "Placená reklama s přesným cílením a měřitelnými výsledky.",
+    "description1": "PPC (Pay-Per-Click) reklama je rychlý způsob, jak se dostat k zákazníkům, kteří právě hledají vaši službu.",
+    "description2": "V NextLayer Studio vytváříme kampaně, které jsou \"smart\" – cílené, optimalizované a přinášejí ROI.",
+    "description3": "Od Google Ads přes Facebook až po TikTok – vše s důrazem na konverze, ne jen na zobrazení.",
+    "ctaButton": "Spustit PPC kampaň",
+    "whyPpcWorks": {
+      "title": "Proč PPC funguje?"
+    },
+    "stats": {
+      "averageRoas": "Průměrný ROAS",
+      "roiReturn": "Návratnost investice",
+      "launchTime": "Čas spuštění",
+      "fromOrderToDisplay": "Od objednávky po zobrazení",
+      "targetingAccuracy": "Přesnost cílení",
+      "byDemographics": "Podle demografie a zájmů",
+      "averageCpc": "Průměrný CPC",
+      "costPerClick": "Cena za kliknutí"
+    },
+    "whatIsPpc": {
+      "title": "Co je PPC reklama?",
+      "description1": "PPC (Pay-Per-Click) znamená, že platíte pouze za kliknutí, ne za zobrazení reklamy.",
+      "description2": "Je to rychlý způsob, jak se dostat k zákazníkům, kteří právě hledají vaši službu nebo produkt.",
+      "description3": "Výhoda je v tom, že máte plnou kontrolu nad rozpočtem, cílením a můžete přesně měřit, kolik vás stojí každý zákazník."
+    },
+    "benefits": {
+      "title": "Výhody PPC reklamy",
+      "immediateVisibility": {
+        "title": "Okamžitá viditelnost",
+        "description": "Výsledky už za pár hodin"
+      },
+      "preciseTargeting": {
+        "title": "Přesné cílení",
+        "description": "Podle demografie, zájmů, chování"
+      },
+      "measurableResults": {
+        "title": "Měřitelné výsledky",
+        "description": "Každý cent se dá spočítat"
+      },
+      "flexibility": {
+        "title": "Flexibilita",
+        "description": "Můžete měnit kampaň kdykoliv"
+      }
+    },
+    "howWeWork": {
+      "title": "Jak pracujeme s PPC",
+      "step1": {
+        "title": "Analýza a strategie",
+        "description": "Zjistíme vaši cílovku a naplánujeme kampaň."
+      },
+      "step2": {
+        "title": "Výběr platformy",
+        "description": "Vybereme správné kanály podle vaší cílovky."
+      },
+      "step3": {
+        "title": "Tvorba kampaně",
+        "description": "Vytvoříme reklamy, klíčová slova a landing pages."
+      },
+      "step4": {
+        "title": "Spuštění a monitoring",
+        "description": "Spustíme kampaň a sledujeme výkonnost."
+      },
+      "step5": {
+        "title": "Optimalizace",
+        "description": "Pravidelně optimalizujeme na základě výsledků."
+      },
+      "step6": {
+        "title": "Reporting",
+        "description": "Pravidelně reportujeme a navrhujeme vylepšení."
+      }
+    },
+    "whyAgency": {
+      "title": "Proč to dělat s agenturou?",
+      "diy": {
+        "title": "DIY (Sám)",
+        "complexity": {
+          "title": "Složitost",
+          "description": "Mnoho technických detailů"
+        },
+        "lackExperience": {
+          "title": "Nedostatek zkušeností",
+          "description": "Chyby a neefektivnost"
+        },
+        "wastedBudget": {
+          "title": "Plytvání rozpočtem",
+          "description": "Nesprávná nastavení"
+        },
+        "timeConsuming": {
+          "title": "Časově náročné",
+          "description": "Každý den hodiny práce"
+        }
+      },
+      "withAgency": {
+        "title": "S agenturou",
+        "expertise": {
+          "title": "Expertíza",
+          "description": "Zkušenosti a know-how"
+        },
+        "optimization": {
+          "title": "Optimalizace",
+          "description": "Maximální ROI"
+        },
+        "saveTime": {
+          "title": "Ušetříte čas",
+          "description": "Soustředíte se na byznys"
+        },
+        "results": {
+          "title": "Výsledky",
+          "description": "Měřitelné a předvídatelné"
+        }
+      }
+    },
+    "whatWeOffer": {
+      "title": "Co všechno umíme zajistit?",
+      "googleAds": {
+        "title": "Google Ads",
+        "description": "Vyhledávání a display"
+      },
+      "facebookAds": {
+        "title": "Facebook & Instagram Ads",
+        "description": "Sociální sítě"
+      },
+      "tiktokAds": {
+        "title": "TikTok Ads",
+        "description": "Krátká videa"
+      },
+      "linkedinAds": {
+        "title": "LinkedIn Ads",
+        "description": "B2B marketing"
+      },
+      "remarketing": {
+        "title": "Remarketing",
+        "description": "Návrat návštěvníků"
+      },
+      "landingPages": {
+        "title": "Landing pages",
+        "description": "Konverzní stránky"
+      },
+      "analytics": {
+        "title": "Analytika",
+        "description": "Sledování výsledků"
+      },
+      "optimization": {
+        "title": "Optimalizace",
+        "description": "Zlepšování výkonnosti"
+      },
+      "reporting": {
+        "title": "Pravidelné reporty",
+        "description": "Měsíční vyhodnocení"
+      }
+    },
+    "finalCta": {
+      "title": "PPC reklama, která přináší výsledky.",
+      "description1": "Nechte si vytvořit PPC kampaně, které budou cílené, optimalizované a budou vám přinášet měřitelné výsledky.",
+      "description2": "Od Google Ads až po sociální sítě – vše s důrazem na konverze a ROI.",
+      "description3": "A vy? Vy se můžete soustředit na svůj byznys."
+    }
+  },
+  "seoContent": {
+    "title": "SEO & Content, které se vyplácí.",
+    "subtitle": "Organické výsledky a kvalitní obsah, který konvertuje.",
+    "description1": "SEO není jen o klíčových slovech. Je to o tom, jak se vaše stránka zobrazuje v Google a jak ji lidé nacházejí.",
+    "description2": "V NextLayer Studio děláme SEO, které je \"smart\" – založené na datech, optimalizované pro uživatele a dlouhodobě udržitelné.",
+    "description3": "Od technického SEO přes obsah až po linkbuilding – vše s důrazem na organický růst a konverze.",
+    "ctaButton": "Spustit SEO & Content",
+    "whySeoWorks": {
+      "title": "Proč SEO funguje?"
+    },
+    "stats": {
+      "onlineExperiences": "Online zážitků",
+      "startWithSearch": "Začínají s vyhledáváním",
+      "clicks": "Kliknutí",
+      "goToFirst3": "Jde na první 3 výsledky",
+      "costPerClick": "Cena za kliknutí",
+      "organicResults": "Organické výsledky",
+      "availability": "Dostupnost",
+      "resultsWorkAlways": "Výsledky fungují stále"
+    },
+    "whatIsSeo": {
+      "title": "Co je SEO & Content?",
+      "description1": "SEO (Search Engine Optimization) je proces optimalizace webové stránky pro vyhledávače jako Google.",
+      "description2": "Cílem je zlepšit viditelnost stránky v organických (neplacených) výsledcích vyhledávání.",
+      "description3": "Content marketing je o vytváření hodnotného obsahu, který přiláká, zaujme a konvertuje vaši cílovou skupinu."
+    },
+    "seoPillars": {
+      "title": "Pilíře SEO",
+      "technicalSeo": {
+        "title": "Technické SEO",
+        "description": "Rychlost, indexování, struktura"
+      },
+      "onPageSeo": {
+        "title": "On-page SEO",
+        "description": "Klíčová slova, meta tagy, obsah"
+      },
+      "offPageSeo": {
+        "title": "Off-page SEO",
+        "description": "Backlinky, autorita, důvěryhodnost"
+      },
+      "userExperience": {
+        "title": "User Experience",
+        "description": "Navigace, mobilita, rychlost"
+      }
+    },
+    "howWeWork": {
+      "title": "Jak pracujeme na SEO & Content",
+      "step1": {
+        "title": "Analýza a audit",
+        "description": "Zjistíme aktuální stav a identifikujeme příležitosti."
+      },
+      "step2": {
+        "title": "Výběr klíčových slov",
+        "description": "Vybereme slova, která používají vaši potenciální zákazníci."
+      },
+      "step3": {
+        "title": "Technická optimalizace",
+        "description": "Opravíme technické problémy a zlepšíme rychlost."
+      },
+      "step4": {
+        "title": "Tvorba obsahu",
+        "description": "Vytvoříme kvalitní obsah optimalizovaný pro SEO."
+      },
+      "step5": {
+        "title": "Linkbuilding",
+        "description": "Získáme kvalitní backlinky z důvěryhodných stránek."
+      },
+      "step6": {
+        "title": "Monitoring a optimalizace",
+        "description": "Sledujeme výsledky a neustále vylepšujeme."
+      }
+    },
+    "whatWeOffer": {
+      "title": "Co všechno umíme zajistit?",
+      "technicalSeo": {
+        "title": "Technické SEO",
+        "description": "Rychlost, indexování, struktura"
+      },
+      "keywordResearch": {
+        "title": "Výzkum klíčových slov",
+        "description": "Analýza a výběr správných slov"
+      },
+      "contentCreation": {
+        "title": "Tvorba obsahu",
+        "description": "Články, blogy, příspěvky"
+      },
+      "onPageOptimization": {
+        "title": "On-page optimalizace",
+        "description": "Meta tagy, nadpisy, struktura"
+      },
+      "linkBuilding": {
+        "title": "Linkbuilding",
+        "description": "Získávání kvalitních backlinků"
+      },
+      "localSeo": {
+        "title": "Lokální SEO",
+        "description": "Optimalizace pro lokální vyhledávání"
+      },
+      "ecommerceSeo": {
+        "title": "E-commerce SEO",
+        "description": "Optimalizace pro online obchody"
+      },
+      "seoAudit": {
+        "title": "SEO audit",
+        "description": "Kompletní analýza a doporučení"
+      },
+      "performanceTracking": {
+        "title": "Sledování výkonnosti",
+        "description": "Reporty a metriky"
+      }
+    },
+    "whyAgency": {
+      "title": "Proč to dělat s agenturou?",
+      "diy": {
+        "title": "DIY (Sám)",
+        "complexity": {
+          "title": "Složitost",
+          "description": "Mnoho technických detailů"
+        },
+        "lackExperience": {
+          "title": "Nedostatek zkušeností",
+          "description": "Chyby a neefektivnost"
+        },
+        "timeConsuming": {
+          "title": "Časově náročné",
+          "description": "Měsíce práce na výsledky"
+        },
+        "algorithmChanges": {
+          "title": "Změny algoritmů",
+          "description": "Google mění pravidla"
+        }
+      },
+      "withAgency": {
+        "title": "S agenturou",
+        "expertise": {
+          "title": "Expertíza",
+          "description": "Zkušenosti a know-how"
+        },
+        "fasterResults": {
+          "title": "Rychlejší výsledky",
+          "description": "Profesionální přístup"
+        },
+        "saveTime": {
+          "title": "Ušetříte čas",
+          "description": "Soustředíte se na byznys"
+        },
+        "stayUpdated": {
+          "title": "Aktuální informace",
+          "description": "Sledujeme změny"
+        }
+      }
+    },
+    "finalCta": {
+      "title": "SEO & Content, které se vyplácí.",
+      "description1": "Nechte si vytvořit SEO strategii, která bude založená na datech, optimalizovaná pro uživatele a bude vám přinášet organické výsledky.",
+      "description2": "Od technického SEO až po obsah – vše s důrazem na dlouhodobý růst a konverze.",
+      "description3": "A vy? Vy se můžete soustředit na svůj byznys."
+    }
+  },
+  "webLanding": {
+    "title": "Weby & Landing pages, které konvertují.",
+    "subtitle": "Moderní, rychlé a konverzně optimalizované webové stránky.",
+    "description1": "Webová stránka je vaše digitální vizitka. Je to první, co zákazníci uvidí a posoudí.",
+    "description2": "V NextLayer Studio děláme weby, které jsou \"smart\" – rychlé, responzivní, konverzně optimalizované a technicky dokonalé.",
+    "description3": "Od návrhu přes vývoj až po optimalizaci – vše s důrazem na uživatelský zážitek a konverze.",
+    "ctaButton": "Spustit web projekt",
+    "whyModernWebWorks": {
+      "title": "Proč moderní web funguje?"
+    },
+    "stats": {
+      "averageLoadTime": "Průměrný čas načítání",
+      "forSuccessfulWebsites": "Pro úspěšné weby",
+      "mobileTraffic": "Mobilní traffic",
+      "onModernWebsites": "Na moderních webech",
+      "decisionTime": "Čas na rozhodnutí",
+      "userLeaves": "Uživatel odejde",
+      "averageConversionIncrease": "Průměrný nárůst konverzí",
+      "afterOptimization": "Po optimalizaci"
+    },
+    "whatIsModernWeb": {
+      "title": "Co je moderní web?",
+      "description1": "Moderní web je rychlý, responzivní a optimalizovaný pro všechna zařízení.",
+      "description2": "Je to web, který se načte za méně než 3 sekundy, vypadá perfektně na mobilu i desktopu a vede zákazníky k akci.",
+      "description3": "Je to web, který je technicky dokonalý, bezpečný a přizpůsobený pro vyhledávače."
+    },
+    "technologies": {
+      "title": "Technologie, které používáme",
+      "reactNextjs": {
+        "title": "React/Next.js",
+        "description": "Moderní frontend"
+      },
+      "typescript": {
+        "title": "TypeScript",
+        "description": "Typová bezpečnost"
+      },
+      "tailwindCss": {
+        "title": "Tailwind CSS",
+        "description": "Rychlý vývoj"
+      },
+      "seoOptimization": {
+        "title": "SEO optimalizace",
+        "description": "Viditelnost"
+      }
+    },
+    "howWeWork": {
+      "title": "Jak pracujeme na webech",
+      "step1": {
+        "title": "Analýza a plánování",
+        "description": "Zjistíme vaše potřeby a vytvoříme plán."
+      },
+      "step2": {
+        "title": "Návrh a wireframing",
+        "description": "Vytvoříme vizuální návrh a strukturu."
+      },
+      "step3": {
+        "title": "Vývoj a programování",
+        "description": "Zakódujeme web s moderními technologiemi."
+      },
+      "step4": {
+        "title": "Testování a optimalizace",
+        "description": "Otestujeme a optimalizujeme výkon."
+      },
+      "step5": {
+        "title": "Spuštění a monitoring",
+        "description": "Spustíme web a sledujeme jeho výkon."
+      },
+      "step6": {
+        "title": "Podpora a údržba",
+        "description": "Poskytujeme pokračující podporu."
+      }
+    },
+    "whatWeOffer": {
+      "title": "Co všechno umíme zajistit?",
+      "corporateWebsites": {
+        "title": "Firemní webové stránky",
+        "description": "Profesionální weby pro firmy"
+      },
+      "ecommerceWebsites": {
+        "title": "E-commerce weby",
+        "description": "Online obchody a prodejní platformy"
+      },
+      "landingPages": {
+        "title": "Landing pages",
+        "description": "Konverzně optimalizované stránky"
+      },
+      "webApplications": {
+        "title": "Webové aplikace",
+        "description": "Komplexní aplikace a systémy"
+      },
+      "responsiveDesign": {
+        "title": "Responzivní design",
+        "description": "Optimalizace pro všechna zařízení"
+      },
+      "seoOptimization": {
+        "title": "SEO optimalizace",
+        "description": "Optimalizace pro vyhledávače"
+      },
+      "performanceOptimization": {
+        "title": "Optimalizace výkonu",
+        "description": "Rychlost a efektivita"
+      },
+      "maintenanceSupport": {
+        "title": "Údržba a podpora",
+        "description": "Pokračující podpora a aktualizace"
+      }
+    },
+    "whyAgency": {
+      "title": "Proč to dělat s agenturou?",
+      "diy": {
+        "title": "DIY (Sám)",
+        "complexity": {
+          "title": "Složitost",
+          "description": "Mnoho technických detailů"
+        },
+        "lackExperience": {
+          "title": "Nedostatek zkušeností",
+          "description": "Chyby a neefektivnost"
+        },
+        "timeConsuming": {
+          "title": "Časově náročné",
+          "description": "Měsíce práce na výsledky"
+        },
+        "maintenance": {
+          "title": "Údržba",
+          "description": "Potřeba pokračující podpory"
+        }
+      },
+      "withAgency": {
+        "title": "S agenturou",
+        "expertise": {
+          "title": "Expertíza",
+          "description": "Zkušenosti a know-how"
+        },
+        "fasterResults": {
+          "title": "Rychlejší výsledky",
+          "description": "Profesionální přístup"
+        },
+        "saveTime": {
+          "title": "Ušetříte čas",
+          "description": "Soustředíte se na byznys"
+        },
+        "ongoingSupport": {
+          "title": "Pokračující podpora",
+          "description": "Údržba a aktualizace"
+        }
+      }
+    },
+    "finalCta": {
+      "title": "Weby & Landing pages, které konvertují.",
+      "description1": "Nechte si vytvořit web, který bude rychlý, moderní a bude vám přinášet zákazníky.",
+      "description2": "Od návrhu až po spuštění a podporu – vše s důrazem na kvalitu a výsledky.",
+      "description3": "A vy? Vy se můžete soustředit na svůj byznys."
+    }
+  },
+  "analytics": {
+    "title": "Analytika, která dává smysl.",
+    "subtitle": "Data, která vám řeknou, co dělat dál.",
+    "description1": "Analytika není jen o číslech. Je o pochopení chování zákazníků, identifikaci příležitostí a optimalizaci kampaní.",
+    "description2": "V NextLayer Studio děláme analýzy, které jsou přehledné, akční a pomáhají vám dělat lepší rozhodnutí.",
+    "description3": "Od Google Analytics přes Facebook Insights až po vlastní reporty – vše s důrazem na praktické využití.",
+    "ctaButton": "Spustit analýzu",
+    "whyAnalyticsImportant": {
+      "title": "Proč je analytika důležitá?"
+    },
+    "stats": {
+      "visitors": "Návštěvníků",
+      "averageTime": "Průměrný čas",
+      "conversion": "Konverze",
+      "roi": "ROI"
+    },
+    "whatIsAnalytics": {
+      "title": "Co je analytika?",
+      "description1": "Analytika je systém sběru, analýzy a interpretace dat o návštěvnících vašeho webu.",
+      "description2": "Pomáhá vám pochopit, jak se lidé chovají na vaší stránce, co je zajímá a kde mají problémy.",
+      "description3": "S těmito informacemi můžete optimalizovat web, kampaně a celkovou strategii."
+    },
+    "keyMetrics": {
+      "title": "Klíčové metriky",
+      "traffic": "Návštěvnost",
+      "engagement": "Engagement",
+      "conversions": "Konverze",
+      "roi": "ROI"
+    },
+    "howWeWork": {
+      "title": "Jak pracujeme na analytice",
+      "step1": {
+        "title": "Nastavení tracking",
+        "description": "Nastavíme sledování všech důležitých metrik."
+      },
+      "step2": {
+        "title": "Sbírání dat",
+        "description": "Sbíráme data z různých zdrojů a kanálů."
+      },
+      "step3": {
+        "title": "Analýza a interpretace",
+        "description": "Analyzujeme data a hledáme vzory a příležitosti."
+      },
+      "step4": {
+        "title": "Reportování",
+        "description": "Vytvoříme přehledné reporty s akčními doporučeními."
+      },
+      "step5": {
+        "title": "Optimalizace",
+        "description": "Implementujeme změny na základě analýzy."
+      },
+      "step6": {
+        "title": "Monitoring",
+        "description": "Sledujeme výsledky a pokračujeme v optimalizaci."
+      }
+    },
+    "whatWeOffer": {
+      "title": "Co všechno umíme zajistit?",
+      "googleAnalytics": {
+        "title": "Google Analytics",
+        "description": "Kompletní analýza webu"
+      },
+      "facebookInsights": {
+        "title": "Facebook Insights",
+        "description": "Analýza sociálních sítí"
+      },
+      "googleAds": {
+        "title": "Google Ads",
+        "description": "Analýza reklam"
+      },
+      "customReports": {
+        "title": "Vlastní reporty",
+        "description": "Specifické metriky pro váš byznys"
+      },
+      "conversionTracking": {
+        "title": "Sledování konverzí",
+        "description": "Měření úspěchu kampaní"
+      },
+      "userBehavior": {
+        "title": "Chování uživatelů",
+        "description": "Analýza user journey"
+      },
+      "performanceOptimization": {
+        "title": "Optimalizace výkonu",
+        "description": "Zlepšení na základě dat"
+      },
+      "monthlyReports": {
+        "title": "Měsíční reporty",
+        "description": "Pravidelné vyhodnocení"
+      }
+    },
+    "whyAgency": {
+      "title": "Proč to dělat s agenturou?",
+      "diy": {
+        "title": "DIY (Sám)",
+        "complexity": {
+          "title": "Složitost",
+          "description": "Mnoho nástrojů a metrik"
+        },
+        "lackExperience": {
+          "title": "Nedostatek zkušeností",
+          "description": "Chybné interpretace"
+        },
+        "timeConsuming": {
+          "title": "Časově náročné",
+          "description": "Hodiny analýzy"
+        },
+        "dataOverload": {
+          "title": "Přetížení daty",
+          "description": "Příliš mnoho informací"
+        }
+      },
+      "withAgency": {
+        "title": "S agenturou",
+        "expertise": {
+          "title": "Expertíza",
+          "description": "Zkušenosti s analýzou"
+        },
+        "clearInsights": {
+          "title": "Jasné poznatky",
+          "description": "Přehledné reporty"
+        },
+        "saveTime": {
+          "title": "Ušetříte čas",
+          "description": "Soustředíte se na byznys"
+        },
+        "actionableRecommendations": {
+          "title": "Akční doporučení",
+          "description": "Konkrétní kroky"
+        }
+      }
+    },
+    "finalCta": {
+      "title": "Analytika, která dává smysl.",
+      "description1": "Nechte si vytvořit analytickou strategii, která vám poskytne jasné poznatky o vašich zákaznících.",
+      "description2": "Od nastavení tracking až po pravidelný monitoring – vše s důrazem na praktické využití.",
+      "description3": "A vy? Vy se můžete soustředit na svůj byznys."
+    }
+  },
+  "digitalFootprint": {
+    "hero": {
+      "title": "Zanechej dojem. Zanechej stopu.",
+      "subtitle": "Budujeme značky, které jsou viditelné, zapamatovatelné a konzistentní.",
+      "description1": "Digitální stopa je vše, co o vás zákazník vidí na internetu. Je to jako váš online otisk.",
+      "description2": "V NextLayer Studio pomáháme vytvářet firemní identitu, která je jasná, srozumitelná a reprezentativní.",
+      "description3": "Od loga přes barvy až po design manuál – vše s důrazem na konzistenci a profesionalitu.",
+      "ctaButton": "Začni budovat značku"
+    },
+    "stats": {
+      "title": "Proč je firemní identita důležitá?",
+      "stat1": {
+        "percentage": "80%",
+        "label": "Zákazníků",
+        "description": "si vzpomíná na značku"
+      },
+      "stat2": {
+        "percentage": "3x",
+        "label": "Více důvěry",
+        "description": "s konzistentní identitou"
+      },
+      "stat3": {
+        "percentage": "60%",
+        "label": "Nižší náklady",
+        "description": "na marketing"
+      },
+      "stat4": {
+        "percentage": "5x",
+        "label": "Více loajalita",
+        "description": "zákazníků"
+      },
+      "digitalFootprintDefinition": {
+        "title": "Co je digitální stopa?",
+        "description1": "Digitální stopa je vše, co o vás zákazník vidí na internetu: webová stránka, sociální sítě, Google výsledky, články, recenze, vizuály, videa, komentáře.",
+        "description2": "Je to jako váš online otisk. A právě proto musí být jasný, srozumitelný a reprezentativní.",
+        "description3": "Pomůžeme vám vytvořit stopu, která bude fungovat ve váš prospěch – ne proti vám."
+      },
+      "brandComponents": {
+        "title": "Komponenty značky",
+        "logo": {
+          "title": "Logo",
+          "description": "Základ značky"
+        },
+        "colors": {
+          "title": "Barvy",
+          "description": "Barevná paleta"
+        },
+        "typography": {
+          "title": "Typografie",
+          "description": "Písma a styly"
+        },
+        "visuals": {
+          "title": "Vizuály",
+          "description": "Ilustrace a ikony"
+        }
+      }
+    },
+    "process": {
+      "title": "Jak budujeme značku",
+      "step1": {
+        "title": "Analýza a research",
+        "description": "Zjistíme vaši pozici na trhu a cílovou skupinu.",
+        "tag": "Výzkum trhu"
+      },
+      "step2": {
+        "title": "Koncept a strategie",
+        "description": "Vytvoříme koncept značky a komunikační strategii.",
+        "tag": "Brand strategie"
+      },
+      "step3": {
+        "title": "Vizuální identita",
+        "description": "Navrhneme logo, barvy, typografii a vizuální prvky.",
+        "tag": "Vizuální identita"
+      },
+      "step4": {
+        "title": "Design manuál",
+        "description": "Vytvoříme pravidla a šablóny pro konzistentní používání.",
+        "tag": "Design manuál"
+      },
+      "step5": {
+        "title": "Implementace",
+        "description": "Aplikujeme identitu na všechny materiály a kanály.",
+        "tag": "Implementace"
+      },
+      "step6": {
+        "title": "Monitoring a údržba",
+        "description": "Sledujeme konzistenci a vyvíjíme značku dále.",
+        "tag": "Brand údržba"
+      }
+    },
+    "services": {
+      "title": "Co všechno umíme zajistit?",
+      "logoIdentity": {
+        "title": "Logo a vizuální identita",
+        "description": "Logo, barvy, typografie",
+        "benefit": "Základ značky"
+      },
+      "designManual": {
+        "title": "Design manuál",
+        "description": "Pravidla a šablóny",
+        "benefit": "Konzistence"
+      },
+      "graphicMaterials": {
+        "title": "Grafické materiály",
+        "description": "Vizitky, hlavičky, prezentace",
+        "benefit": "Profesionální vzhled"
+      },
+      "digitalMaterials": {
+        "title": "Digitální materiály",
+        "description": "Sociální sítě, web, email",
+        "benefit": "Online přítomnost"
+      },
+      "videoIdentity": {
+        "title": "Video identita",
+        "description": "Intro, outro, animace",
+        "benefit": "Dynamický obsah"
+      },
+      "communicationStrategy": {
+        "title": "Komunikační strategie",
+        "description": "Tón hlasu, messaging",
+        "benefit": "Konzistentní komunikace"
+      },
+      "brandAudit": {
+        "title": "Brand audit",
+        "description": "Analýza existující značky",
+        "benefit": "Identifikace problémů"
+      },
+      "reports": {
+        "title": "Pravidelné reporty a konzultace",
+        "description": "Měsíční vyhodnocení s doporučeními",
+        "benefit": "Transparentnost"
+      }
+    },
+    "whyChooseUs": {
+      "title": "Proč to dělat s námi?",
+      "description1": "Protože děláme značky, které jsou založeny na dlouhodobých hodnotách a autenticitě, ne na rychlých trendech.",
+      "description2": "Máme zkušenosti s různými obory a víme, co funguje pro váš typ byznysu. Neexperimentujeme s vaší identitou.",
+      "description3": "Transparentnost je pro nás klíčová – vždy víte, co děláme a jaké výsledky to přináší."
+    },
+    "finalCta": {
+      "title": "Zanechej dojem. Zanechej stopu.",
+      "description1": "Nechte si vytvořit firemní identitu, která bude jasná, zapamatovatelná a konzistentní.",
+      "description2": "S námi budete mít značku, která se liší od konkurence a buduje důvěru se zákazníky.",
+      "description3": "Od konceptu až po implementaci a dlouhodobou údržbu.",
+      "ctaButton": "Začni budovat značku"
+    }
+  },
+  "services": {
+    "hero": {
+      "title": "Naše služby",
+      "subtitle": "Komplexní marketingová řešení pro váš byznys",
+      "stats": {
+        "growth": "Průměrný růst 450%",
+        "clients": "100+ spokojených klientů",
+        "satisfaction": "98% spokojenost"
+      }
+    },
+    "title": "Naše služby",
+    "subtitle": "Komplexní marketingová řešení pro váš byznys",
+    "seoContent": {
+      "title": "SEO & Content",
+      "subtitle": "Optimalizace pro vyhledávače",
+      "description": "Zlepšujeme viditelnost vašeho webu v Google a vytváříme kvalitní obsah, který přiláká vaše zákazníky.",
+      "learnMore": "Více o SEO"
+    },
+    "socialMedia": {
+      "title": "Sociální sítě",
+      "subtitle": "Správa sociálních sítí",
+      "description": "Spravujeme vaše sociální sítě, vytváříme angažovaný obsah a budujeme komunitu kolem vaší značky.",
+      "learnMore": "Více o sociálních sítích"
+    },
+    "ppcAdvertising": {
+      "title": "PPC reklama",
+      "subtitle": "Placená reklama",
+      "description": "Spouštíme a optimalizujeme placené kampaně na Google Ads, Facebook a dalších platformách pro maximální ROI.",
+      "learnMore": "Více o PPC"
+    },
+    "webLanding": {
+      "title": "Weby & Landing pages",
+      "subtitle": "Vývoj webových stránek",
+      "description": "Vytváříme moderní, rychlé a konverzní webové stránky a landing pages, které prodávají.",
+      "learnMore": "Více o webech"
+    },
+    "analytics": {
+      "title": "Analytika",
+      "subtitle": "Analýza dat a reportování",
+      "description": "Nastavujeme tracking, analyzujeme data a vytváříme přehledné reporty s akčními doporučeními.",
+      "learnMore": "Více o analytice"
+    },
+    "contentCreation": {
+      "title": "Tvorba obsahu",
+      "subtitle": "Kvalitní obsah pro vaši značku",
+      "description": "Vytváříme originální obsah - články, videa, infografiky a další materiály, které budují vaši autoritu.",
+      "learnMore": "Více o tvorbě obsahu"
+    },
+    "adCampaigns": {
+      "title": "Reklamní kampaně",
+      "subtitle": "Komplexní reklamní řešení",
+      "description": "Navrhujeme a realizujeme kompletní reklamní kampaně napříč všemi kanály s důrazem na výsledky.",
+      "learnMore": "Více o kampaních"
+    },
+    "digitalFootprint": {
+      "title": "Digitální stopa",
+      "subtitle": "Firemní identita a branding",
+      "description": "Pomáháme vytvářet konzistentní firemní identitu a digitální stopu, která buduje důvěru zákazníků.",
+      "learnMore": "Více o digitální stopě"
+    },
+    "learnMore": "Zjistit více",
+    "viewAllServices": "Zobrazit všechny služby",
+    "cta": {
+      "title": "Připraveni začít?",
+      "subtitle": "Kontaktujte nás a domluvíme si bezplatnou konzultaci",
+      "button": "Kontaktovat nás"
     }
   }
 } 

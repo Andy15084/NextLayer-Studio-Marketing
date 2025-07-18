@@ -1,4 +1,4 @@
-export default {
+const skMessages = {
   navigation: {
     webServices: 'Web riešenia',
     services: 'Služby',
@@ -27,4 +27,6 @@ export default {
     subtitle: 'Profesionálny marketing, ktorý vám prinesie nových zákazníkov a zvýši predaje.',
     campaignButton: 'Chcem kampaň'
   }
-}; 
+};
+
+export default skMessages; 

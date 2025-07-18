@@ -1,13 +1,29 @@
 'use client';
 
-import { useState } from 'react';
-import { useLocale, useTranslations } from 'next-intl';
+import { useTranslations } from 'next-intl';
 import type { LocaleCode } from '@/types/i18n.types';
+import { useState, useRef } from 'react';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 export default function MobileLanguageLinks() {
   const [isOpen, setIsOpen] = useState(false);
-  const locale = useLocale() as LocaleCode;
+  const dropdownRef = useRef<HTMLDivElement>(null);
+  const pathname = usePathname();
   const t = useTranslations();
+
+  // Extract locale from pathname - handle root path as Slovak
+  const getLocaleFromPath = (path: string): LocaleCode => {
+    const segments = path.split('/').filter(Boolean);
+    if (segments.length === 0) return 'sk'; // Root path is Slovak
+    const firstSegment = segments[0];
+    if (['sk', 'en', 'de', 'cs'].includes(firstSegment)) {
+      return firstSegment as LocaleCode;
+    }
+    return 'sk'; // Default to Slovak
+  };
+
+  const locale = getLocaleFromPath(pathname);
 
   // Language definitions
   const languages = [
@@ -21,18 +37,39 @@ export default function MobileLanguageLinks() {
     setIsOpen(!isOpen);
   };
 
+  const handleLanguageSelect = (langCode: string) => {
+    setIsOpen(false);
+    const url = getLanguageUrl(langCode);
+    // Force page refresh to ensure translations update properly
+    window.location.href = url;
+  };
+
+  // Create the correct URL for each language
+  const getLanguageUrl = (langCode: string) => {
+    // For all languages, preserve the current path but change locale
+    const segments = pathname.split('/').filter(Boolean);
+    if (segments.length === 0) {
+      return `/${langCode}`;
+    }
+    // If first segment is a locale, replace it
+    if (['sk', 'en', 'de', 'cs'].includes(segments[0])) {
+      segments[0] = langCode;
+      return `/${segments.join('/')}`;
+    } else {
+      // If no locale in path, add it
+      return `/${langCode}${pathname}`;
+    }
+  };
+
   return (
-    <div className="relative w-full">
+    <div className="relative" ref={dropdownRef}>
       <button
         onClick={toggleDropdown}
-        className="font-heading w-full text-left bg-gray-100 text-gray-800 px-4 py-3 rounded-md text-sm font-medium inline-flex items-center justify-between"
+        className="font-heading text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium inline-flex items-center w-full justify-between"
       >
-        <div>
-          <span className="font-bold mr-2">{languages.find(lang => lang.code === locale)?.name || 'SK'}</span>
-          {languages.find(lang => lang.code === locale)?.fullName}
-        </div>
+        <span>Jazyk / Language</span>
         <svg
-          className={`ml-2 h-5 w-5 transition-transform ${
+          className={`ml-2 h-4 w-4 transition-transform ${
             isOpen ? 'rotate-180' : ''
           }`}
           fill="none"
@@ -49,21 +86,22 @@ export default function MobileLanguageLinks() {
       </button>
       
       {isOpen && (
-        <div className="absolute left-0 right-0 mt-2 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-50">
+        <div className="mt-2 w-full rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
           <div className="py-1 divide-y divide-gray-200">
             {languages.map((language) => (
-              <a
+              <Link
                 key={language.code}
-                href={`/${language.code}`}
-                className={`block w-full text-left px-4 py-3 text-sm ${
+                href={getLanguageUrl(language.code)}
+                className={`block w-full text-left px-4 py-2 text-sm ${
                   locale === language.code
                     ? 'bg-gray-100 text-gray-900'
                     : 'text-gray-700 hover:bg-gray-100'
                 } font-heading`}
+                onClick={() => handleLanguageSelect(language.code)}
               >
                 <span className="font-bold mr-2">{language.name}</span>
                 {language.fullName}
-              </a>
+              </Link>
             ))}
           </div>
         </div>

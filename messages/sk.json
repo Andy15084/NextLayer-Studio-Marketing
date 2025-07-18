@@ -5,7 +5,105 @@
   },
   "home": {
     "subtitle": "Profesionálna marketingová agentúra",
-    "campaignButton": "Spustiť kampaň"
+    "campaignButton": "Spustiť kampaň",
+    "expertBadge": "Digitálny marketing expert",
+    "stats": {
+      "averageGrowth": "Priemerný rast",
+      "campaignSuccess": "Úspešnosť kampaní",
+      "clientSatisfaction": "Spokojnosť klientov",
+      "support": "Podpora",
+      "forOurCampaigns": "Pre naše kampane",
+      "exceededGoals": "Presiahli ciele",
+      "averageRating": "Priemerné hodnotenie",
+      "alwaysHere": "Vždy sme tu pre vás"
+    },
+    "services": {
+      "title": "Naše služby",
+      "subtitle": "Komplexné riešenia pre váš digitálny úspech",
+      "seoContent": {
+        "title": "SEO & Content",
+        "subtitle": "Organic growth",
+        "description": "Optimalizujeme váš web pre vyhľadávače a vytvárame kvalitný obsah, ktorý priláka organickú návštevnosť.",
+        "learnMore": "Zistiť viac"
+      },
+      "socialMedia": {
+        "title": "Sociálne siete",
+        "subtitle": "Community building",
+        "description": "Správame vaše sociálne siete, vytvárame engažujúci obsah a budujeme komunitu vašich fanúšikov.",
+        "learnMore": "Zistiť viac"
+      },
+      "ppcAdvertising": {
+        "title": "PPC reklama",
+        "subtitle": "Performance marketing",
+        "description": "Spúšťame a optimalizujeme výkonnostné kampane, ktoré prinášajú merateľné výsledky a vysokú návratnosť.",
+        "learnMore": "Zistiť viac"
+      },
+      "webLanding": {
+        "title": "Weby & Landing pages",
+        "subtitle": "Modern development",
+        "description": "Vytvárame rýchle, moderné a konverzné webstránky, ktoré presvedčia návštevníkov k akcii.",
+        "learnMore": "Zistiť viac"
+      },
+      "viewAllServices": "Pozrieť všetky služby"
+    },
+    "process": {
+      "title": "Ako pracujeme",
+      "subtitle": "Moderný marketing nemusí byť zložitý. U nás funguje všetko jednoducho, rýchlo a prehľadne.",
+      "step1": {
+        "title": "Počúvame a analyzujeme",
+        "subtitle": "Spoznáme váš biznis",
+        "description": "Najprv vás spoznáme – vašu značku, cieľovku, ciele a výzvy. Zanalyzujeme, kde ste a kam sa chcete dostať.",
+        "output": "Výstup: Brief, cieľ kampane, analýza aktuálneho stavu"
+      },
+      "step2": {
+        "title": "Navrhujeme stratégiu",
+        "subtitle": "Vytvoríme plán",
+        "description": "Na základe analýzy pripravíme konkrétny plán. Navrhneme vhodné kanály, rozpočty a formáty komunikácie.",
+        "output": "Výstup: Marketingová stratégia, návrh obsahu, harmonogram"
+      },
+      "step3": {
+        "title": "Implementujeme a spúšťame",
+        "subtitle": "Spustíme kampane",
+        "description": "Všetko pripravíme a spustíme podľa plánu. Nastavíme účty, tracking a optimalizujeme kampane.",
+        "output": "Výstup: Spustené kampane, aktívne kanály, tracking"
+      },
+      "step4": {
+        "title": "Optimalizujeme a rastieme",
+        "subtitle": "Nepretržitý rast",
+        "description": "Neustále sledujeme výsledky a optimalizujeme. Pravidelne reportujeme a navrhujeme vylepšenia.",
+        "output": "Výstup: Pravidelné reporty, optimalizácie, rozšírenia"
+      },
+      "analysis": "Analýza",
+      "strategicPlanning": "Strategické plánovanie",
+      "implementation": "Implementácia",
+      "campaignLaunch": "Spustenie kampaní"
+    },
+    "contact": {
+      "title": "Začnime spolupracovať",
+      "subtitle": "Máte otázky alebo chcete začať s marketingom? Kontaktujte nás a dohodneme si bezplatnú konzultáciu.",
+      "formTitle": "Kontaktný formulár"
+    },
+    "analytics": {
+      "marketingAnalytics": "Marketing Analytics",
+      "realTimeData": "Real-time data",
+      "conversions": "Conversions",
+      "roiTracking": "ROI Tracking",
+      "performanceMetrics": "Performance metrics",
+      "socialMedia": "Social Media",
+      "engagementRate": "Engagement rate",
+      "reach": "Reach",
+      "totalImpressions": "Total impressions",
+      "activeCampaigns": "Active Campaigns",
+      "ppcSocial": "PPC & Social",
+      "ctr": "CTR",
+      "clickThroughRate": "Click-through rate",
+      "trafficSources": "Traffic Sources",
+      "organicVsPaid": "Organic vs Paid",
+      "organic": "Organic",
+      "paid": "Paid",
+      "newUsers": "New Users",
+      "thisMonth": "This month"
+    }
   },
   "Metadata": {
     "title": "NextLayer Studio",
@@ -128,6 +226,1295 @@
     "summary": {
       "title": "Zhrnutie?",
       "content": "Otvorená komunikácia, jasný proces, žiadne hádanky.\nVy viete, čo chcete. My vieme, ako to dosiahnuť. Spolu to dotiahneme tam, kde má vaša značka byť – na očiach, v povedomí a v dôvere zákazníkov."
+    }
+  },
+  "socialMedia": {
+    "title": "Sociálne siete, ktoré budujú značku.",
+    "subtitle": "Nie len príspevky. Stratégia, ktorá prináša výsledky.",
+    "description1": "Sociálne siete sú miesto, kde sa tvoja značka stretáva s ľuďmi. Kde sa buduje dôvera, komunita a lojalita.",
+    "description2": "V NextLayer Studio robíme sociálne siete, ktoré nie sú len o \"byť vidieť\" – sú o tom, aby si ľudí zaujal, zapojil a získal.",
+    "description3": "Od stratégie cez obsah až po komunitu – všetko s dôrazom na autenticitu a výsledky.",
+    "ctaButton": "Spustiť sociálne siete",
+    "stats": {
+      "activeUsers": "Aktívnych používateľov",
+      "socialNetworks": "sociálnych sietí",
+      "averageTime": "Priemerný čas",
+      "dailyOnSocial": "denne na sociálnych sieťach",
+      "customers": "Zákazníkov",
+      "buyAfterSocial": "kupuje po sociálnych sieťach"
+    },
+    "whyImportant": {
+      "title": "Prečo sú sociálne siete dôležité?",
+      "description1": "Sociálne siete sú miesto, kde sa ľudia rozhodujú o značkách. Kde sa buduje dôvera, kde sa riešia otázky a kde sa vytvárajú vzťahy.",
+      "description2": "Nie je to len o počte followerov. Je to o tom, ako sa tvoja značka správa online, ako komunikuje a ako buduje komunitu.",
+      "description3": "Správne vedené sociálne siete ti pomôžu byť bližšie k zákazníkom, získať spätnú väzbu a budovať dlhodobé vzťahy."
+    },
+    "benefits": {
+      "title": "Benefity sociálnych sietí",
+      "brandBuilding": {
+        "title": "Budovanie značky",
+        "description": "Autentická komunikácia"
+      },
+      "directContact": {
+        "title": "Priamy kontakt",
+        "description": "S zákazníkmi"
+      },
+      "increaseSales": {
+        "title": "Zvýšenie predajov",
+        "description": "Cielené kampane"
+      },
+      "feedback": {
+        "title": "Spätná väzba",
+        "description": "Od zákazníkov"
+      },
+      "community": {
+        "title": "Komunita",
+        "description": "Lojálnych zákazníkov"
+      }
+    },
+    "howWeWork": {
+      "title": "Ako pracujeme na sociálnych sieťach",
+      "step1": {
+        "title": "Analýza a stratégia",
+        "description": "Zistíme tvoju cieľovku a naplánujeme obsahovú stratégiu."
+      },
+      "step2": {
+        "title": "Výber platformy",
+        "description": "Vyberieme správne siete podľa tvojej cieľovky."
+      },
+      "step3": {
+        "title": "Tvorba obsahu",
+        "description": "Vytvoríme príspevky, príbehy, rels a ďalší obsah."
+      },
+      "step4": {
+        "title": "Publikovanie a monitoring",
+        "description": "Pravidelne publikujeme a sledujeme výkonnosť."
+      },
+      "step5": {
+        "title": "Komunita a interakcia",
+        "description": "Reagujeme na komentáre a budujeme komunitu."
+      },
+      "step6": {
+        "title": "Analýza a optimalizácia",
+        "description": "Pravidelne vyhodnocujeme výsledky a optimalizujeme stratégiu."
+      }
+    },
+    "whyAgency": {
+      "title": "Prečo to robiť s agentúrou?",
+      "diy": {
+        "title": "DIY (Sám)",
+        "timeConsuming": {
+          "title": "Časovo náročné",
+          "description": "Každý deň hodiny práce"
+        },
+        "lackExperience": {
+          "title": "Nedostatok skúseností",
+          "description": "Chyby a neefektívnosť"
+        },
+        "inconsistency": {
+          "title": "Nekonzistentnosť",
+          "description": "Prerušovaná komunikácia"
+        },
+        "missingTools": {
+          "title": "Chýbajúce nástroje",
+          "description": "Drahé licencie a software"
+        }
+      },
+      "withAgency": {
+        "title": "S agentúrou",
+        "saveTime": {
+          "title": "Ušetríš čas",
+          "description": "Sústredíš sa na biznis"
+        },
+        "professionalApproach": {
+          "title": "Profesionálny prístup",
+          "description": "Skúsenosti a know-how"
+        },
+        "consistency": {
+          "title": "Konzistentnosť",
+          "description": "Pravidelná komunikácia"
+        },
+        "allTools": {
+          "title": "Všetky nástroje",
+          "description": "Profesionálne vybavenie"
+        }
+      }
+    },
+    "whatWeOffer": {
+      "title": "Čo všetko vieme zabezpečiť?",
+      "socialMediaManagement": {
+        "title": "Správa sociálnych sietí",
+        "description": "Denná komunikácia"
+      },
+      "contentCreation": {
+        "title": "Tvorba obsahu",
+        "description": "Príspevky, príbehy, reels"
+      },
+      "communityManagement": {
+        "title": "Komunita management",
+        "description": "Reakcie na komentáre"
+      },
+      "influencerMarketing": {
+        "title": "Influencer marketing",
+        "description": "Spolupráca s influencerami"
+      },
+      "contentCalendar": {
+        "title": "Content kalendár",
+        "description": "Plánovanie obsahu"
+      },
+      "performanceAnalysis": {
+        "title": "Analýza výkonnosti",
+        "description": "Reporty a metriky"
+      },
+      "adCampaigns": {
+        "title": "Reklamné kampane",
+        "description": "Na sociálnych sieťach"
+      },
+      "accountSetup": {
+        "title": "Nastavenie účtov",
+        "description": "Profesionálne profily"
+      },
+      "reportsConsultations": {
+        "title": "Pravidelné reporty a konzultácie",
+        "description": "Mesačné vyhodnotenie s odporúčaniami"
+      }
+    },
+    "finalCta": {
+      "title": "Sociálne siete, ktoré budujú značku.",
+      "description1": "Nechaj si vytvoriť sociálne siete, ktoré budú autentické, zaujímavé a budú ti prinášať reálne výsledky.",
+      "description2": "Od stratégie až po dennú komunikáciu – všetko s dôrazom na tvoju značku a cieľovku.",
+      "description3": "A ty? Ty sa môžeš sústrediť na svoj biznis."
+    }
+  },
+  "ppcAdvertising": {
+    "title": "PPC reklama, ktorá prináša výsledky.",
+    "subtitle": "Platená reklama s presným cielením a merateľnými výsledkami.",
+    "description1": "PPC (Pay-Per-Click) reklama je rýchly spôsob, ako sa dostaneš k zákazníkom, ktorí práve hľadajú tvoju službu.",
+    "description2": "V NextLayer Studio robíme kampane, ktoré sú \"smart\" – cielené, optimalizované a prinášajú ROI.",
+    "description3": "Od Google Ads cez Facebook až po TikTok – všetko s dôrazom na konverzie, nie len na zobrazenia.",
+    "ctaButton": "Spustiť PPC kampaň",
+    "whyPpcWorks": {
+      "title": "Prečo PPC funguje?"
+    },
+    "stats": {
+      "averageRoas": "Priemerný ROAS",
+      "roiReturn": "Návratnosť investície",
+      "launchTime": "Čas spustenia",
+      "fromOrderToDisplay": "Od objednávky po zobrazenie",
+      "targetingAccuracy": "Presnosť cielenia",
+      "byDemographics": "Podľa demografie a záujmov",
+      "averageCpc": "Priemerný CPC",
+      "costPerClick": "Cena za kliknutie"
+    },
+    "whatIsPpc": {
+      "title": "Čo je PPC reklama?",
+      "description1": "PPC (Pay-Per-Click) znamená, že platíš len za kliknutie, nie za zobrazenie reklamy.",
+      "description2": "Je to rýchly spôsob, ako sa dostaneš k zákazníkom, ktorí práve hľadajú tvoju službu alebo produkt.",
+      "description3": "Výhoda je v tom, že máš plnú kontrolu nad rozpočtom, cielením a môžeš presne merať, koľko ti každý zákazník stojí."
+    },
+    "benefits": {
+      "title": "Výhody PPC reklamy",
+      "immediateVisibility": {
+        "title": "Okamžitá viditeľnosť",
+        "description": "Výsledky už za pár hodín"
+      },
+      "preciseTargeting": {
+        "title": "Presné cielenie",
+        "description": "Podľa demografie, záujmov, správania"
+      },
+      "measurableResults": {
+        "title": "Merateľné výsledky",
+        "description": "Každý cent sa dá spočítať"
+      },
+      "flexibility": {
+        "title": "Flexibilita",
+        "description": "Môžeš meniť kampaň kedykoľvek"
+      }
+    },
+    "howWeWork": {
+      "title": "Ako pracujeme s PPC",
+      "step1": {
+        "title": "Analýza a stratégia",
+        "description": "Zistíme tvoju cieľovku a naplánujeme kampaň."
+      },
+      "step2": {
+        "title": "Výber platformy",
+        "description": "Vyberieme správne kanály podľa tvojej cieľovky."
+      },
+      "step3": {
+        "title": "Tvorba kampane",
+        "description": "Vytvoríme reklamy, kľúčové slová a landing pages."
+      },
+      "step4": {
+        "title": "Spustenie a monitoring",
+        "description": "Spustíme kampaň a sledujeme výkonnosť."
+      },
+      "step5": {
+        "title": "Optimalizácia",
+        "description": "Pravidelne optimalizujeme na základe výsledkov."
+      },
+      "step6": {
+        "title": "Reporting",
+        "description": "Pravidelne reportujeme a navrhujeme vylepšenia."
+      }
+    },
+    "whyAgency": {
+      "title": "Prečo to robiť s agentúrou?",
+      "diy": {
+        "title": "DIY (Sám)",
+        "complexity": {
+          "title": "Zložitosť",
+          "description": "Súčasťou je veľa technických detailov"
+        },
+        "lackExperience": {
+          "title": "Nedostatok skúseností",
+          "description": "Chyby a neefektívnosť"
+        },
+        "wastedBudget": {
+          "title": "Plytvanie rozpočtom",
+          "description": "Nesprávne nastavenia"
+        },
+        "timeConsuming": {
+          "title": "Časovo náročné",
+          "description": "Každý deň hodiny práce"
+        }
+      },
+      "withAgency": {
+        "title": "S agentúrou",
+        "expertise": {
+          "title": "Expertíza",
+          "description": "Skúsenosti a know-how"
+        },
+        "optimization": {
+          "title": "Optimalizácia",
+          "description": "Maximálny ROI"
+        },
+        "saveTime": {
+          "title": "Ušetríš čas",
+          "description": "Sústredíš sa na biznis"
+        },
+        "results": {
+          "title": "Výsledky",
+          "description": "Merateľné a predvídateľné"
+        }
+      }
+    },
+    "whatWeOffer": {
+      "title": "Čo všetko vieme zabezpečiť?",
+      "googleAds": {
+        "title": "Google Ads",
+        "description": "Vyhľadávanie a display"
+      },
+      "facebookAds": {
+        "title": "Facebook & Instagram Ads",
+        "description": "Sociálne siete"
+      },
+      "tiktokAds": {
+        "title": "TikTok Ads",
+        "description": "Krátke videá"
+      },
+      "linkedinAds": {
+        "title": "LinkedIn Ads",
+        "description": "B2B marketing"
+      },
+      "remarketing": {
+        "title": "Remarketing",
+        "description": "Návrat návštevníkov"
+      },
+      "landingPages": {
+        "title": "Landing pages",
+        "description": "Konverzné stránky"
+      },
+      "analytics": {
+        "title": "Analytika",
+        "description": "Sledovanie výsledkov"
+      },
+      "optimization": {
+        "title": "Optimalizácia",
+        "description": "Zlepšovanie výkonnosti"
+      },
+      "reporting": {
+        "title": "Pravidelné reporty",
+        "description": "Mesačné vyhodnotenie"
+      }
+    },
+    "finalCta": {
+      "title": "PPC reklama, ktorá prináša výsledky.",
+      "description1": "Nechaj si vytvoriť PPC kampane, ktoré budú cielené, optimalizované a budú ti prinášať merateľné výsledky.",
+      "description2": "Od Google Ads až po sociálne siete – všetko s dôrazom na konverzie a ROI.",
+      "description3": "A ty? Ty sa môžeš sústrediť na svoj biznis."
+    }
+  },
+  "seoContent": {
+    "title": "SEO & Content, ktoré sa vypláca.",
+    "subtitle": "Organické výsledky a kvalitný obsah, ktorý konvertuje.",
+    "description1": "SEO nie je len o kľúčových slovách. Je to o tom, ako sa tvoja stránka zobrazuje v Google a ako ju ľudia nachádzajú.",
+    "description2": "V NextLayer Studio robíme SEO, ktoré je \"smart\" – založené na dátach, optimalizované pre používateľov a dlhodobo udržateľné.",
+    "description3": "Od technického SEO cez obsah až po linkbuilding – všetko s dôrazom na organický rast a konverzie.",
+    "ctaButton": "Spustiť SEO & Content",
+    "whySeoWorks": {
+      "title": "Prečo SEO funguje?"
+    },
+    "stats": {
+      "onlineExperiences": "Online zážitkov",
+      "startWithSearch": "Začínajú s vyhľadávaním",
+      "clicks": "Kliknutí",
+      "goToFirst3": "Ide na prvé 3 výsledky",
+      "costPerClick": "Cena za kliknutie",
+      "organicResults": "Organické výsledky",
+      "availability": "Dostupnosť",
+      "resultsWorkAlways": "Výsledky fungujú stále"
+    },
+    "whatIsSeo": {
+      "title": "Čo je SEO & Content?",
+      "description1": "SEO (Search Engine Optimization) je proces optimalizácie webstránky pre vyhľadávače ako Google.",
+      "description2": "Cieľom je zlepšiť viditeľnosť stránky v organických (neplatených) výsledkoch vyhľadávania.",
+      "description3": "Content marketing je o tvorbe hodnotného obsahu, ktorý priláka, zaujme a konvertuje tvoju cieľovú skupinu."
+    },
+    "seoPillars": {
+      "title": "Pilíre SEO",
+      "technicalSeo": {
+        "title": "Technické SEO",
+        "description": "Rýchlosť, indexovanie, štruktúra"
+      },
+      "onPageSeo": {
+        "title": "On-page SEO",
+        "description": "Kľúčové slová, meta tagy, obsah"
+      },
+      "offPageSeo": {
+        "title": "Off-page SEO",
+        "description": "Backlinky, autorita, dôveryhodnosť"
+      },
+      "userExperience": {
+        "title": "User Experience",
+        "description": "Navigácia, mobilnosť, rýchlosť"
+      }
+    },
+    "howWeWork": {
+      "title": "Ako pracujeme na SEO & Content",
+      "step1": {
+        "title": "Analýza a audit",
+        "description": "Zistíme aktuálny stav a identifikujeme príležitosti."
+      },
+      "step2": {
+        "title": "Výber kľúčových slov",
+        "description": "Vyberieme slová, ktoré používajú tvoji potenciálni zákazníci."
+      },
+      "step3": {
+        "title": "Technická optimalizácia",
+        "description": "Opravíme technické problémy a zlepšíme rýchlosť."
+      },
+      "step4": {
+        "title": "Tvorba obsahu",
+        "description": "Vytvoríme kvalitný obsah optimalizovaný pre SEO."
+      },
+      "step5": {
+        "title": "Linkbuilding",
+        "description": "Získame kvalitné backlinky z dôveryhodných stránok."
+      },
+      "step6": {
+        "title": "Monitoring a optimalizácia",
+        "description": "Sledujeme výsledky a neustále vylepšujeme."
+      }
+    },
+    "whatWeOffer": {
+      "title": "Čo všetko vieme zabezpečiť?",
+      "technicalSeo": {
+        "title": "Technické SEO",
+        "description": "Rýchlosť, indexovanie, štruktúra"
+      },
+      "keywordResearch": {
+        "title": "Výskum kľúčových slov",
+        "description": "Analýza a výber správnych slov"
+      },
+      "contentCreation": {
+        "title": "Tvorba obsahu",
+        "description": "Články, blogy, príspevky"
+      },
+      "onPageOptimization": {
+        "title": "On-page optimalizácia",
+        "description": "Meta tagy, nadpisy, štruktúra"
+      },
+      "linkBuilding": {
+        "title": "Linkbuilding",
+        "description": "Získavanie kvalitných backlinkov"
+      },
+      "localSeo": {
+        "title": "Lokálne SEO",
+        "description": "Optimalizácia pre lokálne vyhľadávanie"
+      },
+      "ecommerceSeo": {
+        "title": "E-commerce SEO",
+        "description": "Optimalizácia pre online obchody"
+      },
+      "seoAudit": {
+        "title": "SEO audit",
+        "description": "Kompletná analýza a odporúčania"
+      },
+      "performanceTracking": {
+        "title": "Sledovanie výkonnosti",
+        "description": "Reporty a metriky"
+      }
+    },
+    "whyAgency": {
+      "title": "Prečo to robiť s agentúrou?",
+      "diy": {
+        "title": "DIY (Sám)",
+        "complexity": {
+          "title": "Zložitosť",
+          "description": "Mnoho technických detailov"
+        },
+        "lackExperience": {
+          "title": "Nedostatok skúseností",
+          "description": "Chyby a neefektívnosť"
+        },
+        "timeConsuming": {
+          "title": "Časovo náročné",
+          "description": "Mesiace práce na výsledky"
+        },
+        "algorithmChanges": {
+          "title": "Zmeny algoritmov",
+          "description": "Google mení pravidlá"
+        }
+      },
+      "withAgency": {
+        "title": "S agentúrou",
+        "expertise": {
+          "title": "Expertíza",
+          "description": "Skúsenosti a know-how"
+        },
+        "fasterResults": {
+          "title": "Rýchlejšie výsledky",
+          "description": "Profesionálny prístup"
+        },
+        "saveTime": {
+          "title": "Ušetríš čas",
+          "description": "Sústredíš sa na biznis"
+        },
+        "stayUpdated": {
+          "title": "Aktuálne informácie",
+          "description": "Sledujeme zmeny"
+        }
+      }
+    },
+    "finalCta": {
+      "title": "SEO & Content, ktoré sa vypláca.",
+      "description1": "Nechaj si vytvoriť SEO stratégiu, ktorá bude založená na dátach, optimalizovaná pre používateľov a bude ti prinášať organické výsledky.",
+      "description2": "Od technického SEO až po obsah – všetko s dôrazom na dlhodobý rast a konverzie.",
+      "description3": "A ty? Ty sa môžeš sústrediť na svoj biznis."
+    }
+  },
+  "webLanding": {
+    "title": "Weby & Landing pages, ktoré konvertujú.",
+    "subtitle": "Moderné, rýchle a konverzne optimalizované webstránky.",
+    "description1": "Webstránka je tvoja digitálna vizitka. Je to prvé, čo zákazníci uvidia a posúdia.",
+    "description2": "V NextLayer Studio robíme weby, ktoré sú \"smart\" – rýchle, responzívne, konverzne optimalizované a technicky dokonalé.",
+    "description3": "Od návrhu cez vývoj až po optimalizáciu – všetko s dôrazom na používateľský zážitok a konverzie.",
+    "ctaButton": "Spustiť web projekt",
+    "whyModernWebWorks": {
+      "title": "Prečo moderný web funguje?"
+    },
+    "stats": {
+      "averageLoadTime": "Priemerný čas načítania",
+      "forSuccessfulWebsites": "Pre úspešné weby",
+      "mobileTraffic": "Mobilný traffic",
+      "onModernWebsites": "Na moderných weboch",
+      "decisionTime": "Čas na rozhodnutie",
+      "userLeaves": "Používateľa oďaľ",
+      "averageConversionIncrease": "Priemerný nárast konverzií",
+      "afterOptimization": "Po optimalizácii"
+    },
+    "whatIsModernWeb": {
+      "title": "Čo je moderný web?",
+      "description1": "Moderný web je rýchly, responzívny a optimalizovaný pre všetky zariadenia.",
+      "description2": "Je to web, ktorý sa načíta za menej ako 3 sekundy, vyzerá perfektne na mobile aj desktope a vedie zákazníkov k akcii.",
+      "description3": "Je to web, ktorý je technicky dokonalý, bezpečný a prispôsobený pre vyhľadávače."
+    },
+    "technologies": {
+      "title": "Technológie, ktoré používame",
+      "reactNextjs": {
+        "title": "React/Next.js",
+        "description": "Moderný frontend"
+      },
+      "typescript": {
+        "title": "TypeScript",
+        "description": "Typová bezpečnosť"
+      },
+      "tailwindCss": {
+        "title": "Tailwind CSS",
+        "description": "Rýchly vývoj"
+      },
+      "seoOptimization": {
+        "title": "SEO optimalizácia",
+        "description": "Viditeľnosť"
+      }
+    },
+    "howWeWork": {
+      "title": "Ako pracujeme na webe",
+      "step1": {
+        "title": "Analýza a plánovanie",
+        "description": "Zistíme tvoje potreby a vytvoríme plán."
+      },
+      "step2": {
+        "title": "Návrh a wireframing",
+        "description": "Vytvoríme vizuálny návrh a štruktúru."
+      },
+      "step3": {
+        "title": "Vývoj a programovanie",
+        "description": "Zakódujeme web s modernými technológiami."
+      },
+      "step4": {
+        "title": "Testovanie a optimalizácia",
+        "description": "Otestujeme a optimalizujeme výkon."
+      },
+      "step5": {
+        "title": "Spustenie a monitoring",
+        "description": "Spustíme web a sledujeme jeho výkon."
+      },
+      "step6": {
+        "title": "Podpora a údržba",
+        "description": "Poskytujeme pokračujúcu podporu."
+      }
+    },
+    "whatWeOffer": {
+      "title": "Čo všetko vieme zabezpečiť?",
+      "corporateWebsites": {
+        "title": "Firemné webstránky",
+        "description": "Profesionálne weby pre firmy"
+      },
+      "ecommerceWebsites": {
+        "title": "E-commerce weby",
+        "description": "Online obchody a predajné platformy"
+      },
+      "landingPages": {
+        "title": "Landing pages",
+        "description": "Konverzne optimalizované stránky"
+      },
+      "webApplications": {
+        "title": "Webové aplikácie",
+        "description": "Komplexné aplikácie a systémy"
+      },
+      "responsiveDesign": {
+        "title": "Responzívny dizajn",
+        "description": "Optimalizácia pre všetky zariadenia"
+      },
+      "seoOptimization": {
+        "title": "SEO optimalizácia",
+        "description": "Optimalizácia pre vyhľadávače"
+      },
+      "performanceOptimization": {
+        "title": "Optimalizácia výkonu",
+        "description": "Rýchlosť a efektivita"
+      },
+      "maintenanceSupport": {
+        "title": "Údržba a podpora",
+        "description": "Pokračujúca podpora a aktualizácie"
+      }
+    },
+    "whyAgency": {
+      "title": "Prečo to robiť s agentúrou?",
+      "diy": {
+        "title": "DIY (Sám)",
+        "complexity": {
+          "title": "Zložitosť",
+          "description": "Mnoho technických detailov"
+        },
+        "lackExperience": {
+          "title": "Nedostatok skúseností",
+          "description": "Chyby a neefektívnosť"
+        },
+        "timeConsuming": {
+          "title": "Časovo náročné",
+          "description": "Mesiace práce na výsledky"
+        },
+        "maintenance": {
+          "title": "Údržba",
+          "description": "Potreba pokračujúcej podpory"
+        }
+      },
+      "withAgency": {
+        "title": "S agentúrou",
+        "expertise": {
+          "title": "Expertíza",
+          "description": "Skúsenosti a know-how"
+        },
+        "fasterResults": {
+          "title": "Rýchlejšie výsledky",
+          "description": "Profesionálny prístup"
+        },
+        "saveTime": {
+          "title": "Ušetríš čas",
+          "description": "Sústredíš sa na biznis"
+        },
+        "ongoingSupport": {
+          "title": "Pokračujúca podpora",
+          "description": "Údržba a aktualizácie"
+        }
+      }
+    },
+    "finalCta": {
+      "title": "Weby & Landing pages, ktoré konvertujú.",
+      "description1": "Nechaj si vytvoriť web, ktorý bude rýchly, moderný a bude ti prinášať zákazníkov.",
+      "description2": "Od návrhu až po spustenie a podporu – všetko s dôrazom na kvalitu a výsledky.",
+      "description3": "A ty? Ty sa môžeš sústrediť na svoj biznis."
+    }
+  },
+  "analytics": {
+    "title": "Analytika, ktorá dáva zmysel.",
+    "subtitle": "Dáta, ktoré ti povedia, čo robiť ďalej.",
+    "description1": "Analytika nie je len o číslach. Je o pochopení správania zákazníkov, identifikácii príležitostí a optimalizácii kampán.",
+    "description2": "V NextLayer Studio robíme analýzy, ktoré sú prehľadné, akčné a pomáhajú ti robiť lepšie rozhodnutia.",
+    "description3": "Od Google Analytics cez Facebook Insights až po vlastné reporty – všetko s dôrazom na praktické využitie.",
+    "ctaButton": "Spustiť analýzu",
+    "whyAnalyticsImportant": {
+      "title": "Prečo je analytika dôležitá?"
+    },
+    "stats": {
+      "visitors": "Návštevníkov",
+      "averageTime": "Priemerný čas",
+      "conversion": "Konverzia",
+      "roi": "ROI"
+    },
+    "whatIsAnalytics": {
+      "title": "Čo je analytika?",
+      "description1": "Analytika je systém zberu, analýzy a interpretácie dát o návštevníkoch tvojho webu.",
+      "description2": "Pomáha ti pochopiť, ako sa ľudia správajú na tvojej stránke, čo ich zaujíma a kde majú problémy.",
+      "description3": "S týmito informáciami môžeš optimalizovať web, kampane a celkovú stratégiu."
+    },
+    "keyMetrics": {
+      "title": "Kľúčové metriky",
+      "traffic": "Návštevnosť",
+      "engagement": "Engagement",
+      "conversions": "Konverzie",
+      "roi": "ROI"
+    },
+    "howWeWork": {
+      "title": "Ako pracujeme na analytike",
+      "step1": {
+        "title": "Nastavenie tracking",
+        "description": "Nastavíme sledovanie všetkých dôležitých metrík."
+      },
+      "step2": {
+        "title": "Zber dát",
+        "description": "Zbierame dáta z rôznych zdrojov a kanálov."
+      },
+      "step3": {
+        "title": "Analýza a interpretácia",
+        "description": "Analyzujeme dáta a hľadáme vzory a príležitosti."
+      },
+      "step4": {
+        "title": "Reportovanie",
+        "description": "Vytvoríme prehľadné reporty s akčnými odporúčaniami."
+      },
+      "step5": {
+        "title": "Optimalizácia",
+        "description": "Implementujeme zmeny na základe analýzy."
+      },
+      "step6": {
+        "title": "Monitoring",
+        "description": "Sledujeme výsledky a pokračujeme v optimalizácii."
+      }
+    },
+    "whatWeOffer": {
+      "title": "Čo všetko vieme zabezpečiť?",
+      "googleAnalytics": {
+        "title": "Google Analytics",
+        "description": "Kompletná analýza webu"
+      },
+      "facebookInsights": {
+        "title": "Facebook Insights",
+        "description": "Analýza sociálnych sietí"
+      },
+      "googleAds": {
+        "title": "Google Ads",
+        "description": "Analýza reklám"
+      },
+      "customReports": {
+        "title": "Vlastné reporty",
+        "description": "Špecifické metriky pre tvoj biznis"
+      },
+      "conversionTracking": {
+        "title": "Sledovanie konverzií",
+        "description": "Meranie úspechu kampán"
+      },
+      "userBehavior": {
+        "title": "Správanie používateľov",
+        "description": "Analýza user journey"
+      },
+      "performanceOptimization": {
+        "title": "Optimalizácia výkonu",
+        "description": "Zlepšenie na základe dát"
+      },
+      "monthlyReports": {
+        "title": "Mesačné reporty",
+        "description": "Pravidelné vyhodnotenie"
+      }
+    },
+    "whyAgency": {
+      "title": "Prečo to robiť s agentúrou?",
+      "diy": {
+        "title": "DIY (Sám)",
+        "complexity": {
+          "title": "Zložitosť",
+          "description": "Mnoho nástrojov a metrík"
+        },
+        "lackExperience": {
+          "title": "Nedostatok skúseností",
+          "description": "Chybné interpretácie"
+        },
+        "timeConsuming": {
+          "title": "Časovo náročné",
+          "description": "Hodiny analýzy"
+        },
+        "dataOverload": {
+          "title": "Preťaženie dátami",
+          "description": "Príliš veľa informácií"
+        }
+      },
+      "withAgency": {
+        "title": "S agentúrou",
+        "expertise": {
+          "title": "Expertíza",
+          "description": "Skúsenosti s analýzou"
+        },
+        "clearInsights": {
+          "title": "Jasné poznatky",
+          "description": "Prehľadné reporty"
+        },
+        "saveTime": {
+          "title": "Ušetríš čas",
+          "description": "Sústredíš sa na biznis"
+        },
+        "actionableRecommendations": {
+          "title": "Akčné odporúčania",
+          "description": "Konkrétne kroky"
+        }
+      }
+    },
+    "finalCta": {
+      "title": "Analytika, ktorá dáva zmysel.",
+      "description1": "Nechaj si vytvoriť analytickú stratégiu, ktorá ti poskytne jasné poznatky o tvojich zákazníkoch.",
+      "description2": "Od nastavenia tracking až po pravidelný monitoring – všetko s dôrazom na praktické využitie.",
+      "description3": "A ty? Ty sa môžeš sústrediť na svoj biznis."
+    }
+  },
+  "contentCreation": {
+    "hero": {
+      "title": "Kontent, ktorý sa číta.",
+      "subtitle": "Obsah, ktorý zaujme, poučí a konvertuje.",
+      "description1": "Dobrý kontent je základom každého úspešného marketingu. Je to spôsob, ako sa dostaneš k zákazníkom bez reklám.",
+      "description2": "V NextLayer Studio robíme obsah, ktorý nie je len o \"byť vidieť\" – je o tom, aby si ľudí zaujal, poučil a presvedčil.",
+      "description3": "Od článkov cez videá až po infografiky – všetko s dôrazom na hodnotu a autenticitu.",
+      "ctaButton": "Vytvoriť kontent"
+    },
+    "stats": {
+      "title": "Prečo je kvalitný kontent dôležitý?",
+      "stat1": {
+        "percentage": "70%",
+        "label": "Zákazníkov",
+        "description": "sa informuje cez obsah"
+      },
+      "stat2": {
+        "percentage": "3x",
+        "label": "Viac konverzií",
+        "description": "s kvalitným obsahom"
+      },
+      "stat3": {
+        "percentage": "60%",
+        "label": "Nižšie náklady",
+        "description": "na získanie zákazníka"
+      },
+      "stat4": {
+        "percentage": "5x",
+        "label": "Viac zdieľaní",
+        "description": "organický obsah"
+      },
+      "qualityContent": {
+        "title": "Čo je kvalitný kontent?",
+        "description1": "Kvalitný kontent je ten, ktorý rieši problémy tvojich zákazníkov a poskytuje im hodnotu.",
+        "description2": "Je to obsah, ktorý sa ľahko číta, je vizuálne príťažlivý a vedie k akcii.",
+        "description3": "Je to obsah, ktorý buduje dôveru, autoritu a dlhodobé vzťahy so zákazníkmi."
+      },
+      "contentTypes": {
+        "title": "Typy obsahu",
+        "video": {
+          "title": "Video",
+          "description": "Reels, spoty, tutoriály"
+        },
+        "text": {
+          "title": "Text",
+          "description": "Články, blog, copy"
+        },
+        "graphics": {
+          "title": "Grafika",
+          "description": "Príspevky, infografiky"
+        },
+        "audio": {
+          "title": "Audio",
+          "description": "Podcasty, zvukové"
+        }
+      }
+    },
+    "process": {
+      "title": "Ako pracujeme na kontente",
+      "step1": {
+        "title": "Analýza a stratégia",
+        "description": "Zistíme tvoju cieľovku a naplánujeme obsahovú stratégiu.",
+        "tag": "Audience research"
+      },
+      "step2": {
+        "title": "Kreatívny koncept",
+        "description": "Vytvoríme nápad, štýl a formu obsahu.",
+        "tag": "Creative concept"
+      },
+      "step3": {
+        "title": "Produkcia obsahu",
+        "description": "Tvoríme video, grafiku, texty a ďalší obsah.",
+        "tag": "Content production"
+      },
+      "step4": {
+        "title": "Optimalizácia a úpravy",
+        "description": "Upravujeme obsah podľa spätnej väzby a optimalizujeme.",
+        "tag": "Refinement"
+      },
+      "step5": {
+        "title": "Publikovanie a distribúcia",
+        "description": "Zverejníme obsah na správnych platformách.",
+        "tag": "Distribution"
+      },
+      "step6": {
+        "title": "Analýza a optimalizácia",
+        "description": "Sledujeme výkonnosť a vylepšujeme budúci obsah.",
+        "tag": "Performance analysis"
+      }
+    },
+    "services": {
+      "title": "Aký obsah vytvárame?",
+      "videoContent": {
+        "title": "Video obsah",
+        "description": "Reels, TikTok, YouTube, spoty",
+        "benefit": "Vysoká engagement"
+      },
+      "graphicDesign": {
+        "title": "Grafický dizajn",
+        "description": "Príspevky, carousel, infografiky",
+        "benefit": "Vizuálna príťažlivosť"
+      },
+      "textContent": {
+        "title": "Textový obsah",
+        "description": "Články, blog, copywriting",
+        "benefit": "SEO optimalizácia"
+      },
+      "audioContent": {
+        "title": "Audio obsah",
+        "description": "Podcasty, zvukové príspevky",
+        "benefit": "Mobilné počúvanie"
+      },
+      "interactiveContent": {
+        "title": "Interaktívny obsah",
+        "description": "Stories, polls, quizzes",
+        "benefit": "Vysoká interakcia"
+      },
+      "photography": {
+        "title": "Fotografický obsah",
+        "description": "Produktové fotky, lifestyle",
+        "benefit": "Autentický vzhľad"
+      },
+      "educationalContent": {
+        "title": "Edukačný obsah",
+        "description": "Tutoriály, návody, prípadové štúdie",
+        "benefit": "Budovanie autority"
+      },
+      "contentCalendar": {
+        "title": "Content kalendár",
+        "description": "Plánovanie a koordinácia",
+        "benefit": "Konzistentnosť"
+      },
+      "reports": {
+        "title": "Pravidelné reporty a konzultácie",
+        "description": "Mesačné vyhodnotenie s odporúčaniami",
+        "benefit": "Transparentnosť"
+      }
+    },
+    "whyChooseUs": {
+      "title": "Prečo to robiť s nami?",
+      "description1": "Pretože robíme kontent, ktorý je založený na skutočných potrebách zákazníkov a prináša reálne výsledky.",
+      "description2": "Máme skúsenosti s rôznymi typmi obsahu a vieme, čo funguje pre tvoj typ biznisu. Neexperimentujeme s tvojou online prítomnosťou.",
+      "description3": "Transparentnosť je pre nás kľúčová – vždy vieš, čo robíme a aké výsledky to prináša."
+    },
+    "finalCta": {
+      "title": "Kontent, ktorý sa číta.",
+      "description1": "Nechaj si vytvoriť obsah, ktorý bude zaujímavý, hodnotný a bude ti prinášať zákazníkov.",
+      "description2": "S nami budeš mať kontent, ktorý sa ľudia budú chcieť čítať, pozerať a zdieľať.",
+      "description3": "Od stratégie až po publikovanie a analýzu výkonnosti.",
+      "ctaButton": "Vytvoriť kontent"
+    }
+  },
+  "adCampaigns": {
+    "hero": {
+      "title": "Reklamné kampane, ktoré fungujú.",
+      "subtitle": "Komplexné riešenia pre maximálne výsledky.",
+      "description1": "Reklamná kampaň nie je len o zobrazení reklamy. Je o celkovej stratégii, ktorá spája všetky kanály a prináša výsledky.",
+      "description2": "V NextLayer Studio robíme kampane, ktoré sú koordinované, optimalizované a merateľné. Od plánovania až po vyhodnocovanie.",
+      "description3": "Od PPC cez sociálne siete až po display reklamy – všetko s dôrazom na ROI a konverzie.",
+      "ctaButton": "Spustiť kampaň"
+    },
+    "stats": {
+      "title": "Prečo sú kampane dôležité?",
+      "totalSales": {
+        "amount": "€15,847",
+        "label": "Celkový predaj",
+        "change": "+45%"
+      },
+      "clicks": {
+        "amount": "2,847",
+        "label": "Kliknutí",
+        "change": "+23%"
+      },
+      "conversion": {
+        "amount": "4.2%",
+        "label": "Konverzia",
+        "change": "+18%"
+      },
+      "avgCpc": {
+        "amount": "€2.45",
+        "label": "Priemerný CPC",
+        "change": "-12%"
+      },
+      "campaignDefinition": {
+        "title": "Čo je reklamná kampaň?",
+        "description1": "Reklamná kampaň je sústredená marketingová aktivita, ktorá má za cieľ niečo konkrétne: predať produkt, získať nových zákazníkov, spustiť novú službu.",
+        "description2": "Aby bola úspešná, musí byť dobre načasovaná, kreatívne spracovaná a strategicky vedená.",
+        "description3": "Je to komplexný systém, ktorý spája rôzne kanály a optimalizuje pre maximálne výsledky."
+      },
+      "components": {
+        "title": "Komponenty kampane",
+        "strategy": {
+          "title": "Stratégia",
+          "description": "Plánovanie a ciele"
+        },
+        "content": {
+          "title": "Obsah",
+          "description": "Kreatíva a copy"
+        },
+        "targeting": {
+          "title": "Cielenie",
+          "description": "Audience targeting"
+        },
+        "optimization": {
+          "title": "Optimalizácia",
+          "description": "Performance tuning"
+        }
+      }
+    },
+    "process": {
+      "title": "Ako pracujeme na kampani",
+      "step1": {
+        "title": "Analýza a plánovanie",
+        "description": "Zistíme tvoje ciele a cieľovú skupinu.",
+        "tag": "Audience research"
+      },
+      "step2": {
+        "title": "Stratégia a kanály",
+        "description": "Vyberieme správne platformy a spôsoby.",
+        "tag": "Channel selection"
+      },
+      "step3": {
+        "title": "Kreatíva a obsah",
+        "description": "Vytvoríme všetky potrebné výstupy.",
+        "tag": "Creative production"
+      },
+      "step4": {
+        "title": "Technické nastavenie",
+        "description": "Pripravíme účty, tracking a rozpočty.",
+        "tag": "Technical setup"
+      },
+      "step5": {
+        "title": "Spustenie a optimalizácia",
+        "description": "Sledujeme výkonnosť a optimalizujeme.",
+        "tag": "Performance optimization"
+      },
+      "step6": {
+        "title": "Analýza a reporting",
+        "description": "Vyhodnotíme výsledky a navrhujeme ďalšie kroky.",
+        "tag": "Results analysis"
+      }
+    },
+    "channels": {
+      "title": "Kde robíme kampane?",
+      "googleAds": {
+        "title": "Google Ads",
+        "description": "Vyhľadávanie, bannery, YouTube",
+        "benefit": "Vysoká konverzia"
+      },
+      "facebookInstagram": {
+        "title": "Facebook & Instagram",
+        "description": "Všetky formáty vrátane reels",
+        "benefit": "Široké cielenie"
+      },
+      "tiktokAds": {
+        "title": "TikTok Ads",
+        "description": "Pre mladšiu cieľovku",
+        "benefit": "Viral potenciál"
+      },
+      "linkedinAds": {
+        "title": "LinkedIn Ads",
+        "description": "Pre B2B segment",
+        "benefit": "Profesionálne cielenie"
+      },
+      "displayAds": {
+        "title": "Display reklamy",
+        "description": "Bannery na weboch",
+        "benefit": "Široká viditeľnosť"
+      },
+      "emailMarketing": {
+        "title": "Email marketing",
+        "description": "Newsletter kampane",
+        "benefit": "Nízke náklady"
+      },
+      "videoCampaigns": {
+        "title": "Video kampane",
+        "description": "YouTube, TikTok, Instagram",
+        "benefit": "Vysoká engagement"
+      },
+      "abTesting": {
+        "title": "A/B testovanie",
+        "description": "Optimalizácia kampán",
+        "benefit": "Vylepšenie výkonnosti"
+      },
+      "reports": {
+        "title": "Pravidelné reporty a konzultácie",
+        "description": "Mesačné vyhodnotenie s odporúčaniami",
+        "benefit": "Transparentnosť"
+      }
+    },
+    "whyChooseUs": {
+      "title": "Prečo to robiť s nami?",
+      "description1": "Pretože robíme kampane, ktoré sú založené na dátach a dlhodobých výsledkoch, nie na rýchlych trikoch.",
+      "description2": "Máme skúsenosti s rôznymi odvetviami a vieme, čo funguje pre tvoj typ biznisu. Neexperimentujeme s tvojimi peniazmi.",
+      "description3": "Transparentnosť je pre nás kľúčová – vždy vieš, kde tvoje peniaze idú a aké výsledky prinášajú."
+    },
+    "finalCta": {
+      "title": "Reklamné kampane, ktoré fungujú.",
+      "description1": "Nechaj si vytvoriť kampaň, ktorá bude koordinovaná, optimalizovaná a bude ti prinášať zákazníkov.",
+      "description2": "S nami budeš mať kampaň, ktorá spája všetky kanály a optimalizuje pre maximálne výsledky.",
+      "description3": "Od plánovania až po vyhodnocovanie a návrh ďalších krokov.",
+      "ctaButton": "Spustiť kampaň"
+    }
+  },
+  "digitalFootprint": {
+    "hero": {
+      "title": "Zanechaj dojem. Zanechaj stopu.",
+      "subtitle": "Budujeme značky, ktoré sú viditeľné, zapamätateľné a konzistentné.",
+      "description1": "Digitálna stopa je všetko, čo o tebe zákazník vidí na internete. Je to ako tvoj online odtlačok.",
+      "description2": "V NextLayer Studio pomáhame vytvárať firemnú identitu, ktorá je jasná, zrozumiteľná a reprezentatívna.",
+      "description3": "Od loga cez farby až po dizajn manuál – všetko s dôrazom na konzistenciu a profesionalitu.",
+      "ctaButton": "Začni budovať značku"
+    },
+    "stats": {
+      "title": "Prečo je firemná identita dôležitá?",
+      "stat1": {
+        "percentage": "80%",
+        "label": "Zákazníkov",
+        "description": "si spomína na značku"
+      },
+      "stat2": {
+        "percentage": "3x",
+        "label": "Viac dôvery",
+        "description": "s konzistentnou identitou"
+      },
+      "stat3": {
+        "percentage": "60%",
+        "label": "Nižšie náklady",
+        "description": "na marketing"
+      },
+      "stat4": {
+        "percentage": "5x",
+        "label": "Viac lojalita",
+        "description": "zákazníkov"
+      },
+      "digitalFootprintDefinition": {
+        "title": "Čo je digitálna stopa?",
+        "description1": "Digitálna stopa je všetko, čo o tebe zákazník vidí na internete: webová stránka, sociálne siete, Google výsledky, články, recenzie, vizuály, videá, komentáre.",
+        "description2": "Je to ako tvoj online odtlačok. A práve preto musí byť jasný, zrozumiteľný a reprezentatívny.",
+        "description3": "Pomôžeme ti vytvoriť stopu, ktorá bude fungovať v tvoj prospech – nie proti tebe."
+      },
+      "brandComponents": {
+        "title": "Komponenty značky",
+        "logo": {
+          "title": "Logo",
+          "description": "Základ značky"
+        },
+        "colors": {
+          "title": "Farby",
+          "description": "Farebná paleta"
+        },
+        "typography": {
+          "title": "Typografia",
+          "description": "Písma a štýly"
+        },
+        "visuals": {
+          "title": "Vizuály",
+          "description": "Ilustrácie a ikony"
+        }
+      }
+    },
+    "process": {
+      "title": "Ako budujeme značku",
+      "step1": {
+        "title": "Analýza a research",
+        "description": "Zistíme tvoju pozíciu na trhu a cieľovú skupinu.",
+        "tag": "Market research"
+      },
+      "step2": {
+        "title": "Koncept a stratégia",
+        "description": "Vytvoríme koncept značky a komunikačnú stratégiu.",
+        "tag": "Brand strategy"
+      },
+      "step3": {
+        "title": "Vizuálna identita",
+        "description": "Navrhneme logo, farby, typografiu a vizuálne prvky.",
+        "tag": "Visual identity"
+      },
+      "step4": {
+        "title": "Dizajn manuál",
+        "description": "Vytvoríme pravidlá a šablóny pre konzistentné používanie.",
+        "tag": "Design manual"
+      },
+      "step5": {
+        "title": "Implementácia",
+        "description": "Aplikujeme identitu na všetky materiály a kanály.",
+        "tag": "Implementation"
+      },
+      "step6": {
+        "title": "Monitoring a údržba",
+        "description": "Sledujeme konzistenciu a vyvíjame značku ďalej.",
+        "tag": "Brand maintenance"
+      }
+    },
+    "services": {
+      "title": "Čo všetko vieme zabezpečiť?",
+      "logoIdentity": {
+        "title": "Logo a vizuálna identita",
+        "description": "Logo, farby, typografia",
+        "benefit": "Základ značky"
+      },
+      "designManual": {
+        "title": "Dizajn manuál",
+        "description": "Pravidlá a šablóny",
+        "benefit": "Konzistentnosť"
+      },
+      "graphicMaterials": {
+        "title": "Grafické materiály",
+        "description": "Vizitky, hlavičky, prezentácie",
+        "benefit": "Profesionálny vzhľad"
+      },
+      "digitalMaterials": {
+        "title": "Digitálne materiály",
+        "description": "Sociálne siete, web, email",
+        "benefit": "Online prítomnosť"
+      },
+      "videoIdentity": {
+        "title": "Video identita",
+        "description": "Intro, outro, animácie",
+        "benefit": "Dynamický obsah"
+      },
+      "communicationStrategy": {
+        "title": "Komunikačná stratégia",
+        "description": "Tón hlasu, messaging",
+        "benefit": "Konzistentná komunikácia"
+      },
+      "brandAudit": {
+        "title": "Brand audit",
+        "description": "Analýza existujúcej značky",
+        "benefit": "Identifikácia problémov"
+      },
+      "reports": {
+        "title": "Pravidelné reporty a konzultácie",
+        "description": "Mesačné vyhodnotenie s odporúčaniami",
+        "benefit": "Transparentnosť"
+      }
+    },
+    "whyChooseUs": {
+      "title": "Prečo to robiť s nami?",
+      "description1": "Pretože robíme značky, ktoré sú založené na dlhodobých hodnotách a autenticite, nie na rýchlych trendoch.",
+      "description2": "Máme skúsenosti s rôznymi odvetviami a vieme, čo funguje pre tvoj typ biznisu. Neexperimentujeme s tvojou identitou.",
+      "description3": "Transparentnosť je pre nás kľúčová – vždy vieš, čo robíme a aké výsledky to prináša."
+    },
+    "finalCta": {
+      "title": "Zanechaj dojem. Zanechaj stopu.",
+      "description1": "Nechaj si vytvoriť firemnú identitu, ktorá bude jasná, zapamätateľná a konzistentná.",
+      "description2": "S nami budeš mať značku, ktorá sa líši od konkurencie a buduje dôveru so zákazníkmi.",
+      "description3": "Od konceptu až po implementáciu a dlhodobú údržbu.",
+      "ctaButton": "Začni budovať značku"
+    }
+  },
+  "services": {
+    "hero": {
+      "title": "Naše služby",
+      "subtitle": "Komplexné marketingové riešenia pre váš byznys",
+      "stats": {
+        "growth": "Priemerný rast 450%",
+        "clients": "100+ spokojných klientov",
+        "satisfaction": "98% spokojnosť"
+      }
+    },
+    "title": "Naše služby",
+    "subtitle": "Komplexné marketingové riešenia pre váš byznys",
+    "seoContent": {
+      "title": "SEO & Content",
+      "subtitle": "Optimalizácia pre vyhľadávače",
+      "description": "Zlepšujeme viditeľnosť vašej stránky v Google a vytvárame kvalitný obsah, ktorý priláka vašich zákazníkov.",
+      "learnMore": "Viac o SEO"
+    },
+    "socialMedia": {
+      "title": "Sociálne siete",
+      "subtitle": "Správa sociálnych sietí",
+      "description": "Spravujeme vaše sociálne siete, vytvárame angažovaný obsah a budujeme komunitu okolo vašej značky.",
+      "learnMore": "Viac o sociálnych sieťach"
+    },
+    "ppcAdvertising": {
+      "title": "PPC reklama",
+      "subtitle": "Platená reklama",
+      "description": "Spúšťame a optimalizujeme platené kampane na Google Ads, Facebook a iných platformách pre maximálny ROI.",
+      "learnMore": "Viac o PPC"
+    },
+    "webLanding": {
+      "title": "Weby & Landing pages",
+      "subtitle": "Vývoj webových stránok",
+      "description": "Vytvárame moderné, rýchle a konverzné webové stránky a landing pages, ktoré predávajú.",
+      "learnMore": "Viac o weboch"
+    },
+    "analytics": {
+      "title": "Analytika",
+      "subtitle": "Analýza dát a reportovanie",
+      "description": "Nastavujeme tracking, analyzujeme dáta a vytvárame prehľadné reporty s akčnými odporúčaniami.",
+      "learnMore": "Viac o analytike"
+    },
+    "contentCreation": {
+      "title": "Tvorba obsahu",
+      "subtitle": "Kvalitný obsah pre vašu značku",
+      "description": "Vytvárame originálny obsah - články, videá, infografiky a ďalšie materiály, ktoré budujú vašu autoritu.",
+      "learnMore": "Viac o tvorbe obsahu"
+    },
+    "adCampaigns": {
+      "title": "Reklamné kampane",
+      "subtitle": "Komplexné reklamné riešenia",
+      "description": "Navrhujeme a realizujeme kompletné reklamné kampane naprieč všetkými kanálmi s dôrazom na výsledky.",
+      "learnMore": "Viac o kampaniach"
+    },
+    "digitalFootprint": {
+      "title": "Digitálna stopa",
+      "subtitle": "Firemná identita a branding",
+      "description": "Pomáhame vytvárať konzistentnú firemnú identitu a digitálnu stopu, ktorá buduje dôveru zákazníkov.",
+      "learnMore": "Viac o digitálnej stope"
+    },
+    "learnMore": "Zistiť viac",
+    "viewAllServices": "Zobraziť všetky služby",
+    "cta": {
+      "title": "Pripravení začať?",
+      "subtitle": "Kontaktujte nás a dohodneme si bezplatnú konzultáciu",
+      "button": "Kontaktovať nás"
     }
   }
 } 

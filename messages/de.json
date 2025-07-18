@@ -5,7 +5,144 @@
   },
   "home": {
     "subtitle": "Professionelle Marketing-Agentur",
-    "campaignButton": "Kampagne starten"
+    "campaignButton": "Kampagne starten",
+    "expertBadge": "Digital Marketing Experte",
+    "stats": {
+      "averageGrowth": "Durchschnittliches Wachstum",
+      "campaignSuccess": "Kampagnenerfolg",
+      "clientSatisfaction": "Kundenzufriedenheit",
+      "support": "Unterstützung",
+      "forOurCampaigns": "Für unsere Kampagnen",
+      "exceededGoals": "Ziele übertroffen",
+      "averageRating": "Durchschnittliche Bewertung",
+      "alwaysHere": "Immer für Sie da"
+    },
+    "services": {
+      "hero": {
+        "title": "Unsere Dienstleistungen",
+        "subtitle": "Umfassende Marketing-Lösungen für Ihr Unternehmen",
+        "stats": {
+          "growth": "Durchschnittliches Wachstum 450%",
+          "clients": "100+ zufriedene Kunden",
+          "satisfaction": "98% Zufriedenheit"
+        }
+      },
+      "title": "Unsere Dienstleistungen",
+      "subtitle": "Umfassende Marketing-Lösungen für Ihr Unternehmen",
+      "seoContent": {
+        "title": "SEO & Content",
+        "subtitle": "Suchmaschinenoptimierung",
+        "description": "Wir verbessern die Sichtbarkeit Ihrer Website in Google und erstellen qualitativ hochwertige Inhalte, die Ihre Kunden anziehen.",
+        "learnMore": "Mehr über SEO erfahren"
+      },
+      "socialMedia": {
+        "title": "Social Media",
+        "subtitle": "Social Media Management",
+        "description": "Wir verwalten Ihre Social Media-Kanäle, erstellen ansprechende Inhalte und bauen eine Community um Ihre Marke auf.",
+        "learnMore": "Mehr über Social Media erfahren"
+      },
+      "ppcAdvertising": {
+        "title": "PPC-Werbung",
+        "subtitle": "Bezahlte Werbung",
+        "description": "Wir starten und optimieren bezahlte Kampagnen auf Google Ads, Facebook und anderen Plattformen für maximalen ROI.",
+        "learnMore": "Mehr über PPC erfahren"
+      },
+      "webLanding": {
+        "title": "Websites & Landing Pages",
+        "subtitle": "Webentwicklung",
+        "description": "Wir erstellen moderne, schnelle und konversionsorientierte Websites und Landing Pages, die verkaufen.",
+        "learnMore": "Mehr über Websites erfahren"
+      },
+      "analytics": {
+        "title": "Analytics",
+        "subtitle": "Datenanalyse und Berichterstattung",
+        "description": "Wir richten Tracking ein, analysieren Daten und erstellen klare Berichte mit umsetzbaren Empfehlungen.",
+        "learnMore": "Mehr über Analytics erfahren"
+      },
+      "contentCreation": {
+        "title": "Content-Erstellung",
+        "subtitle": "Qualitativ hochwertige Inhalte für Ihre Marke",
+        "description": "Wir erstellen originelle Inhalte - Artikel, Videos, Infografiken und andere Materialien, die Ihre Autorität aufbauen.",
+        "learnMore": "Mehr über Content-Erstellung erfahren"
+      },
+      "adCampaigns": {
+        "title": "Werbekampagnen",
+        "subtitle": "Umfassende Werbelösungen",
+        "description": "Wir entwerfen und implementieren komplette Werbekampagnen über alle Kanäle hinweg mit Fokus auf Ergebnisse.",
+        "learnMore": "Mehr über Kampagnen erfahren"
+      },
+      "digitalFootprint": {
+        "title": "Digitaler Fußabdruck",
+        "subtitle": "Corporate Identity und Branding",
+        "description": "Wir helfen dabei, eine konsistente Corporate Identity und einen digitalen Fußabdruck zu schaffen, der das Vertrauen der Kunden aufbaut.",
+        "learnMore": "Mehr über digitalen Fußabdruck erfahren"
+      },
+      "learnMore": "Mehr erfahren",
+      "viewAllServices": "Alle Dienstleistungen anzeigen",
+      "cta": {
+        "title": "Bereit zu starten?",
+        "subtitle": "Kontaktieren Sie uns und wir vereinbaren eine kostenlose Beratung",
+        "button": "Kontaktieren Sie uns"
+      }
+    },
+    "process": {
+      "title": "Wie wir arbeiten",
+      "subtitle": "Modernes Marketing muss nicht kompliziert sein. Bei uns funktioniert alles einfach, schnell und übersichtlich.",
+      "step1": {
+        "title": "Wir hören zu und analysieren",
+        "subtitle": "Wir lernen Ihr Unternehmen kennen",
+        "description": "Zuerst lernen wir Sie kennen – Ihre Marke, Zielgruppe, Ziele und Herausforderungen. Wir analysieren, wo Sie stehen und wohin Sie wollen.",
+        "output": "Ergebnis: Briefing, Kampagnenziel, Analyse des aktuellen Zustands"
+      },
+      "step2": {
+        "title": "Wir entwerfen Strategie",
+        "subtitle": "Wir erstellen einen Plan",
+        "description": "Basierend auf der Analyse bereiten wir einen konkreten Plan vor. Wir schlagen geeignete Kanäle, Budgets und Kommunikationsformate vor.",
+        "output": "Ergebnis: Marketingstrategie, Inhaltsvorschlag, Zeitplan"
+      },
+      "step3": {
+        "title": "Wir implementieren und starten",
+        "subtitle": "Wir starten Kampagnen",
+        "description": "Wir bereiten alles vor und starten es nach Plan. Wir richten Konten ein, Tracking und optimieren Kampagnen.",
+        "output": "Ergebnis: Gestartete Kampagnen, aktive Kanäle, Tracking"
+      },
+      "step4": {
+        "title": "Wir optimieren und wachsen",
+        "subtitle": "Kontinuierliches Wachstum",
+        "description": "Wir überwachen kontinuierlich die Ergebnisse und optimieren. Wir berichten regelmäßig und schlagen Verbesserungen vor.",
+        "output": "Output: Regelmäßige Berichte, Optimierungen, Erweiterungen"
+      },
+      "analysis": "Analyse",
+      "strategicPlanning": "Strategische Planung",
+      "implementation": "Implementierung",
+      "campaignLaunch": "Kampagnenstart"
+    },
+    "contact": {
+      "title": "Lassen Sie uns zusammenarbeiten",
+      "subtitle": "Haben Sie Fragen oder möchten Sie mit Marketing beginnen? Kontaktieren Sie uns und wir vereinbaren eine kostenlose Beratung.",
+      "formTitle": "Kontaktformular"
+    },
+    "analytics": {
+      "marketingAnalytics": "Marketing Analytics",
+      "realTimeData": "Echtzeitdaten",
+      "conversions": "Konversionen",
+      "roiTracking": "ROI-Tracking",
+      "performanceMetrics": "Leistungsmetriken",
+      "socialMedia": "Soziale Medien",
+      "engagementRate": "Engagement-Rate",
+      "reach": "Reichweite",
+      "totalImpressions": "Gesamte Impressionen",
+      "activeCampaigns": "Aktive Kampagnen",
+      "ppcSocial": "PPC & Social",
+      "ctr": "CTR",
+      "clickThroughRate": "Klickrate",
+      "trafficSources": "Verkehrsquellen",
+      "organicVsPaid": "Organisch vs Bezahlt",
+      "organic": "Organisch",
+      "paid": "Bezahlt",
+      "newUsers": "Neue Benutzer",
+      "thisMonth": "Diesen Monat"
+    }
   },
   "Metadata": {
     "title": "NextLayer Studio",
@@ -128,6 +265,1227 @@
     "summary": {
       "title": "Zusammenfassung?",
       "content": "Offene Kommunikation, klarer Prozess, keine Rätsel.\nSie wissen, was Sie wollen. Wir wissen, wie man es erreicht. Gemeinsam bringen wir es dorthin, wo Ihre Marke sein sollte – im Blick, im Bewusstsein und im Vertrauen der Kunden."
+    }
+  },
+  "socialMedia": {
+    "title": "Social Media, die Marken aufbauen.",
+    "subtitle": "Nicht nur Posts. Strategie, die Ergebnisse liefert.",
+    "description1": "Social Media ist der Ort, wo Ihre Marke auf Menschen trifft. Wo Vertrauen, Community und Loyalität aufgebaut werden.",
+    "description2": "Bei NextLayer Studio erstellen wir Social Media, die nicht nur darum geht, 'gesehen zu werden' – es geht darum, Menschen zu begeistern, einzubinden und zu gewinnen.",
+    "description3": "Von der Strategie über Content bis zur Community – alles mit Fokus auf Authentizität und Ergebnisse.",
+    "ctaButton": "Social Media starten",
+    "stats": {
+      "activeUsers": "Aktive Nutzer",
+      "socialNetworks": "von sozialen Netzwerken",
+      "averageTime": "Durchschnittliche Zeit",
+      "dailyOnSocial": "täglich in sozialen Medien",
+      "customers": "Kunden",
+      "buyAfterSocial": "kaufen nach sozialen Medien"
+    },
+    "whyImportant": {
+      "title": "Warum ist Social Media wichtig?",
+      "description1": "Social Media ist der Ort, wo Menschen Entscheidungen über Marken treffen. Wo Vertrauen aufgebaut, Fragen beantwortet und Beziehungen geschaffen werden.",
+      "description2": "Es geht nicht nur um Follower-Zahlen. Es geht darum, wie sich Ihre Marke online verhält, wie sie kommuniziert und wie sie Community aufbaut.",
+      "description3": "Gut geführtes Social Media hilft Ihnen, näher an Kunden zu kommen, Feedback zu erhalten und langfristige Beziehungen aufzubauen."
+    },
+    "benefits": {
+      "title": "Vorteile von Social Media",
+      "brandBuilding": {
+        "title": "Markenaufbau",
+        "description": "Authentische Kommunikation"
+      },
+      "directContact": {
+        "title": "Direkter Kontakt",
+        "description": "Mit Kunden"
+      },
+      "increaseSales": {
+        "title": "Umsatzsteigerung",
+        "description": "Zielgerichtete Kampagnen"
+      },
+      "feedback": {
+        "title": "Feedback",
+        "description": "Von Kunden"
+      },
+      "community": {
+        "title": "Community",
+        "description": "Loyale Kunden"
+      }
+    },
+    "howWeWork": {
+      "title": "Wie wir an Social Media arbeiten",
+      "step1": {
+        "title": "Analyse und Strategie",
+        "description": "Wir identifizieren Ihre Zielgruppe und planen Content-Strategie."
+      },
+      "step2": {
+        "title": "Plattformauswahl",
+        "description": "Wir wählen die richtigen Netzwerke basierend auf Ihrer Zielgruppe."
+      },
+      "step3": {
+        "title": "Content-Erstellung",
+        "description": "Wir erstellen Posts, Stories, Reels und anderen Content."
+      },
+      "step4": {
+        "title": "Veröffentlichung und Monitoring",
+        "description": "Wir veröffentlichen regelmäßig und überwachen die Performance."
+      },
+      "step5": {
+        "title": "Community und Interaktion",
+        "description": "Wir reagieren auf Kommentare und bauen Community auf."
+      },
+      "step6": {
+        "title": "Analyse und Optimierung",
+        "description": "Wir bewerten regelmäßig Ergebnisse und optimieren Strategie."
+      }
+    },
+    "whyAgency": {
+      "title": "Warum mit einer Agentur?",
+      "diy": {
+        "title": "DIY (Allein)",
+        "timeConsuming": {
+          "title": "Zeitaufwändig",
+          "description": "Stunden Arbeit jeden Tag"
+        },
+        "lackExperience": {
+          "title": "Fehlende Erfahrung",
+          "description": "Fehler und Ineffizienz"
+        },
+        "inconsistency": {
+          "title": "Inkonsistenz",
+          "description": "Unterbrochene Kommunikation"
+        },
+        "missingTools": {
+          "title": "Fehlende Tools",
+          "description": "Teure Lizenzen und Software"
+        }
+      },
+      "withAgency": {
+        "title": "Mit Agentur",
+        "saveTime": {
+          "title": "Zeit sparen",
+          "description": "Fokus auf Ihr Geschäft"
+        },
+        "professionalApproach": {
+          "title": "Professioneller Ansatz",
+          "description": "Erfahrung und Know-how"
+        },
+        "consistency": {
+          "title": "Konsistenz",
+          "description": "Regelmäßige Kommunikation"
+        },
+        "allTools": {
+          "title": "Alle Tools",
+          "description": "Professionelle Ausstattung"
+        }
+      }
+    },
+    "whatWeOffer": {
+      "title": "Was können wir bereitstellen?",
+      "socialMediaManagement": {
+        "title": "Social Media Management",
+        "description": "Tägliche Kommunikation"
+      },
+      "contentCreation": {
+        "title": "Content-Erstellung",
+        "description": "Posts, Stories, Reels"
+      },
+      "communityManagement": {
+        "title": "Community Management",
+        "description": "Reaktion auf Kommentare"
+      },
+      "influencerMarketing": {
+        "title": "Influencer Marketing",
+        "description": "Zusammenarbeit mit Influencern"
+      },
+      "contentCalendar": {
+        "title": "Content-Kalender",
+        "description": "Content-Planung"
+      },
+      "performanceAnalysis": {
+        "title": "Performance-Analyse",
+        "description": "Berichte und Metriken"
+      },
+      "adCampaigns": {
+        "title": "Werbekampagnen",
+        "description": "In sozialen Netzwerken"
+      },
+      "accountSetup": {
+        "title": "Account-Einrichtung",
+        "description": "Professionelle Profile"
+      },
+      "reportsConsultations": {
+        "title": "Regelmäßige Berichte und Beratung",
+        "description": "Monatliche Bewertung mit Empfehlungen"
+      }
+    },
+    "finalCta": {
+      "title": "Social Media, die Marken aufbauen.",
+      "description1": "Lassen Sie uns Social Media erstellen, die authentisch, interessant ist und Ihnen echte Ergebnisse bringt.",
+      "description2": "Von der Strategie bis zur täglichen Kommunikation – alles mit Fokus auf Ihre Marke und Zielgruppe.",
+      "description3": "Und Sie? Sie können sich auf Ihr Geschäft konzentrieren."
+    }
+  },
+  "ppcAdvertising": {
+    "title": "PPC-Werbung, die Ergebnisse liefert.",
+    "subtitle": "Bezahlte Werbung mit präzisem Targeting und messbaren Ergebnissen.",
+    "description1": "PPC (Pay-Per-Click) Werbung ist ein schneller Weg, um Kunden zu erreichen, die aktiv nach Ihrem Service suchen.",
+    "description2": "Bei NextLayer Studio erstellen wir Kampagnen, die \"smart\" sind – zielgerichtet, optimiert und liefern ROI.",
+    "description3": "Von Google Ads über Facebook bis TikTok – alles mit Fokus auf Konversionen, nicht nur auf Impressionen.",
+    "ctaButton": "PPC-Kampagne starten",
+    "whyPpcWorks": {
+      "title": "Warum funktioniert PPC?"
+    },
+    "stats": {
+      "averageRoas": "Durchschnittlicher ROAS",
+      "roiReturn": "Return on Investment",
+      "launchTime": "Startzeit",
+      "fromOrderToDisplay": "Von Bestellung bis Anzeige",
+      "targetingAccuracy": "Targeting-Genauigkeit",
+      "byDemographics": "Nach Demografie und Interessen",
+      "averageCpc": "Durchschnittlicher CPC",
+      "costPerClick": "Kosten pro Klick"
+    },
+    "whatIsPpc": {
+      "title": "Was ist PPC-Werbung?",
+      "description1": "PPC (Pay-Per-Click) bedeutet, dass Sie nur für Klicks bezahlen, nicht für Anzeigenimpressionen.",
+      "description2": "Es ist ein schneller Weg, um Kunden zu erreichen, die aktiv nach Ihrem Service oder Produkt suchen.",
+      "description3": "Der Vorteil ist, dass Sie volle Kontrolle über Budget, Targeting haben und genau messen können, wie viel jeder Kunde Sie kostet."
+    },
+    "benefits": {
+      "title": "Vorteile von PPC-Werbung",
+      "immediateVisibility": {
+        "title": "Sofortige Sichtbarkeit",
+        "description": "Ergebnisse in wenigen Stunden"
+      },
+      "preciseTargeting": {
+        "title": "Präzises Targeting",
+        "description": "Nach Demografie, Interessen, Verhalten"
+      },
+      "measurableResults": {
+        "title": "Messbare Ergebnisse",
+        "description": "Jeder Cent kann gezählt werden"
+      },
+      "flexibility": {
+        "title": "Flexibilität",
+        "description": "Sie können die Kampagne jederzeit ändern"
+      }
+    },
+    "howWeWork": {
+      "title": "Wie wir mit PPC arbeiten",
+      "step1": {
+        "title": "Analyse und Strategie",
+        "description": "Wir identifizieren Ihre Zielgruppe und planen die Kampagne."
+      },
+      "step2": {
+        "title": "Plattformauswahl",
+        "description": "Wir wählen die richtigen Kanäle basierend auf Ihrer Zielgruppe."
+      },
+      "step3": {
+        "title": "Kampagnenerstellung",
+        "description": "Wir erstellen Anzeigen, Keywords und Landing Pages."
+      },
+      "step4": {
+        "title": "Start und Monitoring",
+        "description": "Wir starten die Kampagne und überwachen die Performance."
+      },
+      "step5": {
+        "title": "Optimierung",
+        "description": "Wir optimieren regelmäßig basierend auf Ergebnissen."
+      },
+      "step6": {
+        "title": "Berichterstattung",
+        "description": "Wir berichten regelmäßig und schlagen Verbesserungen vor."
+      }
+    },
+    "whyAgency": {
+      "title": "Warum mit einer Agentur?",
+      "diy": {
+        "title": "DIY (Allein)",
+        "complexity": {
+          "title": "Komplexität",
+          "description": "Viele technische Details beteiligt"
+        },
+        "lackExperience": {
+          "title": "Fehlende Erfahrung",
+          "description": "Fehler und Ineffizienz"
+        },
+        "wastedBudget": {
+          "title": "Verschwendetes Budget",
+          "description": "Falsche Einstellungen"
+        },
+        "timeConsuming": {
+          "title": "Zeitaufwändig",
+          "description": "Stunden Arbeit jeden Tag"
+        }
+      },
+      "withAgency": {
+        "title": "Mit Agentur",
+        "expertise": {
+          "title": "Expertise",
+          "description": "Erfahrung und Know-how"
+        },
+        "optimization": {
+          "title": "Optimierung",
+          "description": "Maximaler ROI"
+        },
+        "saveTime": {
+          "title": "Zeit sparen",
+          "description": "Fokus auf Ihr Geschäft"
+        },
+        "results": {
+          "title": "Ergebnisse",
+          "description": "Messbar und vorhersagbar"
+        }
+      }
+    },
+    "whatWeOffer": {
+      "title": "Was können wir bereitstellen?",
+      "googleAds": {
+        "title": "Google Ads",
+        "description": "Suche und Display"
+      },
+      "facebookAds": {
+        "title": "Facebook & Instagram Ads",
+        "description": "Soziale Netzwerke"
+      },
+      "tiktokAds": {
+        "title": "TikTok Ads",
+        "description": "Kurze Videos"
+      },
+      "linkedinAds": {
+        "title": "LinkedIn Ads",
+        "description": "B2B Marketing"
+      },
+      "remarketing": {
+        "title": "Remarketing",
+        "description": "Besucher-Rückkehr"
+      },
+      "landingPages": {
+        "title": "Landing Pages",
+        "description": "Konversionsseiten"
+      },
+      "analytics": {
+        "title": "Analytik",
+        "description": "Ergebnisverfolgung"
+      },
+      "optimization": {
+        "title": "Optimierung",
+        "description": "Leistungsverbesserung"
+      },
+      "reporting": {
+        "title": "Regelmäßige Berichte",
+        "description": "Monatliche Bewertung"
+      }
+    },
+    "finalCta": {
+      "title": "PPC-Werbung, die Ergebnisse liefert.",
+      "description1": "Lassen Sie uns PPC-Kampagnen erstellen, die zielgerichtet, optimiert sind und Ihnen messbare Ergebnisse bringen.",
+      "description2": "Von Google Ads bis zu sozialen Netzwerken – alles mit Fokus auf Konversionen und ROI.",
+      "description3": "Und Sie? Sie können sich auf Ihr Geschäft konzentrieren."
+    }
+  },
+  "seoContent": {
+    "title": "SEO & Content, die sich auszahlen.",
+    "subtitle": "Organische Ergebnisse und qualitativ hochwertige Inhalte, die konvertieren.",
+    "description1": "SEO ist nicht nur über Keywords. Es geht darum, wie Ihre Seite in Google erscheint und wie Menschen sie finden.",
+    "description2": "Bei NextLayer Studio machen wir SEO, das \"smart\" ist – datengesteuert, benutzeroptimiert und langfristig nachhaltig.",
+    "description3": "Von technischem SEO über Content bis Linkbuilding – alles mit Fokus auf organisches Wachstum und Konversionen.",
+    "ctaButton": "SEO & Content starten",
+    "whySeoWorks": {
+      "title": "Warum funktioniert SEO?"
+    },
+    "stats": {
+      "onlineExperiences": "Online-Erfahrungen",
+      "startWithSearch": "Beginnen mit Suche",
+      "clicks": "Klicks",
+      "goToFirst3": "Gehen zu ersten 3 Ergebnissen",
+      "costPerClick": "Kosten pro Klick",
+      "organicResults": "Organische Ergebnisse",
+      "availability": "Verfügbarkeit",
+      "resultsWorkAlways": "Ergebnisse funktionieren immer"
+    },
+    "whatIsSeo": {
+      "title": "Was ist SEO & Content?",
+      "description1": "SEO (Search Engine Optimization) ist der Prozess der Optimierung einer Website für Suchmaschinen wie Google.",
+      "description2": "Das Ziel ist es, die Sichtbarkeit der Seite in organischen (unbezahlten) Suchergebnissen zu verbessern.",
+      "description3": "Content Marketing dreht sich um die Erstellung wertvoller Inhalte, die Ihre Zielgruppe anziehen, begeistern und konvertieren."
+    },
+    "seoPillars": {
+      "title": "SEO-Säulen",
+      "technicalSeo": {
+        "title": "Technisches SEO",
+        "description": "Geschwindigkeit, Indexierung, Struktur"
+      },
+      "onPageSeo": {
+        "title": "On-Page SEO",
+        "description": "Keywords, Meta-Tags, Inhalt"
+      },
+      "offPageSeo": {
+        "title": "Off-Page SEO",
+        "description": "Backlinks, Autorität, Vertrauen"
+      },
+      "userExperience": {
+        "title": "User Experience",
+        "description": "Navigation, Mobile, Geschwindigkeit"
+      }
+    },
+    "howWeWork": {
+      "title": "Wie wir an SEO & Content arbeiten",
+      "step1": {
+        "title": "Analyse und Audit",
+        "description": "Wir identifizieren den aktuellen Zustand und identifizieren Möglichkeiten."
+      },
+      "step2": {
+        "title": "Keyword-Auswahl",
+        "description": "Wir wählen Wörter aus, die Ihre potenziellen Kunden verwenden."
+      },
+      "step3": {
+        "title": "Technische Optimierung",
+        "description": "Wir beheben technische Probleme und verbessern die Geschwindigkeit."
+      },
+      "step4": {
+        "title": "Content-Erstellung",
+        "description": "Wir erstellen qualitativ hochwertige Inhalte, die für SEO optimiert sind."
+      },
+      "step5": {
+        "title": "Linkbuilding",
+        "description": "Wir erhalten qualitativ hochwertige Backlinks von vertrauenswürdigen Seiten."
+      },
+      "step6": {
+        "title": "Monitoring und Optimierung",
+        "description": "Wir überwachen Ergebnisse und verbessern kontinuierlich."
+      }
+    },
+    "whatWeOffer": {
+      "title": "Was können wir bereitstellen?",
+      "technicalSeo": {
+        "title": "Technisches SEO",
+        "description": "Geschwindigkeit, Indexierung, Struktur"
+      },
+      "keywordResearch": {
+        "title": "Keyword-Recherche",
+        "description": "Analyse und Auswahl der richtigen Wörter"
+      },
+      "contentCreation": {
+        "title": "Content-Erstellung",
+        "description": "Artikel, Blogs, Beiträge"
+      },
+      "onPageOptimization": {
+        "title": "On-Page-Optimierung",
+        "description": "Meta-Tags, Überschriften, Struktur"
+      },
+      "linkBuilding": {
+        "title": "Linkbuilding",
+        "description": "Qualitativ hochwertige Backlinks erhalten"
+      },
+      "localSeo": {
+        "title": "Lokales SEO",
+        "description": "Optimierung für lokale Suche"
+      },
+      "ecommerceSeo": {
+        "title": "E-Commerce SEO",
+        "description": "Optimierung für Online-Shops"
+      },
+      "seoAudit": {
+        "title": "SEO-Audit",
+        "description": "Vollständige Analyse und Empfehlungen"
+      },
+      "performanceTracking": {
+        "title": "Leistungsverfolgung",
+        "description": "Berichte und Metriken"
+      }
+    },
+    "whyAgency": {
+      "title": "Warum mit einer Agentur?",
+      "diy": {
+        "title": "DIY (Allein)",
+        "complexity": {
+          "title": "Komplexität",
+          "description": "Viele technische Details"
+        },
+        "lackExperience": {
+          "title": "Fehlende Erfahrung",
+          "description": "Fehler und Ineffizienz"
+        },
+        "timeConsuming": {
+          "title": "Zeitaufwändig",
+          "description": "Monate Arbeit für Ergebnisse"
+        },
+        "algorithmChanges": {
+          "title": "Algorithmus-Änderungen",
+          "description": "Google ändert Regeln"
+        }
+      },
+      "withAgency": {
+        "title": "Mit Agentur",
+        "expertise": {
+          "title": "Expertise",
+          "description": "Erfahrung und Know-how"
+        },
+        "fasterResults": {
+          "title": "Schnellere Ergebnisse",
+          "description": "Professioneller Ansatz"
+        },
+        "saveTime": {
+          "title": "Zeit sparen",
+          "description": "Fokus auf Ihr Geschäft"
+        },
+        "stayUpdated": {
+          "title": "Aktuell bleiben",
+          "description": "Wir überwachen Änderungen"
+        }
+      }
+    },
+    "finalCta": {
+      "title": "SEO & Content, die sich auszahlen.",
+      "description1": "Lassen Sie uns eine SEO-Strategie erstellen, die datengesteuert, benutzeroptimiert ist und Ihnen organische Ergebnisse bringt.",
+      "description2": "Von technischem SEO bis Content – alles mit Fokus auf langfristiges Wachstum und Konversionen.",
+      "description3": "Und Sie? Sie können sich auf Ihr Geschäft konzentrieren."
+    }
+  },
+  "webLanding": {
+    "title": "Websites & Landing Pages, die konvertieren.",
+    "subtitle": "Moderne, schnelle und konversionsoptimierte Websites.",
+    "description1": "Eine Website ist Ihre digitale Visitenkarte. Es ist das erste, was Kunden sehen und bewerten.",
+    "description2": "Bei NextLayer Studio erstellen wir Websites, die \"smart\" sind – schnell, responsiv, konversionsoptimiert und technisch perfekt.",
+    "description3": "Von Design über Entwicklung bis Optimierung – alles mit Fokus auf Benutzererfahrung und Konversionen.",
+    "ctaButton": "Web-Projekt starten",
+    "whyModernWebWorks": {
+      "title": "Warum funktioniert eine moderne Website?"
+    },
+    "stats": {
+      "averageLoadTime": "Durchschnittliche Ladezeit",
+      "forSuccessfulWebsites": "Für erfolgreiche Websites",
+      "mobileTraffic": "Mobiler Traffic",
+      "onModernWebsites": "Auf modernen Websites",
+      "decisionTime": "Entscheidungszeit",
+      "userLeaves": "Benutzer verlässt",
+      "averageConversionIncrease": "Durchschnittliche Konversionssteigerung",
+      "afterOptimization": "Nach Optimierung"
+    },
+    "whatIsModernWeb": {
+      "title": "Was ist eine moderne Website?",
+      "description1": "Eine moderne Website ist schnell, responsiv und für alle Geräte optimiert.",
+      "description2": "Es ist eine Website, die in weniger als 3 Sekunden lädt, auf Mobilgerät und Desktop perfekt aussieht und Kunden zur Aktion führt.",
+      "description3": "Es ist eine Website, die technisch perfekt, sicher und für Suchmaschinen optimiert ist."
+    },
+    "technologies": {
+      "title": "Technologien, die wir verwenden",
+      "reactNextjs": {
+        "title": "React/Next.js",
+        "description": "Modernes Frontend"
+      },
+      "typescript": {
+        "title": "TypeScript",
+        "description": "Typsicherheit"
+      },
+      "tailwindCss": {
+        "title": "Tailwind CSS",
+        "description": "Schnelle Entwicklung"
+      },
+      "seoOptimization": {
+        "title": "SEO-Optimierung",
+        "description": "Sichtbarkeit"
+      }
+    },
+    "howWeWork": {
+      "title": "Wie wir an Websites arbeiten",
+      "step1": {
+        "title": "Analyse und Planung",
+        "description": "Wir identifizieren Ihre Bedürfnisse und erstellen einen Plan."
+      },
+      "step2": {
+        "title": "Design und Wireframing",
+        "description": "Wir erstellen visuelles Design und Struktur."
+      },
+      "step3": {
+        "title": "Entwicklung und Programmierung",
+        "description": "Wir programmieren die Website mit modernen Technologien."
+      },
+      "step4": {
+        "title": "Tests und Optimierung",
+        "description": "Wir testen und optimieren die Leistung."
+      },
+      "step5": {
+        "title": "Launch und Monitoring",
+        "description": "Wir starten die Website und überwachen ihre Leistung."
+      },
+      "step6": {
+        "title": "Support und Wartung",
+        "description": "Wir bieten laufende Unterstützung."
+      }
+    },
+    "whatWeOffer": {
+      "title": "Was können wir bereitstellen?",
+      "corporateWebsites": {
+        "title": "Unternehmenswebsites",
+        "description": "Professionelle Websites für Unternehmen"
+      },
+      "ecommerceWebsites": {
+        "title": "E-Commerce-Websites",
+        "description": "Online-Shops und Verkaufsplattformen"
+      },
+      "landingPages": {
+        "title": "Landing Pages",
+        "description": "Konversionsoptimierte Seiten"
+      },
+      "webApplications": {
+        "title": "Web-Anwendungen",
+        "description": "Komplexe Anwendungen und Systeme"
+      },
+      "responsiveDesign": {
+        "title": "Responsives Design",
+        "description": "Optimierung für alle Geräte"
+      },
+      "seoOptimization": {
+        "title": "SEO-Optimierung",
+        "description": "Optimierung für Suchmaschinen"
+      },
+      "performanceOptimization": {
+        "title": "Leistungsoptimierung",
+        "description": "Geschwindigkeit und Effizienz"
+      },
+      "maintenanceSupport": {
+        "title": "Wartung und Support",
+        "description": "Laufende Unterstützung und Updates"
+      }
+    },
+    "whyAgency": {
+      "title": "Warum mit einer Agentur?",
+      "diy": {
+        "title": "DIY (Allein)",
+        "complexity": {
+          "title": "Komplexität",
+          "description": "Viele technische Details"
+        },
+        "lackExperience": {
+          "title": "Fehlende Erfahrung",
+          "description": "Fehler und Ineffizienz"
+        },
+        "timeConsuming": {
+          "title": "Zeitaufwändig",
+          "description": "Monate Arbeit für Ergebnisse"
+        },
+        "maintenance": {
+          "title": "Wartung",
+          "description": "Bedarf an laufender Unterstützung"
+        }
+      },
+      "withAgency": {
+        "title": "Mit Agentur",
+        "expertise": {
+          "title": "Expertise",
+          "description": "Erfahrung und Know-how"
+        },
+        "fasterResults": {
+          "title": "Schnellere Ergebnisse",
+          "description": "Professioneller Ansatz"
+        },
+        "saveTime": {
+          "title": "Zeit sparen",
+          "description": "Fokus auf Ihr Geschäft"
+        },
+        "ongoingSupport": {
+          "title": "Laufende Unterstützung",
+          "description": "Wartung und Updates"
+        }
+      }
+    },
+    "finalCta": {
+      "title": "Websites & Landing Pages, die konvertieren.",
+      "description1": "Lassen Sie uns eine Website erstellen, die schnell, modern ist und Ihnen Kunden bringt.",
+      "description2": "Von Design bis Launch und Support – alles mit Fokus auf Qualität und Ergebnisse.",
+      "description3": "Und Sie? Sie können sich auf Ihr Geschäft konzentrieren."
+    }
+  },
+  "analytics": {
+    "title": "Analytics, die Sinn macht.",
+    "subtitle": "Daten, die dir sagen, was als nächstes zu tun ist.",
+    "description1": "Analytics ist nicht nur über Zahlen. Es geht um das Verständnis des Kundenverhaltens, die Identifizierung von Möglichkeiten und die Optimierung von Kampagnen.",
+    "description2": "Bei NextLayer Studio machen wir Analytics, die klar, umsetzbar sind und dir helfen, bessere Entscheidungen zu treffen.",
+    "description3": "Von Google Analytics über Facebook Insights bis hin zu benutzerdefinierten Berichten – alles mit Fokus auf praktische Nutzung.",
+    "ctaButton": "Analyse starten",
+    "whyAnalyticsImportant": {
+      "title": "Warum ist Analytics wichtig?"
+    },
+    "stats": {
+      "visitors": "Besucher",
+      "averageTime": "Durchschnittliche Zeit",
+      "conversion": "Konversion",
+      "roi": "ROI"
+    },
+    "whatIsAnalytics": {
+      "title": "Was ist Analytics?",
+      "description1": "Analytics ist ein System zur Sammlung, Analyse und Interpretation von Daten über Ihre Website-Besucher.",
+      "description2": "Es hilft Ihnen zu verstehen, wie sich Menschen auf Ihrer Seite verhalten, was sie interessiert und wo sie Probleme haben.",
+      "description3": "Mit diesen Informationen können Sie Ihre Website, Kampagnen und Gesamtstrategie optimieren."
+    },
+    "keyMetrics": {
+      "title": "Wichtige Metriken",
+      "traffic": "Verkehr",
+      "engagement": "Engagement",
+      "conversions": "Konversionen",
+      "roi": "ROI"
+    },
+    "howWeWork": {
+      "title": "Wie wir an Analytics arbeiten",
+      "step1": {
+        "title": "Tracking-Einrichtung",
+        "description": "Wir richten das Tracking für alle wichtigen Metriken ein."
+      },
+      "step2": {
+        "title": "Datensammlung",
+        "description": "Wir sammeln Daten aus verschiedenen Quellen und Kanälen."
+      },
+      "step3": {
+        "title": "Analyse und Interpretation",
+        "description": "Wir analysieren Daten und suchen nach Mustern und Möglichkeiten."
+      },
+      "step4": {
+        "title": "Berichterstattung",
+        "description": "Wir erstellen klare Berichte mit umsetzbaren Empfehlungen."
+      },
+      "step5": {
+        "title": "Optimierung",
+        "description": "Wir implementieren Änderungen basierend auf der Analyse."
+      },
+      "step6": {
+        "title": "Monitoring",
+        "description": "Wir überwachen Ergebnisse und setzen die Optimierung fort."
+      }
+    },
+    "whatWeOffer": {
+      "title": "Was können wir bereitstellen?",
+      "googleAnalytics": {
+        "title": "Google Analytics",
+        "description": "Vollständige Website-Analyse"
+      },
+      "facebookInsights": {
+        "title": "Facebook Insights",
+        "description": "Social Media-Analyse"
+      },
+      "googleAds": {
+        "title": "Google Ads",
+        "description": "Anzeigenanalyse"
+      },
+      "customReports": {
+        "title": "Benutzerdefinierte Berichte",
+        "description": "Spezifische Metriken für Ihr Geschäft"
+      },
+      "conversionTracking": {
+        "title": "Konversions-Tracking",
+        "description": "Kampagnenerfolgsmessung"
+      },
+      "userBehavior": {
+        "title": "Benutzerverhalten",
+        "description": "User Journey-Analyse"
+      },
+      "performanceOptimization": {
+        "title": "Leistungsoptimierung",
+        "description": "Verbesserung basierend auf Daten"
+      },
+      "monthlyReports": {
+        "title": "Monatliche Berichte",
+        "description": "Regelmäßige Bewertung"
+      }
+    },
+    "whyAgency": {
+      "title": "Warum mit einer Agentur?",
+      "diy": {
+        "title": "DIY (Allein)",
+        "complexity": {
+          "title": "Komplexität",
+          "description": "Viele Tools und Metriken"
+        },
+        "lackExperience": {
+          "title": "Fehlende Erfahrung",
+          "description": "Fehlinterpretationen"
+        },
+        "timeConsuming": {
+          "title": "Zeitaufwändig",
+          "description": "Stunden der Analyse"
+        },
+        "dataOverload": {
+          "title": "Datenüberlastung",
+          "description": "Zu viele Informationen"
+        }
+      },
+      "withAgency": {
+        "title": "Mit Agentur",
+        "expertise": {
+          "title": "Expertise",
+          "description": "Analytics-Erfahrung"
+        },
+        "clearInsights": {
+          "title": "Klare Einblicke",
+          "description": "Klare Berichte"
+        },
+        "saveTime": {
+          "title": "Zeit sparen",
+          "description": "Fokus auf Ihr Geschäft"
+        },
+        "actionableRecommendations": {
+          "title": "Umsetzbare Empfehlungen",
+          "description": "Konkrete Schritte"
+        }
+      }
+    },
+    "finalCta": {
+      "title": "Analytics, die Sinn macht.",
+      "description1": "Lassen Sie uns eine Analytics-Strategie erstellen, die Ihnen klare Einblicke in Ihre Kunden gibt.",
+      "description2": "Von Tracking-Einrichtung bis regelmäßiges Monitoring – alles mit Fokus auf praktische Nutzung.",
+      "description3": "Und Sie? Sie können sich auf Ihr Geschäft konzentrieren."
+    }
+  },
+  "contentCreation": {
+    "hero": {
+      "title": "Content, der gelesen wird.",
+      "subtitle": "Content, der fesselt, bildet und konvertiert.",
+      "description1": "Guter Content ist die Grundlage jedes erfolgreichen Marketings. Es ist ein Weg, Kunden ohne Werbung zu erreichen.",
+      "description2": "Bei NextLayer Studio erstellen wir Content, der nicht nur darum geht, \"gesehen zu werden\" – es geht darum, Menschen zu fesseln, zu bilden und zu überzeugen.",
+      "description3": "Von Artikeln über Videos bis hin zu Infografiken – alles mit Betonung auf Wert und Authentizität.",
+      "ctaButton": "Content erstellen"
+    },
+    "stats": {
+      "title": "Warum ist qualitativ hochwertiger Content wichtig?",
+      "stat1": {
+        "percentage": "70%",
+        "label": "Kunden",
+        "description": "informieren sich über Content"
+      },
+      "stat2": {
+        "percentage": "3x",
+        "label": "Mehr Konversionen",
+        "description": "mit qualitativem Content"
+      },
+      "stat3": {
+        "percentage": "60%",
+        "label": "Niedrigere Kosten",
+        "description": "für Kundenakquise"
+      },
+      "stat4": {
+        "percentage": "5x",
+        "label": "Mehr Shares",
+        "description": "organischer Content"
+      },
+      "qualityContent": {
+        "title": "Was ist qualitativ hochwertiger Content?",
+        "description1": "Qualitativ hochwertiger Content ist Content, der die Probleme Ihrer Kunden löst und ihnen Wert bietet.",
+        "description2": "Es ist Content, der leicht zu lesen ist, visuell ansprechend ist und zu Aktionen führt.",
+        "description3": "Es ist Content, der Vertrauen, Autorität und langfristige Beziehungen zu Kunden aufbaut."
+      },
+      "contentTypes": {
+        "title": "Content-Typen",
+        "video": {
+          "title": "Video",
+          "description": "Reels, Werbespots, Tutorials"
+        },
+        "text": {
+          "title": "Text",
+          "description": "Artikel, Blog, Copy"
+        },
+        "graphics": {
+          "title": "Grafik",
+          "description": "Posts, Infografiken"
+        },
+        "audio": {
+          "title": "Audio",
+          "description": "Podcasts, Audio-Content"
+        }
+      }
+    },
+    "process": {
+      "title": "Wie wir an Content arbeiten",
+      "step1": {
+        "title": "Analyse und Strategie",
+        "description": "Wir identifizieren Ihre Zielgruppe und planen Content-Strategie.",
+        "tag": "Zielgruppenforschung"
+      },
+      "step2": {
+        "title": "Kreatives Konzept",
+        "description": "Wir erstellen Idee, Stil und Form des Contents.",
+        "tag": "Kreatives Konzept"
+      },
+      "step3": {
+        "title": "Content-Produktion",
+        "description": "Wir erstellen Video, Grafiken, Texte und anderen Content.",
+        "tag": "Content-Produktion"
+      },
+      "step4": {
+        "title": "Optimierung und Anpassungen",
+        "description": "Wir passen Content basierend auf Feedback an und optimieren.",
+        "tag": "Verfeinerung"
+      },
+      "step5": {
+        "title": "Veröffentlichung und Verteilung",
+        "description": "Wir veröffentlichen Content auf den richtigen Plattformen.",
+        "tag": "Verteilung"
+      },
+      "step6": {
+        "title": "Analyse und Optimierung",
+        "description": "Wir überwachen die Performance und verbessern zukünftigen Content.",
+        "tag": "Performance-Analyse"
+      }
+    },
+    "services": {
+      "title": "Welchen Content erstellen wir?",
+      "videoContent": {
+        "title": "Video-Content",
+        "description": "Reels, TikTok, YouTube, Werbespots",
+        "benefit": "Hohe Engagement"
+      },
+      "graphicDesign": {
+        "title": "Grafikdesign",
+        "description": "Posts, Carousel, Infografiken",
+        "benefit": "Visuelle Attraktivität"
+      },
+      "textContent": {
+        "title": "Text-Content",
+        "description": "Artikel, Blog, Copywriting",
+        "benefit": "SEO-Optimierung"
+      },
+      "audioContent": {
+        "title": "Audio-Content",
+        "description": "Podcasts, Audio-Posts",
+        "benefit": "Mobiles Hören"
+      },
+      "interactiveContent": {
+        "title": "Interaktiver Content",
+        "description": "Stories, Umfragen, Quiz",
+        "benefit": "Hohe Interaktion"
+      },
+      "photography": {
+        "title": "Fotografischer Content",
+        "description": "Produktfotos, Lifestyle",
+        "benefit": "Authentischer Look"
+      },
+      "educationalContent": {
+        "title": "Bildungs-Content",
+        "description": "Tutorials, Anleitungen, Fallstudien",
+        "benefit": "Autorität aufbauen"
+      },
+      "contentCalendar": {
+        "title": "Content-Kalender",
+        "description": "Planung und Koordination",
+        "benefit": "Konsistenz"
+      },
+      "reports": {
+        "title": "Regelmäßige Berichte und Beratung",
+        "description": "Monatliche Bewertung mit Empfehlungen",
+        "benefit": "Transparenz"
+      }
+    },
+    "whyChooseUs": {
+      "title": "Warum mit uns?",
+      "description1": "Weil wir Content erstellen, der auf echten Kundenbedürfnissen basiert und echte Ergebnisse bringt.",
+      "description2": "Wir haben Erfahrung mit verschiedenen Content-Typen und wissen, was für Ihren Geschäftstyp funktioniert. Wir experimentieren nicht mit Ihrer Online-Präsenz.",
+      "description3": "Transparenz ist für uns entscheidend – Sie wissen immer, was wir tun und welche Ergebnisse es bringt."
+    },
+    "finalCta": {
+      "title": "Content, der gelesen wird.",
+      "description1": "Lassen Sie uns Content erstellen, der interessant, wertvoll ist und Ihnen Kunden bringt.",
+      "description2": "Mit uns haben Sie Content, den Menschen lesen, ansehen und teilen möchten.",
+      "description3": "Von der Strategie bis zur Veröffentlichung und Performance-Analyse.",
+      "ctaButton": "Content erstellen"
+    }
+  },
+  "adCampaigns": {
+    "hero": {
+      "title": "Werbekampagnen, die funktionieren.",
+      "subtitle": "Umfassende Lösungen für maximale Ergebnisse.",
+      "description1": "Eine Werbekampagne ist nicht nur das Anzeigen von Werbung. Es geht um eine Gesamtstrategie, die alle Kanäle verbindet und Ergebnisse bringt.",
+      "description2": "Bei NextLayer Studio erstellen wir Kampagnen, die koordiniert, optimiert und messbar sind. Von der Planung bis zur Bewertung.",
+      "description3": "Von PPC über Social Media bis hin zu Display-Anzeigen – alles mit Betonung auf ROI und Konversionen.",
+      "ctaButton": "Kampagne starten"
+    },
+    "stats": {
+      "title": "Warum sind Kampagnen wichtig?",
+      "totalSales": {
+        "amount": "€15,847",
+        "label": "Gesamtumsatz",
+        "change": "+45%"
+      },
+      "clicks": {
+        "amount": "2,847",
+        "label": "Klicks",
+        "change": "+23%"
+      },
+      "conversion": {
+        "amount": "4.2%",
+        "label": "Konversion",
+        "change": "+18%"
+      },
+      "avgCpc": {
+        "amount": "€2.45",
+        "label": "Durchschnittlicher CPC",
+        "change": "-12%"
+      },
+      "campaignDefinition": {
+        "title": "Was ist eine Werbekampagne?",
+        "description1": "Eine Werbekampagne ist eine fokussierte Marketingaktivität, die auf etwas Konkretes abzielt: ein Produkt verkaufen, neue Kunden gewinnen, einen neuen Service starten.",
+        "description2": "Um erfolgreich zu sein, muss sie gut getimed, kreativ verarbeitet und strategisch geführt werden.",
+        "description3": "Es ist ein komplexes System, das verschiedene Kanäle verbindet und für maximale Ergebnisse optimiert."
+      },
+      "components": {
+        "title": "Kampagnen-Komponenten",
+        "strategy": {
+          "title": "Strategie",
+          "description": "Planung und Ziele"
+        },
+        "content": {
+          "title": "Content",
+          "description": "Kreative und Copy"
+        },
+        "targeting": {
+          "title": "Targeting",
+          "description": "Zielgruppen-Targeting"
+        },
+        "optimization": {
+          "title": "Optimierung",
+          "description": "Performance-Tuning"
+        }
+      }
+    },
+    "process": {
+      "title": "Wie wir an Kampagnen arbeiten",
+      "step1": {
+        "title": "Analyse und Planung",
+        "description": "Wir identifizieren Ihre Ziele und Zielgruppe.",
+        "tag": "Zielgruppenforschung"
+      },
+      "step2": {
+        "title": "Strategie und Kanäle",
+        "description": "Wir wählen die richtigen Plattformen und Methoden.",
+        "tag": "Kanalauswahl"
+      },
+      "step3": {
+        "title": "Kreative und Content",
+        "description": "Wir erstellen alle notwendigen Ausgaben.",
+        "tag": "Kreative Produktion"
+      },
+      "step4": {
+        "title": "Technisches Setup",
+        "description": "Wir bereiten Konten, Tracking und Budgets vor.",
+        "tag": "Technisches Setup"
+      },
+      "step5": {
+        "title": "Start und Optimierung",
+        "description": "Wir überwachen die Performance und optimieren.",
+        "tag": "Performance-Optimierung"
+      },
+      "step6": {
+        "title": "Analyse und Reporting",
+        "description": "Wir bewerten Ergebnisse und schlagen nächste Schritte vor.",
+        "tag": "Ergebnisanalyse"
+      }
+    },
+    "channels": {
+      "title": "Wo führen wir Kampagnen durch?",
+      "googleAds": {
+        "title": "Google Ads",
+        "description": "Suche, Banner, YouTube",
+        "benefit": "Hohe Konversion"
+      },
+      "facebookInstagram": {
+        "title": "Facebook & Instagram",
+        "description": "Alle Formate einschließlich Reels",
+        "benefit": "Breites Targeting"
+      },
+      "tiktokAds": {
+        "title": "TikTok Ads",
+        "description": "Für jüngeres Publikum",
+        "benefit": "Virales Potenzial"
+      },
+      "linkedinAds": {
+        "title": "LinkedIn Ads",
+        "description": "Für B2B-Segment",
+        "benefit": "Professionelles Targeting"
+      },
+      "displayAds": {
+        "title": "Display-Anzeigen",
+        "description": "Banner auf Websites",
+        "benefit": "Breite Sichtbarkeit"
+      },
+      "emailMarketing": {
+        "title": "E-Mail-Marketing",
+        "description": "Newsletter-Kampagnen",
+        "benefit": "Niedrige Kosten"
+      },
+      "videoCampaigns": {
+        "title": "Video-Kampagnen",
+        "description": "YouTube, TikTok, Instagram",
+        "benefit": "Hohe Engagement"
+      },
+      "abTesting": {
+        "title": "A/B-Tests",
+        "description": "Kampagnen-Optimierung",
+        "benefit": "Performance-Verbesserung"
+      },
+      "reports": {
+        "title": "Regelmäßige Berichte und Beratung",
+        "description": "Monatliche Bewertung mit Empfehlungen",
+        "benefit": "Transparenz"
+      }
+    },
+    "whyChooseUs": {
+      "title": "Warum mit uns?",
+      "description1": "Weil wir Kampagnen erstellen, die auf Daten und langfristigen Ergebnissen basieren, nicht auf schnellen Tricks.",
+      "description2": "Wir haben Erfahrung mit verschiedenen Branchen und wissen, was für Ihren Geschäftstyp funktioniert. Wir experimentieren nicht mit Ihrem Geld.",
+      "description3": "Transparenz ist für uns entscheidend – Sie wissen immer, wohin Ihr Geld geht und welche Ergebnisse es bringt."
+    },
+    "finalCta": {
+      "title": "Werbekampagnen, die funktionieren.",
+      "description1": "Lassen Sie uns eine Kampagne erstellen, die koordiniert, optimiert ist und Ihnen Kunden bringt.",
+      "description2": "Mit uns haben Sie eine Kampagne, die alle Kanäle verbindet und für maximale Ergebnisse optimiert.",
+      "description3": "Von der Planung bis zur Bewertung und Vorschlag der nächsten Schritte.",
+      "ctaButton": "Kampagne starten"
+    }
+  },
+  "digitalFootprint": {
+    "hero": {
+      "title": "Hinterlasse einen Eindruck. Hinterlasse eine Spur.",
+      "subtitle": "Wir bauen Marken auf, die sichtbar, einprägsam und konsistent sind.",
+      "description1": "Digitaler Fußabdruck ist alles, was ein Kunde über Sie im Internet sieht. Es ist wie Ihr Online-Fingerabdruck.",
+      "description2": "Bei NextLayer Studio helfen wir dabei, Unternehmensidentität zu schaffen, die klar, verständlich und repräsentativ ist.",
+      "description3": "Vom Logo über Farben bis zum Designhandbuch – alles mit Betonung auf Konsistenz und Professionalität.",
+      "ctaButton": "Marke aufbauen"
+    },
+    "stats": {
+      "title": "Warum ist Unternehmensidentität wichtig?",
+      "stat1": {
+        "percentage": "80%",
+        "label": "Kunden",
+        "description": "erinnern sich an die Marke"
+      },
+      "stat2": {
+        "percentage": "3x",
+        "label": "Mehr Vertrauen",
+        "description": "mit konsistenter Identität"
+      },
+      "stat3": {
+        "percentage": "60%",
+        "label": "Niedrigere Kosten",
+        "description": "für Marketing"
+      },
+      "stat4": {
+        "percentage": "5x",
+        "label": "Mehr Loyalität",
+        "description": "von Kunden"
+      },
+      "digitalFootprintDefinition": {
+        "title": "Was ist digitaler Fußabdruck?",
+        "description1": "Digitaler Fußabdruck ist alles, was ein Kunde über Sie im Internet sieht: Website, Social Media, Google-Ergebnisse, Artikel, Bewertungen, Visuals, Videos, Kommentare.",
+        "description2": "Es ist wie Ihr Online-Fingerabdruck. Und deshalb muss er klar, verständlich und repräsentativ sein.",
+        "description3": "Wir helfen Ihnen, einen Fußabdruck zu schaffen, der zu Ihren Gunsten funktioniert – nicht gegen Sie."
+      },
+      "brandComponents": {
+        "title": "Marken-Komponenten",
+        "logo": {
+          "title": "Logo",
+          "description": "Marken-Grundlage"
+        },
+        "colors": {
+          "title": "Farben",
+          "description": "Farbpalette"
+        },
+        "typography": {
+          "title": "Typografie",
+          "description": "Schriften und Stile"
+        },
+        "visuals": {
+          "title": "Visuals",
+          "description": "Illustrationen und Icons"
+        }
+      }
+    },
+    "process": {
+      "title": "Wie wir Marken aufbauen",
+      "step1": {
+        "title": "Analyse und Forschung",
+        "description": "Wir identifizieren Ihre Marktposition und Zielgruppe.",
+        "tag": "Marktforschung"
+      },
+      "step2": {
+        "title": "Konzept und Strategie",
+        "description": "Wir erstellen Markenkonzept und Kommunikationsstrategie.",
+        "tag": "Markenstrategie"
+      },
+      "step3": {
+        "title": "Visuelle Identität",
+        "description": "Wir gestalten Logo, Farben, Typografie und visuelle Elemente.",
+        "tag": "Visuelle Identität"
+      },
+      "step4": {
+        "title": "Designhandbuch",
+        "description": "Wir erstellen Regeln und Vorlagen für konsistente Nutzung.",
+        "tag": "Designhandbuch"
+      },
+      "step5": {
+        "title": "Implementierung",
+        "description": "Wir wenden Identität auf alle Materialien und Kanäle an.",
+        "tag": "Implementierung"
+      },
+      "step6": {
+        "title": "Überwachung und Wartung",
+        "description": "Wir überwachen Konsistenz und entwickeln die Marke weiter.",
+        "tag": "Markenwartung"
+      }
+    },
+    "services": {
+      "title": "Was können wir bereitstellen?",
+      "logoIdentity": {
+        "title": "Logo und visuelle Identität",
+        "description": "Logo, Farben, Typografie",
+        "benefit": "Marken-Grundlage"
+      },
+      "designManual": {
+        "title": "Designhandbuch",
+        "description": "Regeln und Vorlagen",
+        "benefit": "Konsistenz"
+      },
+      "graphicMaterials": {
+        "title": "Grafische Materialien",
+        "description": "Visitenkarten, Briefköpfe, Präsentationen",
+        "benefit": "Professionelles Aussehen"
+      },
+      "digitalMaterials": {
+        "title": "Digitale Materialien",
+        "description": "Social Media, Web, E-Mail",
+        "benefit": "Online-Präsenz"
+      },
+      "videoIdentity": {
+        "title": "Video-Identität",
+        "description": "Intro, Outro, Animationen",
+        "benefit": "Dynamischer Content"
+      },
+      "communicationStrategy": {
+        "title": "Kommunikationsstrategie",
+        "description": "Tonfall, Messaging",
+        "benefit": "Konsistente Kommunikation"
+      },
+      "brandAudit": {
+        "title": "Marken-Audit",
+        "description": "Analyse bestehender Marke",
+        "benefit": "Problemidentifikation"
+      },
+      "reports": {
+        "title": "Regelmäßige Berichte und Beratung",
+        "description": "Monatliche Bewertung mit Empfehlungen",
+        "benefit": "Transparenz"
+      }
+    },
+    "whyChooseUs": {
+      "title": "Warum mit uns?",
+      "description1": "Weil wir Marken schaffen, die auf langfristigen Werten und Authentizität basieren, nicht auf schnellen Trends.",
+      "description2": "Wir haben Erfahrung mit verschiedenen Branchen und wissen, was für Ihren Geschäftstyp funktioniert. Wir experimentieren nicht mit Ihrer Identität.",
+      "description3": "Transparenz ist für uns entscheidend – Sie wissen immer, was wir tun und welche Ergebnisse es bringt."
+    },
+    "finalCta": {
+      "title": "Hinterlasse einen Eindruck. Hinterlasse eine Spur.",
+      "description1": "Lassen Sie uns eine Unternehmensidentität schaffen, die klar, einprägsam und konsistent ist.",
+      "description2": "Mit uns haben Sie eine Marke, die sich von der Konkurrenz abhebt und Vertrauen bei Kunden aufbaut.",
+      "description3": "Vom Konzept bis zur Implementierung und langfristigen Wartung.",
+      "ctaButton": "Marke aufbauen"
     }
   }
 } 

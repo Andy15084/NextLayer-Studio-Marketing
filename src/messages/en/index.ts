@@ -1,4 +1,4 @@
-export default {
+const enMessages = {
   navigation: {
     webServices: 'Web Solutions',
     services: 'Services',
@@ -11,14 +11,14 @@ export default {
     ppcAdvertising: 'PPC & Performance Advertising',
     seoContent: 'SEO & Content Marketing',
     webLanding: 'Web & Landing Pages',
-    analytics: 'Analytics and Reporting',
+    analytics: 'Analytics & Reporting',
     contentProduction: 'Content Production',
-    adCampaigns: 'Advertising Campaigns'
+    adCampaigns: 'Ad Campaign Creation'
   },
   languages: {
-    slovak: 'Slovak',
-    german: 'German',
-    czech: 'Czech',
+    slovak: 'Slovenský',
+    german: 'Deutsch',
+    czech: 'Čeština',
     english: 'English'
   },
   // Add more translations as needed
@@ -27,4 +27,6 @@ export default {
     subtitle: 'Professional marketing that brings you new customers and increases sales.',
     campaignButton: 'I want a campaign'
   }
-}; 
+};
+
+export default enMessages; 

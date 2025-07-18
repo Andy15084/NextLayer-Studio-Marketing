@@ -1,3 +1,7 @@
+'use client';
+
+import { useTranslations } from 'next-intl';
+import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import PaletteButton from '@/components/PaletteButton';
 import { 
@@ -19,6 +23,22 @@ import {
 } from 'lucide-react';
 
 export default function SocialneSietePage() {
+  const t = useTranslations('socialMedia');
+  const pathname = usePathname();
+  
+  // Extract locale from pathname
+  const getLocaleFromPath = (path: string): string => {
+    const segments = path.split('/').filter(Boolean);
+    if (segments.length === 0) return 'sk';
+    const firstSegment = segments[0];
+    if (['sk', 'en', 'de', 'cs'].includes(firstSegment)) {
+      return firstSegment;
+    }
+    return 'sk';
+  };
+
+  const locale = getLocaleFromPath(pathname);
+
   return (
     <main className="min-h-screen">
       {/* 1. Hero Section with Social Media Icons */}
@@ -55,25 +75,25 @@ export default function SocialneSietePage() {
             </div>
             
             <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-[#023047]">
-              Sociálne siete, ktoré budujú značku.
+              {t('title')}
             </h1>
             <p className="font-mono text-xl md:text-2xl lg:text-3xl mb-8 text-[#023047] font-medium">
-              Nie len príspevky. Stratégia, ktorá prináša výsledky.
+              {t('subtitle')}
             </p>
             <div className="font-mono text-lg md:text-xl mb-12 text-[#023047] max-w-4xl">
               <p className="mb-4">
-                Sociálne siete sú miesto, kde sa tvoja značka stretáva s ľuďmi. Kde sa buduje dôvera, komunita a lojalita.
+                {t('description1')}
               </p>
               <p className="mb-4">
-                V NextLayer Studio robíme sociálne siete, ktoré nie sú len o &quot;byť vidieť&quot; – sú o tom, aby si ľudí zaujal, zapojil a získal.
+                {t('description2')}
               </p>
               <p>
-                Od stratégie cez obsah až po komunitu – všetko s dôrazom na autenticitu a výsledky.
+                {t('description3')}
               </p>
             </div>
-            <Link href="/sk/kontakt">
+            <Link href={`/${locale}/kontakt`}>
               <PaletteButton variant="secondary" className="text-lg px-8 py-4">
-                Spustiť sociálne siete
+                {t('ctaButton')}
               </PaletteButton>
             </Link>
           </div>
@@ -85,18 +105,18 @@ export default function SocialneSietePage() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
           <div className="bg-white rounded-2xl shadow-xl p-8 text-center hover:scale-105 transition-transform duration-300">
             <div className="text-4xl font-bold text-[#219EBC] mb-2">4.8B</div>
-            <div className="font-mono text-gray-700">Aktívnych používateľov</div>
-            <div className="text-sm text-gray-500 mt-2">sociálnych sietí</div>
+            <div className="font-mono text-gray-700">{t('stats.activeUsers')}</div>
+            <div className="text-sm text-gray-500 mt-2">{t('stats.socialNetworks')}</div>
           </div>
           <div className="bg-white rounded-2xl shadow-xl p-8 text-center hover:scale-105 transition-transform duration-300">
             <div className="text-4xl font-bold text-[#219EBC] mb-2">2.5h</div>
-            <div className="font-mono text-gray-700">Priemerný čas</div>
-            <div className="text-sm text-gray-500 mt-2">denne na sociálnych sieťach</div>
+            <div className="font-mono text-gray-700">{t('stats.averageTime')}</div>
+            <div className="text-sm text-gray-500 mt-2">{t('stats.dailyOnSocial')}</div>
           </div>
           <div className="bg-white rounded-2xl shadow-xl p-8 text-center hover:scale-105 transition-transform duration-300">
             <div className="text-4xl font-bold text-[#219EBC] mb-2">78%</div>
-            <div className="font-mono text-gray-700">Zákazníkov</div>
-            <div className="text-sm text-gray-500 mt-2">kupuje po sociálnych sieťach</div>
+            <div className="font-mono text-gray-700">{t('stats.customers')}</div>
+            <div className="text-sm text-gray-500 mt-2">{t('stats.buyAfterSocial')}</div>
           </div>
         </div>
         
@@ -104,58 +124,58 @@ export default function SocialneSietePage() {
           {/* Left: Text */}
           <div>
             <h2 className="font-heading text-3xl md:text-4xl font-bold mb-6 text-[#023047]">
-              Prečo sú sociálne siete dôležité?
+              {t('whyImportant.title')}
             </h2>
             <div className="font-mono text-lg space-y-4 text-gray-800">
               <p>
-                Sociálne siete sú miesto, kde sa ľudia rozhodujú o značkách. Kde sa buduje dôvera, kde sa riešia otázky a kde sa vytvárajú vzťahy.
+                {t('whyImportant.description1')}
               </p>
               <p>
-                Nie je to len o počte followerov. Je to o tom, ako sa tvoja značka správa online, ako komunikuje a ako buduje komunitu.
+                {t('whyImportant.description2')}
               </p>
               <p>
-                Správne vedené sociálne siete ti pomôžu byť bližšie k zákazníkom, získať spätnú väzbu a budovať dlhodobé vzťahy.
+                {t('whyImportant.description3')}
               </p>
             </div>
           </div>
           
           {/* Right: Benefits with Icons */}
           <div className="bg-white rounded-2xl shadow-xl p-8">
-            <h3 className="font-heading text-xl font-bold mb-6 text-[#023047] text-center">Benefity sociálnych sietí</h3>
+            <h3 className="font-heading text-xl font-bold mb-6 text-[#023047] text-center">{t('benefits.title')}</h3>
             <div className="space-y-4">
               <div className="flex items-start space-x-3 p-3 rounded-lg hover:bg-gray-50 transition-colors">
                 <CheckCircle className="text-green-500 w-6 h-6 flex-shrink-0 mt-1" />
                 <div>
-                  <h4 className="font-heading font-bold text-[#023047]">Budovanie značky</h4>
-                  <p className="font-mono text-sm text-gray-700">Autentická komunikácia</p>
+                  <h4 className="font-heading font-bold text-[#023047]">{t('benefits.brandBuilding.title')}</h4>
+                  <p className="font-mono text-sm text-gray-700">{t('benefits.brandBuilding.description')}</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3 p-3 rounded-lg hover:bg-gray-50 transition-colors">
                 <CheckCircle className="text-green-500 w-6 h-6 flex-shrink-0 mt-1" />
                 <div>
-                  <h4 className="font-heading font-bold text-[#023047]">Priamy kontakt</h4>
-                  <p className="font-mono text-sm text-gray-700">S zákazníkmi</p>
+                  <h4 className="font-heading font-bold text-[#023047]">{t('benefits.directContact.title')}</h4>
+                  <p className="font-mono text-sm text-gray-700">{t('benefits.directContact.description')}</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3 p-3 rounded-lg hover:bg-gray-50 transition-colors">
                 <CheckCircle className="text-green-500 w-6 h-6 flex-shrink-0 mt-1" />
                 <div>
-                  <h4 className="font-heading font-bold text-[#023047]">Zvýšenie predajov</h4>
-                  <p className="font-mono text-sm text-gray-700">Cielené kampane</p>
+                  <h4 className="font-heading font-bold text-[#023047]">{t('benefits.increaseSales.title')}</h4>
+                  <p className="font-mono text-sm text-gray-700">{t('benefits.increaseSales.description')}</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3 p-3 rounded-lg hover:bg-gray-50 transition-colors">
                 <CheckCircle className="text-green-500 w-6 h-6 flex-shrink-0 mt-1" />
                 <div>
-                  <h4 className="font-heading font-bold text-[#023047]">Spätná väzba</h4>
-                  <p className="font-mono text-sm text-gray-700">Od zákazníkov</p>
+                  <h4 className="font-heading font-bold text-[#023047]">{t('benefits.feedback.title')}</h4>
+                  <p className="font-mono text-sm text-gray-700">{t('benefits.feedback.description')}</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3 p-3 rounded-lg hover:bg-gray-50 transition-colors">
                 <CheckCircle className="text-green-500 w-6 h-6 flex-shrink-0 mt-1" />
                 <div>
-                  <h4 className="font-heading font-bold text-[#023047]">Komunita</h4>
-                  <p className="font-mono text-sm text-gray-700">Lojálnych zákazníkov</p>
+                  <h4 className="font-heading font-bold text-[#023047]">{t('benefits.community.title')}</h4>
+                  <p className="font-mono text-sm text-gray-700">{t('benefits.community.description')}</p>
                 </div>
               </div>
             </div>
@@ -166,7 +186,7 @@ export default function SocialneSietePage() {
       {/* 3. How We Work Section with Timeline */}
       <section className="max-w-7xl mx-auto py-20 px-4">
         <h2 className="font-heading text-3xl md:text-4xl font-bold mb-12 text-center text-[#023047]">
-          Ako pracujeme na sociálnych sieťach
+          {t('howWeWork.title')}
         </h2>
         
         <div className="relative">
@@ -179,10 +199,10 @@ export default function SocialneSietePage() {
                 <div className="bg-white rounded-2xl shadow-xl p-6 border-l-4 border-[#219EBC] hover:scale-105 transition-transform duration-300">
                   <div className="flex items-center gap-4 mb-4">
                     <div className="bg-[#219EBC] text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl">1</div>
-                    <h3 className="font-heading text-xl font-bold text-[#023047]">Analýza a stratégia</h3>
+                    <h3 className="font-heading text-xl font-bold text-[#023047]">{t('howWeWork.step1.title')}</h3>
                   </div>
                   <p className="font-mono text-gray-700">
-                    Zistíme tvoju cieľovku a naplánujeme obsahovú stratégiu.
+                    {t('howWeWork.step1.description')}
                   </p>
                 </div>
               </div>
@@ -190,10 +210,10 @@ export default function SocialneSietePage() {
                 <div className="bg-white rounded-2xl shadow-xl p-6 border-l-4 border-[#219EBC] hover:scale-105 transition-transform duration-300">
                   <div className="flex items-center gap-4 mb-4">
                     <div className="bg-[#219EBC] text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl">2</div>
-                    <h3 className="font-heading text-xl font-bold text-[#023047]">Výber platformy</h3>
+                    <h3 className="font-heading text-xl font-bold text-[#023047]">{t('howWeWork.step2.title')}</h3>
                   </div>
                   <p className="font-mono text-gray-700">
-                    Vyberieme správne siete podľa tvojej cieľovky.
+                    {t('howWeWork.step2.description')}
                   </p>
                 </div>
               </div>
@@ -204,10 +224,10 @@ export default function SocialneSietePage() {
                 <div className="bg-white rounded-2xl shadow-xl p-6 border-l-4 border-[#219EBC] hover:scale-105 transition-transform duration-300">
                   <div className="flex items-center gap-4 mb-4">
                     <div className="bg-[#219EBC] text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl">3</div>
-                    <h3 className="font-heading text-xl font-bold text-[#023047]">Tvorba obsahu</h3>
+                    <h3 className="font-heading text-xl font-bold text-[#023047]">{t('howWeWork.step3.title')}</h3>
                   </div>
                   <p className="font-mono text-gray-700">
-                    Vytvoríme príspevky, príbehy, reels a ďalší obsah.
+                    {t('howWeWork.step3.description')}
                   </p>
                 </div>
               </div>
@@ -215,10 +235,10 @@ export default function SocialneSietePage() {
                 <div className="bg-white rounded-2xl shadow-xl p-6 border-l-4 border-[#219EBC] hover:scale-105 transition-transform duration-300">
                   <div className="flex items-center gap-4 mb-4">
                     <div className="bg-[#219EBC] text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl">4</div>
-                    <h3 className="font-heading text-xl font-bold text-[#023047]">Publikovanie a monitoring</h3>
+                    <h3 className="font-heading text-xl font-bold text-[#023047]">{t('howWeWork.step4.title')}</h3>
                   </div>
                   <p className="font-mono text-gray-700">
-                    Pravidelne publikujeme a sledujeme výkonnosť.
+                    {t('howWeWork.step4.description')}
                   </p>
                 </div>
               </div>
@@ -229,10 +249,10 @@ export default function SocialneSietePage() {
                 <div className="bg-white rounded-2xl shadow-xl p-6 border-l-4 border-[#219EBC] hover:scale-105 transition-transform duration-300">
                   <div className="flex items-center gap-4 mb-4">
                     <div className="bg-[#219EBC] text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl">5</div>
-                    <h3 className="font-heading text-xl font-bold text-[#023047]">Komunita a interakcia</h3>
+                    <h3 className="font-heading text-xl font-bold text-[#023047]">{t('howWeWork.step5.title')}</h3>
                   </div>
                   <p className="font-mono text-gray-700">
-                    Reagujeme na komentáre a budujeme komunitu.
+                    {t('howWeWork.step5.description')}
                   </p>
                 </div>
               </div>
@@ -240,10 +260,10 @@ export default function SocialneSietePage() {
                 <div className="bg-white rounded-2xl shadow-xl p-6 border-l-4 border-[#219EBC] hover:scale-105 transition-transform duration-300">
                   <div className="flex items-center gap-4 mb-4">
                     <div className="bg-[#219EBC] text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl">6</div>
-                    <h3 className="font-heading text-xl font-bold text-[#023047]">Analýza a optimalizácia</h3>
+                    <h3 className="font-heading text-xl font-bold text-[#023047]">{t('howWeWork.step6.title')}</h3>
                   </div>
                   <p className="font-mono text-gray-700">
-                    Pravidelne vyhodnocujeme výsledky a optimalizujeme stratégiu.
+                    {t('howWeWork.step6.description')}
                   </p>
                 </div>
               </div>
@@ -255,74 +275,74 @@ export default function SocialneSietePage() {
       {/* 4. Agency vs DIY Section with Visual Comparison */}
       <section className="max-w-7xl mx-auto py-20 px-4">
         <h2 className="font-heading text-3xl md:text-4xl font-bold mb-12 text-center text-[#023047]">
-          Prečo to robiť s agentúrou?
+          {t('whyAgency.title')}
         </h2>
         
         <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div className="border-2 border-red-200 rounded-xl p-6 bg-red-50">
-              <h3 className="font-heading text-xl font-bold mb-6 text-red-600 text-center">DIY (Sám)</h3>
+              <h3 className="font-heading text-xl font-bold mb-6 text-red-600 text-center">{t('whyAgency.diy.title')}</h3>
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
                   <div className="text-red-500 text-xl">❌</div>
                   <div>
-                    <h4 className="font-heading font-bold text-[#023047]">Časovo náročné</h4>
-                    <p className="font-mono text-sm text-gray-700">Každý deň hodiny práce</p>
+                    <h4 className="font-heading font-bold text-[#023047]">{t('whyAgency.diy.timeConsuming.title')}</h4>
+                    <p className="font-mono text-sm text-gray-700">{t('whyAgency.diy.timeConsuming.description')}</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="text-red-500 text-xl">❌</div>
                   <div>
-                    <h4 className="font-heading font-bold text-[#023047]">Nedostatok skúseností</h4>
-                    <p className="font-mono text-sm text-gray-700">Chyby a neefektívnosť</p>
+                    <h4 className="font-heading font-bold text-[#023047]">{t('whyAgency.diy.lackExperience.title')}</h4>
+                    <p className="font-mono text-sm text-gray-700">{t('whyAgency.diy.lackExperience.description')}</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="text-red-500 text-xl">❌</div>
                   <div>
-                    <h4 className="font-heading font-bold text-[#023047]">Nekonzistentnosť</h4>
-                    <p className="font-mono text-sm text-gray-700">Prerušovaná komunikácia</p>
+                    <h4 className="font-heading font-bold text-[#023047]">{t('whyAgency.diy.inconsistency.title')}</h4>
+                    <p className="font-mono text-sm text-gray-700">{t('whyAgency.diy.inconsistency.description')}</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="text-red-500 text-xl">❌</div>
                   <div>
-                    <h4 className="font-heading font-bold text-[#023047]">Chýbajúce nástroje</h4>
-                    <p className="font-mono text-sm text-gray-700">Drahé licencie a software</p>
+                    <h4 className="font-heading font-bold text-[#023047]">{t('whyAgency.diy.missingTools.title')}</h4>
+                    <p className="font-mono text-sm text-gray-700">{t('whyAgency.diy.missingTools.description')}</p>
                   </div>
                 </div>
               </div>
             </div>
             
             <div className="border-2 border-green-200 rounded-xl p-6 bg-green-50">
-              <h3 className="font-heading text-xl font-bold mb-6 text-green-600 text-center">S agentúrou</h3>
+              <h3 className="font-heading text-xl font-bold mb-6 text-green-600 text-center">{t('whyAgency.withAgency.title')}</h3>
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="text-green-500 w-6 h-6 flex-shrink-0 mt-1" />
                   <div>
-                    <h4 className="font-heading font-bold text-[#023047]">Ušetríš čas</h4>
-                    <p className="font-mono text-sm text-gray-700">Sústredíš sa na biznis</p>
+                    <h4 className="font-heading font-bold text-[#023047]">{t('whyAgency.withAgency.saveTime.title')}</h4>
+                    <p className="font-mono text-sm text-gray-700">{t('whyAgency.withAgency.saveTime.description')}</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="text-green-500 w-6 h-6 flex-shrink-0 mt-1" />
                   <div>
-                    <h4 className="font-heading font-bold text-[#023047]">Profesionálny prístup</h4>
-                    <p className="font-mono text-sm text-gray-700">Skúsenosti a know-how</p>
+                    <h4 className="font-heading font-bold text-[#023047]">{t('whyAgency.withAgency.professionalApproach.title')}</h4>
+                    <p className="font-mono text-sm text-gray-700">{t('whyAgency.withAgency.professionalApproach.description')}</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="text-green-500 w-6 h-6 flex-shrink-0 mt-1" />
                   <div>
-                    <h4 className="font-heading font-bold text-[#023047]">Konzistentnosť</h4>
-                    <p className="font-mono text-sm text-gray-700">Pravidelná komunikácia</p>
+                    <h4 className="font-heading font-bold text-[#023047]">{t('whyAgency.withAgency.consistency.title')}</h4>
+                    <p className="font-mono text-sm text-gray-700">{t('whyAgency.withAgency.consistency.description')}</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="text-green-500 w-6 h-6 flex-shrink-0 mt-1" />
                   <div>
-                    <h4 className="font-heading font-bold text-[#023047]">Všetky nástroje</h4>
-                    <p className="font-mono text-sm text-gray-700">Profesionálne vybavenie</p>
+                    <h4 className="font-heading font-bold text-[#023047]">{t('whyAgency.withAgency.allTools.title')}</h4>
+                    <p className="font-mono text-sm text-gray-700">{t('whyAgency.withAgency.allTools.description')}</p>
                   </div>
                 </div>
               </div>
@@ -334,7 +354,7 @@ export default function SocialneSietePage() {
       {/* 5. What We Offer Section with Hover Effects */}
       <section className="max-w-7xl mx-auto py-20 px-4">
         <h2 className="font-heading text-3xl md:text-4xl font-bold mb-12 text-center text-[#023047]">
-          Čo všetko vieme zabezpečiť?
+          {t('whatWeOffer.title')}
         </h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -342,9 +362,9 @@ export default function SocialneSietePage() {
             <div className="bg-[#7dffee] rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:bg-[#219EBC] transition-colors">
               <Share2 className="text-[#023047] w-8 h-8" />
             </div>
-            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">Správa sociálnych sietí</h3>
+            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">{t('whatWeOffer.socialMediaManagement.title')}</h3>
             <p className="font-mono text-gray-700 text-sm">
-              Denná komunikácia
+              {t('whatWeOffer.socialMediaManagement.description')}
             </p>
           </div>
           
@@ -352,9 +372,9 @@ export default function SocialneSietePage() {
             <div className="bg-[#7dffee] rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:bg-[#219EBC] transition-colors">
               <MessageCircle className="text-[#023047] w-8 h-8" />
             </div>
-            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">Tvorba obsahu</h3>
+            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">{t('whatWeOffer.contentCreation.title')}</h3>
             <p className="font-mono text-gray-700 text-sm">
-              Príspevky, príbehy, reels
+              {t('whatWeOffer.contentCreation.description')}
             </p>
           </div>
           
@@ -362,9 +382,9 @@ export default function SocialneSietePage() {
             <div className="bg-[#7dffee] rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:bg-[#219EBC] transition-colors">
               <Heart className="text-[#023047] w-8 h-8" />
             </div>
-            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">Komunita management</h3>
+            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">{t('whatWeOffer.communityManagement.title')}</h3>
             <p className="font-mono text-gray-700 text-sm">
-              Reakcie na komentáre
+              {t('whatWeOffer.communityManagement.description')}
             </p>
           </div>
           
@@ -372,9 +392,9 @@ export default function SocialneSietePage() {
             <div className="bg-[#7dffee] rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:bg-[#219EBC] transition-colors">
               <Eye className="text-[#023047] w-8 h-8" />
             </div>
-            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">Influencer marketing</h3>
+            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">{t('whatWeOffer.influencerMarketing.title')}</h3>
             <p className="font-mono text-gray-700 text-sm">
-              Spolupráca s influencerami
+              {t('whatWeOffer.influencerMarketing.description')}
             </p>
           </div>
           
@@ -382,9 +402,9 @@ export default function SocialneSietePage() {
             <div className="bg-[#7dffee] rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:bg-[#219EBC] transition-colors">
               <Calendar className="text-[#023047] w-8 h-8" />
             </div>
-            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">Content kalendár</h3>
+            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">{t('whatWeOffer.contentCalendar.title')}</h3>
             <p className="font-mono text-gray-700 text-sm">
-              Plánovanie obsahu
+              {t('whatWeOffer.contentCalendar.description')}
             </p>
           </div>
           
@@ -392,9 +412,9 @@ export default function SocialneSietePage() {
             <div className="bg-[#7dffee] rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:bg-[#219EBC] transition-colors">
               <BarChart3 className="text-[#023047] w-8 h-8" />
             </div>
-            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">Analýza výkonnosti</h3>
+            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">{t('whatWeOffer.performanceAnalysis.title')}</h3>
             <p className="font-mono text-gray-700 text-sm">
-              Reporty a metriky
+              {t('whatWeOffer.performanceAnalysis.description')}
             </p>
           </div>
           
@@ -402,9 +422,9 @@ export default function SocialneSietePage() {
             <div className="bg-[#7dffee] rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:bg-[#219EBC] transition-colors">
               <RefreshCw className="text-[#023047] w-8 h-8" />
             </div>
-            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">Reklamné kampane</h3>
+            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">{t('whatWeOffer.adCampaigns.title')}</h3>
             <p className="font-mono text-gray-700 text-sm">
-              Na sociálnych sieťach
+              {t('whatWeOffer.adCampaigns.description')}
             </p>
           </div>
           
@@ -412,9 +432,9 @@ export default function SocialneSietePage() {
             <div className="bg-[#7dffee] rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:bg-[#219EBC] transition-colors">
               <Settings className="text-[#023047] w-8 h-8" />
             </div>
-            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">Nastavenie účtov</h3>
+            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">{t('whatWeOffer.accountSetup.title')}</h3>
             <p className="font-mono text-gray-700 text-sm">
-              Profesionálne profily
+              {t('whatWeOffer.accountSetup.description')}
             </p>
           </div>
           
@@ -422,9 +442,9 @@ export default function SocialneSietePage() {
             <div className="bg-[#7dffee] rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:bg-[#219EBC] transition-colors">
               <FileSpreadsheet className="text-[#023047] w-8 h-8" />
             </div>
-            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">Pravidelné reporty a konzultácie</h3>
+            <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">{t('whatWeOffer.reportsConsultations.title')}</h3>
             <p className="font-mono text-gray-700 text-sm">
-              Mesačné vyhodnotenie s odporúčaniami
+              {t('whatWeOffer.reportsConsultations.description')}
             </p>
           </div>
         </div>
@@ -435,18 +455,18 @@ export default function SocialneSietePage() {
         <div className="bg-gradient-to-br from-[#219EBC] to-[#8ECAE6] rounded-2xl shadow-xl p-10 md:p-16 text-center relative overflow-hidden">
           <div className="relative z-10">
             <h2 className="font-heading text-3xl md:text-4xl font-bold mb-4 text-[#023047]">
-              Sociálne siete, ktoré budujú značku.
+              {t('finalCta.title')}
             </h2>
             <div className="font-mono text-lg md:text-xl mb-8 text-[#023047]">
-              Nechaj si vytvoriť sociálne siete, ktoré budú autentické, zaujímavé a budú ti prinášať reálne výsledky.
+              {t('finalCta.description1')}
             </div>
             <div className="font-mono text-lg md:text-xl mb-8 text-[#023047]">
-              Od stratégie až po dennú komunikáciu – všetko s dôrazom na tvoju značku a cieľovku.
+              {t('finalCta.description2')}
             </div>
             <div className="font-mono text-lg md:text-xl mb-8 text-[#023047]">
-              A ty? Ty sa môžeš sústrediť na svoj biznis.
+              {t('finalCta.description3')}
             </div>
-            <Link href="/sk/kontakt">
+            <Link href={`/${locale}/kontakt`}>
               <PaletteButton variant="secondary" className="text-lg px-8 py-4">
                 Spustiť sociálne siete
               </PaletteButton>

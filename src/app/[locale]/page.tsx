@@ -1,7 +1,10 @@
+'use client';
+
 import { useTranslations } from 'next-intl';
 import PaletteButton from "@/components/PaletteButton";
 import Link from "next/link";
 import ContactForm from "@/components/ContactForm";
+import { usePathname } from 'next/navigation';
 import { 
   Rocket, 
   Target, 
@@ -22,10 +25,23 @@ import {
 export default function Home() {
   // Get translations
   const t = useTranslations('home');
+  const pathname = usePathname();
+  
+  // Extract locale from pathname
+  const getLocaleFromPath = (path: string): string => {
+    const segments = path.split('/').filter(Boolean);
+    if (segments.length === 0) return 'sk';
+    const firstSegment = segments[0];
+    if (['sk', 'en', 'de', 'cs'].includes(firstSegment)) {
+      return firstSegment;
+    }
+    return 'sk';
+  };
+
+  const locale = getLocaleFromPath(pathname);
   
   return (
-    <>
-      <main className="p-4 sm:p-8 relative z-10">
+    <main className="p-4 sm:p-8 relative z-10">
         {/* Professional Hero Section */}
         <section className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-16 pt-20 lg:pt-28 pb-16 lg:pb-24 relative">
           {/* Subtle Background Elements */}
@@ -34,7 +50,7 @@ export default function Home() {
               <div className="bg-gradient-to-r from-blue-500 to-purple-500 rounded-full p-2 shadow-lg">
                 <Rocket className="text-white w-4 h-4" />
               </div>
-                </div>
+            </div>
             <div className="absolute top-40 right-20 animate-bounce" style={{animationDelay: '1s'}}>
               <div className="bg-gradient-to-r from-green-500 to-blue-500 rounded-full p-2 shadow-lg">
                 <Target className="text-white w-4 h-4" />
@@ -53,7 +69,7 @@ export default function Home() {
               {/* Professional Badge */}
               <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-50 to-purple-50 border border-blue-200 rounded-full px-4 py-2 mb-6">
                 <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
-                <span className="font-mono text-sm font-medium text-blue-700">Digitálny marketing expert</span>
+                <span className="font-mono text-sm font-medium text-blue-700">{t('expertBadge')}</span>
               </div>
               
               {/* Main Heading */}
@@ -71,7 +87,7 @@ export default function Home() {
               
               {/* Professional CTA */}
               <div className="flex flex-col sm:flex-row gap-4 items-start">
-            <Link href="/kontakt">
+            <Link href={`/${locale}/kontakt`}>
                   <PaletteButton variant="secondary" className="group text-lg px-8 py-4 shadow-lg hover:shadow-xl transition-all duration-300">
                     <span className="flex items-center gap-3">
                       {t('campaignButton')}
@@ -110,13 +126,13 @@ export default function Home() {
                               <BarChart3 className="text-white w-4 h-4" />
                             </div>
                             <div>
-                              <div className="font-semibold text-sm text-gray-900">Marketing Analytics</div>
-                              <div className="text-xs text-gray-500">Real-time data</div>
+                              <div className="font-semibold text-sm text-gray-900">{t('analytics.marketingAnalytics')}</div>
+                              <div className="text-xs text-gray-500">{t('analytics.realTimeData')}</div>
                             </div>
                           </div>
                           <div className="space-y-2">
                             <div className="flex justify-between text-xs">
-                              <span className="text-gray-600">Conversions</span>
+                              <span className="text-gray-600">{t('analytics.conversions')}</span>
                               <span className="font-semibold text-green-600">+24%</span>
                             </div>
                             <div className="w-full bg-gray-200 rounded-full h-2">
@@ -131,8 +147,8 @@ export default function Home() {
                               <TrendingUp className="text-white w-4 h-4" />
                             </div>
                             <div>
-                              <div className="font-semibold text-sm text-gray-900">ROI Tracking</div>
-                              <div className="text-xs text-gray-500">Performance metrics</div>
+                              <div className="font-semibold text-sm text-gray-900">{t('analytics.roiTracking')}</div>
+                              <div className="text-xs text-gray-500">{t('analytics.performanceMetrics')}</div>
                             </div>
                           </div>
                           <div className="text-2xl font-bold text-gray-900">€2.4M</div>
@@ -148,8 +164,8 @@ export default function Home() {
                               <MessageSquare className="text-white w-4 h-4" />
                             </div>
                             <div>
-                              <div className="font-semibold text-sm text-gray-900">Social Media</div>
-                              <div className="text-xs text-gray-500">Engagement rate</div>
+                              <div className="font-semibold text-sm text-gray-900">{t('analytics.socialMedia')}</div>
+                              <div className="text-xs text-gray-500">{t('analytics.engagementRate')}</div>
                             </div>
                           </div>
                           <div className="flex justify-between items-center">
@@ -164,8 +180,8 @@ export default function Home() {
                               <Eye className="text-white w-4 h-4" />
                             </div>
                             <div>
-                              <div className="font-semibold text-sm text-gray-900">Reach</div>
-                              <div className="text-xs text-gray-500">Total impressions</div>
+                              <div className="font-semibold text-sm text-gray-900">{t('analytics.reach')}</div>
+                              <div className="text-xs text-gray-500">{t('analytics.totalImpressions')}</div>
                             </div>
                           </div>
                           <div className="text-lg font-bold text-gray-900">2.4M</div>
@@ -181,8 +197,8 @@ export default function Home() {
                               <Target className="text-white w-4 h-4" />
                             </div>
                             <div>
-                              <div className="font-semibold text-sm">Active Campaigns</div>
-                              <div className="text-xs opacity-80">PPC & Social</div>
+                              <div className="font-semibold text-sm">{t('analytics.activeCampaigns')}</div>
+                              <div className="text-xs opacity-80">{t('analytics.ppcSocial')}</div>
                             </div>
                           </div>
                           <div className="text-xs opacity-80">NextLayer Studio</div>
@@ -194,8 +210,8 @@ export default function Home() {
                               <MousePointer className="text-white w-4 h-4" />
                             </div>
                             <div>
-                              <div className="font-semibold text-sm text-gray-900">CTR</div>
-                              <div className="text-xs text-gray-500">Click-through rate</div>
+                              <div className="font-semibold text-sm text-gray-900">{t('analytics.ctr')}</div>
+                              <div className="text-xs text-gray-500">{t('analytics.clickThroughRate')}</div>
                             </div>
                           </div>
                           <div className="text-lg font-bold text-gray-900">3.8%</div>
@@ -211,17 +227,17 @@ export default function Home() {
                               <Activity className="text-white w-4 h-4" />
                             </div>
                             <div>
-                              <div className="font-semibold text-sm text-gray-900">Traffic Sources</div>
-                              <div className="text-xs text-gray-500">Organic vs Paid</div>
+                              <div className="font-semibold text-sm text-gray-900">{t('analytics.trafficSources')}</div>
+                              <div className="text-xs text-gray-500">{t('analytics.organicVsPaid')}</div>
                             </div>
                           </div>
                           <div className="space-y-2">
                             <div className="flex justify-between text-xs">
-                              <span className="text-gray-600">Organic</span>
+                              <span className="text-gray-600">{t('analytics.organic')}</span>
                               <span className="font-semibold text-blue-600">65%</span>
                             </div>
                             <div className="flex justify-between text-xs">
-                              <span className="text-gray-600">Paid</span>
+                              <span className="text-gray-600">{t('analytics.paid')}</span>
                               <span className="font-semibold text-green-600">35%</span>
                             </div>
                           </div>
@@ -233,8 +249,8 @@ export default function Home() {
                               <Users className="text-white w-4 h-4" />
                             </div>
                             <div>
-                              <div className="font-semibold text-sm text-gray-900">New Users</div>
-                              <div className="text-xs text-gray-500">This month</div>
+                              <div className="font-semibold text-sm text-gray-900">{t('analytics.newUsers')}</div>
+                              <div className="text-xs text-gray-500">{t('analytics.thisMonth')}</div>
                             </div>
                           </div>
                           <div className="text-lg font-bold text-gray-900">12.5K</div>
@@ -250,13 +266,13 @@ export default function Home() {
                               <BarChart3 className="text-white w-4 h-4" />
                             </div>
                             <div>
-                              <div className="font-semibold text-sm text-gray-900">Marketing Analytics</div>
-                              <div className="text-xs text-gray-500">Real-time data</div>
+                              <div className="font-semibold text-sm text-gray-900">{t('analytics.marketingAnalytics')}</div>
+                              <div className="text-xs text-gray-500">{t('analytics.realTimeData')}</div>
                             </div>
                           </div>
                           <div className="space-y-2">
                             <div className="flex justify-between text-xs">
-                              <span className="text-gray-600">Conversions</span>
+                              <span className="text-gray-600">{t('analytics.conversions')}</span>
                               <span className="font-semibold text-green-600">+24%</span>
                             </div>
                             <div className="w-full bg-gray-200 rounded-full h-2">
@@ -303,8 +319,8 @@ export default function Home() {
                 <TrendingUp className="text-white w-8 h-8" />
               </div>
               <div className="text-4xl font-bold text-gray-900 mb-2">450%</div>
-              <div className="font-semibold text-gray-700 mb-2">Priemerný rast</div>
-              <div className="text-sm text-gray-500">Pre naše kampane</div>
+              <div className="font-semibold text-gray-700 mb-2">{t('stats.averageGrowth')}</div>
+              <div className="text-sm text-gray-500">{t('stats.forOurCampaigns')}</div>
             </div>
             
             <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-8 text-center hover:shadow-xl transition-all duration-300 group">
@@ -312,8 +328,8 @@ export default function Home() {
                 <Target className="text-white w-8 h-8" />
               </div>
               <div className="text-4xl font-bold text-gray-900 mb-2">85%</div>
-              <div className="font-semibold text-gray-700 mb-2">Úspešnosť kampaní</div>
-              <div className="text-sm text-gray-500">Presiahli ciele</div>
+              <div className="font-semibold text-gray-700 mb-2">{t('stats.campaignSuccess')}</div>
+              <div className="text-sm text-gray-500">{t('stats.exceededGoals')}</div>
             </div>
             
             <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-8 text-center hover:shadow-xl transition-all duration-300 group">
@@ -321,8 +337,8 @@ export default function Home() {
                 <Award className="text-white w-8 h-8" />
               </div>
               <div className="text-4xl font-bold text-gray-900 mb-2">98%</div>
-              <div className="font-semibold text-gray-700 mb-2">Spokojnosť klientov</div>
-              <div className="text-sm text-gray-500">Priemerné hodnotenie</div>
+              <div className="font-semibold text-gray-700 mb-2">{t('stats.clientSatisfaction')}</div>
+              <div className="text-sm text-gray-500">{t('stats.averageRating')}</div>
             </div>
             
             <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-8 text-center hover:shadow-xl transition-all duration-300 group">
@@ -330,8 +346,8 @@ export default function Home() {
                 <Activity className="text-white w-8 h-8" />
               </div>
               <div className="text-4xl font-bold text-gray-900 mb-2">24/7</div>
-              <div className="font-semibold text-gray-700 mb-2">Podpora</div>
-              <div className="text-sm text-gray-500">Vždy sme tu pre vás</div>
+              <div className="font-semibold text-gray-700 mb-2">{t('stats.support')}</div>
+              <div className="text-sm text-gray-500">{t('stats.alwaysHere')}</div>
             </div>
           </div>
         </section>
@@ -339,9 +355,9 @@ export default function Home() {
         {/* Professional Services Section */}
         <section className="max-w-7xl mx-auto mt-24 lg:mt-32">
           <div className="text-center mb-16">
-            <h2 className="font-heading text-4xl lg:text-5xl font-bold mb-4 text-[#023047]">Naše služby</h2>
+            <h2 className="font-heading text-4xl lg:text-5xl font-bold mb-4 text-[#023047]">{t('services.title')}</h2>
             <p className="font-mono text-xl text-gray-600 max-w-3xl mx-auto">
-              Komplexné riešenia pre váš digitálny úspech
+              {t('services.subtitle')}
             </p>
           </div>
           
@@ -360,9 +376,9 @@ export default function Home() {
                             <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg flex items-center justify-center">
                               <Search className="text-white w-4 h-4" />
                             </div>
-                            <div className="font-semibold text-sm text-gray-900">SEO & Content</div>
+                            <div className="font-semibold text-sm text-gray-900">{t('services.seoContent.title')}</div>
                           </div>
-                          <div className="text-xs text-gray-500">Organic growth strategy</div>
+                          <div className="text-xs text-gray-500">{t('services.seoContent.subtitle')}</div>
                         </div>
                         
                         <div className="bg-white rounded-xl p-4 shadow-sm">
@@ -370,9 +386,9 @@ export default function Home() {
                             <div className="w-8 h-8 bg-gradient-to-r from-green-500 to-blue-500 rounded-lg flex items-center justify-center">
                               <MessageSquare className="text-white w-4 h-4" />
                             </div>
-                            <div className="font-semibold text-sm text-gray-900">Social Media</div>
+                            <div className="font-semibold text-sm text-gray-900">{t('services.socialMedia.title')}</div>
                           </div>
-                          <div className="text-xs text-gray-500">Community management</div>
+                          <div className="text-xs text-gray-500">{t('services.socialMedia.subtitle')}</div>
                         </div>
                         
                         <div className="bg-white rounded-xl p-4 shadow-sm">
@@ -380,9 +396,9 @@ export default function Home() {
                             <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg flex items-center justify-center">
                               <MousePointer className="text-white w-4 h-4" />
                             </div>
-                            <div className="font-semibold text-sm text-gray-900">PPC Advertising</div>
+                            <div className="font-semibold text-sm text-gray-900">{t('services.ppcAdvertising.title')}</div>
                           </div>
-                          <div className="text-xs text-gray-500">Performance marketing</div>
+                          <div className="text-xs text-gray-500">{t('services.ppcAdvertising.subtitle')}</div>
                         </div>
                         
                         <div className="bg-white rounded-xl p-4 shadow-sm">
@@ -390,9 +406,9 @@ export default function Home() {
                             <div className="w-8 h-8 bg-gradient-to-r from-orange-500 to-red-500 rounded-lg flex items-center justify-center">
                               <Monitor className="text-white w-4 h-4" />
                             </div>
-                            <div className="font-semibold text-sm text-gray-900">Web Development</div>
+                            <div className="font-semibold text-sm text-gray-900">{t('services.webLanding.title')}</div>
                           </div>
-                          <div className="text-xs text-gray-500">Modern websites</div>
+                          <div className="text-xs text-gray-500">{t('services.webLanding.subtitle')}</div>
                         </div>
                       </div>
                     </div>
@@ -411,15 +427,15 @@ export default function Home() {
                       <Search className="text-white w-6 h-6" />
                     </div>
                     <div>
-                      <h3 className="font-heading text-xl font-bold text-gray-900">SEO & Content</h3>
-                      <p className="text-sm text-gray-500">Organic growth</p>
+                      <h3 className="font-heading text-xl font-bold text-gray-900">{t('services.seoContent.title')}</h3>
+                      <p className="text-sm text-gray-500">{t('services.seoContent.subtitle')}</p>
                     </div>
                   </div>
                   <p className="text-gray-600 mb-4 leading-relaxed">
-                    Optimalizujeme váš web pre vyhľadávače a vytvárame kvalitný obsah, ktorý priláka organickú návštevnosť.
+                    {t('services.seoContent.description')}
                   </p>
-                  <Link href="/sluzby/seo-content" className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-semibold text-sm group-hover:underline">
-                    Zistiť viac <ArrowUpRight className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" />
+                  <Link href={`/${locale}/sluzby/seo-content`} className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-semibold text-sm group-hover:underline">
+                    {t('services.seoContent.learnMore')} <ArrowUpRight className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" />
                   </Link>
                 </div>
                 
@@ -430,15 +446,15 @@ export default function Home() {
                       <MessageSquare className="text-white w-6 h-6" />
                     </div>
                     <div>
-                      <h3 className="font-heading text-xl font-bold text-gray-900">Sociálne siete</h3>
-                      <p className="text-sm text-gray-500">Community building</p>
+                      <h3 className="font-heading text-xl font-bold text-gray-900">{t('services.socialMedia.title')}</h3>
+                      <p className="text-sm text-gray-500">{t('services.socialMedia.subtitle')}</p>
                     </div>
                   </div>
                   <p className="text-gray-600 mb-4 leading-relaxed">
-                    Správame vaše sociálne siete, vytvárame engažujúci obsah a budujeme komunitu vašich fanúšikov.
+                    {t('services.socialMedia.description')}
                   </p>
-                  <Link href="/sluzby/socialne-siete" className="inline-flex items-center gap-2 text-green-600 hover:text-green-700 font-semibold text-sm group-hover:underline">
-                    Zistiť viac <ArrowUpRight className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" />
+                  <Link href={`/${locale}/sluzby/socialne-siete`} className="inline-flex items-center gap-2 text-green-600 hover:text-green-700 font-semibold text-sm group-hover:underline">
+                    {t('services.socialMedia.learnMore')} <ArrowUpRight className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" />
                   </Link>
                 </div>
                 
@@ -449,15 +465,15 @@ export default function Home() {
                       <MousePointer className="text-white w-6 h-6" />
                     </div>
                     <div>
-                      <h3 className="font-heading text-xl font-bold text-gray-900">PPC reklama</h3>
-                      <p className="text-sm text-gray-500">Performance marketing</p>
+                      <h3 className="font-heading text-xl font-bold text-gray-900">{t('services.ppcAdvertising.title')}</h3>
+                      <p className="text-sm text-gray-500">{t('services.ppcAdvertising.subtitle')}</p>
                     </div>
                   </div>
                   <p className="text-gray-600 mb-4 leading-relaxed">
-                    Spúšťame a optimalizujeme výkonnostné kampane, ktoré prinášajú merateľné výsledky a vysokú návratnosť.
+                    {t('services.ppcAdvertising.description')}
                   </p>
-                  <Link href="/sluzby/ppc-reklama" className="inline-flex items-center gap-2 text-purple-600 hover:text-purple-700 font-semibold text-sm group-hover:underline">
-                    Zistiť viac <ArrowUpRight className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" />
+                  <Link href={`/${locale}/sluzby/ppc-reklama`} className="inline-flex items-center gap-2 text-purple-600 hover:text-purple-700 font-semibold text-sm group-hover:underline">
+                    {t('services.ppcAdvertising.learnMore')} <ArrowUpRight className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" />
                   </Link>
                 </div>
                 
@@ -468,22 +484,22 @@ export default function Home() {
                       <Monitor className="text-white w-6 h-6" />
                     </div>
                     <div>
-                      <h3 className="font-heading text-xl font-bold text-gray-900">Weby & Landing pages</h3>
-                      <p className="text-sm text-gray-500">Modern development</p>
+                      <h3 className="font-heading text-xl font-bold text-gray-900">{t('services.webLanding.title')}</h3>
+                      <p className="text-sm text-gray-500">{t('services.webLanding.subtitle')}</p>
                     </div>
                   </div>
                   <p className="text-gray-600 mb-4 leading-relaxed">
-                    Vytvárame rýchle, moderné a konverzné webstránky, ktoré presvedčia návštevníkov k akcii.
+                    {t('services.webLanding.description')}
                   </p>
-                  <Link href="/sluzby/web-landing" className="inline-flex items-center gap-2 text-orange-600 hover:text-orange-700 font-semibold text-sm group-hover:underline">
-                    Zistiť viac <ArrowUpRight className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" />
+                  <Link href={`/${locale}/sluzby/web-landing`} className="inline-flex items-center gap-2 text-orange-600 hover:text-orange-700 font-semibold text-sm group-hover:underline">
+                    {t('services.webLanding.learnMore')} <ArrowUpRight className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" />
                   </Link>
                 </div>
               </div>
               
               <div className="text-center mt-8">
-                <Link href="/sluzby" className="inline-flex items-center gap-2 text-gray-700 hover:text-gray-900 font-semibold text-lg group">
-                  Pozrieť všetky služby
+                <Link href={`/${locale}/sluzby`} className="inline-flex items-center gap-2 text-gray-700 hover:text-gray-900 font-semibold text-lg group">
+                  {t('services.viewAllServices')}
                   <ArrowUpRight className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" />
                 </Link>
               </div>
@@ -495,10 +511,10 @@ export default function Home() {
         <section className="max-w-7xl mx-auto mt-24 lg:mt-32">
           <div className="text-center mb-16">
             <h2 className="font-heading text-4xl lg:text-5xl font-bold mb-4 text-[#023047]">
-              Ako pracujeme
+              {t('process.title')}
             </h2>
-            <p className="font-mono text-xl text-gray-600 max-w-4xl mx-auto">
-              Moderný marketing nemusí byť zložitý. U nás funguje všetko jednoducho, rýchlo a prehľadne.
+            <p className="font-mono text-xl text-gray-600 max-w-3xl mx-auto">
+              {t('process.subtitle')}
             </p>
           </div>
           
@@ -514,15 +530,15 @@ export default function Home() {
                     <div className="flex items-center gap-4 mb-6">
                       <div className="bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl w-12 h-12 flex items-center justify-center text-white font-bold text-lg">1</div>
                       <div>
-                        <h3 className="font-heading text-2xl font-bold text-gray-900">Počúvame a analyzujeme</h3>
-                        <p className="text-gray-600">Spoznáme váš biznis</p>
+                        <h3 className="font-heading text-2xl font-bold text-gray-900">{t('process.step1.title')}</h3>
+                        <p className="text-gray-600">{t('process.step1.subtitle')}</p>
                       </div>
                     </div>
                     <p className="text-gray-700 leading-relaxed mb-4">
-                      Najprv vás spoznáme – vašu značku, cieľovku, ciele a výzvy. Zanalyzujeme, kde ste a kam sa chcete dostať.
+                      {t('process.step1.description')}
                     </p>
                     <div className="bg-blue-50 rounded-xl p-4">
-                      <p className="text-sm text-blue-700 font-semibold">Výstup: Brief, cieľ kampane, analýza aktuálneho stavu</p>
+                      <p className="text-sm text-blue-700 font-semibold">{t('process.step1.output')}</p>
                     </div>
                   </div>
                   
@@ -530,15 +546,15 @@ export default function Home() {
                     <div className="flex items-center gap-4 mb-6">
                       <div className="bg-gradient-to-r from-green-500 to-blue-500 rounded-2xl w-12 h-12 flex items-center justify-center text-white font-bold text-lg">2</div>
                       <div>
-                        <h3 className="font-heading text-2xl font-bold text-gray-900">Navrhujeme stratégiu</h3>
-                        <p className="text-gray-600">Vytvoríme plán</p>
+                        <h3 className="font-heading text-2xl font-bold text-gray-900">{t('process.step2.title')}</h3>
+                        <p className="text-gray-600">{t('process.step2.subtitle')}</p>
                       </div>
                     </div>
                     <p className="text-gray-700 leading-relaxed mb-4">
-                      Na základe analýzy pripravíme konkrétny plán. Navrhneme vhodné kanály, rozpočty a formáty komunikácie.
+                      {t('process.step2.description')}
                     </p>
                     <div className="bg-green-50 rounded-xl p-4">
-                      <p className="text-sm text-green-700 font-semibold">Výstup: Marketingová stratégia, návrh obsahu, harmonogram</p>
+                      <p className="text-sm text-green-700 font-semibold">{t('process.step2.output')}</p>
                     </div>
                   </div>
                 </div>
@@ -548,8 +564,8 @@ export default function Home() {
                     <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-1/3 h-6 bg-gray-800 rounded-b-lg z-10"></div>
                     <div className="w-full h-full bg-gradient-to-br from-blue-400 to-purple-500 rounded-[25px] flex items-center justify-center">
                       <div className="text-white text-center">
-                        <div className="text-2xl font-bold mb-2">Analýza</div>
-                        <div className="text-sm opacity-80">Strategické plánovanie</div>
+                        <div className="text-2xl font-bold mb-2">{t('process.analysis')}</div>
+                        <div className="text-sm opacity-80">{t('process.strategicPlanning')}</div>
                       </div>
                     </div>
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-[25px] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -564,8 +580,8 @@ export default function Home() {
                     <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-1/3 h-6 bg-gray-800 rounded-b-lg z-10"></div>
                     <div className="w-full h-full bg-gradient-to-br from-green-400 to-blue-500 rounded-[25px] flex items-center justify-center">
                       <div className="text-white text-center">
-                        <div className="text-2xl font-bold mb-2">Implementácia</div>
-                        <div className="text-sm opacity-80">Spustenie kampaní</div>
+                        <div className="text-2xl font-bold mb-2">{t('process.implementation')}</div>
+                        <div className="text-sm opacity-80">{t('process.campaignLaunch')}</div>
                       </div>
                     </div>
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-[25px] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -577,15 +593,15 @@ export default function Home() {
                     <div className="flex items-center gap-4 mb-6">
                       <div className="bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl w-12 h-12 flex items-center justify-center text-white font-bold text-lg">3</div>
                       <div>
-                        <h3 className="font-heading text-2xl font-bold text-gray-900">Implementujeme a spúšťame</h3>
-                        <p className="text-gray-600">Spustíme kampane</p>
+                        <h3 className="font-heading text-2xl font-bold text-gray-900">{t('process.step3.title')}</h3>
+                        <p className="text-gray-600">{t('process.step3.subtitle')}</p>
                       </div>
                     </div>
                     <p className="text-gray-700 leading-relaxed mb-4">
-                      Všetko pripravíme a spustíme podľa plánu. Nastavíme účty, tracking a optimalizujeme kampane.
+                      {t('process.step3.description')}
                     </p>
                     <div className="bg-purple-50 rounded-xl p-4">
-                      <p className="text-sm text-purple-700 font-semibold">Výstup: Spustené kampane, aktívne kanály, tracking</p>
+                      <p className="text-sm text-purple-700 font-semibold">{t('process.step3.output')}</p>
                     </div>
                   </div>
                   
@@ -593,15 +609,15 @@ export default function Home() {
                     <div className="flex items-center gap-4 mb-6">
                       <div className="bg-gradient-to-r from-orange-500 to-red-500 rounded-2xl w-12 h-12 flex items-center justify-center text-white font-bold text-lg">4</div>
                       <div>
-                        <h3 className="font-heading text-2xl font-bold text-gray-900">Optimalizujeme a rastieme</h3>
-                        <p className="text-gray-600">Neustály rast</p>
+                        <h3 className="font-heading text-2xl font-bold text-gray-900">{t('process.step4.title')}</h3>
+                        <p className="text-gray-600">{t('process.step4.subtitle')}</p>
                       </div>
                     </div>
                     <p className="text-gray-700 leading-relaxed mb-4">
-                      Neustále sledujeme výsledky a optimalizujeme. Pravidelne reportujeme a navrhujeme vylepšenia.
+                      {t('process.step4.description')}
                     </p>
                     <div className="bg-orange-50 rounded-xl p-4">
-                      <p className="text-sm text-orange-700 font-semibold">Výstup: Pravidelné reporty, optimalizácie, rozšírenia</p>
+                      <p className="text-sm text-orange-700 font-semibold">{t('process.step4.output')}</p>
                     </div>
                   </div>
                 </div>
@@ -614,17 +630,17 @@ export default function Home() {
         <section className="max-w-7xl mx-auto mt-24 lg:mt-32">
           <div className="text-center mb-16">
             <h2 className="font-heading text-4xl lg:text-5xl font-bold mb-4 text-[#023047]">
-              Začnime spolupracovať
+              {t('contact.title')}
             </h2>
             <p className="font-mono text-xl text-gray-600 max-w-3xl mx-auto">
-              Máte otázky alebo chcete začať s marketingom? Kontaktujte nás a dohodneme si bezplatnú konzultáciu.
+              {t('contact.subtitle')}
             </p>
           </div>
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 md:gap-24">
             {/* Left: Contact Form */}
             <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
-              <h3 className="font-heading text-3xl md:text-4xl font-bold mb-8 text-[#023047]">Kontaktný formulár</h3>
+              <h3 className="font-heading text-3xl md:text-4xl font-bold mb-8 text-[#023047]">{t('contact.formTitle')}</h3>
               <ContactForm />
             </div>
 
@@ -733,6 +749,5 @@ export default function Home() {
           </div>
         </section>
       </main>
-    </>
   );
 } 
