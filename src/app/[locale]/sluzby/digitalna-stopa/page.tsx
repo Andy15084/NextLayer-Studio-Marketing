@@ -17,7 +17,7 @@ import {
   ArrowUpRight,
   Layers,
   Type,
-  Image,
+  Image as ImageIcon,
   Zap,
   Award,
   Star,
@@ -61,7 +61,7 @@ export default function DigitalnaStopaPage() {
           </div>
           <div className="absolute bottom-40 left-20 animate-bounce" style={{animationDelay: '1s'}}>
             <div className="bg-white rounded-full p-3 shadow-lg">
-              <Image className="text-purple-500 w-6 h-6" />
+              <ImageIcon className="text-purple-500 w-6 h-6" />
             </div>
           </div>
           <div className="absolute bottom-20 right-10 animate-pulse" style={{animationDelay: '2s'}}>
@@ -362,7 +362,7 @@ export default function DigitalnaStopaPage() {
           
           <div className="bg-white rounded-2xl shadow-xl p-6 hover:scale-105 transition-transform duration-300 group">
             <div className="bg-gradient-to-br from-purple-500 to-purple-600 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-              <Image className="text-white w-8 h-8" />
+              <ImageIcon className="text-white w-8 h-8" />
             </div>
             <h3 className="font-heading text-lg font-bold mb-3 text-[#023047]">{t('services.graphicMaterials.title')}</h3>
             <p className="font-mono text-gray-700 text-sm">

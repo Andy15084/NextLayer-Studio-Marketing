@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Footer() {
   return (
     <footer className="w-full py-8" style={{ background: '#faa957', borderTop: '2px solid rgb(252, 188, 91)' }}>
@@ -6,32 +8,37 @@ export default function Footer() {
           {/* Quick Links */}
           <div>
             <div className="font-heading text-base sm:text-lg md:text-xl font-bold mt-4 mb-2 md:mb-4 text-white">Rýchle odkazy</div>
-            <div className="font-mono text-xs sm:text-sm mb-1 text-white">Domov</div>
-            <div className="font-mono text-xs sm:text-sm mb-1 text-white">Prečo my</div>
-            <div className="font-mono text-xs sm:text-sm mb-1 text-white">Úspešné projekty</div>
-            <div className="font-mono text-xs sm:text-sm mb-1 text-white">Kontakt</div>
+            <Link href="/sk" className="block font-mono text-xs sm:text-sm mb-1 text-white hover:text-blue-300 transition-colors">Domov</Link>
+            <Link href="/sk/o-nas" className="block font-mono text-xs sm:text-sm mb-1 text-white hover:text-blue-300 transition-colors">O nás</Link>
+            <Link href="/sk/ako-pracujeme" className="block font-mono text-xs sm:text-sm mb-1 text-white hover:text-blue-300 transition-colors">Ako pracujeme</Link>
+            <Link href="/sk/kontakt" className="block font-mono text-xs sm:text-sm mb-1 text-white hover:text-blue-300 transition-colors">Kontakt</Link>
+            <Link href="/sk/cookies" className="block font-mono text-xs sm:text-sm mb-1 text-white hover:text-blue-300 transition-colors">Cookies</Link>
+            <Link href="/sk/podmienky-pouzivania" className="block font-mono text-xs sm:text-sm mb-1 text-white hover:text-blue-300 transition-colors">Podmienky používania</Link>
           </div>
-          {/* Company Info */}
+          {/* What We're Looking For */}
           <div>
-            <div className="font-heading text-base sm:text-lg md:text-xl font-bold mt-4 mb-2 md:mb-4 text-white">Údaje o firme</div>
-            <div className="font-mono text-xs sm:text-sm mb-1 text-white">IČO: 56580894</div>
-            <div className="font-mono text-xs sm:text-sm mb-1 text-white">Číslo živnostenského registra: 140-35375</div>
-            <div className="font-mono text-xs sm:text-sm text-white">Zapísaný v: Živnostenskom registri<br/>okresného úradu Senec</div>
+            <div className="font-heading text-base sm:text-lg md:text-xl font-bold mt-4 mb-2 md:mb-4 text-white">Čo hľadáme</div>
+            <div className="font-mono text-xs sm:text-sm text-white leading-relaxed">
+              Hľadáte spoľahlivého partnera, ktorý dodá riešenie načas a bez zbytočných komplikácií? Radi prijmeme nové firemné výzvy – od konzultácie po kompletnú realizáciu.
+            </div>
           </div>
           {/* What We Offer */}
           <div>
             <div className="font-heading text-base sm:text-lg md:text-xl font-bold mt-4 mb-2 md:mb-4 text-white">Čo ponúkame</div>
-            <div className="font-mono text-xs sm:text-sm mb-1 text-white">Správa sociálnych sietí</div>
-            <div className="font-mono text-xs sm:text-sm mb-1 text-white">Modernizácia vašej webstránky</div>
-            <div className="font-mono text-xs sm:text-sm mb-1 text-white">Vytvorenie digitálnej identity spoločnosti</div>
-            <div className="font-mono text-xs sm:text-sm mb-1 text-white">Tvorba eshopu</div>
-            <div className="font-mono text-xs sm:text-sm mb-1 text-white">Tvorba webových aplikácii</div>
+            <Link href="/sk/sluzby/socialne-siete" className="block font-mono text-xs sm:text-sm mb-1 text-white hover:text-blue-300 transition-colors">Sociálne siete</Link>
+            <Link href="/sk/sluzby/ppc-reklama" className="block font-mono text-xs sm:text-sm mb-1 text-white hover:text-blue-300 transition-colors">PPC reklama</Link>
+            <Link href="/sk/sluzby/seo-content" className="block font-mono text-xs sm:text-sm mb-1 text-white hover:text-blue-300 transition-colors">SEO & Content</Link>
+            <Link href="/sk/sluzby/web-landing" className="block font-mono text-xs sm:text-sm mb-1 text-white hover:text-blue-300 transition-colors">Weby & Landing</Link>
+            <Link href="/sk/sluzby/analytika" className="block font-mono text-xs sm:text-sm mb-1 text-white hover:text-blue-300 transition-colors">Analytika</Link>
+            <Link href="/sk/sluzby/kontent" className="block font-mono text-xs sm:text-sm mb-1 text-white hover:text-blue-300 transition-colors">Tvorba obsahu</Link>
+            <Link href="/sk/sluzby/kampane" className="block font-mono text-xs sm:text-sm mb-1 text-white hover:text-blue-300 transition-colors">Reklamné kampane</Link>
+            <Link href="/sk/sluzby/digitalna-stopa" className="block font-mono text-xs sm:text-sm mb-1 text-white hover:text-blue-300 transition-colors">Digitálna stopa & firemná identita</Link>
           </div>
           {/* Contact */}
           <div>
             <div className="font-heading text-base sm:text-lg md:text-xl font-bold mt-4 mb-2 md:mb-4 text-white">Kontakt</div>
-            <div className="font-mono text-xs sm:text-sm mb-1 text-white">email: nextlayerstudio@gmail.com</div>
-            <div className="font-mono text-xs sm:text-sm mb-1 text-white">tel.: 0903652258</div>
+            <a href="mailto:team@nextlayer.studio" className="block font-mono text-xs sm:text-sm mb-1 text-white hover:text-blue-300 transition-colors">team@nextlayer.studio</a>
+            <a href="tel:+421902238309" className="block font-mono text-xs sm:text-sm mb-1 text-white hover:text-blue-300 transition-colors">+421 902 238 309</a>
           </div>
         </div>
         

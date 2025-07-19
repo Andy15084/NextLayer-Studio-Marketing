@@ -4,6 +4,7 @@ import "../globals.css";
 import { Albert_Sans, Roboto_Mono } from 'next/font/google';
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import CookiesPopup from "@/components/CookiesPopup";
 import { NextIntlClientProvider } from 'next-intl';
 import { notFound } from 'next/navigation';
 import { getMessages } from 'next-intl/server';
@@ -70,6 +71,7 @@ export default async function LocaleLayout({
             {children}
           </div>
           <Footer />
+          <CookiesPopup />
         </NextIntlClientProvider>
       </body>
     </html>

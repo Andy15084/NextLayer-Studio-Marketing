@@ -1516,5 +1516,157 @@
       "subtitle": "Kontaktujte nás a dohodneme si bezplatnú konzultáciu",
       "button": "Kontaktovať nás"
     }
+  },
+  "content": {
+    "hero": {
+      "title": "Tvorba obsahu, ktorá zaujme.",
+      "subtitle": "Kvalitný obsah, ktorý priláka, zaujme a konvertuje.",
+      "description1": "Obsah je kráľ. Ale nie akýkoľvek obsah – len ten, ktorý je relevantný, hodnotný a zábavný.",
+      "description2": "V NextLayer Studio vytvárame obsah, ktorý je \"smart\" – založený na dátach, optimalizovaný pre cieľovú skupinu a merateľný.",
+      "description3": "Od článkov cez videá až po infografiky – všetko s dôrazom na engažment a konverzie.",
+      "ctaButton": "Spustiť tvorbu obsahu"
+    },
+    "stats": {
+      "title": "Prečo kvalitný obsah funguje?",
+      "stat1": {
+        "percentage": "70%",
+        "label": "Viac engažment",
+        "description": "s kvalitným obsahom"
+      },
+      "stat2": {
+        "percentage": "3x",
+        "label": "Viac dôvery",
+        "description": "s konzistentným obsahom"
+      },
+      "stat3": {
+        "percentage": "60%",
+        "label": "Nižšie náklady",
+        "description": "na získanie zákazníkov"
+      },
+      "stat4": {
+        "percentage": "5x",
+        "label": "Viac zdieľaní",
+        "description": "organického obsahu"
+      },
+      "qualityContent": {
+        "title": "Kvalitný obsah je investícia",
+        "description1": "Dobrý obsah neumiera. Na rozdiel od reklamy, ktorá prestane fungovať, keď prestanete platiť, kvalitný obsah pokračuje v práci roky.",
+        "description2": "Je to ako majetok, ktorý sa zhodnocuje v čase – čím viac ľudí ho vidí, zdieľa a odkazuje naň, tým viac hodnoty má.",
+        "description3": "A práve preto sa vyplatí investovať do kvality, nie do kvantity."
+      },
+      "contentTypes": {
+        "title": "Typy obsahu, ktoré vytvárame",
+        "video": {
+          "title": "Video obsah",
+          "description": "Videá, animácie, live streamy"
+        },
+        "text": {
+          "title": "Textový obsah",
+          "description": "Články, blogy, príspevky"
+        },
+        "graphics": {
+          "title": "Grafický obsah",
+          "description": "Infografiky, obrázky, dizajny"
+        },
+        "audio": {
+          "title": "Audio obsah",
+          "description": "Podcasty, zvukové príspevky"
+        }
+      }
+    },
+    "process": {
+      "title": "Ako tvoríme obsah",
+      "step1": {
+        "title": "Analýza a research",
+        "description": "Zistíme vašu cieľovú skupinu, konkurenciu a najlepšie formáty obsahu pre vašu značku.",
+        "tag": "Content research"
+      },
+      "step2": {
+        "title": "Stratégia a plánovanie",
+        "description": "Vytvoríme content stratégiu, kalendár a plán pre rôzne typy obsahu.",
+        "tag": "Content strategy"
+      },
+      "step3": {
+        "title": "Tvorba a produkcia",
+        "description": "Vytvoríme kvalitný obsah podľa plánu – videá, články, grafiky, podcasty.",
+        "tag": "Content production"
+      },
+      "step4": {
+        "title": "Optimalizácia a distribúcia",
+        "description": "Optimalizujeme obsah pre rôzne platformy a distribuujeme ho na správne kanály.",
+        "tag": "Content distribution"
+      },
+      "step5": {
+        "title": "Promócia a marketing",
+        "description": "Aktivne propagujeme obsah cez sociálne siete, email marketing a ďalšie kanály.",
+        "tag": "Content promotion"
+      },
+      "step6": {
+        "title": "Analýza a optimalizácia",
+        "description": "Sledujeme výkonnosť obsahu a neustále vylepšujeme naše postupy.",
+        "tag": "Content analytics"
+      }
+    },
+    "services": {
+      "title": "Čo všetko vieme vytvoriť?",
+      "videoContent": {
+        "title": "Video obsah",
+        "description": "Videá, animácie, live streamy, reklamy",
+        "benefit": "Vysoký engažment"
+      },
+      "graphicDesign": {
+        "title": "Grafický dizajn",
+        "description": "Infografiky, obrázky, vizuály, logá",
+        "benefit": "Profesionálny vzhľad"
+      },
+      "textContent": {
+        "title": "Textový obsah",
+        "description": "Články, blogy, príspevky, copywriting",
+        "benefit": "SEO optimalizácia"
+      },
+      "audioContent": {
+        "title": "Audio obsah",
+        "description": "Podcasty, zvukové príspevky, jingle",
+        "benefit": "Mobilné publikum"
+      },
+      "interactiveContent": {
+        "title": "Interaktívny obsah",
+        "description": "Kvízy, hry, 360° videá, VR",
+        "benefit": "Vysoká interakcia"
+      },
+      "photography": {
+        "title": "Fotografia",
+        "description": "Produktové fotky, eventy, lifestyle",
+        "benefit": "Autentický obsah"
+      },
+      "educationalContent": {
+        "title": "Vzdelávací obsah",
+        "description": "Tutoriály, návody, webináre",
+        "benefit": "Budovanie autority"
+      },
+      "contentCalendar": {
+        "title": "Content kalendár",
+        "description": "Plánovanie a koordinácia obsahu",
+        "benefit": "Konzistentnosť"
+      },
+      "reports": {
+        "title": "Reporty a analýzy",
+        "description": "Mesačné reporty o výkonnosti obsahu",
+        "benefit": "Merateľné výsledky"
+      }
+    },
+    "whyChooseUs": {
+      "title": "Prečo to robiť s nami?",
+      "description1": "Pretože rozumieme obsahu. Vieme, čo funguje, čo sa zdieľa a čo konvertuje. Naša práca nie je len o tvorbe – je o stratégií.",
+      "description2": "Máme skúsenosti s rôznymi odvetviami a vieme, ako prispôsobiť obsah pre vašu cieľovú skupinu. Neexperimentujeme s vašou značkou.",
+      "description3": "Transparentnosť je pre nás kľúčová – vždy viete, čo robíme, aké výsledky to prináša a ako môžeme vylepšiť."
+    },
+    "finalCta": {
+      "title": "Začnime tvoriť obsah, ktorý funguje.",
+      "description1": "Nechajte si vytvoriť content stratégiu, ktorá bude založená na dátach, optimalizovaná pre vašu cieľovú skupinu a bude vám prinášať merateľné výsledky.",
+      "description2": "Od analýzy až po distribúciu a optimalizáciu – všetko s dôrazom na kvalitu a výsledky.",
+      "description3": "A vy? Vy sa môžete sústrediť na svoj biznis.",
+      "ctaButton": "Začať tvoriť obsah"
+    }
   }
 } 
